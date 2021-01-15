@@ -1,0 +1,49 @@
+﻿@model Project.Models.DimInfoMst
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>DimInfoMst</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.DimType)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DimType)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.DimSubType)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DimSubType)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.DimCrt)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DimCrt)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.DimPrice)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DimPrice)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.DimImg)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DimImg)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.DimId">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

@@ -1,0 +1,72 @@
+﻿@model IEnumerable<Project.Models.StoneMst>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.StoneQltyId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.StoneGm)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.StonePcs)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.StoneCrt)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.StoneRate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.StoneAmt)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.StyleCodeNavigation)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.StoneQltyId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.StoneGm)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.StonePcs)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.StoneCrt)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.StoneRate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.StoneAmt)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.StyleCodeNavigation.StyleCode)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.StyleCode">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.StyleCode">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.StyleCode">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

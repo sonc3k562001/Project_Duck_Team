@@ -1,0 +1,514 @@
+C:\Users\son10\source\repos\Project\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\son10\source\repos\Project\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\son10\source\repos\Project\bin\Debug\netcoreapp3.1\Project.exe
+C:\Users\son10\source\repos\Project\bin\Debug\netcoreapp3.1\Project.deps.json
+C:\Users\son10\source\repos\Project\bin\Debug\netcoreapp3.1\Project.runtimeconfig.json
+C:\Users\son10\source\repos\Project\bin\Debug\netcoreapp3.1\Project.runtimeconfig.dev.json
+C:\Users\son10\source\repos\Project\bin\Debug\netcoreapp3.1\Project.dll
+C:\Users\son10\source\repos\Project\bin\Debug\netcoreapp3.1\Project.pdb
+C:\Users\son10\source\repos\Project\bin\Debug\netcoreapp3.1\Project.Views.dll
+C:\Users\son10\source\repos\Project\bin\Debug\netcoreapp3.1\Project.Views.pdb
+C:\Users\son10\source\repos\Project\bin\Debug\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\son10\source\repos\Project\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
+C:\Users\son10\source\repos\Project\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\son10\source\repos\Project\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\son10\source\repos\Project\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\son10\source\repos\Project\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\son10\source\repos\Project\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\son10\source\repos\Project\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\son10\source\repos\Project\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\son10\source\repos\Project\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\son10\source\repos\Project\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\son10\source\repos\Project\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.dll
+C:\Users\son10\source\repos\Project\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\son10\source\repos\Project\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
+C:\Users\son10\source\repos\Project\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+C:\Users\son10\source\repos\Project\bin\Debug\netcoreapp3.1\Microsoft.Identity.Client.dll
+C:\Users\son10\source\repos\Project\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\son10\source\repos\Project\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+C:\Users\son10\source\repos\Project\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
+C:\Users\son10\source\repos\Project\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\son10\source\repos\Project\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+C:\Users\son10\source\repos\Project\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\son10\source\repos\Project\bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll
+C:\Users\son10\source\repos\Project\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+C:\Users\son10\source\repos\Project\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
+C:\Users\son10\source\repos\Project\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\son10\source\repos\Project\bin\Debug\netcoreapp3.1\System.Runtime.Caching.dll
+C:\Users\son10\source\repos\Project\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+C:\Users\son10\source\repos\Project\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\son10\source\repos\Project\obj\Debug\netcoreapp3.1\Project.csprojAssemblyReference.cache
+C:\Users\son10\source\repos\Project\obj\Debug\netcoreapp3.1\Project.AssemblyInfoInputs.cache
+C:\Users\son10\source\repos\Project\obj\Debug\netcoreapp3.1\Project.AssemblyInfo.cs
+C:\Users\son10\source\repos\Project\obj\Debug\netcoreapp3.1\Project.csproj.CoreCompileInputs.cache
+C:\Users\son10\source\repos\Project\obj\Debug\netcoreapp3.1\Project.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\son10\source\repos\Project\obj\Debug\netcoreapp3.1\Project.RazorAssemblyInfo.cache
+C:\Users\son10\source\repos\Project\obj\Debug\netcoreapp3.1\Project.RazorAssemblyInfo.cs
+C:\Users\son10\source\repos\Project\obj\Debug\netcoreapp3.1\staticwebassets\Project.StaticWebAssets.Manifest.cache
+C:\Users\son10\source\repos\Project\obj\Debug\netcoreapp3.1\staticwebassets\Project.StaticWebAssets.xml
+C:\Users\son10\source\repos\Project\obj\Debug\netcoreapp3.1\scopedcss\bundle\Project.styles.css
+C:\Users\son10\source\repos\Project\obj\Debug\netcoreapp3.1\Project.TagHelpers.input.cache
+C:\Users\son10\source\repos\Project\obj\Debug\netcoreapp3.1\Project.TagHelpers.output.cache
+C:\Users\son10\source\repos\Project\obj\Debug\netcoreapp3.1\Project.RazorCoreGenerate.cache
+C:\Users\son10\source\repos\Project\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
+C:\Users\son10\source\repos\Project\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
+C:\Users\son10\source\repos\Project\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
+C:\Users\son10\source\repos\Project\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Users\son10\source\repos\Project\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\son10\source\repos\Project\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
+C:\Users\son10\source\repos\Project\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
+C:\Users\son10\source\repos\Project\obj\Debug\netcoreapp3.1\Project.RazorTargetAssemblyInfo.cache
+C:\Users\son10\source\repos\Project\obj\Debug\netcoreapp3.1\Project.RazorTargetAssemblyInfo.cs
+C:\Users\son10\source\repos\Project\obj\Debug\netcoreapp3.1\Project.Views.pdb
+C:\Users\son10\source\repos\Project\obj\Debug\netcoreapp3.1\Project.csproj.CopyComplete
+C:\Users\son10\source\repos\Project\obj\Debug\netcoreapp3.1\Project.dll
+C:\Users\son10\source\repos\Project\obj\Debug\netcoreapp3.1\Project.pdb
+C:\Users\son10\source\repos\Project\obj\Debug\netcoreapp3.1\Project.genruntimeconfig.cache
+C:\Users\son10\source\repos\Project\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Razor.Language.dll
+C:\Users\son10\source\repos\Project\bin\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\son10\source\repos\Project\bin\Debug\netcoreapp3.1\Microsoft.Bcl.HashCode.dll
+C:\Users\son10\source\repos\Project\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.dll
+C:\Users\son10\source\repos\Project\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\son10\source\repos\Project\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+C:\Users\son10\source\repos\Project\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.Razor.dll
+C:\Users\son10\source\repos\Project\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.Workspaces.dll
+C:\Users\son10\source\repos\Project\bin\Debug\netcoreapp3.1\Microsoft.Data.Sqlite.dll
+C:\Users\son10\source\repos\Project\bin\Debug\netcoreapp3.1\Microsoft.DotNet.PlatformAbstractions.dll
+C:\Users\son10\source\repos\Project\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Sqlite.dll
+C:\Users\son10\source\repos\Project\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.dll
+C:\Users\son10\source\repos\Project\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\son10\source\repos\Project\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyModel.dll
+C:\Users\son10\source\repos\Project\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.dll
+C:\Users\son10\source\repos\Project\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Contracts.dll
+C:\Users\son10\source\repos\Project\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
+C:\Users\son10\source\repos\Project\bin\Debug\netcoreapp3.1\dotnet-aspnet-codegenerator-design.dll
+C:\Users\son10\source\repos\Project\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
+C:\Users\son10\source\repos\Project\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
+C:\Users\son10\source\repos\Project\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
+C:\Users\son10\source\repos\Project\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+C:\Users\son10\source\repos\Project\bin\Debug\netcoreapp3.1\NuGet.Frameworks.dll
+C:\Users\son10\source\repos\Project\bin\Debug\netcoreapp3.1\SQLitePCLRaw.batteries_v2.dll
+C:\Users\son10\source\repos\Project\bin\Debug\netcoreapp3.1\SQLitePCLRaw.nativelibrary.dll
+C:\Users\son10\source\repos\Project\bin\Debug\netcoreapp3.1\SQLitePCLRaw.core.dll
+C:\Users\son10\source\repos\Project\bin\Debug\netcoreapp3.1\SQLitePCLRaw.provider.dynamic_cdecl.dll
+C:\Users\son10\source\repos\Project\bin\Debug\netcoreapp3.1\System.Composition.AttributedModel.dll
+C:\Users\son10\source\repos\Project\bin\Debug\netcoreapp3.1\System.Composition.Convention.dll
+C:\Users\son10\source\repos\Project\bin\Debug\netcoreapp3.1\System.Composition.Hosting.dll
+C:\Users\son10\source\repos\Project\bin\Debug\netcoreapp3.1\System.Composition.Runtime.dll
+C:\Users\son10\source\repos\Project\bin\Debug\netcoreapp3.1\System.Composition.TypedParts.dll
+C:\Users\son10\source\repos\Project\bin\Debug\netcoreapp3.1\System.Text.Json.dll
+C:\Users\son10\source\repos\Project\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.resources.dll
+C:\Users\son10\source\repos\Project\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.resources.dll
+C:\Users\son10\source\repos\Project\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.resources.dll
+C:\Users\son10\source\repos\Project\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\son10\source\repos\Project\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.resources.dll
+C:\Users\son10\source\repos\Project\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.resources.dll
+C:\Users\son10\source\repos\Project\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.resources.dll
+C:\Users\son10\source\repos\Project\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.resources.dll
+C:\Users\son10\source\repos\Project\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.resources.dll
+C:\Users\son10\source\repos\Project\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.resources.dll
+C:\Users\son10\source\repos\Project\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\son10\source\repos\Project\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+C:\Users\son10\source\repos\Project\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+C:\Users\son10\source\repos\Project\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\son10\source\repos\Project\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\son10\source\repos\Project\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\son10\source\repos\Project\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\son10\source\repos\Project\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\son10\source\repos\Project\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\son10\source\repos\Project\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\son10\source\repos\Project\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\son10\source\repos\Project\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\son10\source\repos\Project\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\son10\source\repos\Project\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\son10\source\repos\Project\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\son10\source\repos\Project\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\son10\source\repos\Project\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\son10\source\repos\Project\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\son10\source\repos\Project\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\son10\source\repos\Project\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\son10\source\repos\Project\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\son10\source\repos\Project\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\son10\source\repos\Project\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\son10\source\repos\Project\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\son10\source\repos\Project\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\son10\source\repos\Project\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\son10\source\repos\Project\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\son10\source\repos\Project\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\son10\source\repos\Project\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\son10\source\repos\Project\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\son10\source\repos\Project\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\son10\source\repos\Project\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\son10\source\repos\Project\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\son10\source\repos\Project\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\son10\source\repos\Project\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\son10\source\repos\Project\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\son10\source\repos\Project\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\son10\source\repos\Project\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\son10\source\repos\Project\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\son10\source\repos\Project\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\son10\source\repos\Project\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\son10\source\repos\Project\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\son10\source\repos\Project\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+C:\Users\son10\source\repos\Project\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+C:\Users\son10\source\repos\Project\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+C:\Users\son10\source\repos\Project\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+C:\Users\son10\source\repos\Project\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+C:\Users\son10\source\repos\Project\bin\Debug\netcoreapp3.1\runtimes\alpine-x64\native\libe_sqlite3.so
+C:\Users\son10\source\repos\Project\bin\Debug\netcoreapp3.1\runtimes\linux-arm\native\libe_sqlite3.so
+C:\Users\son10\source\repos\Project\bin\Debug\netcoreapp3.1\runtimes\linux-arm64\native\libe_sqlite3.so
+C:\Users\son10\source\repos\Project\bin\Debug\netcoreapp3.1\runtimes\linux-armel\native\libe_sqlite3.so
+C:\Users\son10\source\repos\Project\bin\Debug\netcoreapp3.1\runtimes\linux-musl-x64\native\libe_sqlite3.so
+C:\Users\son10\source\repos\Project\bin\Debug\netcoreapp3.1\runtimes\linux-x64\native\libe_sqlite3.so
+C:\Users\son10\source\repos\Project\bin\Debug\netcoreapp3.1\runtimes\linux-x86\native\libe_sqlite3.so
+C:\Users\son10\source\repos\Project\bin\Debug\netcoreapp3.1\runtimes\osx-x64\native\libe_sqlite3.dylib
+C:\Users\son10\source\repos\Project\bin\Debug\netcoreapp3.1\runtimes\win-arm\native\e_sqlite3.dll
+C:\Users\son10\source\repos\Project\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\e_sqlite3.dll
+C:\Users\son10\source\repos\Project\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\e_sqlite3.dll
+C:\Users\son10\source\repos\Project\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\e_sqlite3.dll
+C:\Users\son10\source\repos\Project\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
+C:\Users\son10\source\repos\Project\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
+C:\Users\son10\source\repos\Project\obj\Debug\netcoreapp3.1\Razor\Views\DimMsts\Create.cshtml.g.cs
+C:\Users\son10\source\repos\Project\obj\Debug\netcoreapp3.1\Razor\Views\DimMsts\Delete.cshtml.g.cs
+C:\Users\son10\source\repos\Project\obj\Debug\netcoreapp3.1\Razor\Views\DimMsts\Details.cshtml.g.cs
+C:\Users\son10\source\repos\Project\obj\Debug\netcoreapp3.1\Razor\Views\DimMsts\Edit.cshtml.g.cs
+C:\Users\son10\source\repos\Project\obj\Debug\netcoreapp3.1\Razor\Views\DimMsts\Index.cshtml.g.cs
+C:\Users\son10\source\repos\Project\obj\Debug\netcoreapp3.1\Razor\Views\AdminLoginMsts\Create.cshtml.g.cs
+C:\Users\son10\source\repos\Project\obj\Debug\netcoreapp3.1\Razor\Views\AdminLoginMsts\Delete.cshtml.g.cs
+C:\Users\son10\source\repos\Project\obj\Debug\netcoreapp3.1\Razor\Views\AdminLoginMsts\Details.cshtml.g.cs
+C:\Users\son10\source\repos\Project\obj\Debug\netcoreapp3.1\Razor\Views\AdminLoginMsts\Edit.cshtml.g.cs
+C:\Users\son10\source\repos\Project\obj\Debug\netcoreapp3.1\Razor\Views\AdminLoginMsts\Index.cshtml.g.cs
+C:\Users\son10\source\repos\Project\obj\Debug\netcoreapp3.1\Razor\Views\BrandMsts\Create.cshtml.g.cs
+C:\Users\son10\source\repos\Project\obj\Debug\netcoreapp3.1\Razor\Views\BrandMsts\Delete.cshtml.g.cs
+C:\Users\son10\source\repos\Project\obj\Debug\netcoreapp3.1\Razor\Views\BrandMsts\Details.cshtml.g.cs
+C:\Users\son10\source\repos\Project\obj\Debug\netcoreapp3.1\Razor\Views\BrandMsts\Edit.cshtml.g.cs
+C:\Users\son10\source\repos\Project\obj\Debug\netcoreapp3.1\Razor\Views\BrandMsts\Index.cshtml.g.cs
+C:\Users\son10\source\repos\Project\obj\Debug\netcoreapp3.1\Razor\Views\CartLists\Create.cshtml.g.cs
+C:\Users\son10\source\repos\Project\obj\Debug\netcoreapp3.1\Razor\Views\CartLists\Delete.cshtml.g.cs
+C:\Users\son10\source\repos\Project\obj\Debug\netcoreapp3.1\Razor\Views\CartLists\Details.cshtml.g.cs
+C:\Users\son10\source\repos\Project\obj\Debug\netcoreapp3.1\Razor\Views\CartLists\Edit.cshtml.g.cs
+C:\Users\son10\source\repos\Project\obj\Debug\netcoreapp3.1\Razor\Views\CartLists\Index.cshtml.g.cs
+C:\Users\son10\source\repos\Project\obj\Debug\netcoreapp3.1\Razor\Views\CatMsts\Create.cshtml.g.cs
+C:\Users\son10\source\repos\Project\obj\Debug\netcoreapp3.1\Razor\Views\CatMsts\Delete.cshtml.g.cs
+C:\Users\son10\source\repos\Project\obj\Debug\netcoreapp3.1\Razor\Views\CatMsts\Details.cshtml.g.cs
+C:\Users\son10\source\repos\Project\obj\Debug\netcoreapp3.1\Razor\Views\CatMsts\Edit.cshtml.g.cs
+C:\Users\son10\source\repos\Project\obj\Debug\netcoreapp3.1\Razor\Views\CatMsts\Index.cshtml.g.cs
+C:\Users\son10\source\repos\Project\obj\Debug\netcoreapp3.1\Razor\Views\CertifyMsts\Create.cshtml.g.cs
+C:\Users\son10\source\repos\Project\obj\Debug\netcoreapp3.1\Razor\Views\CertifyMsts\Delete.cshtml.g.cs
+C:\Users\son10\source\repos\Project\obj\Debug\netcoreapp3.1\Razor\Views\CertifyMsts\Details.cshtml.g.cs
+C:\Users\son10\source\repos\Project\obj\Debug\netcoreapp3.1\Razor\Views\CertifyMsts\Edit.cshtml.g.cs
+C:\Users\son10\source\repos\Project\obj\Debug\netcoreapp3.1\Razor\Views\CertifyMsts\Index.cshtml.g.cs
+C:\Users\son10\source\repos\Project\obj\Debug\netcoreapp3.1\Razor\Views\DimInfoMsts\Create.cshtml.g.cs
+C:\Users\son10\source\repos\Project\obj\Debug\netcoreapp3.1\Razor\Views\DimInfoMsts\Delete.cshtml.g.cs
+C:\Users\son10\source\repos\Project\obj\Debug\netcoreapp3.1\Razor\Views\DimInfoMsts\Details.cshtml.g.cs
+C:\Users\son10\source\repos\Project\obj\Debug\netcoreapp3.1\Razor\Views\DimInfoMsts\Edit.cshtml.g.cs
+C:\Users\son10\source\repos\Project\obj\Debug\netcoreapp3.1\Razor\Views\DimInfoMsts\Index.cshtml.g.cs
+C:\Users\son10\source\repos\Project\obj\Debug\netcoreapp3.1\Razor\Views\DimQltyMsts\Create.cshtml.g.cs
+C:\Users\son10\source\repos\Project\obj\Debug\netcoreapp3.1\Razor\Views\DimQltyMsts\Delete.cshtml.g.cs
+C:\Users\son10\source\repos\Project\obj\Debug\netcoreapp3.1\Razor\Views\DimQltyMsts\Details.cshtml.g.cs
+C:\Users\son10\source\repos\Project\obj\Debug\netcoreapp3.1\Razor\Views\DimQltyMsts\Edit.cshtml.g.cs
+C:\Users\son10\source\repos\Project\obj\Debug\netcoreapp3.1\Razor\Views\DimQltyMsts\Index.cshtml.g.cs
+C:\Users\son10\source\repos\Project\obj\Debug\netcoreapp3.1\Razor\Views\DimQltySubMsts\Create.cshtml.g.cs
+C:\Users\son10\source\repos\Project\obj\Debug\netcoreapp3.1\Razor\Views\DimQltySubMsts\Delete.cshtml.g.cs
+C:\Users\son10\source\repos\Project\obj\Debug\netcoreapp3.1\Razor\Views\DimQltySubMsts\Details.cshtml.g.cs
+C:\Users\son10\source\repos\Project\obj\Debug\netcoreapp3.1\Razor\Views\DimQltySubMsts\Edit.cshtml.g.cs
+C:\Users\son10\source\repos\Project\obj\Debug\netcoreapp3.1\Razor\Views\DimQltySubMsts\Index.cshtml.g.cs
+C:\Users\son10\source\repos\Project\obj\Debug\netcoreapp3.1\Razor\Views\GoldKrtMsts\Create.cshtml.g.cs
+C:\Users\son10\source\repos\Project\obj\Debug\netcoreapp3.1\Razor\Views\GoldKrtMsts\Delete.cshtml.g.cs
+C:\Users\son10\source\repos\Project\obj\Debug\netcoreapp3.1\Razor\Views\GoldKrtMsts\Details.cshtml.g.cs
+C:\Users\son10\source\repos\Project\obj\Debug\netcoreapp3.1\Razor\Views\GoldKrtMsts\Edit.cshtml.g.cs
+C:\Users\son10\source\repos\Project\obj\Debug\netcoreapp3.1\Razor\Views\GoldKrtMsts\Index.cshtml.g.cs
+C:\Users\son10\source\repos\Project\obj\Debug\netcoreapp3.1\Razor\Views\Inquiries\Create.cshtml.g.cs
+C:\Users\son10\source\repos\Project\obj\Debug\netcoreapp3.1\Razor\Views\Inquiries\Delete.cshtml.g.cs
+C:\Users\son10\source\repos\Project\obj\Debug\netcoreapp3.1\Razor\Views\Inquiries\Details.cshtml.g.cs
+C:\Users\son10\source\repos\Project\obj\Debug\netcoreapp3.1\Razor\Views\Inquiries\Edit.cshtml.g.cs
+C:\Users\son10\source\repos\Project\obj\Debug\netcoreapp3.1\Razor\Views\Inquiries\Index.cshtml.g.cs
+C:\Users\son10\source\repos\Project\obj\Debug\netcoreapp3.1\Razor\Views\ItemMsts\Create.cshtml.g.cs
+C:\Users\son10\source\repos\Project\obj\Debug\netcoreapp3.1\Razor\Views\ItemMsts\Delete.cshtml.g.cs
+C:\Users\son10\source\repos\Project\obj\Debug\netcoreapp3.1\Razor\Views\ItemMsts\Details.cshtml.g.cs
+C:\Users\son10\source\repos\Project\obj\Debug\netcoreapp3.1\Razor\Views\ItemMsts\Edit.cshtml.g.cs
+C:\Users\son10\source\repos\Project\obj\Debug\netcoreapp3.1\Razor\Views\ItemMsts\Index.cshtml.g.cs
+C:\Users\son10\source\repos\Project\obj\Debug\netcoreapp3.1\Razor\Views\JewelTypeMsts\Create.cshtml.g.cs
+C:\Users\son10\source\repos\Project\obj\Debug\netcoreapp3.1\Razor\Views\JewelTypeMsts\Delete.cshtml.g.cs
+C:\Users\son10\source\repos\Project\obj\Debug\netcoreapp3.1\Razor\Views\JewelTypeMsts\Details.cshtml.g.cs
+C:\Users\son10\source\repos\Project\obj\Debug\netcoreapp3.1\Razor\Views\JewelTypeMsts\Edit.cshtml.g.cs
+C:\Users\son10\source\repos\Project\obj\Debug\netcoreapp3.1\Razor\Views\JewelTypeMsts\Index.cshtml.g.cs
+C:\Users\son10\source\repos\Project\obj\Debug\netcoreapp3.1\Razor\Views\ProdMsts\Create.cshtml.g.cs
+C:\Users\son10\source\repos\Project\obj\Debug\netcoreapp3.1\Razor\Views\ProdMsts\Delete.cshtml.g.cs
+C:\Users\son10\source\repos\Project\obj\Debug\netcoreapp3.1\Razor\Views\ProdMsts\Details.cshtml.g.cs
+C:\Users\son10\source\repos\Project\obj\Debug\netcoreapp3.1\Razor\Views\ProdMsts\Edit.cshtml.g.cs
+C:\Users\son10\source\repos\Project\obj\Debug\netcoreapp3.1\Razor\Views\ProdMsts\Index.cshtml.g.cs
+C:\Users\son10\source\repos\Project\obj\Debug\netcoreapp3.1\Razor\Views\StoneMsts\Create.cshtml.g.cs
+C:\Users\son10\source\repos\Project\obj\Debug\netcoreapp3.1\Razor\Views\StoneMsts\Delete.cshtml.g.cs
+C:\Users\son10\source\repos\Project\obj\Debug\netcoreapp3.1\Razor\Views\StoneMsts\Details.cshtml.g.cs
+C:\Users\son10\source\repos\Project\obj\Debug\netcoreapp3.1\Razor\Views\StoneMsts\Edit.cshtml.g.cs
+C:\Users\son10\source\repos\Project\obj\Debug\netcoreapp3.1\Razor\Views\StoneMsts\Index.cshtml.g.cs
+C:\Users\son10\source\repos\Project\obj\Debug\netcoreapp3.1\Razor\Views\StoneQltyMsts\Create.cshtml.g.cs
+C:\Users\son10\source\repos\Project\obj\Debug\netcoreapp3.1\Razor\Views\StoneQltyMsts\Delete.cshtml.g.cs
+C:\Users\son10\source\repos\Project\obj\Debug\netcoreapp3.1\Razor\Views\StoneQltyMsts\Details.cshtml.g.cs
+C:\Users\son10\source\repos\Project\obj\Debug\netcoreapp3.1\Razor\Views\StoneQltyMsts\Edit.cshtml.g.cs
+C:\Users\son10\source\repos\Project\obj\Debug\netcoreapp3.1\Razor\Views\StoneQltyMsts\Index.cshtml.g.cs
+C:\Users\son10\source\repos\Project\obj\Debug\netcoreapp3.1\Razor\Views\UserRegMsts\Create.cshtml.g.cs
+C:\Users\son10\source\repos\Project\obj\Debug\netcoreapp3.1\Razor\Views\UserRegMsts\Delete.cshtml.g.cs
+C:\Users\son10\source\repos\Project\obj\Debug\netcoreapp3.1\Razor\Views\UserRegMsts\Details.cshtml.g.cs
+C:\Users\son10\source\repos\Project\obj\Debug\netcoreapp3.1\Razor\Views\UserRegMsts\Edit.cshtml.g.cs
+C:\Users\son10\source\repos\Project\obj\Debug\netcoreapp3.1\Razor\Views\UserRegMsts\Index.cshtml.g.cs
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\obj\Debug\netcoreapp3.1\Project.dll
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\obj\Debug\netcoreapp3.1\Project.pdb
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\bin\Debug\netcoreapp3.1\appsettings.Development.json
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\bin\Debug\netcoreapp3.1\appsettings.json
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\bin\Debug\netcoreapp3.1\Project.exe
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\bin\Debug\netcoreapp3.1\Project.deps.json
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\bin\Debug\netcoreapp3.1\Project.runtimeconfig.json
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\bin\Debug\netcoreapp3.1\Project.runtimeconfig.dev.json
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\bin\Debug\netcoreapp3.1\Project.dll
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\bin\Debug\netcoreapp3.1\Project.pdb
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\bin\Debug\netcoreapp3.1\Project.Views.dll
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\bin\Debug\netcoreapp3.1\Project.Views.pdb
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Razor.Language.dll
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\bin\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\bin\Debug\netcoreapp3.1\Microsoft.Bcl.HashCode.dll
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.dll
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.dll
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.Razor.dll
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.Workspaces.dll
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\bin\Debug\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\bin\Debug\netcoreapp3.1\Microsoft.Data.Sqlite.dll
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\bin\Debug\netcoreapp3.1\Microsoft.DotNet.PlatformAbstractions.dll
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Sqlite.dll
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.dll
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Binder.dll
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyModel.dll
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.dll
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\bin\Debug\netcoreapp3.1\Microsoft.Identity.Client.dll
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.dll
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Contracts.dll
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\bin\Debug\netcoreapp3.1\dotnet-aspnet-codegenerator-design.dll
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\bin\Debug\netcoreapp3.1\NuGet.Frameworks.dll
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\bin\Debug\netcoreapp3.1\SQLitePCLRaw.batteries_v2.dll
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\bin\Debug\netcoreapp3.1\SQLitePCLRaw.nativelibrary.dll
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\bin\Debug\netcoreapp3.1\SQLitePCLRaw.core.dll
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\bin\Debug\netcoreapp3.1\SQLitePCLRaw.provider.dynamic_cdecl.dll
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\bin\Debug\netcoreapp3.1\System.Composition.AttributedModel.dll
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\bin\Debug\netcoreapp3.1\System.Composition.Convention.dll
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\bin\Debug\netcoreapp3.1\System.Composition.Hosting.dll
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\bin\Debug\netcoreapp3.1\System.Composition.Runtime.dll
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\bin\Debug\netcoreapp3.1\System.Composition.TypedParts.dll
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\bin\Debug\netcoreapp3.1\System.Runtime.Caching.dll
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\bin\Debug\netcoreapp3.1\System.Text.Json.dll
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.resources.dll
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.resources.dll
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.resources.dll
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.resources.dll
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.resources.dll
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.resources.dll
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.resources.dll
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.resources.dll
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.resources.dll
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.resources.dll
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.resources.dll
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\bin\Debug\netcoreapp3.1\runtimes\alpine-x64\native\libe_sqlite3.so
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\bin\Debug\netcoreapp3.1\runtimes\linux-arm\native\libe_sqlite3.so
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\bin\Debug\netcoreapp3.1\runtimes\linux-arm64\native\libe_sqlite3.so
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\bin\Debug\netcoreapp3.1\runtimes\linux-armel\native\libe_sqlite3.so
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\bin\Debug\netcoreapp3.1\runtimes\linux-musl-x64\native\libe_sqlite3.so
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\bin\Debug\netcoreapp3.1\runtimes\linux-x64\native\libe_sqlite3.so
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\bin\Debug\netcoreapp3.1\runtimes\linux-x86\native\libe_sqlite3.so
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\bin\Debug\netcoreapp3.1\runtimes\osx-x64\native\libe_sqlite3.dylib
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\bin\Debug\netcoreapp3.1\runtimes\win-arm\native\e_sqlite3.dll
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\e_sqlite3.dll
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\e_sqlite3.dll
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\e_sqlite3.dll
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\obj\Debug\netcoreapp3.1\Project.csprojAssemblyReference.cache
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\obj\Debug\netcoreapp3.1\Project.AssemblyInfoInputs.cache
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\obj\Debug\netcoreapp3.1\Project.AssemblyInfo.cs
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\obj\Debug\netcoreapp3.1\Project.csproj.CoreCompileInputs.cache
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\obj\Debug\netcoreapp3.1\Project.MvcApplicationPartsAssemblyInfo.cache
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\obj\Debug\netcoreapp3.1\Project.RazorAssemblyInfo.cache
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\obj\Debug\netcoreapp3.1\Project.RazorAssemblyInfo.cs
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\obj\Debug\netcoreapp3.1\Project.TagHelpers.input.cache
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\obj\Debug\netcoreapp3.1\Project.TagHelpers.output.cache
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\obj\Debug\netcoreapp3.1\Project.RazorCoreGenerate.cache
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\obj\Debug\netcoreapp3.1\Razor\Views\AdminLoginMsts\Create.cshtml.g.cs
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\obj\Debug\netcoreapp3.1\Razor\Views\AdminLoginMsts\Delete.cshtml.g.cs
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\obj\Debug\netcoreapp3.1\Razor\Views\AdminLoginMsts\Details.cshtml.g.cs
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\obj\Debug\netcoreapp3.1\Razor\Views\AdminLoginMsts\Edit.cshtml.g.cs
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\obj\Debug\netcoreapp3.1\Razor\Views\AdminLoginMsts\Index.cshtml.g.cs
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\obj\Debug\netcoreapp3.1\Razor\Views\BrandMsts\Create.cshtml.g.cs
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\obj\Debug\netcoreapp3.1\Razor\Views\BrandMsts\Delete.cshtml.g.cs
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\obj\Debug\netcoreapp3.1\Razor\Views\BrandMsts\Details.cshtml.g.cs
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\obj\Debug\netcoreapp3.1\Razor\Views\BrandMsts\Edit.cshtml.g.cs
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\obj\Debug\netcoreapp3.1\Razor\Views\BrandMsts\Index.cshtml.g.cs
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\obj\Debug\netcoreapp3.1\Razor\Views\CartLists\Create.cshtml.g.cs
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\obj\Debug\netcoreapp3.1\Razor\Views\CartLists\Delete.cshtml.g.cs
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\obj\Debug\netcoreapp3.1\Razor\Views\CartLists\Details.cshtml.g.cs
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\obj\Debug\netcoreapp3.1\Razor\Views\CartLists\Edit.cshtml.g.cs
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\obj\Debug\netcoreapp3.1\Razor\Views\CartLists\Index.cshtml.g.cs
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\obj\Debug\netcoreapp3.1\Razor\Views\CatMsts\Create.cshtml.g.cs
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\obj\Debug\netcoreapp3.1\Razor\Views\CatMsts\Delete.cshtml.g.cs
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\obj\Debug\netcoreapp3.1\Razor\Views\CatMsts\Details.cshtml.g.cs
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\obj\Debug\netcoreapp3.1\Razor\Views\CatMsts\Edit.cshtml.g.cs
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\obj\Debug\netcoreapp3.1\Razor\Views\CatMsts\Index.cshtml.g.cs
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\obj\Debug\netcoreapp3.1\Razor\Views\CertifyMsts\Create.cshtml.g.cs
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\obj\Debug\netcoreapp3.1\Razor\Views\CertifyMsts\Delete.cshtml.g.cs
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\obj\Debug\netcoreapp3.1\Razor\Views\CertifyMsts\Details.cshtml.g.cs
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\obj\Debug\netcoreapp3.1\Razor\Views\CertifyMsts\Edit.cshtml.g.cs
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\obj\Debug\netcoreapp3.1\Razor\Views\CertifyMsts\Index.cshtml.g.cs
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\obj\Debug\netcoreapp3.1\Razor\Views\DimInfoMsts\Create.cshtml.g.cs
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\obj\Debug\netcoreapp3.1\Razor\Views\DimInfoMsts\Delete.cshtml.g.cs
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\obj\Debug\netcoreapp3.1\Razor\Views\DimInfoMsts\Details.cshtml.g.cs
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\obj\Debug\netcoreapp3.1\Razor\Views\DimInfoMsts\Edit.cshtml.g.cs
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\obj\Debug\netcoreapp3.1\Razor\Views\DimInfoMsts\Index.cshtml.g.cs
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\obj\Debug\netcoreapp3.1\Razor\Views\DimMsts\Create.cshtml.g.cs
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\obj\Debug\netcoreapp3.1\Razor\Views\DimMsts\Delete.cshtml.g.cs
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\obj\Debug\netcoreapp3.1\Razor\Views\DimMsts\Details.cshtml.g.cs
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\obj\Debug\netcoreapp3.1\Razor\Views\DimMsts\Edit.cshtml.g.cs
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\obj\Debug\netcoreapp3.1\Razor\Views\DimMsts\Index.cshtml.g.cs
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\obj\Debug\netcoreapp3.1\Razor\Views\DimQltyMsts\Create.cshtml.g.cs
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\obj\Debug\netcoreapp3.1\Razor\Views\DimQltyMsts\Delete.cshtml.g.cs
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\obj\Debug\netcoreapp3.1\Razor\Views\DimQltyMsts\Details.cshtml.g.cs
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\obj\Debug\netcoreapp3.1\Razor\Views\DimQltyMsts\Edit.cshtml.g.cs
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\obj\Debug\netcoreapp3.1\Razor\Views\DimQltyMsts\Index.cshtml.g.cs
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\obj\Debug\netcoreapp3.1\Razor\Views\DimQltySubMsts\Create.cshtml.g.cs
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\obj\Debug\netcoreapp3.1\Razor\Views\DimQltySubMsts\Delete.cshtml.g.cs
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\obj\Debug\netcoreapp3.1\Razor\Views\DimQltySubMsts\Details.cshtml.g.cs
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\obj\Debug\netcoreapp3.1\Razor\Views\DimQltySubMsts\Edit.cshtml.g.cs
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\obj\Debug\netcoreapp3.1\Razor\Views\DimQltySubMsts\Index.cshtml.g.cs
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\obj\Debug\netcoreapp3.1\Razor\Views\GoldKrtMsts\Create.cshtml.g.cs
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\obj\Debug\netcoreapp3.1\Razor\Views\GoldKrtMsts\Delete.cshtml.g.cs
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\obj\Debug\netcoreapp3.1\Razor\Views\GoldKrtMsts\Details.cshtml.g.cs
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\obj\Debug\netcoreapp3.1\Razor\Views\GoldKrtMsts\Edit.cshtml.g.cs
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\obj\Debug\netcoreapp3.1\Razor\Views\GoldKrtMsts\Index.cshtml.g.cs
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\obj\Debug\netcoreapp3.1\Razor\Views\Inquiries\Create.cshtml.g.cs
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\obj\Debug\netcoreapp3.1\Razor\Views\Inquiries\Delete.cshtml.g.cs
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\obj\Debug\netcoreapp3.1\Razor\Views\Inquiries\Details.cshtml.g.cs
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\obj\Debug\netcoreapp3.1\Razor\Views\Inquiries\Edit.cshtml.g.cs
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\obj\Debug\netcoreapp3.1\Razor\Views\Inquiries\Index.cshtml.g.cs
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\obj\Debug\netcoreapp3.1\Razor\Views\ItemMsts\Create.cshtml.g.cs
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\obj\Debug\netcoreapp3.1\Razor\Views\ItemMsts\Delete.cshtml.g.cs
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\obj\Debug\netcoreapp3.1\Razor\Views\ItemMsts\Details.cshtml.g.cs
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\obj\Debug\netcoreapp3.1\Razor\Views\ItemMsts\Edit.cshtml.g.cs
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\obj\Debug\netcoreapp3.1\Razor\Views\ItemMsts\Index.cshtml.g.cs
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\obj\Debug\netcoreapp3.1\Razor\Views\ProdMsts\Create.cshtml.g.cs
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\obj\Debug\netcoreapp3.1\Razor\Views\ProdMsts\Delete.cshtml.g.cs
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\obj\Debug\netcoreapp3.1\Razor\Views\ProdMsts\Details.cshtml.g.cs
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\obj\Debug\netcoreapp3.1\Razor\Views\ProdMsts\Edit.cshtml.g.cs
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\obj\Debug\netcoreapp3.1\Razor\Views\ProdMsts\Index.cshtml.g.cs
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\obj\Debug\netcoreapp3.1\Razor\Views\StoneMsts\Create.cshtml.g.cs
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\obj\Debug\netcoreapp3.1\Razor\Views\StoneMsts\Delete.cshtml.g.cs
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\obj\Debug\netcoreapp3.1\Razor\Views\StoneMsts\Details.cshtml.g.cs
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\obj\Debug\netcoreapp3.1\Razor\Views\StoneMsts\Edit.cshtml.g.cs
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\obj\Debug\netcoreapp3.1\Razor\Views\StoneMsts\Index.cshtml.g.cs
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\obj\Debug\netcoreapp3.1\Razor\Views\StoneQltyMsts\Create.cshtml.g.cs
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\obj\Debug\netcoreapp3.1\Razor\Views\StoneQltyMsts\Delete.cshtml.g.cs
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\obj\Debug\netcoreapp3.1\Razor\Views\StoneQltyMsts\Details.cshtml.g.cs
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\obj\Debug\netcoreapp3.1\Razor\Views\StoneQltyMsts\Edit.cshtml.g.cs
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\obj\Debug\netcoreapp3.1\Razor\Views\StoneQltyMsts\Index.cshtml.g.cs
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\obj\Debug\netcoreapp3.1\Razor\Views\UserRegMsts\Create.cshtml.g.cs
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\obj\Debug\netcoreapp3.1\Razor\Views\UserRegMsts\Delete.cshtml.g.cs
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\obj\Debug\netcoreapp3.1\Razor\Views\UserRegMsts\Details.cshtml.g.cs
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\obj\Debug\netcoreapp3.1\Razor\Views\UserRegMsts\Edit.cshtml.g.cs
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\obj\Debug\netcoreapp3.1\Razor\Views\UserRegMsts\Index.cshtml.g.cs
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\obj\Debug\netcoreapp3.1\Project.RazorTargetAssemblyInfo.cache
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\obj\Debug\netcoreapp3.1\Project.RazorTargetAssemblyInfo.cs
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\obj\Debug\netcoreapp3.1\Project.Views.pdb
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\obj\Debug\netcoreapp3.1\Project.csproj.CopyComplete
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\obj\Debug\netcoreapp3.1\staticwebassets\Project.StaticWebAssets.Manifest.cache
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\obj\Debug\netcoreapp3.1\staticwebassets\Project.StaticWebAssets.xml
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\obj\Debug\netcoreapp3.1\Project.genruntimeconfig.cache
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\obj\Debug\netcoreapp3.1\Razor\Views\JewelTypeMsts\Create.cshtml.g.cs
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\obj\Debug\netcoreapp3.1\Razor\Views\JewelTypeMsts\Delete.cshtml.g.cs
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\obj\Debug\netcoreapp3.1\Razor\Views\JewelTypeMsts\Details.cshtml.g.cs
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\obj\Debug\netcoreapp3.1\Razor\Views\JewelTypeMsts\Edit.cshtml.g.cs
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\obj\Debug\netcoreapp3.1\Razor\Views\JewelTypeMsts\Index.cshtml.g.cs
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\obj\Debug\netcoreapp3.1\Razor\Views\Product\Index.cshtml.g.cs
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\obj\Debug\netcoreapp3.1\Razor\Views\ListIt\Index.cshtml.g.cs
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\obj\Debug\netcoreapp3.1\Razor\Views\EditProd\Index.cshtml.g.cs
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\obj\Debug\netcoreapp3.1\Razor\Views\OrderProd\Index.cshtml.g.cs

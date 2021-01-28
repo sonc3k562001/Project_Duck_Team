@@ -1,0 +1,35 @@
+﻿
+@model ProjectTeamVitAspDotNetCore.Models.User
+<environment>
+    <link rel="stylesheet" href="/css/login.css" />
+</environment>
+
+<div class="info-login">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-4 information">
+                <h2 class="text-center">Already a member?</h2>
+                <form method="post" asp-controller="Account" asp-action="Login">
+                    <p style="color:red">@ViewBag.error</p>
+                    <div class="form-group">
+                        <label for="Email">Email:</label>
+                        <input type="email" asp-for="Email" name="Email" id="Email" class="form-control" placeholder="Email..." />
+                    </div>
+                    <div class="form-group">
+                        <label for="Password">Password:</label>
+                        <input type="password" asp-for="Password" name="Password" id="Password" class="form-control" placeholder="Password..." />
+                        <a asp-controller="Account" asp-action="PasswordReset" style="font-size:13px; color: #a09e9e;">Forgot password?</a><br />
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" class="btn-dark" value="Login" />
+                        Don't have an account ?<a asp-controller="Account" asp-action="Register">Sign up</a>
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-5 img-login"></div>
+            <div class="col-md-1"></div>
+        </div>
+    </div>
+</div>

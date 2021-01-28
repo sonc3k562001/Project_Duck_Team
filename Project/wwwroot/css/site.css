@@ -1,60 +1,4 @@
-﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
-for details on configuring this project to bundle and minify static web assets. */
-
-a.navbar-brand {
-    white-space: normal;
-    text-align: center;
-    word-break: break-all;
-}
-
-/* Provide sufficient contrast against white background */
-a {
-    color: #0366d6;
-}
-
-.btn-primary {
-    color: #fff;
-    background-color: #1b6ec2;
-    border-color: #1861ac;
-}
-
-.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
-    color: #fff;
-    background-color: #1b6ec2;
-    border-color: #1861ac;
-}
-
-/* Sticky footer styles
--------------------------------------------------- */
-html {
-    font-size: 14px;
-}
-
-@media (min-width: 768px) {
-    html {
-        font-size: 16px;
-    }
-}
-
-.border-top {
-    border-top: 1px solid #e5e5e5;
-}
-
-.border-bottom {
-    border-bottom: 1px solid #e5e5e5;
-}
-
-.box-shadow {
-    box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
-}
-
-button.accept-policy {
-    font-size: 1rem;
-    line-height: inherit;
-}
-
-/* Sticky footer styles
--------------------------------------------------- */
+﻿
 html {
     position: relative;
     min-height: 100%;
@@ -64,7 +8,7 @@ body {
     /* Margin bottom by footer height */
     min-height: 100vh;
     overflow-x: hidden;
-    background-color: #fff5f7 !important;
+    background-color: #f6f7fb !important;
 }
 
 .footer {
@@ -72,10 +16,9 @@ body {
     bottom: 0;
     width: 100%;
     white-space: nowrap;
-    line-height: 60px; /* Vertically center the text there */
+    line-height: 60px; 
+   /* Vertically center the text there */
 }
-
-
 
 
 
@@ -157,7 +100,7 @@ body {
 
 .separator {
     margin: 3rem 0;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #8e8e8e;
 }
 
 .text-uppercase {
@@ -169,7 +112,7 @@ body {
 }
 
 .nav-link {
-    /*text-transform: capitalize;*/
+    text-transform: capitalize;
 }
 
     .nav-link:hover {
@@ -203,3 +146,77 @@ body {
 .btn-secondary {
     background-color: #455ec9 !important;
 }
+
+
+
+
+
+
+
+.sidebar-left {
+    border-radius: 5px;
+}
+
+    .sidebar-left .sidebar-title {
+        color: #333;
+        font-size: 18px;
+        line-height: 22px;
+        font-weight: bold;
+    }
+    .sidebar-menu{
+        padding-left: 5px;
+    }
+
+    .sidebar-left .sidebar-menu {
+        list-style: none;
+    }
+
+        .sidebar-left .sidebar-menu li {
+            display: block;
+        }
+
+            .sidebar-left .sidebar-menu li a {
+                display: block;
+                font-size: 16px;
+                line-height: 1.2;
+                text-decoration: none;
+                padding: 12px 0px;
+                position: relative;
+                color: white;
+                /*border: 1px solid white;*/
+            }
+
+                .sidebar-left .sidebar-menu li a:hover {
+                    color: #4caf50;
+                }
+
+            .sidebar-left .sidebar-menu li ul {
+                padding-left: 25px;
+                list-style: none;
+                display: none;
+            }
+
+            .sidebar-left .sidebar-menu li.has-child > a .icon {
+                content: '';
+                position: absolute;
+                right: 0;
+                top: 15px;
+                width: 20px;
+                height: 20px;
+                background: url(//theme.hstatic.net/1000006434/1000468887/14/menu-arrow.png?v=491) center center no-repeat;
+                background-size: 14px;
+                transition: all 0.3s ease-in-out;
+            }
+
+            .sidebar-left .sidebar-menu li.has-child.menu-open > a .icon {
+                transform: rotate(180deg);
+            }
+
+            .sidebar-left .sidebar-menu li.has-child.menu-open > ul {
+                display: block;
+            }
+
+
+
+
+

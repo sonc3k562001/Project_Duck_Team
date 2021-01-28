@@ -1,22 +1,18 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Mvc;
 
 namespace Project.Controllers
 {
-    public class ProductController : Controller
+    public class CustomerController : Controller
     {
         public IActionResult Index()
         {
             return View();
         }
-        public IActionResult TotalProd()
-        {
-            return View();
-        }
-        public IActionResult AddProd()
+        public IActionResult Edit()
         {
             return View();
         }

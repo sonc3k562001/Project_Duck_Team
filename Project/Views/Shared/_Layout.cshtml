@@ -5,9 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - Admin</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    <link rel="stylesheet" href="/css/site.css" />
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
 </head>
 <body>
     <header>
@@ -31,8 +30,73 @@
             </div>
         </nav>
     </header>
-    <div class="vertical-nav bg-white" id="sidebar">
-        <p class="text-gray font-weight-bold text-uppercase px-2 small py-4 mb-0">Dashboard</p>
+    <div class="vertical-nav bg-dark" id="sidebar">
+
+        <div class="sidebar-left mt-4">
+            <ul class="sidebar-menu">
+                <li>
+                    <a asp-controller="Home" asp-action="Index">
+                        <i class="fa fa-home mr-2 text-primary fa-fw"></i>
+                        Dashboard
+                    </a>
+                </li>
+                <li>
+                    <a asp-controller="OrderProd" asp-action="Index">
+                        <i class="fas fa-align-left mr-2 text-primary fa-fw"></i>
+                        Order list
+                    </a>
+                </li>
+                <li>
+                    <a asp-controller="Article" asp-action="Index">
+                        <i class="fas fa-inbox mr-2 text-primary fa-fw"></i>
+                        Article management
+                    </a>
+                </li>
+                <li class="has-child">
+                    <a href="#"><i class="fas fa-air-freshener mr-2 text-primary fa-fw"></i>>Product Management <i class="icon"></i></a>
+                    <ul class="menu-sub">
+                        <li>
+                            <a  asp-controller="Product" asp-action="Index">
+                                <i class="fa fa-home mr-2 text-primary fa-fw"></i>
+                                All Product
+                            </a>
+                        </li>
+                        <li>
+                            <a asp-controller="Product" asp-action="AddProd">
+                                <i class="fa fa-home mr-2 text-primary fa-fw"></i>
+                                Add Product
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a asp-controller="Customer" asp-action="Index">
+                        <i class="fal fa-address-card mr-2 text-primary fa-fw"></i>
+                        Customer management
+                    </a>
+                </li>
+                <li class="has-child">
+                    <a href="#"><i class="fas fa-chart-area mr-2 text-primary fa-fw"></i> Sales Report <i class="icon"></i></a>
+                    <ul class="menu-sub">
+                        <li>
+                            <a asp-controller="Product" asp-action="TotalProd">
+                                <i class="fa fa-home mr-2 text-primary fa-fw"></i>
+                                Total revenue
+                            </a>
+                        </li>
+                        <li>
+                            <a asp-controller="ListIt" asp-action="Index">
+                                <i class="fa fa-home mr-2 text-primary fa-fw"></i>
+                                Customer information
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+
+        @*<p  class="text-gray font-weight-bold text-uppercase px-2 small py-3 mb-0">Dashboard</p>
         <ul class="nav flex-column bg-white mb-0">
             <li class="nav-item">
                 <a asp-controller="Home" asp-action="Index" class="nav-link bg-light">
@@ -43,7 +107,7 @@
         </ul>
 
 
-        <p class="text-gray font-weight-bold text-uppercase px-2 small py-4 mb-0">Order management</p>
+        <p class="text-gray font-weight-bold text-uppercase px-2 small py-3 mb-0">Order management</p>
         <ul class="nav flex-column bg-white mb-0">
             <li class="nav-item">
                 <a asp-controller="OrderProd" asp-action="Index" class="nav-link">
@@ -53,7 +117,7 @@
             </li>
         </ul>
 
-        <p class="text-gray font-weight-bold text-uppercase px-2 small py-4 mb-0">Article management</p>
+        <p class="text-gray font-weight-bold text-uppercase px-2 small py-3 mb-0">Article management</p>
         <ul class="nav flex-column bg-white mb-0">
             <li class="nav-item">
                 <a href="#" class="nav-link">
@@ -63,7 +127,7 @@
             </li>
         </ul>
 
-        <p class="text-gray font-weight-bold text-uppercase px-2 small py-4 mb-0">Product Management</p>
+        <p class="text-gray font-weight-bold text-uppercase px-2 small py-3 mb-0">Product Management</p>
         <ul class="nav flex-column bg-white mb-0">
             <li class="nav-item">
                 <a asp-controller="Product" asp-action="Index" class="nav-link ">
@@ -80,16 +144,10 @@
         </ul>
 
 
-        <p class="text-gray font-weight-bold text-uppercase px-3 small py-4 mb-0">Customer management</p>
+        <p class="text-gray font-weight-bold text-uppercase px-3 small py-3 mb-0">Customer management</p>
         <ul class="nav flex-column bg-white mb-0">
             <li class="nav-item">
-                <a href="#" class="nav-link ">
-                    <i class="fa fa-area-chart mr-2 fa-fw"></i>
-                    Ordered information
-                </a>
-            </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link ">
+                <a asp-controller="Customer" asp-action="Index" class="nav-link ">
                     <i class="fa fa-area-chart mr-2 fa-fw"></i>
                     Customer information
                 </a>
@@ -97,11 +155,11 @@
         </ul>
 
 
-        <p class="text-gray font-weight-bold text-uppercase px-3 small py-4 mb-0">Sales Report</p>
+        <p class="text-gray font-weight-bold text-uppercase px-3 small py-3 mb-0">Sales Report</p>
         <ul class="nav flex-column bg-white mb-0">
             <li class="nav-item">
-                <a href="#" class="nav-link ">
-                    <i class="fa fa-area-chart mr-2 fa-fw"></i>
+                <a asp-controller="Product" asp-action="TotalProd" class="nav-link ">
+                    <i class="fa fa-area-chart mr-2 fa-fw"></i>`
                     Total revenue
                 </a>
             </li>
@@ -111,21 +169,23 @@
                     Customer information
                 </a>
             </li>
-        </ul>
+        </ul>*@
 
     </div>
+
     <div class="page-content p-5 mt-5 " id="content">
         @RenderBody()
     </div>
 
     @*<footer class="border-top footer text-muted bg-white">
-        <div class="container">
-            &copy; 2020 - Admin - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-        </div>
-    </footer>*@
+            <div class="container">
+                &copy; 2020 - Admin - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            </div>
+        </footer>*@
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     <script src="https://code.highcharts.com/highcharts.src.js"></script>
     <script src="~/js/main.js"></script>

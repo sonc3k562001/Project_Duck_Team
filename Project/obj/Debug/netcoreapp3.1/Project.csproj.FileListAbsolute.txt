@@ -512,3 +512,8 @@ D:\Visual studio code\TeamVit\Project_Duck_Team\Project\obj\Debug\netcoreapp3.1\
 D:\Visual studio code\TeamVit\Project_Duck_Team\Project\obj\Debug\netcoreapp3.1\Razor\Views\ListIt\Index.cshtml.g.cs
 D:\Visual studio code\TeamVit\Project_Duck_Team\Project\obj\Debug\netcoreapp3.1\Razor\Views\EditProd\Index.cshtml.g.cs
 D:\Visual studio code\TeamVit\Project_Duck_Team\Project\obj\Debug\netcoreapp3.1\Razor\Views\OrderProd\Index.cshtml.g.cs
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\obj\Debug\netcoreapp3.1\Razor\Views\Customer\Index.cshtml.g.cs
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\obj\Debug\netcoreapp3.1\Razor\Views\Product\TotalProd.cshtml.g.cs
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\obj\Debug\netcoreapp3.1\Razor\Views\Product\AddProd.cshtml.g.cs
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\obj\Debug\netcoreapp3.1\Razor\Views\Customer\Edit.cshtml.g.cs
+D:\Visual studio code\TeamVit\Project_Duck_Team\Project\obj\Debug\netcoreapp3.1\Razor\Views\Article\Index.cshtml.g.cs

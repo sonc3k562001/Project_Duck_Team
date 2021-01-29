@@ -1,0 +1,175 @@
+﻿@model ProjectTeamVitAspDotNetCore.Models.User
+<environment>
+    <link rel="stylesheet" href="/css/login.css" />
+</environment>
+
+<div class="info-signup">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-4 information">
+                <h2 class="text-center">Let's get you on board</h2>
+                <form asp-controller="Account" asp-action="Register" method="post">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <div class="form-group">
+                        <div class="form-group name-left">
+                            <label for="Fname" class="control-label">First Name:</label>
+                            <input type="text" class="form-control" asp-for="Fname" id="Fname" name="Fname" placeholder="First Name..." />
+                        </div>
+                        <div class="form-group username-right">
+                            <label for="Fname" class="control-label">First Name:</label>
+                            <input type="text" class="form-control" asp-for="Lname" id="Lname" name="Lname" placeholder="Last Name..." />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="Phone" class="control-label">Phone:</label>
+                        <input type="text" asp-for="Phone" id="Phone" name="Phone" class="form-control" placeholder="Phone..." />
+                    </div>
+                    <div class="form-group">
+                        <label for="Email" class="control-label">Email:</label>
+                        <input type="email" asp-for="Email" id="Email" name="Email" class="form-control" placeholder="Email..." />
+                    </div>
+                    <div class="form-group">
+                        <label for="Bdate" class="control-label">Birthday:</label>
+                        <input type="date" asp-for="Bdate" id="Bdate" name="Bdate" min="1900-01-01" max="2021-01-31" class="form-control" />
+                    </div>
+                    <div class="form-group gender">
+                        <label for="Gender" class="control-label">Gender:</label><br />
+                        <input type="radio" asp-for="Gender" id="Gender" name="Gender" value="Man" class="form-check-input" /><span>Man</span>
+                        <input type="radio" asp-for="Gender" id="Gender" name="Gender" value="Woman" class="form-check-input" /><span>Woman</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="Address" class="control-label">Address:</label>
+                        <input type="text" asp-for="Address" id="Address" name="Address" class="form-control" placeholder="Adress..." />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="Avatar" class="control-label">Avatar:</label>
+                        <input type="file" asp-for="Avatar" id="Avatar" name="Avatar" />
+                    </div>
+
+                    <div class="form-group">
+                        <div class="form-group name-left">
+                            <label for="Password" class="control-label">Password:</label>
+                            <input type="password" asp-for="Password" id="Password" name="Password" class="form-control" placeholder="Password..." />
+                        </div>
+                        <div class="form-group username-right">
+                            <label for="ConfirmPassword" class="control-label">Confirm Password:</label>
+                            <input type="text" asp-for="ConfirmPassword" id="ConfirmPassword" name="ConfirmPassword" class="form-control" placeholder="Confirm Password..." />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="Role_Id" class="control-label"></label>
+                        <input type="hidden" asp-for="IdRole" id="Role_Id" name="Role_Id" />
+                    </div>
+                    <div class="form-group">
+                        <label for="Enable" class="control-label"></label>
+                        <input type="hidden" asp-for="Enable" id="Enable" name="Enable" />
+                    </div>
+                    <div class="form-group">
+                        <input class="form-check-input" type="checkbox" id="checkbox_user_agree_to_term" name="user[agree_to_term]">
+                        <label class="check_agree_terms" for="checkbox_user_agree_to_term">Creating an account means you’re okay with our Terms of Service, Privacy Policy, and our default Notification Settings.<a href="">Terms & Conditions</a></label>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" value="CREATE ACCOUNT" class="btn-dark" onclick="return Validate();" />
+                        Already have an account ? <a asp-controller="Account" asp-action="Login">Login</a>
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-5 img-signup"></div>
+            <div class="col-md-1"></div>
+        </div>
+    </div>
+</div>
+<script>
+    function Validate() {
+        //var FirstName = document.getElementById('FName');
+        //if (!Common_CheckEmpty(FirstName.value)) {
+        //    alert('You have not entered the First Name part. Please check back!');
+        //    FirstName.focus();
+        //    return false;
+        //} return true;
+
+        //var LastName = document.getElementById('LName');
+        //if (!Common_CheckEmpty(LastName.value)) {
+        //    alert('You have not entered the Last Name part. Please check back!');
+        //    LastName.focus();
+        //    return false;
+        //} return true;
+
+        //var Phone = document.getElementById('Phone');
+        //if (!Common_CheckEmpty(Phone.value)) {
+        //    alert('You have not entered your mobile Phone number. Please check back!');
+        //    txtMobile1.focus();
+        //    return false;
+        //} return true;
+
+        //var Email = document.getElementById('Email');
+        //if (!Common_CheckEmpty(Email.value)) {
+        //    alert('You did not enter Email. Please check back!');
+        //    Email.focus();
+        //    return false;
+        //}
+        //else {
+        //    var email = Email.value;
+        //    if (!Common_ValidateEmail(email)) {
+        //        Email.focus();
+        //        alert('Email not true. Please check back!');
+        //        return false;
+        //    } return true;
+        //}
+        //var Address = document.getElementById('Adress');
+        //if (!Common_CheckEmpty(Address.value)) {
+        //    alert('You did not enter Address. Please check back!');
+        //    Address.focus();
+        //    return false;
+        //} return true;
+
+        //var Birthday = document.getElementById('Bdate');
+        //if (!Common_CheckEmpty(Birthday.value)) {
+        //    alert('You did not enter Birthday. Please check back!');
+        //    Birthday.focus();
+        //    return false;
+        //} return true;
+
+        //var Avatar = document.getElementById('Avatar');
+        //if (!Common_CheckEmpty(Avatar.value)) {
+        //    alert('You have not selected an Avatar. Please check back!');
+        //    Avatar.focus();
+        //    return false;
+        //} return true;
+
+        //var Password = document.getElementById('Password');
+        //if (!Common_CheckEmpty(Password.value)) {
+        //    alert('You have not selected an Avatar. Please check back!');
+        //    Password.focus();
+        //    return false;
+        //} return true;
+
+        //var ConfirmPassword = document.getElementById('ConfirmPassword');
+        //if (!Common_CheckEmpty(ConfirmPassword.value)) {
+        //    alert('You have not selected an Confirm Password. Please check back!');
+        //    Avatar.focus();
+        //    return false;
+        //} return true;
+
+        //if (Common_CheckEmpty(Password.value) && Common_CheckEmpty(ConfirmPassword.value)) {
+        //    if (Password !== ConfirmPassword) {
+        //        alert('Password and Confirm Password are not the equal. Please check back!');
+        //        ConfirmPassword.focus();
+        //        return false;
+        //    } return true;
+        //} return false;
+        
+
+        //term
+        var chkOK = document.getElementById('checkbox_user_agree_to_term');
+        if (!chkOK.checked) {
+            chkOK.focus();
+            alert("You do not agree to the terms!");
+            return false;
+        }
+        return true;
+    }
+</script>

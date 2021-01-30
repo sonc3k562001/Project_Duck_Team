@@ -2,7 +2,9 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
 
-#nullable disable
+// Code scaffolded by EF Core assumes nullable reference types (NRTs) are not used or disabled.
+// If you have enabled NRTs for your project, then un-comment the following line:
+// #nullable disable
 
 namespace ProjectTeamVitAspDotNetCore.Models
 {
@@ -17,142 +19,120 @@ namespace ProjectTeamVitAspDotNetCore.Models
         {
         }
 
-        public virtual DbSet<Brand> Brands { get; set; }
-        public virtual DbSet<Category> Categories { get; set; }
-        public virtual DbSet<Certify> Certifies { get; set; }
-        public virtual DbSet<Color> Colors { get; set; }
-        public virtual DbSet<Dim> Dims { get; set; }
-        public virtual DbSet<DimInfo> DimInfos { get; set; }
-        public virtual DbSet<Metal> Metals { get; set; }
-        public virtual DbSet<Order> Orders { get; set; }
-        public virtual DbSet<OrderDetail> OrderDetails { get; set; }
-        public virtual DbSet<Product> Products { get; set; }
-        public virtual DbSet<Role> Roles { get; set; }
-        public virtual DbSet<Stone> Stones { get; set; }
-        public virtual DbSet<User> Users { get; set; }
+        public virtual DbSet<Brand> Brand { get; set; }
+        public virtual DbSet<Category> Category { get; set; }
+        public virtual DbSet<Certify> Certify { get; set; }
+        public virtual DbSet<Color> Color { get; set; }
+        public virtual DbSet<Dim> Dim { get; set; }
+        public virtual DbSet<DimInfo> DimInfo { get; set; }
+        public virtual DbSet<Metal> Metal { get; set; }
+        public virtual DbSet<Order> Order { get; set; }
+        public virtual DbSet<OrderDetail> OrderDetail { get; set; }
+        public virtual DbSet<PostNew> PostNew { get; set; }
+        public virtual DbSet<Product> Product { get; set; }
+        public virtual DbSet<Role> Role { get; set; }
+        public virtual DbSet<Stone> Stone { get; set; }
+        public virtual DbSet<User> User { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             if (!optionsBuilder.IsConfigured)
             {
-#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
                 optionsBuilder.UseSqlServer("Server=LAPTOP-JHC23F28\\SQLEXPRESS;Database=Jwellery;Trusted_Connection=True;");
             }
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.HasAnnotation("Relational:Collation", "Vietnamese_CI_AS");
-
             modelBuilder.Entity<Brand>(entity =>
             {
-                entity.ToTable("Brand");
-
                 entity.Property(e => e.BrandId)
-                    .HasMaxLength(50)
                     .HasColumnName("Brand_Id")
-                    .IsFixedLength(true);
-
-                entity.Property(e => e.Brand1)
                     .HasMaxLength(50)
-                    .HasColumnName("Brand");
+                    .IsFixedLength();
+
+                entity.Property(e => e.BrandName)
+                    .HasColumnName("Brand_Name")
+                    .HasMaxLength(50);
             });
 
             modelBuilder.Entity<Category>(entity =>
             {
                 entity.HasKey(e => e.IdCategory);
 
-                entity.ToTable("Category");
-
                 entity.Property(e => e.IdCategory)
-                    .HasMaxLength(50)
                     .HasColumnName("Id_Category")
-                    .IsFixedLength(true);
-
-                entity.Property(e => e.PdId)
                     .HasMaxLength(50)
-                    .HasColumnName("pd_id")
-                    .IsFixedLength(true);
+                    .IsFixedLength();
 
                 entity.Property(e => e.TypeName)
-                    .HasMaxLength(250)
-                    .HasColumnName("Type_Name");
-
-                entity.HasOne(d => d.Pd)
-                    .WithMany(p => p.Categories)
-                    .HasForeignKey(d => d.PdId)
-                    .HasConstraintName("FK_Category_Product");
+                    .HasColumnName("Type_Name")
+                    .HasMaxLength(250);
             });
 
             modelBuilder.Entity<Certify>(entity =>
             {
-                entity.ToTable("Certify");
-
                 entity.Property(e => e.CertifyId)
-                    .HasMaxLength(50)
                     .HasColumnName("Certify_ID")
-                    .IsFixedLength(true);
+                    .HasMaxLength(50)
+                    .IsFixedLength();
 
                 entity.Property(e => e.CertifyType)
-                    .HasMaxLength(50)
-                    .HasColumnName("Certify_Type");
+                    .HasColumnName("Certify_Type")
+                    .HasMaxLength(50);
             });
 
             modelBuilder.Entity<Color>(entity =>
             {
-                entity.ToTable("Color");
-
                 entity.Property(e => e.ColorId)
-                    .HasMaxLength(50)
                     .HasColumnName("Color_Id")
-                    .IsFixedLength(true);
+                    .HasMaxLength(50)
+                    .IsFixedLength();
 
                 entity.Property(e => e.Name).HasMaxLength(50);
             });
 
             modelBuilder.Entity<Dim>(entity =>
             {
-                entity.ToTable("Dim");
-
                 entity.Property(e => e.DimId)
-                    .HasMaxLength(50)
                     .HasColumnName("Dim_Id")
-                    .IsFixedLength(true);
+                    .HasMaxLength(50)
+                    .IsFixedLength();
+
+                entity.Property(e => e.Certify).HasMaxLength(250);
 
                 entity.Property(e => e.DimAmt)
-                    .HasColumnType("numeric(10, 2)")
-                    .HasColumnName("Dim_Amt");
+                    .HasColumnName("Dim_Amt")
+                    .HasColumnType("numeric(10, 2)");
 
                 entity.Property(e => e.DimCrt)
-                    .HasColumnType("numeric(10, 2)")
-                    .HasColumnName("Dim_Crt");
+                    .HasColumnName("Dim_Crt")
+                    .HasColumnType("numeric(10, 2)");
 
                 entity.Property(e => e.DimGm)
-                    .HasColumnType("numeric(10, 2)")
-                    .HasColumnName("Dim_Gm");
+                    .HasColumnName("Dim_Gm")
+                    .HasColumnType("numeric(10, 2)");
 
                 entity.Property(e => e.DimPcs)
-                    .HasColumnType("numeric(10, 2)")
-                    .HasColumnName("Dim_Pcs");
+                    .HasColumnName("Dim_Pcs")
+                    .HasColumnType("numeric(10, 2)");
 
                 entity.Property(e => e.DimRate)
-                    .HasColumnType("numeric(10, 2)")
-                    .HasColumnName("Dim_Rate");
+                    .HasColumnName("Dim_Rate")
+                    .HasColumnType("numeric(10, 2)");
 
                 entity.Property(e => e.DimSize)
-                    .HasColumnType("numeric(10, 2)")
-                    .HasColumnName("Dim_Size");
+                    .HasColumnName("Dim_Size")
+                    .HasColumnType("numeric(10, 2)");
 
                 entity.Property(e => e.Name).HasMaxLength(250);
             });
 
             modelBuilder.Entity<DimInfo>(entity =>
             {
-                entity.ToTable("DimInfo");
-
                 entity.Property(e => e.DimInfoId)
                     .HasMaxLength(50)
-                    .IsFixedLength(true);
+                    .IsFixedLength();
 
                 entity.Property(e => e.Description).HasColumnType("text");
 
@@ -171,169 +151,182 @@ namespace ProjectTeamVitAspDotNetCore.Models
 
             modelBuilder.Entity<Metal>(entity =>
             {
-                entity.ToTable("Metal");
-
                 entity.Property(e => e.MetalId)
-                    .HasMaxLength(50)
                     .HasColumnName("Metal_Id")
-                    .IsFixedLength(true);
+                    .HasMaxLength(50)
+                    .IsFixedLength();
 
                 entity.Property(e => e.MetalCrt)
+                    .HasColumnName("Metal_Crt")
                     .HasMaxLength(50)
-                    .IsUnicode(false)
-                    .HasColumnName("Metal_Crt");
+                    .IsUnicode(false);
 
                 entity.Property(e => e.Name).HasMaxLength(250);
             });
 
             modelBuilder.Entity<Order>(entity =>
             {
-                entity.ToTable("Order");
-
                 entity.Property(e => e.Id)
                     .HasMaxLength(50)
-                    .IsFixedLength(true);
+                    .IsFixedLength();
 
                 entity.Property(e => e.CreateTime)
-                    .HasColumnType("datetime")
-                    .HasColumnName("Create_Time");
+                    .HasColumnName("Create_Time")
+                    .HasColumnType("datetime");
 
                 entity.Property(e => e.Email).HasMaxLength(250);
 
                 entity.HasOne(d => d.EmailNavigation)
-                    .WithMany(p => p.Orders)
+                    .WithMany(p => p.Order)
                     .HasForeignKey(d => d.Email)
                     .HasConstraintName("FK_Order_User1");
             });
 
             modelBuilder.Entity<OrderDetail>(entity =>
             {
+                entity.HasKey(e => new { e.OdId, e.PdId });
+
                 entity.ToTable("Order_Detail");
 
-                entity.Property(e => e.Id)
-                    .HasMaxLength(50)
-                    .IsFixedLength(true);
-
                 entity.Property(e => e.OdId)
-                    .IsRequired()
-                    .HasMaxLength(50)
                     .HasColumnName("od_id")
-                    .IsFixedLength(true);
+                    .HasMaxLength(50)
+                    .IsFixedLength();
 
                 entity.Property(e => e.PdId)
-                    .HasMaxLength(50)
                     .HasColumnName("pd_id")
-                    .IsFixedLength(true);
+                    .HasMaxLength(50)
+                    .IsFixedLength();
 
                 entity.Property(e => e.TotalPrice)
-                    .HasColumnType("decimal(18, 0)")
-                    .HasColumnName("Total_Price");
+                    .HasColumnName("Total_Price")
+                    .HasColumnType("decimal(18, 0)");
 
                 entity.HasOne(d => d.Od)
-                    .WithMany(p => p.OrderDetails)
+                    .WithMany(p => p.OrderDetail)
                     .HasForeignKey(d => d.OdId)
                     .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("FK_Order_Detail_Order");
 
                 entity.HasOne(d => d.Pd)
-                    .WithMany(p => p.OrderDetails)
+                    .WithMany(p => p.OrderDetail)
                     .HasForeignKey(d => d.PdId)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("FK_Order_Detail_Product");
+            });
+
+            modelBuilder.Entity<PostNew>(entity =>
+            {
+                entity.HasKey(e => e.CreateTime);
+
+                entity.ToTable("POST_NEW");
+
+                entity.Property(e => e.CreateTime)
+                    .HasColumnName("Create_Time")
+                    .HasColumnType("date");
+
+                entity.Property(e => e.Content).HasColumnType("text");
+
+                entity.Property(e => e.Title).HasMaxLength(250);
             });
 
             modelBuilder.Entity<Product>(entity =>
             {
                 entity.HasKey(e => e.PdId);
 
-                entity.ToTable("Product");
-
                 entity.Property(e => e.PdId)
-                    .HasMaxLength(50)
                     .HasColumnName("pd_id")
-                    .IsFixedLength(true);
+                    .HasMaxLength(50)
+                    .IsFixedLength();
 
                 entity.Property(e => e.BrandId)
-                    .HasMaxLength(50)
                     .HasColumnName("Brand_id")
-                    .IsFixedLength(true);
+                    .HasMaxLength(50)
+                    .IsFixedLength();
 
                 entity.Property(e => e.ColorId)
-                    .HasMaxLength(50)
                     .HasColumnName("Color_id")
-                    .IsFixedLength(true);
+                    .HasMaxLength(50)
+                    .IsFixedLength();
 
                 entity.Property(e => e.Description).HasColumnType("text");
 
                 entity.Property(e => e.DimId)
-                    .HasMaxLength(50)
                     .HasColumnName("Dim_id")
-                    .IsFixedLength(true);
+                    .HasMaxLength(50)
+                    .IsFixedLength();
+
+                entity.Property(e => e.IdCategory)
+                    .HasColumnName("Id_Category")
+                    .HasMaxLength(50)
+                    .IsFixedLength();
 
                 entity.Property(e => e.Image1).HasColumnType("image");
 
                 entity.Property(e => e.Image2).HasColumnType("image");
 
                 entity.Property(e => e.MetalId)
-                    .HasMaxLength(50)
                     .HasColumnName("Metal_id")
-                    .IsFixedLength(true);
+                    .HasMaxLength(50)
+                    .IsFixedLength();
 
                 entity.Property(e => e.Name).HasMaxLength(250);
 
                 entity.Property(e => e.Price).HasColumnType("decimal(18, 0)");
 
                 entity.Property(e => e.StoneId)
-                    .HasMaxLength(50)
                     .HasColumnName("Stone_id")
-                    .IsFixedLength(true);
+                    .HasMaxLength(50)
+                    .IsFixedLength();
 
                 entity.HasOne(d => d.Brand)
-                    .WithMany(p => p.Products)
+                    .WithMany(p => p.Product)
                     .HasForeignKey(d => d.BrandId)
                     .HasConstraintName("FK_Product_Brand");
 
                 entity.HasOne(d => d.Color)
-                    .WithMany(p => p.Products)
+                    .WithMany(p => p.Product)
                     .HasForeignKey(d => d.ColorId)
                     .HasConstraintName("FK_Product_Color");
 
                 entity.HasOne(d => d.Dim)
-                    .WithMany(p => p.Products)
+                    .WithMany(p => p.Product)
                     .HasForeignKey(d => d.DimId)
                     .HasConstraintName("FK_Product_Dim");
 
+                entity.HasOne(d => d.Category)
+                    .WithMany(p => p.Product)
+                    .HasForeignKey(d => d.IdCategory)
+                    .HasConstraintName("FK_Product_Category");
+
                 entity.HasOne(d => d.Metal)
-                    .WithMany(p => p.Products)
+                    .WithMany(p => p.Product)
                     .HasForeignKey(d => d.MetalId)
                     .HasConstraintName("FK_Product_Metal");
 
                 entity.HasOne(d => d.Stone)
-                    .WithMany(p => p.Products)
+                    .WithMany(p => p.Product)
                     .HasForeignKey(d => d.StoneId)
                     .HasConstraintName("FK_Product_Stone");
             });
 
             modelBuilder.Entity<Role>(entity =>
             {
-                entity.ToTable("Role");
-
                 entity.Property(e => e.Id)
                     .HasMaxLength(10)
-                    .IsFixedLength(true);
+                    .IsFixedLength();
 
                 entity.Property(e => e.StringRole)
-                    .HasMaxLength(50)
-                    .HasColumnName("String_Role");
+                    .HasColumnName("String_Role")
+                    .HasMaxLength(50);
             });
 
             modelBuilder.Entity<Stone>(entity =>
             {
-                entity.ToTable("Stone");
-
                 entity.Property(e => e.StoneId)
-                    .HasMaxLength(50)
                     .HasColumnName("Stone_Id")
-                    .IsFixedLength(true);
+                    .HasMaxLength(50)
+                    .IsFixedLength();
 
                 entity.Property(e => e.Description).HasColumnType("text");
 
@@ -342,27 +335,25 @@ namespace ProjectTeamVitAspDotNetCore.Models
                 entity.Property(e => e.Price).HasColumnType("decimal(18, 0)");
 
                 entity.Property(e => e.StoneAmt)
-                    .HasColumnType("numeric(10, 2)")
-                    .HasColumnName("Stone_Amt");
+                    .HasColumnName("Stone_Amt")
+                    .HasColumnType("numeric(10, 2)");
 
                 entity.Property(e => e.StoneCrt)
-                    .HasColumnType("numeric(10, 2)")
-                    .HasColumnName("Stone_Crt");
+                    .HasColumnName("Stone_Crt")
+                    .HasColumnType("numeric(10, 2)");
 
                 entity.Property(e => e.StoneGm)
-                    .HasColumnType("numeric(10, 2)")
-                    .HasColumnName("Stone_Gm");
+                    .HasColumnName("Stone_Gm")
+                    .HasColumnType("numeric(10, 2)");
 
                 entity.Property(e => e.StoneRate)
-                    .HasColumnType("numeric(10, 2)")
-                    .HasColumnName("Stone_Rate");
+                    .HasColumnName("Stone_Rate")
+                    .HasColumnType("numeric(10, 2)");
             });
 
             modelBuilder.Entity<User>(entity =>
             {
                 entity.HasKey(e => e.Email);
-
-                entity.ToTable("User");
 
                 entity.Property(e => e.Email).HasMaxLength(250);
 
@@ -370,19 +361,23 @@ namespace ProjectTeamVitAspDotNetCore.Models
 
                 entity.Property(e => e.Avatar).HasMaxLength(250);
 
-                entity.Property(e => e.Bdate).HasColumnType("date");
+                entity.Property(e => e.Bdate)
+                    .HasMaxLength(50)
+                    .IsUnicode(false);
 
                 entity.Property(e => e.ConfirmPassword).HasColumnName("Confirm_Password");
+
+                entity.Property(e => e.Eable).HasDefaultValueSql("((1))");
 
                 entity.Property(e => e.Fname).HasMaxLength(50);
 
                 entity.Property(e => e.Gender).HasMaxLength(50);
 
                 entity.Property(e => e.IdRole)
-                    .HasMaxLength(10)
                     .HasColumnName("Id_Role")
-                    .HasDefaultValueSql("((4))")
-                    .IsFixedLength(true);
+                    .HasMaxLength(10)
+                    .IsFixedLength()
+                    .HasDefaultValueSql("((4))");
 
                 entity.Property(e => e.Lname).HasMaxLength(50);
 
@@ -390,8 +385,13 @@ namespace ProjectTeamVitAspDotNetCore.Models
                     .HasMaxLength(50)
                     .IsUnicode(false);
 
+                entity.Property(e => e.ZipCode)
+                    .HasColumnName("Zip_Code")
+                    .HasMaxLength(50)
+                    .IsFixedLength();
+
                 entity.HasOne(d => d.IdRoleNavigation)
-                    .WithMany(p => p.Users)
+                    .WithMany(p => p.User)
                     .HasForeignKey(d => d.IdRole)
                     .HasConstraintName("FK_User_Role");
             });

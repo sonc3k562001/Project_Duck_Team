@@ -29,7 +29,7 @@ namespace ProjectTeamVitAspDotNetCore
         {
             services.AddMvc();
             services.AddSession();
-            services.AddDbContext<JwelleryContext>(options => options.UseSqlServer("Server=LAPTOP-JHC23F28\\SQLEXPRESS;Database=mydb;Trusted_Connection=True;"));
+            services.AddDbContext<JwelleryContext>(options => options.UseSqlServer("Server=LAPTOP-JHC23F28\\SQLEXPRESS;Database=Jwellery;Trusted_Connection=True;;MultipleActiveResultSets=true"));
             services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme).AddCookie();
             services.Configure<CookiePolicyOptions>(options => {
                 options.CheckConsentNeeded = context => true;
@@ -62,7 +62,7 @@ namespace ProjectTeamVitAspDotNetCore
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Account}/{action=Login}/{id?}");
+                    pattern: "{controller=ProductsManager}/{action=Index}/{id?}");
             });
         }
     }

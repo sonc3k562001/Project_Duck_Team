@@ -1,7 +1,10 @@
 ﻿using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Configuration;
+using ProjectTeamVitAspDotNetCore.Helpers;
 using ProjectTeamVitAspDotNetCore.Models;
 using System;
 using System.Collections.Generic;
@@ -13,6 +16,14 @@ namespace ProjectTeamVitAspDotNetCore.Controllers
 {
     public class AccountController : Controller
     {
+        private IConfiguration configuration;
+        private IWebHostEnvironment webHostEnvironment;
+
+        public AccountController(IConfiguration _configuration, IWebHostEnvironment _webHostEnvironment)
+        {
+            configuration = _configuration;
+            webHostEnvironment = _webHostEnvironment;
+        }
         private JwelleryContext db = new JwelleryContext();
         public IActionResult Index()
         {
@@ -22,18 +33,7 @@ namespace ProjectTeamVitAspDotNetCore.Controllers
         {
             return View();
         }
-        public IActionResult PasswordChange()
-        {
-            return View();
-        }
-        public IActionResult PasswordReset()
-        {
-            return View();
-        }
-        public IActionResult Login()
-        {
-            return View();
-        }
+
         public IActionResult AccessDenied()
         {
             return View();
@@ -49,11 +49,16 @@ namespace ProjectTeamVitAspDotNetCore.Controllers
         {
             user.Password = BCrypt.Net.BCrypt.HashPassword(user.Password);
             user.IdRole = "4";
-            db.Users.Add(user);
+            db.User.Add(user);
             await db.SaveChangesAsync();
             return View("Login");
         }
 
+
+        public IActionResult Login()
+        {
+            return View();
+        }
         [HttpPost]
         [ValidateAntiForgeryToken]
         public IActionResult Login(string email, string password)
@@ -63,7 +68,7 @@ namespace ProjectTeamVitAspDotNetCore.Controllers
             bool isAuthenticate = false;
             bool isAuthenticates = false;
 
-            var FullName = db.Users.FirstOrDefault(x => x.Email == email);
+            var FullName = db.User.FirstOrDefault(x => x.Email == email);
 
             if (account == null)
             {
@@ -74,15 +79,14 @@ namespace ProjectTeamVitAspDotNetCore.Controllers
             {
 
                 HttpContext.Session.SetString("name", FullName.Fname);
-                var Role = db.Roles.FirstOrDefault(x => x.Id == account.IdRole);
+                var Role = db.Role.FirstOrDefault(x => x.Id == account.IdRole);
                 identity = new ClaimsIdentity(new[]
                 {
                     new Claim(ClaimTypes.Name,email),
                     new Claim(ClaimTypes.Role,Role.StringRole)
                 }, CookieAuthenticationDefaults.AuthenticationScheme);
                 if (Role.StringRole == "Admin" || Role.StringRole == "SuperAdmin")
-                {
-                    
+                {                   
                     isAuthenticates = true;
                     if (isAuthenticates)
                     {
@@ -108,10 +112,9 @@ namespace ProjectTeamVitAspDotNetCore.Controllers
             }
             
         }
-
         private User checkAccount(string email, string password)
         {
-            var account = db.Users.SingleOrDefault(a => a.Email.Equals(email));
+            var account = db.User.SingleOrDefault(a => a.Email.Equals(email));
 
 
             if (account != null)
@@ -129,5 +132,77 @@ namespace ProjectTeamVitAspDotNetCore.Controllers
             HttpContext.SignOutAsync();
             return RedirectToAction("Login", "Account");
         }
+
+
+        public IActionResult PasswordReset()
+        {
+            return View("PasswordReset");
+        }
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> PasswordReset(string email)
+        {
+            int numberRD = 50;
+            string randomStr = "";
+            try
+            {
+
+                int[] myIntArray = new int[numberRD];
+                int x;  
+                Random autoRand = new Random();
+                for (x = 0; x < numberRD; x++)
+                {
+                    myIntArray[x] = System.Convert.ToInt32(autoRand.Next(0, 9));
+                    randomStr += (myIntArray[x].ToString());
+                }
+            }
+            catch
+            {
+                randomStr = "error";
+            }
+
+            var account = db.User.FirstOrDefault(x => x.Email == email);
+
+            account.Password = BCrypt.Net.BCrypt.HashPassword(randomStr);
+            account.ConfirmPassword = account.Password;
+
+            db.Update(account);
+            await db.SaveChangesAsync();
+
+            var body = "Dear " + account.Fname + " " + account.Lname + "!<br/> Your current password is: " +randomStr+ "<br/> Wish you a good day!";
+            var mailHelper = new MailHelper(configuration);
+            if (mailHelper.Forgot(configuration["Gmail:Username"], account.Email, body))
+            {
+                ViewBag.msg = "Sent Mail Successfully! Please check password in email";
+            }
+            else
+            {
+                ViewBag.msg = "Failed";
+            }
+            return View("PasswordReset",account.Email);
+            
+        }
+
+      
+        public IActionResult PasswordChange()
+        {
+            return View();
+        }
+
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> PasswordChange(string Email,string Password)
+        {
+            var account = db.User.FirstOrDefault(x => x.Email == Email);
+            account.Password = BCrypt.Net.BCrypt.HashPassword(Password);
+            account.ConfirmPassword = account.Password;
+
+            db.Update(account);
+            await db.SaveChangesAsync();
+
+            return View("PasswordChange");
+        }
+
     }
 }

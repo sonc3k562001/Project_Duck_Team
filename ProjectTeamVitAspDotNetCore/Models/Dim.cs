@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 
-#nullable disable
+// Code scaffolded by EF Core assumes nullable reference types (NRTs) are not used or disabled.
+// If you have enabled NRTs for your project, then un-comment the following line:
+// #nullable disable
 
 namespace ProjectTeamVitAspDotNetCore.Models
 {
@@ -9,7 +11,7 @@ namespace ProjectTeamVitAspDotNetCore.Models
     {
         public Dim()
         {
-            Products = new HashSet<Product>();
+            Product = new HashSet<Product>();
         }
 
         public string DimId { get; set; }
@@ -19,8 +21,9 @@ namespace ProjectTeamVitAspDotNetCore.Models
         public decimal? DimGm { get; set; }
         public decimal? DimRate { get; set; }
         public decimal? DimAmt { get; set; }
+        public string Certify { get; set; }
         public decimal? DimSize { get; set; }
 
-        public virtual ICollection<Product> Products { get; set; }
+        public virtual ICollection<Product> Product { get; set; }
     }
 }

@@ -64,6 +64,14 @@ body {
     font-size: 15px;
 }
 
+.home-page {
+    float: left;
+    margin-left: 525px;
+    font-size: 18px;
+    margin-top: 8px;
+    color: #153d77;
+}
+
 .account {
     display: flex;
     -webkit-box-align: center;
@@ -182,9 +190,11 @@ body {
                 text-decoration: none;
                 padding: 12px 0px;
                 position: relative;
-                color: white;
-                /*border: 1px solid white;*/
+                color: black;
             }
+.font-as {
+    color: #153d77;
+}
 
                 .sidebar-left .sidebar-menu li a:hover {
                     color: #4caf50;

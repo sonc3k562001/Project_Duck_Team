@@ -14,12 +14,13 @@
             <div class="navbar-brand col-md-12" href="#">
                 <div class="row">
                     <div class="col-md-5">
-                        <a href="#" class="header-name">Diamond Jewellery</a>
                         <button id="sidebarCollapse" type="button" class="btn btn-light bg-white  shadow-sm toggle">
                             <i class="fa fa-bars mr-2"></i>
                         </button>
+                        <a href="#" class="header-name">Diamond Jewellery</a>
                     </div>
                     <div class="col-md-7 mr-0">
+                        <a href="#" class="home-page">HomePage</a>
                         <div class="account">
                             <img class="account-avatar" src="https://cf.shopee.vn/file/e3aea05255b46e75be739f3d47781132" />
                             <span class="account-name">quynhquynh_04082001</span>
@@ -30,40 +31,40 @@
             </div>
         </nav>
     </header>
-    <div class="vertical-nav bg-dark" id="sidebar">
+    <div class="vertical-nav bg-white" id="sidebar">
 
         <div class="sidebar-left mt-4">
             <ul class="sidebar-menu">
                 <li>
                     <a asp-controller="Home" asp-action="Index">
-                        <i class="fa fa-home mr-2 text-primary fa-fw"></i>
+                        <i class="fa fa-home mr-3 fa-fw font-as"></i>
                         Dashboard
                     </a>
                 </li>
                 <li>
                     <a asp-controller="OrderProd" asp-action="Index">
-                        <i class="fas fa-align-left mr-2 text-primary fa-fw"></i>
+                        <i class="fas fa-align-left mr-3 fa-fw font-as"></i>
                         Order list
                     </a>
                 </li>
                 <li>
                     <a asp-controller="Article" asp-action="Index">
-                        <i class="fas fa-inbox mr-2 text-primary fa-fw"></i>
+                        <i class="fas fa-inbox mr-3 fa-fw font-as"></i>
                         Article management
                     </a>
                 </li>
                 <li class="has-child">
-                    <a href="#"><i class="fas fa-air-freshener mr-2 text-primary fa-fw"></i>>Product Management <i class="icon"></i></a>
+                    <a href="#"><i class="fas fa-arrow-alt-circle-right mr-3 fa-fw font-as"></i>Product Management <i class="icon"></i></a>
                     <ul class="menu-sub">
                         <li>
-                            <a  asp-controller="Product" asp-action="Index">
-                                <i class="fa fa-home mr-2 text-primary fa-fw"></i>
+                            <a asp-controller="Product" asp-action="Index">
+                                <i class="fas fa-angle-double-right mr-2 fa-fw font-as"></i>
                                 All Product
                             </a>
                         </li>
                         <li>
                             <a asp-controller="Product" asp-action="AddProd">
-                                <i class="fa fa-home mr-2 text-primary fa-fw"></i>
+                                <i class="fas fa-angle-double-right mr-2 fa-fw font-as"></i>
                                 Add Product
                             </a>
                         </li>
@@ -71,22 +72,22 @@
                 </li>
                 <li>
                     <a asp-controller="Customer" asp-action="Index">
-                        <i class="fal fa-address-card mr-2 text-primary fa-fw"></i>
+                        <i class="fas fa-address-card mr-3 fa-fw font-as"></i>
                         Customer management
                     </a>
                 </li>
                 <li class="has-child">
-                    <a href="#"><i class="fas fa-chart-area mr-2 text-primary fa-fw"></i> Sales Report <i class="icon"></i></a>
+                    <a href="#"><i class="fas fa-chart-area mr-3 fa-fw font-as"></i> Sales Report <i class="icon"></i></a>
                     <ul class="menu-sub">
                         <li>
                             <a asp-controller="Product" asp-action="TotalProd">
-                                <i class="fa fa-home mr-2 text-primary fa-fw"></i>
+                                <i class="fas fa-angle-double-right mr-2 fa-fw font-as"></i>
                                 Total revenue
                             </a>
                         </li>
                         <li>
                             <a asp-controller="ListIt" asp-action="Index">
-                                <i class="fa fa-home mr-2 text-primary fa-fw"></i>
+                                <i class="fas fa-angle-double-right mr-2 fa-fw font-as"></i>
                                 Customer information
                             </a>
                         </li>
@@ -94,82 +95,6 @@
                 </li>
             </ul>
         </div>
-
-
-        @*<p  class="text-gray font-weight-bold text-uppercase px-2 small py-3 mb-0">Dashboard</p>
-        <ul class="nav flex-column bg-white mb-0">
-            <li class="nav-item">
-                <a asp-controller="Home" asp-action="Index" class="nav-link bg-light">
-                    <i class="fa fa-home mr-2 text-primary fa-fw"></i>
-                    Trang chủ
-                </a>
-            </li>
-        </ul>
-
-
-        <p class="text-gray font-weight-bold text-uppercase px-2 small py-3 mb-0">Order management</p>
-        <ul class="nav flex-column bg-white mb-0">
-            <li class="nav-item">
-                <a asp-controller="OrderProd" asp-action="Index" class="nav-link">
-                    <i class="fa fa-home mr-2 text-primary fa-fw"></i>
-                    Order list
-                </a>
-            </li>
-        </ul>
-
-        <p class="text-gray font-weight-bold text-uppercase px-2 small py-3 mb-0">Article management</p>
-        <ul class="nav flex-column bg-white mb-0">
-            <li class="nav-item">
-                <a href="#" class="nav-link">
-                    <i class="fa fa-home mr-2 text-primary fa-fw"></i>
-                    Product Information
-                </a>
-            </li>
-        </ul>
-
-        <p class="text-gray font-weight-bold text-uppercase px-2 small py-3 mb-0">Product Management</p>
-        <ul class="nav flex-column bg-white mb-0">
-            <li class="nav-item">
-                <a asp-controller="Product" asp-action="Index" class="nav-link ">
-                    <i class="fa fa-address-card mr-2 text-primary fa-fw"></i>
-                    All Products
-                </a>
-            </li>
-            <li class="nav-item">
-                <a asp-controller="ListIt" asp-action="Index" class="nav-link">
-                    <i class="fa fa-th-large mr-2 text-primary fa-fw"></i>
-                    Add Products
-                </a>
-            </li>
-        </ul>
-
-
-        <p class="text-gray font-weight-bold text-uppercase px-3 small py-3 mb-0">Customer management</p>
-        <ul class="nav flex-column bg-white mb-0">
-            <li class="nav-item">
-                <a asp-controller="Customer" asp-action="Index" class="nav-link ">
-                    <i class="fa fa-area-chart mr-2 fa-fw"></i>
-                    Customer information
-                </a>
-            </li>
-        </ul>
-
-
-        <p class="text-gray font-weight-bold text-uppercase px-3 small py-3 mb-0">Sales Report</p>
-        <ul class="nav flex-column bg-white mb-0">
-            <li class="nav-item">
-                <a asp-controller="Product" asp-action="TotalProd" class="nav-link ">
-                    <i class="fa fa-area-chart mr-2 fa-fw"></i>`
-                    Total revenue
-                </a>
-            </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link ">
-                    <i class="fa fa-area-chart mr-2 fa-fw"></i>
-                    Customer information
-                </a>
-            </li>
-        </ul>*@
 
     </div>
 
@@ -184,7 +109,7 @@
         </footer>*@
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
      <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     <script src="https://code.highcharts.com/highcharts.src.js"></script>

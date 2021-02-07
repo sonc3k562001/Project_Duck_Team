@@ -1,0 +1,56 @@
+﻿@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<environment>
+    <link rel="stylesheet" href="/css/editProd.css" />
+</environment>
+
+<div class="container" style="background-color:white">
+    <div class=" col-md-12 row">
+        <div class="col-md-4">
+            <img src="https://www.astleyclarke.com/media/catalog/product/cache/1/image/1348x1348/9df78eab33525d08d6e5fb8d27136e95/4/6/46038yrdr_a/Astley-Clarke-Ruby-Stacking-Ring-Yellow-Gold-(Solid)-46038YRDR.jpg"
+                 alt="Alternate Text" width="200" height="240" />
+        </div>
+        <div class="col-md-8">
+            <div class="change-image">
+                Change image : &nbsp; <input class="btn btn-outline-secondary" type="file" id="img" name="img" accept="image/*">
+            </div>
+            <div>
+                <p>Rename the product : </p>
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1">Name</span>
+                    <input type="text" class="form-control" placeholder="Username" aria-label="..." aria-describedby="basic-addon1">
+                </div>
+            </div>
+            <div>
+                <p>Price correction : </p>
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1">Price</span>
+                    <input type="text" class="form-control" placeholder="Username" aria-label="..." aria-describedby="basic-addon1">
+                </div>
+            </div>
+            <div>
+                <p>Qty correction : </p>
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1">Qty</span>
+                    <input type="text" class="form-control" placeholder="Username" aria-label="..." aria-describedby="basic-addon1">
+                </div>
+            </div>
+            <div>
+                <p>Product classification : </p>
+                <select class="form-select option" aria-label="Default select example">
+                    <option selected>Open this select menu</option>
+                    <option value="1">Baracelets</option>
+                    <option value="2">Rings</option>
+                    <option value="3">Earrings</option>
+                    <option value="4">Necklaces</option>
+                </select>
+            </div>
+            <div class="text-center mt-4 mb-4">
+                <button type="button" class="btn btn-success">Update changes</button>
+            </div>
+        </div>
+    </div>
+</div>

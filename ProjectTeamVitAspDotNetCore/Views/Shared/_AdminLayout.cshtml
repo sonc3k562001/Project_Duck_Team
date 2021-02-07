@@ -1,0 +1,198 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Admin</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/admin.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-light bg-light header">
+            <div class="navbar-brand col-md-12" href="#">
+                <div class="row">
+                    <div class="col-md-5">
+                        <button id="sidebarCollapse" type="button" class="btn btn-light bg-white  shadow-sm toggle">
+                            <i class="fa fa-bars mr-2"></i>
+                        </button>
+                        <a href="#" class="header-name">Diamond Jewellery</a>
+                    </div>
+                    <div class="col-md-7 mr-0">
+                        <a href="#" class="home-page">HomePage</a>
+                        <div class="account">
+                            <img class="account-avatar" src="https://cf.shopee.vn/file/e3aea05255b46e75be739f3d47781132" />
+                            <span class="account-name">quynhquynh_04082001</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+    <div class="vertical-nav bg-white" id="sidebar">
+
+        <div class="sidebar-left mt-4">
+            <ul class="sidebar-menu">
+                <li>
+                    <a asp-controller="Dashboard" asp-action="Index">
+                        <i class="fa fa-home mr-3 fa-fw font-as"></i>
+                        Dashboard
+                    </a>
+                </li>
+                <li>
+                    <a asp-controller="OrderProd" asp-action="Index">
+                        <i class="fas fa-align-left mr-3 fa-fw font-as"></i>
+                        Order list
+                    </a>
+                </li>
+                <li>
+                    <a asp-controller="Article" asp-action="Index">
+                        <i class="fas fa-inbox mr-3 fa-fw font-as"></i>
+                        Article management
+                    </a>
+                </li>
+                <li class="has-child">
+                    <a href="#"><i class="fas fa-arrow-alt-circle-right mr-3 fa-fw font-as"></i>Product Management <i class="icon"></i></a>
+                    <ul class="menu-sub">
+                        <li>
+                            <a asp-controller="Product" asp-action="Index">
+                                <i class="fas fa-angle-double-right mr-2 fa-fw font-as"></i>
+                                All Product
+                            </a>
+                        </li>
+                        <li>
+                            <a asp-controller="Product" asp-action="AddProd">
+                                <i class="fas fa-angle-double-right mr-2 fa-fw font-as"></i>
+                                Add Product
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="has-child">
+                    <a href="#"><i class="fas fa-arrow-alt-circle-right mr-3 fa-fw font-as"></i>Brand Management <i class="icon"></i></a>
+                    <ul class="menu-sub">
+                        <li>
+                            <a asp-controller="Brands" asp-action="Index">
+                                <i class="fas fa-angle-double-right mr-2 fa-fw font-as"></i>
+                                All Brands
+                            </a>
+                        </li>
+                        <li>
+                            <a asp-controller="Brands" asp-action="Create">
+                                <i class="fas fa-angle-double-right mr-2 fa-fw font-as"></i>
+                                Add Brand
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="has-child">
+                    <a href="#"><i class="fas fa-arrow-alt-circle-right mr-3 fa-fw font-as"></i>Metal Management <i class="icon"></i></a>
+                    <ul class="menu-sub">
+                        <li>
+                            <a asp-controller="Metals" asp-action="Index">
+                                <i class="fas fa-angle-double-right mr-2 fa-fw font-as"></i>
+                                All Metals
+                            </a>
+                        </li>
+                        <li>
+                            <a asp-controller="Metals" asp-action="Create">
+                                <i class="fas fa-angle-double-right mr-2 fa-fw font-as"></i>
+                                Add Metal
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="has-child">
+                    <a href="#"><i class="fas fa-arrow-alt-circle-right mr-3 fa-fw font-as"></i>Color Management <i class="icon"></i></a>
+                    <ul class="menu-sub">
+                        <li>
+                            <a asp-controller="Colors" asp-action="Index">
+                                <i class="fas fa-angle-double-right mr-2 fa-fw font-as"></i>
+                                All Colors
+                            </a>
+                        </li>
+                        <li>
+                            <a asp-controller="Colors" asp-action="Create">
+                                <i class="fas fa-angle-double-right mr-2 fa-fw font-as"></i>
+                                Add Color
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="has-child">
+                    <a href="#"><i class="fas fa-arrow-alt-circle-right mr-3 fa-fw font-as"></i>Stone Management <i class="icon"></i></a>
+                    <ul class="menu-sub">
+                        <li>
+                            <a asp-controller="Stones" asp-action="Index">
+                                <i class="fas fa-angle-double-right mr-2 fa-fw font-as"></i>
+                                All Stones
+                            </a>
+                        </li>
+                        <li>
+                            <a asp-controller="Stones" asp-action="Create">
+                                <i class="fas fa-angle-double-right mr-2 fa-fw font-as"></i>
+                                Add Stone
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="has-child">
+                    <a href="#"><i class="fas fa-arrow-alt-circle-right mr-3 fa-fw font-as"></i>Category Management <i class="icon"></i></a>
+                    <ul class="menu-sub">
+                        <li>
+                            <a asp-controller="Categories" asp-action="Index">
+                                <i class="fas fa-angle-double-right mr-2 fa-fw font-as"></i>
+                                All Categories
+                            </a>
+                        </li>
+                        <li>
+                            <a asp-controller="Categories" asp-action="Create">
+                                <i class="fas fa-angle-double-right mr-2 fa-fw font-as"></i>
+                                Add Category
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a asp-controller="Customer" asp-action="Index">
+                        <i class="fas fa-address-card mr-3 fa-fw font-as"></i>
+                        Customer management
+                    </a>
+                </li>
+                <li class="has-child">
+                    <a href="#"><i class="fas fa-chart-area mr-3 fa-fw font-as"></i> Sales Report <i class="icon"></i></a>
+                    <ul class="menu-sub">
+                        <li>
+                            <a asp-controller="Product" asp-action="TotalProd">
+                                <i class="fas fa-angle-double-right mr-2 fa-fw font-as"></i>
+                                Total revenue
+                            </a>
+                        </li>
+                        <li>
+                            <a asp-controller="ListIt" asp-action="Index">
+                                <i class="fas fa-angle-double-right mr-2 fa-fw font-as"></i>
+                                Customer information
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="page-content p-5 mt-5 " id="content">
+        @RenderBody()
+    </div>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="https://code.highcharts.com/highcharts.src.js"></script>
+    <script src="~/js/main.js"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

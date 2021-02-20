@@ -1,0 +1,98 @@
+﻿<environment>
+    <link rel="stylesheet" href="~/css/checkout.css" />
+</environment>
+<div class="container">
+    <div class="row">
+        <section class="checkout col-xs-12 col-md-12">
+            <div class="checkout_info col-xs-12 col-md-12">
+                <h2>SHOPPING BAG</h2>
+                <h3>If you have any questions, please call: <span>+44 (0)20 7706 0060</span></h3>
+                <strong>You are currently shipping to Vietnam.</strong>
+                <a [routerLink]="['/']"> Shipping to a different country?</a>
+            </div>
+
+            <div class="checkout_product col-xs-12 col-md-12">
+                <table class="table table-borderless table-responsive align-middle text-center">
+
+                    <thead class="table-dark">
+                        <tr>
+                            <th>Product Image</th>
+                            <th>Product Name</th>
+                            <th>Product Price</th>
+                            <th>Product Quantity</th>
+                            <th>Product Total</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>
+                                <a [routerLink]="['/']">
+                                    <img class="col-xs-12 col-md-12"
+                                         src="https://www.astleyclarke.com/media/catalog/product/cache/1/thumbnail/170x/9df78eab33525d08d6e5fb8d27136e95/4/6/46038yrdr_a/Astley-Clarke-Ruby-Stacking-Ring-46038YRDR60.jpg">
+                                </a>
+                            </td>
+                            <td>
+                                <ul>
+                                    <li>RUBY STACKING RING</li>
+                                    <li>Size: L</li>
+                                    <li><input type="checkbox"><a href="#">Gift wrap this item</a></li>
+                                    <li><input type="checkbox"><a href="#">Gift wrap to use at home</a></li>
+                                </ul>
+                            </td>
+                            <td>
+                                <span>₫10,618,373</span>
+                            </td>
+                            <td>
+                                <select>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                </select>
+                            </td>
+                            <td>
+                                ₫10,618,373
+                            </td>
+                        </tr>
+                    </tbody>
+
+                    <tfoot>
+                        <tr>
+                            <td colspan="4" class="text-end">Subtotal</td>
+
+                            <td>₫23,360,421</td>
+                        </tr>
+                        <tr>
+                            <td colspan="4" class="text-end">Cart Total</td>
+
+                            <td>₫23,360,421</td>
+                        </tr>
+                        <tr>
+                            <td colspan="3" class="text-end"><h3>Promotional Code</h3></td>
+                            <td><input type="text"></td>
+                            <td><button type="submit" class="btn redeem_button">Redeem</button></td>
+                        </tr>
+                        <tr class="total_row">
+                            <td colspan="3">TOTAL</td>
+                            <td></td>
+                            <td class="total_row-price">₫23,360,421</td>
+                        </tr>
+                    </tfoot>
+                </table>
+
+                <div class="d-flex justify-content-end text-center col-xs-12 col-md-12">
+                    <ul>
+                        <li>
+                            <button type="submit" class="btn checkout_button">
+                                <a [routerLink]="['/order-summary']">Proceed to checkout</a>
+                            </button>
+                        </li>
+                        <li>
+                            <img src="https://www.astleyclarke.com/skin/frontend/default/astleyclarke/images/onestepcheckout_secure_cards_transparent.png">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>

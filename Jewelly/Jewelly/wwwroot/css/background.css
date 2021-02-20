@@ -1,0 +1,188 @@
+﻿.background h3.intro {
+    font-size: 30px;
+    font-weight: bold;
+    font-style: italic;
+    line-height: 1.5;
+    margin: 20px 0;
+}
+
+.background .background_banner {
+    background-image: url("https://www.astleyclarke.com/skin/frontend/default/astleyclarke/images/cms-page-banners/blue-nov-2020.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80px;
+}
+
+    .background .background_banner h2 {
+        color: white;
+        font-weight: bold;
+        text-transform: uppercase;
+        padding-top: 20px;
+        font-size: 32px;
+        line-height: 1.5;
+    }
+
+.background .background_newin {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+}
+
+    .background .background_newin .left img {
+        width: 70%;
+        height: auto;
+        min-width: 30%;
+        min-height: 30%;
+    }
+
+    .background .background_newin .right p {
+        font-size: 16px;
+        line-height: 1.5;
+        text-justify: distribute-all-lines;
+    }
+
+    .background .background_newin .right button {
+        border: solid 1px black;
+        border-radius: 10px;
+        color: black;
+        font-size: 16px;
+        line-height: 1.5;
+        padding: 10px;
+        margin: 20px 0;
+        width: 40%;
+        -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    }
+
+        .background .background_newin .right button:hover {
+            background-color: black;
+            color: white;
+        }
+
+.background .background_stock {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+}
+
+    .background .background_stock .left {
+        padding: 65px;
+    }
+
+        .background .background_stock .left p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        .background .background_stock .left button {
+            border: solid 1px black;
+            border-radius: 10px;
+            color: black;
+            font-size: 16px;
+            line-height: 1.5;
+            padding: 10px;
+            margin: 20px 0;
+            width: 40%;
+            -ms-flex-item-align: center;
+            -ms-grid-row-align: center;
+            align-self: center;
+        }
+
+            .background .background_stock .left button:hover {
+                background-color: black;
+                color: white;
+            }
+
+    .background .background_stock .right img {
+        width: 80%;
+        height: auto;
+        min-width: 30%;
+        min-height: 30%;
+    }
+
+.background .background_public {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+}
+
+    .background .background_public .left img {
+        width: 70%;
+        height: auto;
+        min-width: 30%;
+        min-height: 30%;
+    }
+
+    .background .background_public .right p {
+        font-size: 16px;
+        line-height: 1.5;
+        text-justify: distribute-all-lines;
+    }
+
+    .background .background_public .right button {
+        border: solid 1px black;
+        border-radius: 10px;
+        color: black;
+        font-size: 16px;
+        line-height: 1.5;
+        padding: 10px;
+        margin: 20px 0;
+        width: 40%;
+        -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    }
+
+        .background .background_public .right button:hover {
+            background-color: black;
+            color: white;
+        }
+
+.background .background_brands {
+    margin: 40px 0;
+}
+
+    .background .background_brands h3 {
+        font-size: 28px;
+        font-weight: bold;
+        font-style: italic;
+        line-height: 1.5;
+    }
+
+    .background .background_brands a {
+        text-decoration: none;
+        font-size: 20px;
+        color: black;
+        font-style: italic;
+    }
+
+        .background .background_brands a:hover button {
+            background-color: black;
+            color: white;
+        }
+
+    .background .background_brands button {
+        border: solid 1px black;
+        border-radius: 10px;
+        color: black;
+        font-size: 16px;
+        line-height: 1.5;
+        padding: 10px;
+        margin: 20px 0;
+        width: 20%;
+        -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    }
+
+    .background .background_brands img {
+        margin-top: 40px;
+        width: 100%;
+        max-width: 100%;
+        -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    }
+/*# sourceMappingURL=background.component.css.map */

@@ -1,0 +1,59 @@
+﻿.thankyou {
+    line-height: 1.5;
+}
+
+    .thankyou .thankyou_letter h2 {
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    .thankyou .thankyou_letter h3 {
+        font-size: 20px;
+    }
+
+    .thankyou .thankyou_letter strong {
+        font-weight: bold;
+    }
+
+    .thankyou .thankyou_letter span {
+        font-size: 18px;
+    }
+
+    .thankyou .thankyou_share h3 {
+        font-size: 24px;
+        font-weight: bold;
+        text-transform: capitalize;
+        font-style: italic;
+    }
+
+    .thankyou .thankyou_share li {
+        display: -webkit-inline-box;
+        display: -ms-inline-flexbox;
+        display: inline-flex;
+        padding: 10px;
+    }
+
+        .thankyou .thankyou_share li a {
+            text-decoration: none;
+            font-size: 24px;
+            color: black;
+        }
+
+    .thankyou .thankyou_rate h3 {
+        font-size: 24px;
+        font-weight: bold;
+        text-transform: capitalize;
+    }
+
+    .thankyou .thankyou_rate h4 {
+        margin: 10px 0;
+        font-size: 20px;
+    }
+
+    .thankyou .thankyou_rate form {
+        text-align: start;
+    }
+
+        .thankyou .thankyou_rate form input {
+            margin: 0 10px;
+        }

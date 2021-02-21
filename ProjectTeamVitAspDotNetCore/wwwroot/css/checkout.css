@@ -1,0 +1,119 @@
+﻿.checkout {
+    margin-top: 20px;
+}
+
+    .checkout .checkout_info {
+        line-height: 1.5;
+    }
+
+        .checkout .checkout_info h2 {
+            font-size: 24px;
+        }
+
+        .checkout .checkout_info h3 {
+            font-size: 18px;
+        }
+
+        .checkout .checkout_info strong {
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .checkout .checkout_info span {
+            font-size: 20px;
+        }
+
+        .checkout .checkout_info a {
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+    .checkout button {
+        border: solid 1px black;
+        border-radius: 10px;
+        color: black;
+        -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    }
+
+        .checkout button:hover {
+            background-color: black;
+            color: white;
+        }
+
+        .checkout button.checkout_button {
+            font-size: 18px;
+            line-height: 1.5;
+            padding: 10px;
+        }
+
+            .checkout button.checkout_button a {
+                text-decoration: none;
+                color: black;
+            }
+
+            .checkout button.checkout_button:hover a {
+                color: white;
+            }
+
+        .checkout button.redeem_button {
+            font-size: 14px;
+            padding: 10px;
+            line-height: 1;
+        }
+
+    .checkout ul {
+        list-style: none;
+    }
+
+        .checkout ul li {
+            margin: 10px 0;
+        }
+
+            .checkout ul li input {
+                margin: 0 10px;
+            }
+
+    .checkout table {
+        margin-top: 20px;
+        border-collapse: separate;
+        border-spacing: 0 15px;
+    }
+
+        .checkout table thead th {
+            padding: 10px;
+            line-height: 1.5;
+        }
+
+        .checkout table tbody tr {
+            border-bottom: solid 1px black;
+        }
+
+            .checkout table tbody tr:last-child {
+                border: none;
+            }
+
+            .checkout table tbody tr td img {
+                width: 100%;
+                min-width: 40%;
+                min-height: 40%;
+            }
+
+        .checkout table tfoot tr.total_row {
+            border: solid 1px black;
+            background-color: black;
+            color: white;
+            line-height: 1.5;
+            font-weight: bold;
+            text-align: center;
+        }
+
+            .checkout table tfoot tr.total_row .total_row-price {
+                font-size: 24px;
+            }
+
+        .checkout table tfoot tr td {
+            -ms-flex-line-pack: end;
+            align-content: flex-end;
+        }

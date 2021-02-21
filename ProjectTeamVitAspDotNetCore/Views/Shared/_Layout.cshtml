@@ -3,12 +3,96 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - Jewellry</title>
+    <title>@ViewData["Title"] - Jewelly</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
 </head>
 <body>
     <header>
+        <div class="header">
+            <section class="header_main col-xs-12 col-md-12">
+
+                <div class="header_main-left col-xs-4 col-md-4">
+                    <img src="https://www.astleyclarke.com/skin/frontend/default/default/globale/flags/vn.png">
+                    <div class="header_main-left--money">
+                        <span>(đ)</span>
+                        <span>VND</span>
+                    </div>
+                </div>
+
+                <div class="header_main--middle text-center col-xs-4 col-md-4">
+                    <img src="https://www.astleyclarke.com/skin/frontend/default/astleyclarke/images/logo/ac-2020.png">
+                </div>
+
+                <div class="header_main--right col-xs-4 col-md-4">
+                    <ul>
+                        <li><a href="/search"><i class="fas fa-search"></i></a></li>
+                        <li><a data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fas fa-shopping-cart"></i></a></li>
+                    </ul>
+                </div>
+
+            </section>
+
+            <nav class="header_nav sticky-top col-xs-12 col-md-12">
+                <ul class="text-center col-xs-12 col-md-12">
+                    <li><a href="home">Home</a></li>
+                    <li>
+                        <!-- <a class="btn btn-secondary dropdown-toggle" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">New Arrivals
+                        </a>
+                        <app-dropdown aria-labelledby="dropdownMenuLink"></app-dropdown> -->
+                        <div class="dropdown">
+                            <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                New Arrivals
+                            </a>
+
+                            <app-dropdown class="dropdown-menu col-xs-12 col-md-12" aria-labelledby="dropdownMenuLink" data-popper-placement="bottom-end">
+                            </app-dropdown>
+                        </div>
+                    </li>
+                    <li><a asp-controller="View_pages" asp-action="bestsellers">BestSellers</a></li>
+                    <li><a asp-controller="Product" asp-action="Lockets">Lockets</a></li>
+                    <li><a asp-controller="Product" asp-action="Bracelets">Bracelets</a></li>
+                    <li><a asp-controller="Product" asp-action="Earrings">Earrings</a></li>
+                    <li><a asp-controller="Product" asp-action="Necklaces">Necklaces</a></li>
+                    <li><a asp-controller="Product" asp-action="Rings">Rings</a></li>
+                    <li><a asp-controller="View_pages" asp-action="explore">Explore</a></li>
+                </ul>
+            </nav>
+
+            <section class="header_promo text-center col-xs-12 col-md-12">
+                <div>
+                    <ul>
+                        <li><a asp-controller="View_pages" asp-action="new_items"><i class="fas fa-gift"></i>SHOP NEW ARRIVALS |</a></li>
+                        <li><i class="fas fa-truck"></i><strong>FREE </strong> GLOBAL DELIVERY |</li>
+                        <li><i class="fas fa-undo"></i><strong>FREE </strong> UK, US & EU RETURNS |</li>
+                        <li>
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>8,796 REVIEWS
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+        </div>
+
+        <!-- Scrollable modal -->
+
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Cart</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <app-checkout></app-checkout>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal" href="order-summary">Go to Checkout</button>
+                    </div>
+                </div>
+            </div>
+        </div>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container">
                 <a class="navbar-brand" asp-area="" asp-controller="Login" asp-action="Index">Jewellry</a>
@@ -21,30 +105,110 @@
                         @if (User.Identity.IsAuthenticated)
                         {
 
-                            <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Account" asp-action="Signout">Logout</a>
-                            </li>
-                        }else
+            <li class="nav-item">
+                <a class="nav-link text-dark" asp-area="" asp-controller="Account" asp-action="Signout">Logout</a>
+            </li> }
+                        else
                         {
-                            <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Account" asp-action="Login">Login</a>
-                            </li>
+            <li class="nav-item">
+                <a class="nav-link text-dark" asp-area="" asp-controller="Account" asp-action="Login">Login</a>
+            </li>
                             <li class="nav-item">
                                 <a class="nav-link text-dark" asp-area="" asp-controller="Account" asp-action="Register">Sign up</a>
-                            </li>
-                        }
+                            </li>}
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
-    <main role="main" class="pb-3">
-        @RenderBody()
-    </main>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+    <footer>
+        <div class="footer col-xs-12 col-md-12">
+            <div class="footer_main sticky-bottom col-xs-12 col-md-12">
+                <nav class="footer_main-left col-xs-4 col-md-4">
+                    <ul>
+                        <li><a asp-controller="View_pages" asp-action="contact">Contact us</a></li>
+                        <li><a asp-controller="View_pages" asp-action="faq">FAQs</a></li>
+                        <li><a asp-controller="View_pages" asp-action="delivery">Delivery</a></li>
+                    </ul>
+                </nav>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2021 - Jewellry - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                <div class="footer_main-middle col-xs-4 col-md-4">
+                    <h2>Stay in the know</h2>
+                    <form>
+                        <input type="text" placeholder="Enter your email address">
+                        <button type="submit">
+                            <i class="far fa-check-circle"></i>
+                        </button>
+                    </form>
+                </div>
+
+                <nav class="footer_main-right text-center col-xs-4 col-md-4">
+                    <ul>
+                        <li><a href="facebook"><i class="fab fa-facebook-square"></i></a></li>
+                        <li><a href="www.google.com"><i class="fab fa-google"></i></a></li>
+                        <li><a href="www.youtube.com"><i class="fab fa-youtube"></i></a></li>
+                        <li><a href="www.twitter.com"><i class="fab fa-twitter-square"></i></a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="footer_nav col-xs-12 col-md-12">
+                <div class="footer_nav-left col-xs-8 col-md-8">
+
+                    <ul class="no-pl">
+                        <li><strong>Customer Service |</strong></li>
+                        <li><a asp-controller="View_pages" asp-action="contact">Contact us</a> |</li>
+                        <li><a asp-controller="View_pages" asp-action="delivery">Delivery</a> |</li>
+                        <li><a asp-controller="View_pages" asp-action="refund">Returns & Refunds Policy</a> |</li>
+                        <li><a asp-controller="View_pages" asp-action="faq">FAQs</a> |</li>
+                        <li><a asp-controller="View_pages" asp-action="term">Terms & Conditions</a> |</li>
+                        <li><a asp-controller="View_pages" asp-action="policy">Privacy Policy</a> |</li>
+                    </ul>
+                    <ul class="no-pl">
+                        <li><strong>About us |</strong></li>
+                        <li><a href="background">Our Story</a> |</li>
+                        <li><a href="stock">Global Stockists</a> |</li>
+                    </ul>
+                    <ul class="no-pl">
+                        <li><strong>Here to Help |</strong></li>
+                        <li><a href="popular-search">Popular Searches</a> |</li>
+                        <li><a href="maintain">Jewellery Care</a> |</li>
+                        <li><a href="repair">Warranty & Repairs</a> |</li>
+                        <li><a href="size-guide">Size Guide</a> |</li>
+                    </ul>
+
+                </div>
+
+                <div class="footer_nav-right text-center col-xs-4 col-md-4">
+
+                    <ul class="no-pl">
+                        <li><a asp-controller="View_pages" asp-action="affiliates"><strong>Affiliates |</strong></a></li>
+                        <li><a asp-controller="View_pages" asp-action="careers">Careers</a></li>
+                    </ul>
+                    <ul class="no-pl">
+                        <li><a asp-controller="View_pages" asp-action="sitemap"><strong>Sitemap |</strong></a></li>
+                        <li><a asp-controller="View_pages" asp-action="reviews">Review</a></li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+            <div class="footer_pay text-center col-xs-12 col-md-12">
+                <ul>
+                    <li><i class="fab fa-cc-visa"></i></li>
+                    <li><i class="fab fa-cc-mastercard"></i></li>
+                    <li><i class="fab fa-cc-paypal"></i></li>
+                    <li><i class="fab fa-amazon-pay"></i></li>
+                </ul>
+                <h2>© Astley Clarke Limited 2021</h2>
+            </div>
+
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>

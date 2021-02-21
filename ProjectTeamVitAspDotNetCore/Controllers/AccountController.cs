@@ -4,10 +4,12 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.FileProviders;
 using ProjectTeamVitAspDotNetCore.Helpers;
 using ProjectTeamVitAspDotNetCore.Models;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Security.Claims;
 using System.Threading.Tasks;
@@ -45,12 +47,25 @@ namespace ProjectTeamVitAspDotNetCore.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Register(User user)
+        public async Task<IActionResult> Register(User user , IFormFile Avatar)
         {
             user.Password = BCrypt.Net.BCrypt.HashPassword(user.Password);
+            user.ConfirmPassword = BCrypt.Net.BCrypt.HashPassword(user.ConfirmPassword);
             user.IdRole = "4";
             db.User.Add(user);
             await db.SaveChangesAsync();
+            if (Avatar != null)
+            {
+                var fileName = Path.GetFileName(Avatar.FileName);
+
+                var filepath = new PhysicalFileProvider(Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "Images")).Root + $@"\{fileName}";
+
+                using (FileStream fs = System.IO.File.Create(filepath))
+                {
+                    Avatar.CopyTo(fs);
+                    fs.Flush();
+                }
+            }
             return View("Login");
         }
 
@@ -93,7 +108,7 @@ namespace ProjectTeamVitAspDotNetCore.Controllers
                         
                         var principal = new ClaimsPrincipal(identity);
                         var login = HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, principal);
-                        return RedirectToAction("Welcome", "Account");
+                        return RedirectToAction("Index", "AdminManager");
                     }
                 }
                 if (Role.StringRole == "Customer")
@@ -104,7 +119,7 @@ namespace ProjectTeamVitAspDotNetCore.Controllers
                      
                         var principal = new ClaimsPrincipal(identity);
                         var login = HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, principal);
-                        return RedirectToAction("Welcome", "Account");
+                        return RedirectToAction("Index", "Product");
                     }
                 }
                 
@@ -179,7 +194,7 @@ namespace ProjectTeamVitAspDotNetCore.Controllers
             {
                 ViewBag.msg = "Failed";
             }
-            return View("PasswordReset",account.Email);
+            return View("PasswordReset");
             
         }
 

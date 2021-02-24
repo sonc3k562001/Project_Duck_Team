@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\son10\\source\\repos\\ProjectTeamVitAspDotNetCore\\ProjectTeamVitAspDotNetCore.csproj": {}
+    "C:\\Users\\son10\\OneDrive\\Máy tính\\ProjectTeamVitAspDotNetCore\\ProjectTeamVitAspDotNetCore.csproj": {}
   },
   "projects": {
-    "C:\\Users\\son10\\source\\repos\\ProjectTeamVitAspDotNetCore\\ProjectTeamVitAspDotNetCore.csproj": {
+    "C:\\Users\\son10\\OneDrive\\Máy tính\\ProjectTeamVitAspDotNetCore\\ProjectTeamVitAspDotNetCore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\son10\\source\\repos\\ProjectTeamVitAspDotNetCore\\ProjectTeamVitAspDotNetCore.csproj",
+        "projectUniqueName": "C:\\Users\\son10\\OneDrive\\Máy tính\\ProjectTeamVitAspDotNetCore\\ProjectTeamVitAspDotNetCore.csproj",
         "projectName": "ProjectTeamVitAspDotNetCore",
-        "projectPath": "C:\\Users\\son10\\source\\repos\\ProjectTeamVitAspDotNetCore\\ProjectTeamVitAspDotNetCore.csproj",
+        "projectPath": "C:\\Users\\son10\\OneDrive\\Máy tính\\ProjectTeamVitAspDotNetCore\\ProjectTeamVitAspDotNetCore.csproj",
         "packagesPath": "C:\\Users\\son10\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\son10\\source\\repos\\ProjectTeamVitAspDotNetCore\\obj\\",
+        "outputPath": "C:\\Users\\son10\\OneDrive\\Máy tính\\ProjectTeamVitAspDotNetCore\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -49,6 +49,14 @@
               "target": "Package",
               "version": "[0.1.0, )"
             },
+            "Microsoft.AspNet.Providers.Core": {
+              "target": "Package",
+              "version": "[2.0.0, )"
+            },
+            "Microsoft.AspNetCore.Session": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
@@ -72,6 +80,10 @@
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[3.1.5, )"
+            },
+            "System.Configuration.ConfigurationManager": {
+              "target": "Package",
+              "version": "[5.0.0, )"
             }
           },
           "imports": [

@@ -1,4 +1,86 @@
 ﻿<environment>
-    <link rel="stylesheet" href="~/css/rings.css"/>
+    <link rel="stylesheet" href="~/css/rings.css" />
 </environment>
+
+
+@model IEnumerable<ProjectTeamVitAspDotNetCore.Models.Product>
+
+@{ ViewData["Title"] = "Bracelets";
+    Layout = "~/Views/Shared/_Layout.cshtml"; }
+
+<h1>Earrings</h1>
+
+
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Price)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Description)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Image)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Size)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Brand)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Color)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Dim)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IdCategory)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Metal)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Stone)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        <section class="col-xs-12 col-md-12">
+            @foreach (var item in Model)
+            {
+
+
+                <div class="products_filter-show d-flex flex-row flex-wrap justify-content-center align-content-center col-xs-12 col-md-12">
+                    <div class="product col-xs-2 col-md-2">
+                        <div class="d-flex text-center align-items-center justify-content-center">
+                            <a class="p-3 col-xs-12 col-md-12">
+                                <div class="text-center">
+
+                                    <a asp-controller="Product" asp-action="Product_detail" asp-route-id="@item.PdId"><img src="~/Images/@Html.DisplayFor(modelItem => item.Image)" width="375" height="375" /></a>
+                                    <h3>
+                                        @Html.DisplayFor(modelItem => item.Name)
+                                    </h3>
+                                    <span>
+                                        @Html.DisplayFor(modelItem => item.Price)
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+}
+            </section>
+            </tbody>
+        </table>
+
+
+
 

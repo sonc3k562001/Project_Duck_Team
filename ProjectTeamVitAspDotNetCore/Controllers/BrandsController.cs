@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -9,6 +10,7 @@ using ProjectTeamVitAspDotNetCore.Models;
 
 namespace ProjectTeamVitAspDotNetCore.Controllers
 {
+    [Authorize(Roles = "Admin,SuperAdmin")]
     public class BrandsController : Controller
     {
         private readonly JwelleryContext _context;
@@ -18,13 +20,12 @@ namespace ProjectTeamVitAspDotNetCore.Controllers
             _context = context;
         }
 
-        // GET: Brands
+        
         public async Task<IActionResult> Index()
         {
             return View(await _context.Brand.ToListAsync());
         }
 
-        // GET: Brands/Details/5
         public async Task<IActionResult> Details(string id)
         {
             if (id == null)
@@ -42,7 +43,6 @@ namespace ProjectTeamVitAspDotNetCore.Controllers
             return View(brand);
         }
 
-        // GET: Brands/Create
         public IActionResult Create()
         {
             return View();
@@ -64,7 +64,6 @@ namespace ProjectTeamVitAspDotNetCore.Controllers
             return View(brand);
         }
 
-        // GET: Brands/Edit/5
         public async Task<IActionResult> Edit(string id)
         {
             if (id == null)
@@ -115,7 +114,6 @@ namespace ProjectTeamVitAspDotNetCore.Controllers
             return View(brand);
         }
 
-        // GET: Brands/Delete/5
         public async Task<IActionResult> Delete(string id)
         {
             if (id == null)

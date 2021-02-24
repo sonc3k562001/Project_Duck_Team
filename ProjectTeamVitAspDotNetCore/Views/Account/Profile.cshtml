@@ -1,0 +1,15 @@
+﻿
+
+<img src="~/Images/@ViewBag.User.Avatar" width="100" height="100" />
+<p><span>Full Name :</span> @ViewBag.User.Fname @ViewBag.User.Lname</p>
+<p><span>Birthday :</span> @ViewBag.User.Bdate</p>
+<p><span>Adress :</span> @ViewBag.User.Address</p>
+<p><span>Gender :</span> @ViewBag.User.Gender</p>
+<p><span>Phone :</span> @ViewBag.User.Phone</p>
+<p><span>Zip Code :</span> @ViewBag.User.ZipCode</p>
+<br />
+<a href="/Account/PasswordChange">Change Password</a><br />
+<a href="/Account/ChangedInformation">Change Information</a>
+<a href="/Account/ListOrder">List Bill</a>
+<a class="nav-link text-dark" asp-area="" asp-controller="Account" asp-action="Signout">Logout</a>
+

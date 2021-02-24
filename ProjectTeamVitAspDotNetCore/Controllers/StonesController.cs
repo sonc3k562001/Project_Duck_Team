@@ -1,16 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
+﻿
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using ProjectTeamVitAspDotNetCore.Models;
 
 namespace ProjectTeamVitAspDotNetCore.Controllers
 {
+    [Authorize(Roles = "Admin,SuperAdmin")]
     public class StonesController : Controller
     {
+        
         private readonly JwelleryContext _context;
 
         public StonesController(JwelleryContext context)

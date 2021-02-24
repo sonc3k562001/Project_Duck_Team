@@ -65,8 +65,13 @@
                         <li><img src="https://www.astleyclarke.com/uk/jewellery/bracelets/interstellar-diamond-bangle"></li>
                     </ul>
                 </div>
+                
                 <div class="action d-flex flex-column justify-content-center align-items-center col-xs-12 col-md-12">
                     <button class="btn add_button col-xs-12 col-md-12" type="button">
+
+                        <td>
+                            <a asp-controller="cart" asp-action="buy" asp-route-id="@ViewBag.product.PdId">Buy Now</a>
+                        </td>
                         ADD TO BAG
                     </button>
                     <button class="btn hint_button col-xs-12 col-md-12" type="button">

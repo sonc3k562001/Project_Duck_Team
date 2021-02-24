@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -9,6 +11,7 @@ using ProjectTeamVitAspDotNetCore.Models;
 
 namespace ProjectTeamVitAspDotNetCore.Controllers
 {
+    [Authorize(Roles = "Admin,SuperAdmin")]
     public class ProductsManagerController : Controller
     {
         private readonly JwelleryContext _context;
@@ -63,14 +66,16 @@ namespace ProjectTeamVitAspDotNetCore.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("PdId,Name,Price,Description,Image1,Image2,ColorId,Size,BrandId,DimId,StoneId,IdCategory,MetalId")] Product product)
+        public async Task<IActionResult> Create([Bind("PdId,Name,Price,Description,Image,ColorId,Size,BrandId,DimId,StoneId,IdCategory,MetalId")] Product product, IFormFile Image)
         {
+            product.Image = Image.FileName;
             if (ModelState.IsValid)
             {
                 _context.Add(product);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
+
             ViewData["BrandId"] = new SelectList(_context.Brand, "BrandId", "BrandId", product.BrandId);
             ViewData["IdCategory"] = new SelectList(_context.Category, "IdCategory", "IdCategory", product.IdCategory);
             ViewData["ColorId"] = new SelectList(_context.Color, "ColorId", "ColorId", product.ColorId);
@@ -102,12 +107,10 @@ namespace ProjectTeamVitAspDotNetCore.Controllers
             return View(product);
         }
 
-        // POST: ProductsManager/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to, for 
-        // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(string id, [Bind("PdId,Name,Price,Description,Image1,Image2,ColorId,Size,BrandId,DimId,StoneId,IdCategory,MetalId")] Product product)
+        public async Task<IActionResult> Edit(string id, [Bind("PdId,Name,Price,Description,Image,ColorId,Size,BrandId,DimId,StoneId,IdCategory,MetalId")] Product product)
         {
             if (id != product.PdId)
             {
@@ -167,7 +170,7 @@ namespace ProjectTeamVitAspDotNetCore.Controllers
             return View(product);
         }
 
-        // POST: ProductsManager/Delete/5
+
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(string id)

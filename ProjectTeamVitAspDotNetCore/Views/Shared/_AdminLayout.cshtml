@@ -20,9 +20,23 @@
                         </button>
                     </div>
                     <div class="col-md-7 mr-0">
-                        <div class="account">
-                            <img class="account-avatar" src="https://cf.shopee.vn/file/e3aea05255b46e75be739f3d47781132" />
-                            <span class="account-name">quynhquynh_04082001</span>
+                        <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
+                            <ul class="navbar-nav flex-grow-1">
+                                @if (User.Identity.IsAuthenticated)
+                                {
+
+                        <li class="nav-item">
+                            <a href="/Account/Profile">@User.Identity.Name</a>
+                        </li> }
+                                    else
+                                    {
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Account" asp-action="Login">Login</a>
+                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link text-dark" asp-area="" asp-controller="Account" asp-action="Register">Sign up</a>
+                                        </li>}
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -35,25 +49,25 @@
         <div class="sidebar-left mt-4">
             <ul class="sidebar-menu">
                 <li>
-                    <a asp-controller="Home" asp-action="Index">
+                    <a asp-controller="Dashboard" asp-action="Index">
                         <i class="fa fa-home mr-2 text-primary fa-fw"></i>
                         Dashboard
                     </a>
                 </li>
                 <li>
-                    <a asp-controller="OrderProd" asp-action="Index">
+                    <a asp-controller="Order" asp-action="Index">
                         <i class="fas fa-align-left mr-2 text-primary fa-fw"></i>
                         Order list
                     </a>
                 </li>
                 <li>
-                    <a asp-controller="Article" asp-action="Index">
+                    <a asp-controller="Permistion" asp-action="Index">
                         <i class="fas fa-inbox mr-2 text-primary fa-fw"></i>
-                        Article management
+                        Account management
                     </a>
                 </li>
                 <li class="has-child">
-                    <a href="#"><i class="fas fa-air-freshener mr-2 text-primary fa-fw"></i>Product Management <i class="icon"></i></a>
+                    <a href="/ProductsManager/Index"><i class="fas fa-air-freshener mr-2 text-primary fa-fw"></i>Product Management <i class="icon"></i></a>
                     <ul class="menu-sub">
                         <li>
                             <a asp-controller="ProductsManager" asp-action="Index">
@@ -150,29 +164,6 @@
                             <a asp-controller="Categories" asp-action="Create">
                                 <i class="fa fa-home mr-2 text-primary fa-fw"></i>
                                 Add Category
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a asp-controller="Customer" asp-action="Index">
-                        <i class="fal fa-address-card mr-2 text-primary fa-fw"></i>
-                        Customer management
-                    </a>
-                </li>
-                <li class="has-child">
-                    <a href="#"><i class="fas fa-chart-area mr-2 text-primary fa-fw"></i> Sales Report <i class="icon"></i></a>
-                    <ul class="menu-sub">
-                        <li>
-                            <a asp-controller="Product" asp-action="TotalProd">
-                                <i class="fa fa-home mr-2 text-primary fa-fw"></i>
-                                Total revenue
-                            </a>
-                        </li>
-                        <li>
-                            <a asp-controller="ListIt" asp-action="Index">
-                                <i class="fa fa-home mr-2 text-primary fa-fw"></i>
-                                Customer information
                             </a>
                         </li>
                     </ul>

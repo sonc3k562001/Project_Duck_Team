@@ -22,15 +22,17 @@ namespace ProjectTeamVitAspDotNetCore
             Configuration = configuration;
         }
 
-        public IConfiguration Configuration { get; }
+        public IConfiguration Configuration { get; set; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
-            services.AddSession();
-            services.AddDbContext<JwelleryContext>(options => options.UseSqlServer("Server=LAPTOP-JHC23F28\\SQLEXPRESS;Database=Jwellery;Trusted_Connection=True;;MultipleActiveResultSets=true"));
-            services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme).AddCookie();
+            services.AddSession(options => {
+                options.Cookie.HttpOnly = true;
+                options.Cookie.IsEssential = true;
+            });
+            services.AddDbContext<JwelleryContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"))); services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme).AddCookie();
             services.Configure<CookiePolicyOptions>(options => {
                 options.CheckConsentNeeded = context => true;
                 options.MinimumSameSitePolicy = SameSiteMode.None;
@@ -47,7 +49,6 @@ namespace ProjectTeamVitAspDotNetCore
             else
             {
                 app.UseExceptionHandler("/Home/Error");
-                // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
             app.UseHttpsRedirection();
@@ -62,7 +63,7 @@ namespace ProjectTeamVitAspDotNetCore
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Account}/{action=Login}/{id?}");
+                    pattern: "{controller=Product}/{action=Index}/{id?}");
             });
         }
     }

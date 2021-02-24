@@ -18,10 +18,9 @@ namespace ProjectTeamVitAspDotNetCore.Models
         public string Name { get; set; }
         public decimal? Price { get; set; }
         public string Description { get; set; }
-        public byte[] Image1 { get; set; }
-        public byte[] Image2 { get; set; }
+        public string Image { get; set; }
         public string ColorId { get; set; }
-        public double? Size { get; set; }
+        public string Size { get; set; }
         public string BrandId { get; set; }
         public string DimId { get; set; }
         public string StoneId { get; set; }

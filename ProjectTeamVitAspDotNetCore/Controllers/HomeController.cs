@@ -1,14 +1,19 @@
-﻿using Microsoft.AspNetCore.Authorization;
+﻿using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using ProjectTeamVitAspDotNetCore.Models;
 
 namespace ProjectTeamVitAspDotNetCore.Controllers
 {
     public class HomeController : Controller
     {
-        [Authorize(Roles = "Admin,Customer,SuperAdmin")]
+        [AllowAnonymous]
         public IActionResult Index()
         {
+           
             return View();
+
         }
     }
 }

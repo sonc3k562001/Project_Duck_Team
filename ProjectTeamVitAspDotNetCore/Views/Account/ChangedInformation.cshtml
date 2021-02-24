@@ -1,0 +1,76 @@
+﻿@model ProjectTeamVitAspDotNetCore.Models.User
+
+@{
+    ViewData["Title"] = "ChangedInformation";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>ChangedInformation</h1>
+
+<h4>User</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form enctype="multipart/form-data" asp-action="ChangedInformation">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Fname" class="control-label">First Name</label>
+                <input asp-for="Fname" class="form-control" />
+                <span asp-validation-for="Fname" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Lname" class="control-label">Last Name:</label>
+                <input asp-for="Lname" class="form-control" />
+                <span asp-validation-for="Lname" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Bdate" class="control-label">Birthday: </label>
+                <input asp-for="Bdate" class="form-control" />
+                <span asp-validation-for="Bdate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Address" class="control-label">Adress: </label>
+                <input asp-for="Address" class="form-control" />
+                <span asp-validation-for="Address" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Phone" class="control-label">Phone: </label>
+                <input asp-for="Phone" class="form-control" />
+                <span asp-validation-for="Phone" class="text-danger"></span>
+            </div>
+            <input type="hidden" asp-for="Email" />
+            <input type="hidden" asp-for="Password" class="form-control" />
+            <input type="hidden" asp-for="ConfirmPassword" class="form-control" />
+
+            <div class="form-group">
+                <label asp-for="ZipCode" class="control-label">Zip Code: </label>
+                <input asp-for="ZipCode" class="form-control" />
+                <span asp-validation-for="ZipCode" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Avatar" class="control-label">Avatar: </label>
+                <input type="file" asp-for="Avatar" class="form-control" />
+                <span asp-validation-for="Avatar" class="text-danger"></span>
+            </div>
+            <div class="form-group gender">
+                <label asp-for="Gender" class="control-label">Gender: </label>
+                <input type="radio" asp-for="Gender" name="Gender" value="Man" class="form-check-input" /><span>Man</span>
+                <input type="radio" asp-for="Gender" name="Gender" value="Woman" class="form-check-input" /><span>Woman</span>
+                <span asp-validation-for="Gender" class="text-danger"></span>
+            </div>
+            <input type="hidden" asp-for="Eable" class="form-control" />
+            <input type="hidden" asp-for="IdRole" class="form-control" asp-items="ViewBag.IdRole"/>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Profile">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

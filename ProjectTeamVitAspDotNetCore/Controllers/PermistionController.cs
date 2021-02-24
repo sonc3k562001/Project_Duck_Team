@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using ProjectTeamVitAspDotNetCore.Models;
 using System;
@@ -8,6 +9,7 @@ using System.Threading.Tasks;
 
 namespace ProjectTeamVitAspDotNetCore.Controllers
 {
+    [Authorize(Roles = "Admin,SuperAdmin")]
     public class PermistionController : Controller
     {
         private readonly JwelleryContext _context;
@@ -15,20 +17,21 @@ namespace ProjectTeamVitAspDotNetCore.Controllers
         {
             _context = context;
         }
+        
         public async Task<IActionResult> Index()
         {
             return View(await _context.User.ToListAsync());
         }
-
-        public async Task<IActionResult> Details(string email)
+    
+        public async Task<IActionResult> Details(string id)
         {
-            if (email == null)
+            if (id == null)
             {
                 return NotFound();
             }
 
             var user = await _context.User
-                .FirstOrDefaultAsync(m => m.Email == email);
+                .FirstOrDefaultAsync(m => m.Email == id);
             if (user == null)
             {
                 return NotFound();
@@ -45,7 +48,7 @@ namespace ProjectTeamVitAspDotNetCore.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Email,Name")] User user)
+        public async Task<IActionResult> Create([Bind("Fname,Lname,Bdate,Address,Phone,Password,Confirm_Password,Zip_Code,Avatar,Gender,Email,Enable,Id_Role")] User user)
         {
             if (ModelState.IsValid)
             {
@@ -56,25 +59,26 @@ namespace ProjectTeamVitAspDotNetCore.Controllers
             return View(user);
         }
 
-      
-        public async Task<IActionResult> Edit(string Email)
+        [Authorize(Roles = "SuperAdmin")]
+        public async Task<IActionResult> Edit(string id)
         {
-            if (Email == null)
+            if (id == null)
             {
                 return NotFound();
             }
 
-            var user = await _context.User.FindAsync(Email);
+            var user = await _context.User.FindAsync(id);
             if (user == null)
             {
                 return NotFound();
             }
+            ViewBag.user = user;
             return View(user);
         }
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(string id, [Bind("Email,Enable")] User user)
+        public async Task<IActionResult> Edit(string id, [Bind("Fname,Lname,Bdate,Address,Phone,Password,Confirm_Password,Zip_Code,Avatar,Gender,Email,Enable,Id_Role")] User user)
         {
             if (id != user.Email)
             {
@@ -90,7 +94,7 @@ namespace ProjectTeamVitAspDotNetCore.Controllers
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!ColorExists(user.Email))
+                    if (!UserExists(user.Email))
                     {
                         return NotFound();
                     }
@@ -104,7 +108,7 @@ namespace ProjectTeamVitAspDotNetCore.Controllers
             return View(user);
         }
 
-
+        
         public async Task<IActionResult> Delete(string id)
         {
             if (id == null)
@@ -112,30 +116,29 @@ namespace ProjectTeamVitAspDotNetCore.Controllers
                 return NotFound();
             }
 
-            var color = await _context.Color
-                .FirstOrDefaultAsync(m => m.ColorId == id);
-            if (color == null)
+            var user = await _context.User
+                .FirstOrDefaultAsync(m => m.Email == id);
+            if (user == null)
             {
                 return NotFound();
             }
 
-            return View(color);
+            return View(user);
         }
 
-        // POST: Colors/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(string id)
         {
-            var color = await _context.Color.FindAsync(id);
-            _context.Color.Remove(color);
+            var user = await _context.User.FindAsync(id);
+            _context.User.Remove(user);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
-        private bool ColorExists(string id)
+        private bool UserExists(string id)
         {
-            return _context.Color.Any(e => e.ColorId == id);
+            return _context.User.Any(e => e.Email == id);
         }
 
     }

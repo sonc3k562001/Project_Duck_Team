@@ -1,0 +1,162 @@
+﻿@{ 
+    Layout = "_AdminLayout";
+}
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $.ajax({
+            type: 'GET',
+            dataType: "json",
+            contentType: "application/json",
+            url: '/api/product/findall',
+            success: function (result) {
+                google.charts.load('current', {
+                    'packages': ['corechart']
+                });
+                google.charts.setOnLoadCallback(function () {
+                    BarChart(result);
+                });
+            }
+        });
+
+        function BarChart(result) {
+            var data = new google.visualization.DataTable();
+            data.addColumn('string', 'time');
+            data.addColumn('number', 'money');
+
+            var dataArray = [];
+            $.each(result, function (i, obj) {
+                dataArray.push([obj.time, obj.money]);
+            });
+
+            data.addRows(dataArray);
+
+            var barchart_options = {
+                title: 'Barchart: Monthly revenue',
+                width: 1200,
+                height: 600
+            };
+
+            var barchar = new google.visualization.BarChart(document
+                .getElementById('barchar_div'));
+            barchar.draw(data, barchart_options);
+        }
+
+    });
+    
+</script>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $.ajax({
+            type: 'GET',
+            dataType: "json",
+            contentType: "application/json",
+            url: '/api/product/findyear',
+            success: function (result) {
+                google.charts.load('current', {
+                    'packages': ['corechart']
+                });
+                google.charts.setOnLoadCallback(function () {
+                    PieChart(result);
+                });
+            }
+        });
+
+        function PieChart(result) {
+            var data = new google.visualization.DataTable();
+            data.addColumn('string', 'time');
+            data.addColumn('number', 'money');
+
+            var dataArray = [];
+            $.each(result, function (i, obj) {
+                dataArray.push([obj.time, obj.money]);
+            });
+
+            data.addRows(dataArray);
+            ///
+            var piechart_options = {
+                title: 'Pie Chart: Sales rate for the past 3 years',
+                width: 1200,
+                height: 600,
+
+            };
+            var piechart = new google.visualization.PieChart(document
+                .getElementById('piechart_div'));
+            piechart.draw(data, piechart_options);
+
+        }
+
+    });
+
+</script>
+<div class="col-lg-12">
+    <div class="row">
+        <div class="col-lg-4">
+            <div class=" title-header" style="background-color: white;border:1px solid #a59b9b;border-radius:15px">
+                <div class="row">
+                    <div class="mt-4 pl-5">
+                        <h6>Total product</h6>
+                    </div>
+                    <div class="col-lg-12 mt-2 mb-3">
+                        <div class="row">
+                            <div class="col-lg-6 mt-2">
+                                <i class="fas fa-chart-pie pt-2 pl-5" style="color:green;font-size:30px"></i>
+                            </div>
+                            <div class="col-lg-6 mt-2 pr-3">
+                                <div class="btn btn-outline-success" style="margin-left:60px">550</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class=" title-header" style="background-color: white;border:1px solid #a59b9b;border-radius:15px">
+                <div class="row">
+                    <div class="mt-4 pl-5">
+                        <h6>Total number of customers</h6>
+                    </div>
+                    <div class="col-lg-12 mt-2 mb-3">
+                        <div class="row">
+                            <div class="col-lg-6 mt-2">
+                                <i class="far fa-chart-bar pt-2 pl-5" style="color:red;font-size:30px"></i>
+                            </div>
+                            <div class="col-lg-6 mt-2">
+                                <div class="btn btn-outline-danger" style="margin-left:60px">2000</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="title-header" style="background-color: white;border:1px solid #a59b9b;border-radius:15px">
+                <div class="row">
+                    <div class="mt-4 pl-5">
+                        <h6>Total number of orders</h6>
+                    </div>
+                    <div class="col-lg-12 mt-2 mb-3">
+                        <div class="row">
+                            <div class="col-lg-6 mt-2">
+                                <i class="fas fa-chart-line pt-2 pl-5" style="color:blue;font-size:30px"></i>
+                            </div>
+                            <div class="col-lg-6 mt-2">
+                                <div class="btn btn-outline-primary" style="margin-left:60px">550</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<br/>
+<br/>
+<br/>
+<div id="barchar_div" style="border:1px solid #ccc"></div>
+<div id="piechart_div" style="border:1px solid #ccc"></div>
+
+
+

@@ -1,0 +1,51 @@
+﻿@model IEnumerable<ProjectTeamVitAspDotNetCore.Models.Order>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+
+
+<form asp-controller="Order" asp-action="index">
+    <input type="text" name="searchString" />
+    <input type="submit" value="Search" />
+    <a asp-controller="Order" asp-action="index">All</a>
+</form>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Create Time
+            </th>
+            <th>
+                Id
+            </th>
+            <th>
+                Receiver
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CreateTime)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Id)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td>
+                    <a asp-action="Details" asp-route-id="@item.Id">| Details</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

@@ -11,6 +11,6 @@ namespace ProjectTeamVitAspDotNetCore.Models
     {
         public DateTime CreateTime { get; set; }
         public string Title { get; set; }
-        public string Content { get; set; }
+        public string Body { get; set; }
     }
 }

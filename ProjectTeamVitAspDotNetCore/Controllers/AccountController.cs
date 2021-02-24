@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.FileProviders;
 using ProjectTeamVitAspDotNetCore.Helpers;
@@ -18,13 +19,17 @@ namespace ProjectTeamVitAspDotNetCore.Controllers
 {
     public class AccountController : Controller
     {
-        private IConfiguration configuration;
-        private IWebHostEnvironment webHostEnvironment;
+        
+        
 
+        private readonly IConfiguration configuration;
+        private readonly IWebHostEnvironment webHostEnvironment;
+       
         public AccountController(IConfiguration _configuration, IWebHostEnvironment _webHostEnvironment)
         {
             configuration = _configuration;
             webHostEnvironment = _webHostEnvironment;
+            
         }
         private JwelleryContext db = new JwelleryContext();
         public IActionResult Index()
@@ -51,7 +56,9 @@ namespace ProjectTeamVitAspDotNetCore.Controllers
         {
             user.Password = BCrypt.Net.BCrypt.HashPassword(user.Password);
             user.ConfirmPassword = BCrypt.Net.BCrypt.HashPassword(user.ConfirmPassword);
-            user.IdRole = "4";
+            Role Role = db.Role.FirstOrDefault(x=>x.StringRole == "Customer");
+
+            user.IdRole = Role.Id;
             db.User.Add(user);
             await db.SaveChangesAsync();
             if (Avatar != null)
@@ -78,12 +85,13 @@ namespace ProjectTeamVitAspDotNetCore.Controllers
         [ValidateAntiForgeryToken]
         public IActionResult Login(string email, string password)
         {
+
             var account = checkAccount(email, password);
             ClaimsIdentity identity = null;
             bool isAuthenticate = false;
             bool isAuthenticates = false;
 
-            var FullName = db.User.FirstOrDefault(x => x.Email == email);
+            var User = db.User.FirstOrDefault(x => x.Email == email);
 
             if (account == null)
             {
@@ -91,24 +99,23 @@ namespace ProjectTeamVitAspDotNetCore.Controllers
                 return View("Login");
             }
             else
-            {
-
-                HttpContext.Session.SetString("name", FullName.Fname);
+            {   
                 var Role = db.Role.FirstOrDefault(x => x.Id == account.IdRole);
+
                 identity = new ClaimsIdentity(new[]
                 {
-                    new Claim(ClaimTypes.Name,email),
+                    
+                    new Claim(ClaimTypes.Name,User.Email),   
                     new Claim(ClaimTypes.Role,Role.StringRole)
                 }, CookieAuthenticationDefaults.AuthenticationScheme);
                 if (Role.StringRole == "Admin" || Role.StringRole == "SuperAdmin")
                 {                   
                     isAuthenticates = true;
                     if (isAuthenticates)
-                    {
-                        
+                    {  
                         var principal = new ClaimsPrincipal(identity);
                         var login = HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, principal);
-                        return RedirectToAction("Index", "AdminManager");
+                        return RedirectToAction("Index", "Dashboard", User);
                     }
                 }
                 if (Role.StringRole == "Customer")
@@ -116,10 +123,9 @@ namespace ProjectTeamVitAspDotNetCore.Controllers
                     isAuthenticate = true;
                     if (isAuthenticate)
                     {
-                     
                         var principal = new ClaimsPrincipal(identity);
                         var login = HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, principal);
-                        return RedirectToAction("Index", "Product");
+                        return RedirectToAction("Index", "Product",User);
                     }
                 }
                 
@@ -127,20 +133,7 @@ namespace ProjectTeamVitAspDotNetCore.Controllers
             }
             
         }
-        private User checkAccount(string email, string password)
-        {
-            var account = db.User.SingleOrDefault(a => a.Email.Equals(email));
-
-
-            if (account != null)
-            {
-                if (BCrypt.Net.BCrypt.Verify(password, account.Password))
-                {
-                    return account;
-                }
-            }
-            return null;
-        }
+        
 
         public IActionResult Signout()
         {
@@ -157,7 +150,7 @@ namespace ProjectTeamVitAspDotNetCore.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> PasswordReset(string email)
         {
-            int numberRD = 50;
+            int numberRD = 25;
             string randomStr = "";
             try
             {
@@ -197,27 +190,283 @@ namespace ProjectTeamVitAspDotNetCore.Controllers
             return View("PasswordReset");
             
         }
-
-      
-        public IActionResult PasswordChange()
+        public IActionResult Profile()
         {
+            
+            var email = User.FindFirstValue(ClaimTypes.Name);
+
+            User user = db.User.FirstOrDefault(x => x.Email == email);
+            ViewBag.User = user;
             return View();
+        }
+        public async Task<IActionResult> ChangedInformation()
+        {
+            var email = User.FindFirstValue(ClaimTypes.Name);
+            if (email == null)
+            {
+                return NotFound();
+            }
+
+            var user = await db.User.FindAsync(email);
+            if (user == null)
+            {
+                return NotFound();
+            }
+            return View(user);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> ChangedInformation(string Email,string Fname,string Lname,string Address, string Bdate,string ZipCode,string Phone,string Gender,IFormFile Avatar)
+        {
+            Email = User.FindFirstValue(ClaimTypes.Name);
+            var user = db.User.FirstOrDefault(x => x.Email == Email);
+
+            
+            user.Fname = Fname;
+            user.Lname = Lname;
+            user.Bdate = Bdate;
+            user.Address = Address;
+            user.Phone = Phone;
+            user.Gender = Gender;
+            user.ZipCode = ZipCode;
+            if(Avatar != null)
+            {
+                var avatar = Path.GetFileName(Avatar.FileName);
+                user.Avatar = avatar;
+            }
+            if (ModelState.IsValid)
+            {
+                try
+                {
+                    db.Update(user);
+                    await db.SaveChangesAsync();
+                    if (Avatar != null)
+                    {
+                        var fileName = Path.GetFileName(Avatar.FileName);
+
+                        var filepath = new PhysicalFileProvider(Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "Images")).Root + $@"\{fileName}";
+
+                        using (FileStream fs = System.IO.File.Create(filepath))
+                        {
+                            Avatar.CopyTo(fs);
+                            fs.Flush();
+                        }
+                    }
+                }
+                catch (DbUpdateConcurrencyException)
+                {
+                    if (!userExists(user.Email))
+                    {
+                        return NotFound();
+                    }
+                    else
+                    {
+                        throw;
+                    }
+                }
+                return RedirectToAction(nameof(Profile));
+            }
+            return View(user);
+        }
+        private bool userExists(string email)
+        {
+            return db.User.Any(e => e.Email == email);
+        }
+
+        public IActionResult PasswordChange()
+        {  
+            return View();
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> PasswordChange(string currentpassword,string newpassword, string confirmnewpassword)
+        {
+            var email = User.FindFirstValue(ClaimTypes.Name);
+            if (currentpassword != newpassword && newpassword == confirmnewpassword)
+            {
+                var account = checkAccount(email, currentpassword);
+                if (account != null)
+                {
+                    account.Password = BCrypt.Net.BCrypt.HashPassword(newpassword);
+                    account.ConfirmPassword = account.Password;
+
+                    db.Update(account);
+                    await db.SaveChangesAsync();
+                    ViewBag.Mess = "Changed password success!";
+                    return Redirect("Profile");
+                }
+            }
+            else
+            {
+                ViewBag.Error = "Current password and new password are the same or new passwords do not overlap!";
+                return View("Profile");
+            }
+            return  View();
+        }
+
+        public async Task<IActionResult> ListOrder(string searchString, string sortOrder)
+        {
+            var email = User.FindFirstValue(ClaimTypes.Name);
+
+            List<Order> orders = db.Order.Where(x => x.Email == email).ToList();
+            ViewData["NameSortParm"] = String.IsNullOrEmpty(sortOrder) ? "name_desc" : "";
+            ViewData["DateSortParm"] = sortOrder == "Date" ? "date_desc" : "Date";
+            var orderss = from o in db.Order  where(o.Email==email) select o;
+
+            switch (sortOrder)
+            {
+                case "name_desc":
+                    orderss = orderss.OrderByDescending(s => s.Name);
+                    break;
+                case "Date":
+                    orderss = orderss.OrderBy(s => s.Id);
+                    break;
+                case "date_desc":
+                    orderss = orderss.OrderByDescending(s => s.CreateTime);
+                    break;
+                default:
+                    orderss = orderss.OrderBy(s => s.Phone);
+                    break;
+            }
+           
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                orderss = orderss.Where(s => s.Id.Contains(searchString) || s.Name.Contains(searchString) || s.Phone.Contains(searchString)); 
+            }
+          
+
+            List<Product> productsInUser = new List<Product>();
+
+            foreach (Order order in orders)
+            {
+                var orderId = order.Id;
+
+                List<OrderDetail> orderdetails = db.OrderDetail.Where(x=>x.OdId == orderId).ToList();
+              
+                List<Product> products = new List<Product>();
+                foreach (OrderDetail orderDetail in orderdetails.ToList())
+                {
+                    var productId = orderDetail.PdId;
+                    products.AddRange(db.Product.Where(x => x.PdId == productId).ToList());
+                }
+                productsInUser.AddRange(products);
+                            
+            }
+            ViewBag.products = productsInUser;
+            
+
+            return View(await orderss.AsNoTracking().ToListAsync());
+        }
+        public async Task<IActionResult> OrderDetails(string id)
+        {
+
+            List<Product> productsInUser = new List<Product>();
+
+            List<OrderDetail> orderDetails = new List<OrderDetail>();
+            List<OrderDetail> orderdetails = db.OrderDetail.Where(x => x.OdId == id).ToList();
+            List<Product> products = db.Product.Where(x => x.PdId == id).ToList();
+            decimal? Sum = 0;
+            foreach(OrderDetail orderDetail in orderdetails)
+            {
+                Product product = db.Product.FirstOrDefault(x => x.PdId == orderDetail.PdId);
+                Sum += orderDetail.TotalPrice;
+                products.Add(product);
+
+            }
+
+
+            ViewBag.total = Sum;
+            ViewBag.products = products;
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var Order = await db.Order.FirstOrDefaultAsync(m => m.Id == id);
+
+            if (Order == null)
+            {
+                return NotFound();
+            }
+
+            return View(Order);
+        }
+
+
+
+
+        public async Task<IActionResult> EditOrder(string id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var order = await db.Order.FindAsync(id);
+            if (order == null)
+            {
+                return NotFound();
+            }
+            return View(order);
         }
 
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> PasswordChange(string Email,string Password)
+        public async Task<IActionResult> EditOrder(string id, [Bind("Id,Name,CreateTime,Status,Email,,Address,Birthday,Phone,ZipCode,Gender")] Order order)
         {
-            var account = db.User.FirstOrDefault(x => x.Email == Email);
-            account.Password = BCrypt.Net.BCrypt.HashPassword(Password);
-            account.ConfirmPassword = account.Password;
+            
+            {
 
-            db.Update(account);
-            await db.SaveChangesAsync();
+            }
+            if (id != order.Id)
+            {
+                return NotFound();
+            }
 
-            return View("PasswordChange");
+            if (ModelState.IsValid)
+            {
+                try
+                {
+                    db.Update(order);
+                    await db.SaveChangesAsync();
+                }
+                catch (DbUpdateConcurrencyException)
+                {
+                    if (!OrderExits(order.Id))
+                    {
+                        return NotFound();
+                    }
+                    else
+                    {
+                        throw;
+                    }
+                }
+                return RedirectToAction(nameof(ListOrder));
+            }
+            return View(order);
         }
+        private bool OrderExits(string id)
+        {
+            return db.Order.Any(e => e.Id == id);
+        }
+
+        private User checkAccount(string email, string password)
+        {
+            var account = db.User.SingleOrDefault(a => a.Email.Equals(email));
+
+            if (account != null)
+            {
+                if (BCrypt.Net.BCrypt.Verify(password, account.Password))
+                {
+                    return account;
+                }
+            }
+            return null;
+        }
+
 
     }
 }

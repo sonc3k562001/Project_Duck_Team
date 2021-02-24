@@ -45,13 +45,10 @@
                 @Html.DisplayFor(modelItem => item.Eable)
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.Email">Edit</a> |
-                <form asp-controller="Permistion" asp-action="Details">
-                    <input type="hidden" value="@item.Email" name="email"/>
-                    <input type="submit" value="Details" >
-                </form>
-                <a asp-action="Details" name="email" asp- asp-route-id="@item.Email">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Email">Delete</a>
+                <a  asp-controller="Permistion" asp-action="Edit" asp-route-id="@item.Email">Edit</a> 
+                <a  asp-controller="Permistion" asp-action="Details" asp-route-id="@item.Email">| Details</a> 
+
+      
             </td>
         </tr>
         }

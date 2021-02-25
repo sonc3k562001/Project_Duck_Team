@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "/Uqg+6wPsHX2jJG+O98YUGikicaOZCN8+rfJ8yfBY4nGgxzKjOVkku6aA19Utz8Rh4HGGla3p+59uyqzdR6tjw==",
+  "dgSpecHash": "QjQUBQf4rcYX3qy5lI5teEFMGFaVvEDIRlz267N8ncHE5SNffGR8SwKHM/KljJmOgmHo/GSixN5M12/zMESAJw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\son10\\OneDrive\\Máy tính\\ProjectTeamVitAspDotNetCore\\ProjectTeamVitAspDotNetCore.csproj",
+  "projectFilePath": "C:\\Users\\son10\\OneDrive\\Tài liệu\\GitHub\\TeamVit\\Project_Duck_Team\\ProjectTeamVitAspDotNetCore\\ProjectTeamVitAspDotNetCore.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\son10\\.nuget\\packages\\bcrypt.net\\0.1.0\\bcrypt.net.0.1.0.nupkg.sha512",
     "C:\\Users\\son10\\.nuget\\packages\\entityframework\\6.0.0\\entityframework.6.0.0.nupkg.sha512",

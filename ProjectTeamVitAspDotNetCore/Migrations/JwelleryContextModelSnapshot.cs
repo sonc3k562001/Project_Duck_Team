@@ -281,24 +281,6 @@ namespace ProjectTeamVitAspDotNetCore.Migrations
                     b.ToTable("Order_Detail");
                 });
 
-            modelBuilder.Entity("ProjectTeamVitAspDotNetCore.Models.PostNew", b =>
-                {
-                    b.Property<DateTime>("CreateTime")
-                        .HasColumnName("Create_Time")
-                        .HasColumnType("date");
-
-                    b.Property<string>("Body")
-                        .HasColumnType("text");
-
-                    b.Property<string>("Title")
-                        .HasColumnType("nvarchar(250)")
-                        .HasMaxLength(250);
-
-                    b.HasKey("CreateTime");
-
-                    b.ToTable("POST_NEW");
-                });
-
             modelBuilder.Entity("ProjectTeamVitAspDotNetCore.Models.Product", b =>
                 {
                     b.Property<string>("PdId")

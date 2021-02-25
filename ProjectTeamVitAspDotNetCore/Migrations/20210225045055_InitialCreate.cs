@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace ProjectTeamVitAspDotNetCore.Migrations
 {
-    public partial class InitWebDB : Migration
+    public partial class InitialCreate : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -102,19 +102,6 @@ namespace ProjectTeamVitAspDotNetCore.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Metal", x => x.Metal_Id);
-                });
-
-            migrationBuilder.CreateTable(
-                name: "POST_NEW",
-                columns: table => new
-                {
-                    Create_Time = table.Column<DateTime>(type: "date", nullable: false),
-                    Title = table.Column<string>(maxLength: 250, nullable: true),
-                    Body = table.Column<string>(type: "text", nullable: true)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_POST_NEW", x => x.Create_Time);
                 });
 
             migrationBuilder.CreateTable(
@@ -350,9 +337,6 @@ namespace ProjectTeamVitAspDotNetCore.Migrations
 
             migrationBuilder.DropTable(
                 name: "Order_Detail");
-
-            migrationBuilder.DropTable(
-                name: "POST_NEW");
 
             migrationBuilder.DropTable(
                 name: "Order");

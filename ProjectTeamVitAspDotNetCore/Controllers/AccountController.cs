@@ -19,9 +19,9 @@ namespace ProjectTeamVitAspDotNetCore.Controllers
 {
     public class AccountController : Controller
     {
-        
-        
 
+
+        private JwelleryContext db = new JwelleryContext();
         private readonly IConfiguration configuration;
         private readonly IWebHostEnvironment webHostEnvironment;
        
@@ -31,7 +31,7 @@ namespace ProjectTeamVitAspDotNetCore.Controllers
             webHostEnvironment = _webHostEnvironment;
             
         }
-        private JwelleryContext db = new JwelleryContext();
+        
         public IActionResult Index()
         {
             return View();
@@ -57,14 +57,13 @@ namespace ProjectTeamVitAspDotNetCore.Controllers
             user.Password = BCrypt.Net.BCrypt.HashPassword(user.Password);
             user.ConfirmPassword = BCrypt.Net.BCrypt.HashPassword(user.ConfirmPassword);
             Role Role = db.Role.FirstOrDefault(x=>x.StringRole == "Customer");
-
+            var fileName = Path.GetFileName(Avatar.FileName);
+                user.Avatar = fileName;
             user.IdRole = Role.Id;
             db.User.Add(user);
             await db.SaveChangesAsync();
             if (Avatar != null)
             {
-                var fileName = Path.GetFileName(Avatar.FileName);
-
                 var filepath = new PhysicalFileProvider(Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "Images")).Root + $@"\{fileName}";
 
                 using (FileStream fs = System.IO.File.Create(filepath))
@@ -466,6 +465,7 @@ namespace ProjectTeamVitAspDotNetCore.Controllers
             }
             return null;
         }
+
 
 
     }

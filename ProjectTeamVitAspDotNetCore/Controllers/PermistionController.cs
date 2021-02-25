@@ -1,9 +1,12 @@
 ﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.FileProviders;
 using ProjectTeamVitAspDotNetCore.Models;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -48,13 +51,27 @@ namespace ProjectTeamVitAspDotNetCore.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Fname,Lname,Bdate,Address,Phone,Password,Confirm_Password,Zip_Code,Avatar,Gender,Email,Enable,Id_Role")] User user)
+        public async Task<IActionResult> Create([Bind("Fname,Lname,Bdate,Address,Phone,Password,ConfirmPassword,ZipCode,Avatar,Gender,Email,Enable,IdRole")] User user, IFormFile Avatar)
         {
+            user.Password = BCrypt.Net.BCrypt.HashPassword(user.Password);
+            user.ConfirmPassword = BCrypt.Net.BCrypt.HashPassword(user.ConfirmPassword);
             if (ModelState.IsValid)
             {
                 _context.Add(user);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
+            }
+            if (Avatar != null)
+            {
+                var fileName = Path.GetFileName(Avatar.FileName);
+
+                var filepath = new PhysicalFileProvider(Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "Images")).Root + $@"\{fileName}";
+
+                using (FileStream fs = System.IO.File.Create(filepath))
+                {
+                    Avatar.CopyTo(fs);
+                    fs.Flush();
+                }
             }
             return View(user);
         }
@@ -75,11 +92,12 @@ namespace ProjectTeamVitAspDotNetCore.Controllers
             ViewBag.user = user;
             return View(user);
         }
-
+        
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(string id, [Bind("Fname,Lname,Bdate,Address,Phone,Password,Confirm_Password,Zip_Code,Avatar,Gender,Email,Enable,Id_Role")] User user)
+        public async Task<IActionResult> Edit(string id, [Bind("Fname,Lname,Bdate,Address,Phone,Password,ConfirmPassword,ZipCode,Avatar,Gender,Email,Eable,IdRole")] User user)
         {
+            
             if (id != user.Email)
             {
                 return NotFound();

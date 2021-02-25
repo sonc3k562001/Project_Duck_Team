@@ -10,8 +10,8 @@ using ProjectTeamVitAspDotNetCore.Models;
 namespace ProjectTeamVitAspDotNetCore.Migrations
 {
     [DbContext(typeof(JwelleryContext))]
-    [Migration("20210224235510_InitWebDB")]
-    partial class InitWebDB
+    [Migration("20210225045055_InitialCreate")]
+    partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -281,24 +281,6 @@ namespace ProjectTeamVitAspDotNetCore.Migrations
                     b.HasIndex("PdId");
 
                     b.ToTable("Order_Detail");
-                });
-
-            modelBuilder.Entity("ProjectTeamVitAspDotNetCore.Models.PostNew", b =>
-                {
-                    b.Property<DateTime>("CreateTime")
-                        .HasColumnName("Create_Time")
-                        .HasColumnType("date");
-
-                    b.Property<string>("Body")
-                        .HasColumnType("text");
-
-                    b.Property<string>("Title")
-                        .HasColumnType("nvarchar(250)")
-                        .HasMaxLength(250);
-
-                    b.HasKey("CreateTime");
-
-                    b.ToTable("POST_NEW");
                 });
 
             modelBuilder.Entity("ProjectTeamVitAspDotNetCore.Models.Product", b =>

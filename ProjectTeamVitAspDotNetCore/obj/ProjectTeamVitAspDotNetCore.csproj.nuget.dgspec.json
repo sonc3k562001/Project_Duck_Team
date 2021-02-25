@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\son10\\OneDrive\\Máy tính\\ProjectTeamVitAspDotNetCore\\ProjectTeamVitAspDotNetCore.csproj": {}
+    "C:\\Users\\son10\\OneDrive\\Tài liệu\\GitHub\\TeamVit\\Project_Duck_Team\\ProjectTeamVitAspDotNetCore\\ProjectTeamVitAspDotNetCore.csproj": {}
   },
   "projects": {
-    "C:\\Users\\son10\\OneDrive\\Máy tính\\ProjectTeamVitAspDotNetCore\\ProjectTeamVitAspDotNetCore.csproj": {
+    "C:\\Users\\son10\\OneDrive\\Tài liệu\\GitHub\\TeamVit\\Project_Duck_Team\\ProjectTeamVitAspDotNetCore\\ProjectTeamVitAspDotNetCore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\son10\\OneDrive\\Máy tính\\ProjectTeamVitAspDotNetCore\\ProjectTeamVitAspDotNetCore.csproj",
+        "projectUniqueName": "C:\\Users\\son10\\OneDrive\\Tài liệu\\GitHub\\TeamVit\\Project_Duck_Team\\ProjectTeamVitAspDotNetCore\\ProjectTeamVitAspDotNetCore.csproj",
         "projectName": "ProjectTeamVitAspDotNetCore",
-        "projectPath": "C:\\Users\\son10\\OneDrive\\Máy tính\\ProjectTeamVitAspDotNetCore\\ProjectTeamVitAspDotNetCore.csproj",
+        "projectPath": "C:\\Users\\son10\\OneDrive\\Tài liệu\\GitHub\\TeamVit\\Project_Duck_Team\\ProjectTeamVitAspDotNetCore\\ProjectTeamVitAspDotNetCore.csproj",
         "packagesPath": "C:\\Users\\son10\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\son10\\OneDrive\\Máy tính\\ProjectTeamVitAspDotNetCore\\obj\\",
+        "outputPath": "C:\\Users\\son10\\OneDrive\\Tài liệu\\GitHub\\TeamVit\\Project_Duck_Team\\ProjectTeamVitAspDotNetCore\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",

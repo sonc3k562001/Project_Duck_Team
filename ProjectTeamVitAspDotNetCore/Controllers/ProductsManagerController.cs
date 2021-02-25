@@ -68,7 +68,7 @@ namespace ProjectTeamVitAspDotNetCore.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("PdId,Name,Price,Description,Image,ColorId,Size,BrandId,DimId,StoneId,IdCategory,MetalId")] Product product, IFormFile Image)
         {
-            product.Image = Image.FileName;
+            if (Image != null) { product.Image = Image.FileName; }
             if (ModelState.IsValid)
             {
                 _context.Add(product);

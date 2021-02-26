@@ -19,6 +19,7 @@ namespace ProjectTeamVitAspDotNetCore.Controllers
         }
         public IActionResult Index()
         {
+            
             var cart = SessionHelper.GetObjectFromJson<List<Item>>(HttpContext.Session, "cart");
             if (cart != null)
             {

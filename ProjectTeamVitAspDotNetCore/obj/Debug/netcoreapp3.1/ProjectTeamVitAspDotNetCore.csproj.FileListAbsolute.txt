@@ -814,9 +814,7 @@ C:\Users\son10\OneDrive\Tài liệu\GitHub\TeamVit\Project_Duck_Team\ProjectTe
 C:\Users\son10\OneDrive\Tài liệu\GitHub\TeamVit\Project_Duck_Team\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Stones\Index.cshtml.g.cs
 C:\Users\son10\OneDrive\Tài liệu\GitHub\TeamVit\Project_Duck_Team\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\View_pages\affiliates.cshtml.g.cs
 C:\Users\son10\OneDrive\Tài liệu\GitHub\TeamVit\Project_Duck_Team\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\View_pages\background.cshtml.g.cs
-C:\Users\son10\OneDrive\Tài liệu\GitHub\TeamVit\Project_Duck_Team\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\View_pages\bestsellers.cshtml.g.cs
 C:\Users\son10\OneDrive\Tài liệu\GitHub\TeamVit\Project_Duck_Team\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\View_pages\careers.cshtml.g.cs
-C:\Users\son10\OneDrive\Tài liệu\GitHub\TeamVit\Project_Duck_Team\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\View_pages\checkout.cshtml.g.cs
 C:\Users\son10\OneDrive\Tài liệu\GitHub\TeamVit\Project_Duck_Team\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\View_pages\contact.cshtml.g.cs
 C:\Users\son10\OneDrive\Tài liệu\GitHub\TeamVit\Project_Duck_Team\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\View_pages\delivery.cshtml.g.cs
 C:\Users\son10\OneDrive\Tài liệu\GitHub\TeamVit\Project_Duck_Team\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\View_pages\error.cshtml.g.cs
@@ -824,7 +822,6 @@ C:\Users\son10\OneDrive\Tài liệu\GitHub\TeamVit\Project_Duck_Team\ProjectTe
 C:\Users\son10\OneDrive\Tài liệu\GitHub\TeamVit\Project_Duck_Team\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\View_pages\faq.cshtml.g.cs
 C:\Users\son10\OneDrive\Tài liệu\GitHub\TeamVit\Project_Duck_Team\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\View_pages\home.cshtml.g.cs
 C:\Users\son10\OneDrive\Tài liệu\GitHub\TeamVit\Project_Duck_Team\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\View_pages\new_items.cshtml.g.cs
-C:\Users\son10\OneDrive\Tài liệu\GitHub\TeamVit\Project_Duck_Team\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\View_pages\order_summary.cshtml.g.cs
 C:\Users\son10\OneDrive\Tài liệu\GitHub\TeamVit\Project_Duck_Team\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\View_pages\policy.cshtml.g.cs
 C:\Users\son10\OneDrive\Tài liệu\GitHub\TeamVit\Project_Duck_Team\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\View_pages\refund.cshtml.g.cs
 C:\Users\son10\OneDrive\Tài liệu\GitHub\TeamVit\Project_Duck_Team\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\View_pages\reviews.cshtml.g.cs
@@ -847,3 +844,5 @@ C:\Users\son10\OneDrive\Tài liệu\GitHub\TeamVit\Project_Duck_Team\ProjectTe
 C:\Users\son10\OneDrive\Tài liệu\GitHub\TeamVit\Project_Duck_Team\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.dll
 C:\Users\son10\OneDrive\Tài liệu\GitHub\TeamVit\Project_Duck_Team\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
 C:\Users\son10\OneDrive\Tài liệu\GitHub\TeamVit\Project_Duck_Team\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\son10\OneDrive\Tài liệu\GitHub\TeamVit\Project_Duck_Team\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Cart\CartNull.cshtml.g.cs
+C:\Users\son10\OneDrive\Tài liệu\GitHub\TeamVit\Project_Duck_Team\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Product\Bestsellers.cshtml.g.cs

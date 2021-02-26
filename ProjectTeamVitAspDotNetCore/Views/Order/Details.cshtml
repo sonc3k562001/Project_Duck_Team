@@ -91,6 +91,8 @@
         <input type="hidden" asp-for="Phone" class="form-control" />
         <input type="hidden" asp-for="Email" class="form-control" />
         <input type="hidden" asp-for="Status" />
+
+        @ViewBag.msg
         <div class="form-group">
             @if (@ViewBag.status == true)
             {

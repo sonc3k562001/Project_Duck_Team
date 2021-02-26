@@ -13,7 +13,7 @@ namespace ProjectTeamVitAspDotNetCore.Models
         public string OdId { get; set; }
         public string PdId { get; set; }
         public string Size { get; set; }
-        public int? Quantity { get; set; }
+        public int Quantity { get; set; }
         public decimal? TotalPrice { get; set; }
 
         public virtual Order Od { get; set; }

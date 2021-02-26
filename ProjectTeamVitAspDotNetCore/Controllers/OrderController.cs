@@ -1,6 +1,8 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Configuration;
+using ProjectTeamVitAspDotNetCore.Helpers;
 using ProjectTeamVitAspDotNetCore.Models;
 using System;
 using System.Collections.Generic;
@@ -13,8 +15,12 @@ namespace ProjectTeamVitAspDotNetCore.Controllers
 {
     public class OrderController : Controller
     {
-
+        private readonly IConfiguration configuration;
         private JwelleryContext db = new JwelleryContext();
+        public OrderController(IConfiguration _configuration)
+        {
+            configuration = _configuration;
+        }
         [Authorize(Roles = "Admin,SuperAdmin")]
         public async Task<IActionResult> Index(string searchString)
         {
@@ -90,9 +96,20 @@ namespace ProjectTeamVitAspDotNetCore.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(string id, [Bind("Id,Name,CreateTime,Status,Email,,Address,Birthday,Phone,ZipCode,Gender")] Order order)
         {
+            var account = db.User.FirstOrDefault(x => x.Email == order.Email);
             if (order.Status == false || order.Status == null )
             {
                 order.Status = true;
+                var body = "Dear " + account.Fname + " " + account.Lname + "!<br/>Thank you for using our service and have a nice day!";
+                var mailHelper = new MailHelper(configuration);
+                if (mailHelper.Forgot(configuration["Gmail:Username"], account.Email, body))
+                {
+                    ViewBag.msg = "Sent Mail Successfully! Please check password in email";
+                }
+                else
+                {
+                    ViewBag.msg = "Failed";
+                }
             }
             else
             {

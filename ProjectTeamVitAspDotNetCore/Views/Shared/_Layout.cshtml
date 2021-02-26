@@ -19,36 +19,29 @@
                             @if (User.Identity.IsAuthenticated)
                             {
 
-                            <li class="nav-item">
-                                <a href="/Account/Profile">@User.Identity.Name</a>
-                            </li>
-                             }
+                <li class="nav-item">
+                    <a href="/Account/Profile">@User.Identity.Name</a>
+                </li> }
                             else
                             {
-                                <li class="nav-item">
-                    <a class="nav-link text-dark" asp-area="" asp-controller="Account" asp-action="Login">Login</a>
-</li>
                 <li class="nav-item">
-                    <a class="nav-link text-dark" asp-area="" asp-controller="Account" asp-action="Register">Sign up</a>
+                    <a class="nav-link text-dark" asp-area="" asp-controller="Account" asp-action="Login">Login</a>
                 </li>
-}
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="Account" asp-action="Register">Sign up</a>
+                                </li>}
                         </ul>
                     </div>
-                    @*<img src="https://www.astleyclarke.com/skin/frontend/default/default/globale/flags/vn.png">
-                    <div class="header_main-left--money">
-                        <span>(đ)</span>
-                        <span>VND</span>
-                    </div>*@
-                </div>
+                  
+                </div> 
 
                 <div class="header_main--middle text-center col-xs-4 col-md-4">
                     <img src="https://www.astleyclarke.com/skin/frontend/default/astleyclarke/images/logo/ac-2020.png">
                 </div>
 
                 <div class="header_main--right col-xs-4 col-md-4">
-                    <ul>
-                        <li><a href="/search"><i class="fas fa-search"></i></a></li>
-                        <li><a asp-controller="Cart" asp-action="Checkout" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fas fa-shopping-cart"></i></a></li>
+                    <ul><li><a href="/search"><i class="fas fa-search"></i></a></li>
+                        <li><a asp-controller="Cart" asp-action="Index" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fas fa-shopping-cart">@ViewBag.Count</i></a></li>
                     </ul>
                 </div>
 
@@ -56,21 +49,8 @@
 
             <nav class="header_nav sticky-top col-xs-12 col-md-12">
                 <ul class="text-center col-xs-12 col-md-12">
-                    <li><a href="/Product/Index">Home</a></li>
-                    <li>
-                        <!-- <a class="btn btn-secondary dropdown-toggle" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">New Arrivals
-                        </a>
-                        <app-dropdown aria-labelledby="dropdownMenuLink"></app-dropdown> -->
-                        <div class="dropdown">
-                            <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-                                New Arrivals
-                            </a>
-
-                            <app-dropdown class="dropdown-menu col-xs-12 col-md-12" aria-labelledby="dropdownMenuLink" data-popper-placement="bottom-end">
-                            </app-dropdown>
-                        </div>
-                    </li>
-                    <li><a asp-controller="View_pages" asp-action="bestsellers">BestSellers</a></li>
+                    <li><a asp-controller="Product" asp-action="Index">Home</a></li>
+                    <li><a asp-controller="Product" asp-action="Bestsellers">Bestsellers</a></li>
                     <li><a asp-controller="Product" asp-action="Lockets">Lockets</a></li>
                     <li><a asp-controller="Product" asp-action="Bracelets">Bracelets</a></li>
                     <li><a asp-controller="Product" asp-action="Earrings">Earrings</a></li>

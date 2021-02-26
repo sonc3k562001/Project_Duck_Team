@@ -28,11 +28,17 @@ namespace ProjectTeamVitAspDotNetCore.Controllers
         public IActionResult Index()
         {
             var cart = SessionHelper.GetObjectFromJson<List<Item>>(HttpContext.Session, "cart");
-            ViewBag.cart = cart;
-            ViewBag.Count = cart.Count;
-
-            ViewBag.total = cart.Sum(i => i.Product.Price * i.Quantity);
-            return View();
+            if(cart != null)
+            {
+                ViewBag.cart = cart;
+                ViewBag.Count = cart.Count;
+                ViewBag.total = cart.Sum(i => i.Product.Price * i.Quantity);
+                return View("Index");
+            }
+            else
+            {
+                return View("CartNull");
+            }
         }
 
 

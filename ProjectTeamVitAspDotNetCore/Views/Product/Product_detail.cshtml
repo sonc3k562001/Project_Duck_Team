@@ -1,5 +1,5 @@
 ﻿<environment>
-    <link rel="stylesheet" href="~/css/product-detail.css"/>
+    <link rel="stylesheet" href="~/css/product-detail.css" />
 </environment>
 <div class="product_detail container">
     <div class="row">
@@ -10,72 +10,47 @@
 
         <section class="product_detail-info col-xs-12 col-md-12">
             <div class="left col-xs-6 col-md-6">
-                <div class="list_img col-xs-4 col-md-4">
-                    <ul>
-                        <li>
-                            <img src="https://www.astleyclarke.com/media/catalog/product/cache/1/thumbnail/200x200/9df78eab33525d08d6e5fb8d27136e95/4/5/45044ynob_a/Astley-Clarke-Interstellar-Diamond-Bangle-Yellow-Gold-(Solid,-100-Recycled)-45044YNOB.jpg">
-                        </li>
-                        <li>
-                            <img src="https://www.astleyclarke.com/media/catalog/product/cache/1/thumbnail/200x200/9df78eab33525d08d6e5fb8d27136e95/4/5/45044ynob_ugc_99-2655/Astley-Clarke-Interstellar-Diamond-Bangle-Yellow-Gold-(Solid,-100-Recycled)-45044YNOB.jpg">
-                        </li>
-                        <li>
-                            <img src="https://www.astleyclarke.com/media/catalog/product/cache/1/thumbnail/200x200/9df78eab33525d08d6e5fb8d27136e95/a/c/ac_stellar_1820a_1_11/Astley-Clarke-Interstellar-Diamond-Bangle-Yellow-Gold-(Solid,-100-Recycled)-45044YNOB.jpg">
-                        </li>
-                        <li>
-                            <img src="https://www.astleyclarke.com/media/catalog/product/cache/1/thumbnail/200x200/9df78eab33525d08d6e5fb8d27136e95/a/c/ac-interstellar-still1765/Astley-Clarke-Interstellar-Diamond-Bangle-Yellow-Gold-(Solid,-100-Recycled)-45044YNOB.jpg">
-                        </li>
-                    </ul>
-                </div>
                 <div class="detail_img col-xs-8 col-md-8">
-                    <img src="https://www.astleyclarke.com/media/catalog/product/cache/1/image/420x420/9df78eab33525d08d6e5fb8d27136e95/4/5/45044ynob_a/Astley-Clarke-Interstellar-Diamond-Bangle-Yellow-Gold-(Solid,-100-Recycled)-45044YNOB.jpg">
+                    <img src="~/Images/@ViewBag.product.Image">
                 </div>
             </div>
             <div class="right col-xs-6 col-md-6">
                 <div class="name col-xs-12 col-md-12">
                     <h3>
-                        Name: Interstellar Diamond Bangle
+                        Name:  @ViewBag.product.Name
                     </h3>
                     <h4>
-                        Price: ₫63,743,102
+                        Price:  @ViewBag.product.Price
                     </h4>
-                    <h5>
-                        Code: 45044YNOB
-                    </h5>
+                    <h4>
+                        Code:  @ViewBag.product.PdId
+                    </h4>
+                    <h4>
+                        Category:  @ViewBag.category.TypeName
+                    </h4>
+                    <h4>
+                        Diamond:  @ViewBag.dim.Name
+                    </h4>
+                    <h4>
+                        Stone:  @ViewBag.stone.Name
+                    </h4>
+                    <h4>
+                        Color:  @ViewBag.color.Name
+                    </h4>
+                    <h4>
+                        Brand:  @ViewBag.brand.BrandName
+                    </h4>
 
                 </div>
                 <div class="description col-xs-12 col-md-12">
-                    <p>
-                        The first diamond bangle to be featured in a fine collection, this Interstellar bangle features an impactful
-                        surface made up of clusters of brilliant cut diamonds, set into an elegant line of solid 14ct gold. Designed
-                        to sit comfortably on the wrist, the bangle features a double security clasp. This luxurious bracelet is
-                        made for stacking in with different designs for a unique statement, or can be worn alone for relaxed
-                        opulence.
-                    </p>
-                    <ul>
-                        <li>First of its kind diamond bangle</li>
-                        <li>Features a surface made of clusters of brilliant cut diamonds</li>
-                        <li>Set in solid 14 carat gold</li>
-                        <li>Double security clasp for optimum safety</li>
-                        <li>Produced using 100% recycled gold</li>
-                        <li>All of our diamonds are natural and ethically sourced</li>
-                    </ul>
+                    @ViewData["Descirption"]
                 </div>
-                <div class="colors col-xs-12 col-md-12">
-                    <ul>
-                        <li><img src="https://www.astleyclarke.com/uk/jewellery/bracelets/interstellar-diamond-bangle"></li>
-                    </ul>
-                </div>
-                
-                <div class="action d-flex flex-column justify-content-center align-items-center col-xs-12 col-md-12">
-                    <button class="btn add_button col-xs-12 col-md-12" type="button">
 
-                        <td>
-                            <a asp-controller="cart" asp-action="buy" asp-route-id="@ViewBag.product.PdId">Buy Now</a>
-                        </td>
-                    </button>
-                    <button class="btn hint_button col-xs-12 col-md-12" type="button">
-                        DROP A HINT
-                    </button>
+
+                <div class="action d-flex flex-column justify-content-center align-items-center col-xs-12 col-md-12">
+
+                    <a class="btn add_button col-xs-12 col-md-12" asp-controller="cart" asp-action="buy" asp-route-id="@ViewBag.product.PdId">Buy Now</a>
+
                 </div>
             </div>
         </section>
@@ -155,154 +130,21 @@
                     <h3 class="title text-center">
                         YOU MAY ALSO LIKE
                     </h3>
+                    @foreach (Product product in ViewBag.productWithCategory)
+                    {
 
-                    <div class="d-flex align-items-center justify-content-center">
-                        <a [routerLink]="['/accessories/bracelet']" class="col-xs-4 col-md-4">
-                            <div class="text-center">
-                                <img src="https://www.astleyclarke.com/media/catalog/product/4/1/41006ywtb-a.jpg"
-                                     class="one-edge-shadow">
-                                <h3 class="text-center">
-                                    Mother of Pearl Floris Kula Bracelet
-                                </h3>
-                            </div>
-                        </a>
-                        <a [routerLink]="['/accessories/rings']" class="col-xs-4 col-md-4">
-                            <div class="text-center">
-                                <img src="https://www.astleyclarke.com/media/catalog/product/4/4/44036snon-a.jpg"
-                                     class="one-edge-shadow">
-                                <h3 class="text-center">
-                                    Biography Cosmos Locket Necklace
-                                </h3>
-                            </div>
-                        </a>
-                        <a [routerLink]="['/accessories/earrings']" class="col-xs-4 col-md-4">
-                            <div class="text-center">
-                                <img src="https://www.astleyclarke.com/media/catalog/product/3/9/39078snob_a_spiga.jpg"
-                                     class="one-edge-shadow">
-                                <h3>
-                                    Cylinder Kula Biography Bracelet
-                                </h3>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="public col-xs-12 col-md-12">
-                    <h3 class="title text-center">
-                        #AstleyClarke
-                    </h3>
-
-                    <h2 class="text-center">
-                        BE THE INSPIRATION – SHOW US HOW YOU WEAR YOURS
-                    </h2>
-
-                    <div class="d-flex align-items-center justify-content-center">
-                        <a [routerLink]="['/accessories/bracelet']" class="col-xs-4 col-md-4">
-                            <div class="text-center">
-                                <img src="https://www.astleyclarke.com/media/cms/home/2021-01-08/top-promo-bracelets-d.jpg"
-                                     class="one-edge-shadow">
-                                <h3 class="text-center">
-                                    Mother of Pearl Floris Kula Bracelet
-                                </h3>
-                            </div>
-                        </a>
-                        <a [routerLink]="['/accessories/rings']" class="col-xs-4 col-md-4">
-                            <div class="text-center">
-                                <img src="https://www.astleyclarke.com/media/cms/home/2021-01-08/top-promo-rings-d.jpg"
-                                     class="one-edge-shadow">
-                                <h3 class="text-center">
-                                    Biography Cosmos Locket Necklace
-                                </h3>
-                            </div>
-                        </a>
-                        <a [routerLink]="['/accessories/earrings']" class="col-xs-4 col-md-4">
-                            <div class="text-center">
-                                <img src="https://www.astleyclarke.com/media/cms/home/2021-01-08/top-promo-earrings-d.jpg"
-                                     class="one-edge-shadow">
-                                <h3>
-                                    Cylinder Kula Biography Bracelet
-                                </h3>
-                            </div>
-                        </a>
-                    </div>
+        <a asp-controller="Product" asp-action="Product_detail" asp-route-id="@product.PdId" class="col-xs-4 col-md-4">
+            <div class="text-center">
+                <img src="~/Images/@product.Image"
+                     class="one-edge-shadow">
+                <h3 class="text-center">
+                    @product.Name
+                </h3>
+            </div>
+        </a>}
                 </div>
             </div>
         </section>
 
-        <section class="product_detail-review col-xs-12 col-md-12">
-            <h3 class="review-title col-xs-12 col-md-12 text-center">REVIEWS</h3>
-            <div class="customer col-xs-12 col-md-12">
-                <div class="info col-xs-12 col-md-12">
-                    <div class="left col-xs-6 col-md-6">
-                        <h3>Emma Y.</h3>
-                        <h4>(United Kingdom - 03/01/2021)</h4>
-                        <span>
-                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                        </span>
-                    </div>
-                    <div class="right col-xs-6 col-md-6">
-                        <ul>
-                            <li>Metal: product's metal |</li>
-                            <li>Gemstone: product's gemstone |</li>
-                            <li style="color: green; font-weight: bold;">Verified purchase</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="comment col-xs-12 col-md-12">
-                    <p>
-                        Gorgeous bracelet. I bought this as the opal version had been on my wish list for a while, but sold out.
-                        The bracelet is dainty, very beautiful and extremely good quality.
-                    </p>
-                </div>
-            </div>
-            <div class="customer col-xs-12 col-md-12">
-                <div class="info col-xs-12 col-md-12">
-                    <div class="left col-xs-6 col-md-6">
-                        <h3>Emma Y.</h3>
-                        <h4>(United Kingdom - 03/01/2021)</h4>
-                        <span>
-                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                        </span>
-                    </div>
-                    <div class="right col-xs-6 col-md-6">
-                        <ul>
-                            <li>Metal: product's metal |</li>
-                            <li>Gemstone: product's gemstone |</li>
-                            <li style="color: green; font-weight: bold;">Verified purchase</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="comment col-xs-12 col-md-12">
-                    <p>
-                        Gorgeous bracelet. I bought this as the opal version had been on my wish list for a while, but sold out.
-                        The bracelet is dainty, very beautiful and extremely good quality.
-                    </p>
-                </div>
-            </div>
-            <div class="customer col-xs-12 col-md-12">
-                <div class="info col-xs-12 col-md-12">
-                    <div class="left col-xs-6 col-md-6">
-                        <h3>Emma Y.</h3>
-                        <h4>(United Kingdom - 03/01/2021)</h4>
-                        <span>
-                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                        </span>
-                    </div>
-                    <div class="right col-xs-6 col-md-6">
-                        <ul>
-                            <li>Metal: product's metal |</li>
-                            <li>Gemstone: product's gemstone |</li>
-                            <li style="color: green; font-weight: bold;">Verified purchase</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="comment col-xs-12 col-md-12">
-                    <p>
-                        Gorgeous bracelet. I bought this as the opal version had been on my wish list for a while, but sold out.
-                        The bracelet is dainty, very beautiful and extremely good quality.
-                    </p>
-                </div>
-            </div>
-        </section>
     </div>
 </div>

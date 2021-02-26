@@ -191,7 +191,13 @@ namespace ProjectTeamVitAspDotNetCore.Controllers
         }
         public IActionResult Profile()
         {
-            
+            var cart = SessionHelper.GetObjectFromJson<List<Item>>(HttpContext.Session, "cart");
+            if (cart != null)
+            {
+                ViewBag.cart = cart;
+                ViewBag.Count = cart.Count;
+            }
+
             var email = User.FindFirstValue(ClaimTypes.Name);
 
             User user = db.User.FirstOrDefault(x => x.Email == email);

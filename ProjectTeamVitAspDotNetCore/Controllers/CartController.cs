@@ -43,12 +43,12 @@ namespace ProjectTeamVitAspDotNetCore.Controllers
 
 
         [Route("buy/{id}")]
-        public IActionResult Buy(string id)
+        public IActionResult Buy(string id,string size)
         {
             if (SessionHelper.GetObjectFromJson<List<Item>>(HttpContext.Session, "cart") == null)
             {
                 var cart = new List<Item>();
-                cart.Add(new Item() { Product = db.Product.Find(id), Quantity = 1 });
+                cart.Add(new Item() { Product = db.Product.Find(id), Quantity = 1,Size = size});
                 SessionHelper.SetObjectAsJson(HttpContext.Session, "cart", cart);
             }
             else
@@ -57,7 +57,7 @@ namespace ProjectTeamVitAspDotNetCore.Controllers
                 int index = Exists(cart, id);
                 if (index == -1)
                 {
-                    cart.Add(new Item() { Product = db.Product.Find(id), Quantity = 1 });
+                    cart.Add(new Item() { Product = db.Product.Find(id), Quantity = 1 ,Size = size});
                 }
                 else
                 {
@@ -137,6 +137,7 @@ namespace ProjectTeamVitAspDotNetCore.Controllers
                 orderDetail.PdId = i.Product.PdId;
                 orderDetail.Quantity = i.Quantity;
                 orderDetail.TotalPrice = i.Quantity * i.Product.Price;
+                orderDetail.Size = i.Size;
                 db.Add(orderDetail);
                 db.SaveChanges();
             }
@@ -193,6 +194,7 @@ namespace ProjectTeamVitAspDotNetCore.Controllers
                 orderDetail.PdId = i.Product.PdId;
                 orderDetail.Quantity = i.Quantity;
                 orderDetail.TotalPrice = i.Quantity * i.Product.Price;
+                orderDetail.Size = i.Size;
                 db.Add(orderDetail);
                 db.SaveChanges();
             }

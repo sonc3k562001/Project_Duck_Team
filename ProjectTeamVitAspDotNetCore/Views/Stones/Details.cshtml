@@ -1,0 +1,74 @@
+﻿@model ProjectTeamVitAspDotNetCore.Models.Stone
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h4 style="padding-left:20px;padding-bottom:20px"> Product Details</h4>
+
+<div class="container bg-white">
+    <hr />
+    <div class="mt-4" style="margin-left:60px">
+        <dl class="row">
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Name)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Name)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Description)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Description)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Price)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Price)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.StoneGm)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.StoneGm)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.StoneCrt)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.StoneCrt)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.StoneRate)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.StoneRate)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.StoneAmt)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.StoneAmt)
+            </dd>
+        </dl>
+    </div>
+
+    <div class="col-lg-12">
+        <div class="row pb-3">
+            <div class="col-lg-6">
+                <button type="button" class="btn btn-success float-right">
+                    <a asp-action="Edit" asp-route-id="@Model.StoneId" style="color:white">Edit</a>
+                </button>
+            </div>
+            <div class="col-lg-6">
+                <button type="button" class="btn btn-danger">
+                    <a asp-action="Index" style="color:white">Back to List</a>
+                </button>
+            </div>
+        </div>
+    </div>
+
+</div>

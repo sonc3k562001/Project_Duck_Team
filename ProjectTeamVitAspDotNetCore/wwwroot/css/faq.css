@@ -1,0 +1,56 @@
+﻿.faq h2 {
+    color: white;
+    text-transform: uppercase;
+    padding-top: 20px;
+}
+
+.faq h3 {
+    color: white;
+    padding: 8px;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 20px 0;
+    text-transform: uppercase;
+}
+
+.faq h4 {
+    font-size: 14px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.faq span {
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+.faq .accordion-button {
+    color: black;
+    background: white;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.faq .accordion-body {
+    font-size: 14px;
+    color: black;
+}
+
+.faq .link {
+    text-decoration: none;
+    color: blue;
+}
+
+.faq .faq {
+    text-justify: distribute-all-lines;
+}
+
+.faq .faq_banner {
+    background-image: url("https://www.astleyclarke.com/skin/frontend/default/astleyclarke/images/cms-page-banners/blue-nov-2020.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80px;
+    margin-bottom: 45px;
+}

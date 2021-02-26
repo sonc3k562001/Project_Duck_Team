@@ -1,0 +1,67 @@
+﻿@model IEnumerable<ProjectTeamVitAspDotNetCore.Models.Color>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h4 style="padding-left:20px;padding-bottom:20px">Color Management </h4>
+
+<div class="container bg-white">
+    <div class="col-lg-12 pt-3">
+        <div class="row">
+            <div class="col-lg-8">
+                <form asp-controller="Order" asp-action="index">
+                    <div>
+                        <h6>Search for an order :</h6>
+                    </div>
+                    <div>
+                        <input type="text" name="searchString" style="height:33px;width:400px" />
+                        <input type="submit" value="Search" style="height:33px" />
+                    </div>
+
+                    @*<a asp-controller="Order" asp-action="index">All</a>*@
+                </form>
+            </div>
+            <div class="col-lg-4">
+                <button type="button" class="btn btn-success" style="margin-left:225px;margin-top:22px;">
+                    <a asp-action="Create" style="color:white">Create New</a>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="pt-3 pb-3">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>
+                        @Html.DisplayNameFor(model => model.ColorId)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Name)
+                    </th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ColorId)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Name)
+                    </td>
+                    <td>
+                        <a asp-action="Edit" asp-route-id="@item.ColorId">Edit</a> |
+                        <a asp-action="Details" asp-route-id="@item.ColorId">Details</a> |
+                        <a asp-action="Delete" asp-route-id="@item.ColorId">Delete</a>
+                    </td>
+                </tr>}
+            </tbody>
+        </table>
+
+    </div>
+</div>

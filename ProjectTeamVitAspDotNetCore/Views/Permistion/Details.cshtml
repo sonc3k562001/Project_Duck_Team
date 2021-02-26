@@ -1,0 +1,92 @@
+﻿@model ProjectTeamVitAspDotNetCore.Models.User
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h4 style="padding-left:20px"> Account management</h4>
+
+<div class="container bg-white">
+    <hr />
+    <div class="mt-4" style="margin-left:60px">
+        <dl class="row">
+            <dt class="col-sm-2">
+                First Name :
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Fname)
+            </dd>
+            <dt class="col-sm-2">
+                Last Name :
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Lname)
+            </dd>
+            <dt class="col-sm-2">
+                Birthday :
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Bdate)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Address) :
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Address)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Phone) :
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Phone)
+            </dd>
+            <dt class="col-sm-2">
+                Zip Code :
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.ZipCode)
+            </dd>
+            <dt class="col-sm-2">
+                Avatar :
+            </dt>
+            <dd class="col-sm-10">
+                <img src="~/Images/@Html.DisplayFor(model => model.Avatar)" width="50" height="50" />
+            </dd>
+            <dt class="col-sm-2">
+                Gender :
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Gender)
+            </dd>
+            <dt class="col-sm-2">
+                Enable :
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Eable)
+            </dd>
+            <dt class="col-sm-2">
+                Permistion :
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.IdRole)
+            </dd>
+        </dl>
+    </div>
+    <div class="col-lg-12">
+        <div class="row pb-3">
+            <div class="col-lg-6">
+                <button type="button" class="btn btn-success float-right">
+                    <a asp-action="Edit" asp-route-id="@Model.Email" style="color:white">Edit</a>
+                </button>
+            </div>
+            <div class="col-lg-6">
+                <button type="button" class="btn btn-danger">
+                    <a asp-action="Index" style="color:white">Back to List</a>
+                </button>
+            </div>
+        </div>
+    </div>
+    
+</div>
+

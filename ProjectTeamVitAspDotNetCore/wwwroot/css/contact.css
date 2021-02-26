@@ -1,0 +1,62 @@
+﻿.contact h2 {
+    color: white;
+    text-transform: uppercase;
+    padding-top: 20px;
+}
+
+.contact h3 {
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 20px 0;
+    font-weight: bold;
+}
+
+.contact h4 {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+    .contact h4 i {
+        margin-right: 10px;
+        font-size: 20px;
+    }
+
+    .contact h4 strong {
+        font-weight: bold;
+        color: blue;
+    }
+
+.contact h5 {
+    font-weight: normal;
+    font-size: 14px;
+}
+
+.contact .contact_banner {
+    background-image: url("https://www.astleyclarke.com/skin/frontend/default/astleyclarke/images/cms-page-banners/blue-nov-2020.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80px;
+    margin-bottom: 45px;
+}
+
+.contact th {
+    width: 50%;
+}
+
+.contact .contact_enquiry h3 {
+    margin-bottom: 10px;
+}
+
+.contact .contact_enquiry span {
+    margin-bottom: 15px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+    .contact .contact_enquiry span strong {
+        font-weight: bold;
+        color: blue;
+    }

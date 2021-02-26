@@ -1,0 +1,66 @@
+﻿@model IEnumerable<ProjectTeamVitAspDotNetCore.Models.User>
+
+@{
+    ViewData["Title"] = "Permision";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h4 style="padding-left:20px">Account management</h4>
+
+
+<div class="container bg-white">
+    <div>
+        <button type="button" class="btn btn-success float-right mt-3 mr-3">
+            <a asp-action="Create" class="text-white">Create New</a>
+        </button>
+    </div>
+    
+    <div class="mt-4">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>
+                        Full Name:
+                    </th>
+                    <th>
+                        Email:
+                    </th>
+                    <th>
+                        Role:
+                    </th>
+                    <th>
+                        Eable:
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Fname)
+                @Html.DisplayFor(modelItem => item.Lname)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Email)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdRole)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Eable)
+            </td>
+            <td>
+                <a asp-controller="Permistion" asp-action="Edit" asp-route-id="@item.Email">Edit</a>
+                <a asp-controller="Permistion" asp-action="Details" asp-route-id="@item.Email">| Details</a>
+
+
+            </td>
+        </tr>
+}
+            </tbody>
+        </table>
+    </div>
+    
+</div>
+

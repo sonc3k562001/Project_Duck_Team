@@ -1,0 +1,81 @@
+﻿@model ProjectTeamVitAspDotNetCore.Models.Dim
+
+@{
+    ViewData["Title"] = "Delete";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h3>Are you sure you want to delete this?</h3>
+
+<div class="container bg-white">
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.DimCrt)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.DimCrt)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.DimPcs)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.DimPcs)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.DimGm)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.DimGm)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.DimRate)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.DimRate)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.DimAmt)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.DimAmt)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Certify)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Certify)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.DimSize)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.DimSize)
+        </dd>
+    </dl>
+
+    <div class="col-lg-12">
+        <form asp-action="Delete">
+            <input type="hidden" asp-for="DimId" />
+            <div class="row pb-4">
+                <div class="col-lg-6">
+                    <div class="form-group">
+                        <input type="submit" value="Delete" class="btn btn-danger float-right" />
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <button type="button" class="btn btn-danger">
+                        <a asp-action="Index" class="text-white">Back to List</a>
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+</div>

@@ -1,0 +1,154 @@
+﻿
+.products_banner {
+    background-image: url("https://www.astleyclarke.com/media/landing-pages/category-banners/resized/wide/nov-2020-bracelets.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-width: 100%;
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    color: white;
+}
+
+    .products_banner h3 {
+        margin-top: 20px;
+    }
+
+    .products_banner ul {
+        list-style: none;
+        text-align: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        width: 40%;
+    }
+
+    .products_banner li {
+        display: -webkit-inline-box;
+        display: -ms-inline-flexbox;
+        display: inline-flex;
+        margin-right: 10px;
+        font-size: 20px;
+    }
+
+        .products_banner li a {
+            font-size: 18px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+            .products_banner li a:hover {
+                border-bottom: solid 1px white;
+            }
+
+.products_filter {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    padding: 20px;
+    border-bottom: solid 1px black;
+}
+
+    .products_filter ul {
+        text-align: start;
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
+        justify-content: start;
+    }
+
+    .products_filter li {
+        display: -webkit-inline-box;
+        display: -ms-inline-flexbox;
+        display: inline-flex;
+        margin-right: 20px;
+        font-size: 20px;
+    }
+
+    .products_filter .products_filter-right {
+        font-size: 16px;
+    }
+
+.products_filter-show .product {
+    margin-top: 40px;
+}
+
+    .products_filter-show .product a {
+        text-decoration: none;
+        color: black;
+    }
+
+        .products_filter-show .product a:hover h3 {
+            color: blue;
+        }
+
+        .products_filter-show .product a:hover span {
+            color: green;
+        }
+
+        .products_filter-show .product a img {
+            width: 100%;
+            height: 100%;
+            max-width: 100%;
+            min-width: 30%;
+            max-height: 100%;
+            min-height: 30%;
+            border-radius: 10px;
+        }
+
+            .products_filter-show .product a img:hover {
+                -webkit-box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 0.5px 10px rgba(0, 0, 0, 0.06), 0 0px 8.9px rgba(0, 0, 0, 0.072), 0 1.8px 1.4px rgba(0, 0, 0, 0.086), 0 5px 0px rgba(0, 0, 0, 0.12);
+                box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 0.5px 10px rgba(0, 0, 0, 0.06), 0 0px 8.9px rgba(0, 0, 0, 0.072), 0 1.8px 1.4px rgba(0, 0, 0, 0.086), 0 5px 0px rgba(0, 0, 0, 0.12);
+                -webkit-transition: 0.15s ease-in-out;
+                transition: 0.15s ease-in-out;
+            }
+
+        .products_filter-show .product a h3 {
+            margin: 20px 0;
+            font-size: 18px;
+            line-height: 1.5;
+            font-weight: bold;
+            font-style: italic;
+        }
+
+        .products_filter-show .product a span {
+            font-size: 16px;
+            line-height: 1.5;
+            font-weight: bold;
+        }
+
+.product_notfound {
+    padding: 16px;
+    border: solid 1.5px black;
+}
+
+    .product_notfound h3 {
+        font-size: 24px;
+        font-style: italic;
+        font-weight: bold;
+    }
+
+    .product_notfound button {
+        border: solid 1px black;
+        border-radius: 10px;
+        color: black;
+        font-size: 18px;
+        line-height: 1.5;
+        padding: 10px;
+        margin: 20px 0;
+        -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    }
+
+        .product_notfound button:hover {
+            background: black;
+            color: white;
+        }
+
+.one-edge-shadow {
+    -webkit-box-shadow: 0 8px 6px -6px black;
+    box-shadow: 0 8px 6px -6px black;
+}
+/*# sourceMappingURL=products.component.css.map */

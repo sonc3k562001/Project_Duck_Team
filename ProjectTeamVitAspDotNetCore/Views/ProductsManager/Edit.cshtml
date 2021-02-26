@@ -1,0 +1,99 @@
+﻿@model ProjectTeamVitAspDotNetCore.Models.Product
+
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h4 style="padding-left:20px;padding-bottom:20px">Edit product</h4>
+<hr />
+
+<div class="container bg-white pt-3">
+    <div class="col-lg-12">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="PdId" />
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="form-group">
+                        <label asp-for="Name" class="control-label"></label>
+                        <input asp-for="Name" class="form-control" />
+                        <span asp-validation-for="Name" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Price" class="control-label"></label>
+                        <input asp-for="Price" class="form-control" />
+                        <span asp-validation-for="Price" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Description" class="control-label"></label>
+                        <input asp-for="Description" class="form-control" />
+                        <span asp-validation-for="Description" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Image" class="control-label"></label>
+                        <input asp-for="Image" class="form-control" />
+                        <span asp-validation-for="Image" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label asp-for="ColorId" class="control-label"></label>
+                        <select asp-for="ColorId" class="form-control" asp-items="ViewBag.ColorId"></select>
+                        <span asp-validation-for="ColorId" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Size" class="control-label"></label>
+                        <input asp-for="Size" class="form-control" />
+                        <span asp-validation-for="Size" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="form-group">
+                        <label asp-for="BrandId" class="control-label"></label>
+                        <select asp-for="BrandId" class="form-control" asp-items="ViewBag.BrandId"></select>
+                        <span asp-validation-for="BrandId" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="DimId" class="control-label"></label>
+                        <select asp-for="DimId" class="form-control" asp-items="ViewBag.DimId"></select>
+                        <span asp-validation-for="DimId" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="StoneId" class="control-label"></label>
+                        <select asp-for="StoneId" class="form-control" asp-items="ViewBag.StoneId"></select>
+                        <span asp-validation-for="StoneId" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="IdCategory" class="control-label"></label>
+                        <select asp-for="IdCategory" class="form-control" asp-items="ViewBag.IdCategory"></select>
+                        <span asp-validation-for="IdCategory" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="MetalId" class="control-label"></label>
+                        <select asp-for="MetalId" class="form-control" asp-items="ViewBag.MetalId"></select>
+                        <span asp-validation-for="MetalId" class="text-danger"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row pb-5 pt-4">
+                <div class="col-lg-6">
+                    <div class="form-group">
+                        <input type="submit" value="Save" class="btn btn-success float-right" />
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <button type="button" class="btn btn-danger">
+                        <a asp-action="Index" class="text-white">Back to List</a>
+                    </button>
+                </div>
+            </div>
+
+        </form>
+    </div>
+</div>
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

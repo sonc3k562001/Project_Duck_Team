@@ -12,12 +12,12 @@
 
 
 <section class="col-xs-12 col-md-12">
-    <form asp-controller="Product" asp-action="Lockets">
+    <form asp-controller="Product" asp-action="Rings">
         <input type="text" name="searchString" />
         <input type="submit" value="Search" />
-        <a asp-controller="Product" asp-action="Lockets">All</a>
+        <a asp-controller="Product" asp-action="Rings">All</a>
     </form>
-    <form asp-controller="Product" asp-action="Lockets">
+    <form asp-controller="Product" asp-action="Rings">
         <select name="color">
             <option value="null">Color</option>
             @foreach (Color color in ViewBag.colors)
@@ -82,7 +82,7 @@
                     @Html.DisplayFor(modelItem => item.Name)
                 </h3>
                 <span>
-                    @Html.DisplayFor(modelItem => item.Price)
+                    $@Html.DisplayFor(modelItem => item.Price)
                 </span>
             </div>
         </a>

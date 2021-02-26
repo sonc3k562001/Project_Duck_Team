@@ -54,11 +54,11 @@ namespace ProjectTeamVitAspDotNetCore.Controllers
 
             if (searchString != null)
             {
-                products = products.Where(x => x.Name == searchString || x.PdId == searchString || x.StoneId == searchString || x.DimId == searchString || x.BrandId == searchString || x.ColorId == searchString).ToList();
+                products = products.Where(x => x.Name.Contains(searchString) || x.PdId.Contains(searchString) || x.StoneId.Contains(searchString) || x.DimId.Contains(searchString) || x.BrandId.Contains(searchString) || x.ColorId.Contains(searchString)).ToList();
             }
             if (color != null || stone != null || dim != null || metal != null || brand != null)
             {
-                products = products.Where(x => x.ColorId == color || x.BrandId == brand || x.DimId == dim || x.StoneId == stone || x.MetalId == metal).ToList();
+                products = products.Where(x => x.ColorId == color || x.BrandId== brand || x.DimId==dim || x.StoneId== stone || x.MetalId== metal).ToList();
             }
             if (products.Count == 0)
             {
@@ -92,7 +92,7 @@ namespace ProjectTeamVitAspDotNetCore.Controllers
 
             if (searchString != null)
             {
-                products = products.Where(x => x.Name ==searchString || x.PdId == searchString || x.StoneId == searchString|| x.DimId == searchString|| x.BrandId == searchString|| x.ColorId == searchString).ToList();
+                products = products.Where(x => x.Name.Contains(searchString) || x.PdId.Contains(searchString) || x.StoneId.Contains(searchString) || x.DimId.Contains(searchString) || x.BrandId.Contains(searchString) || x.ColorId.Contains(searchString)).ToList();
             }
             if(color != null ||stone != null || dim != null || metal != null || brand != null)
             {
@@ -130,7 +130,7 @@ namespace ProjectTeamVitAspDotNetCore.Controllers
 
             if (searchString != null)
             {
-                products = products.Where(x => x.Name == searchString || x.PdId == searchString || x.StoneId == searchString || x.DimId == searchString || x.BrandId == searchString || x.ColorId == searchString).ToList();
+                products = products.Where(x => x.Name.Contains(searchString) || x.PdId.Contains(searchString) || x.StoneId.Contains(searchString) || x.DimId.Contains(searchString) || x.BrandId.Contains(searchString) || x.ColorId.Contains(searchString)).ToList();
             }
             if (color != null || stone != null || dim != null || metal != null || brand != null)
             {
@@ -166,7 +166,7 @@ namespace ProjectTeamVitAspDotNetCore.Controllers
 
             if (searchString != null)
             {
-                products = products.Where(x => x.Name == searchString || x.PdId == searchString || x.StoneId == searchString || x.DimId == searchString || x.BrandId == searchString || x.ColorId == searchString).ToList();
+                products = products.Where(x => x.Name.Contains(searchString) || x.PdId.Contains(searchString) || x.StoneId.Contains(searchString) || x.DimId.Contains(searchString) || x.BrandId.Contains(searchString) || x.ColorId.Contains(searchString)).ToList();
             }
             if (color != null || stone != null || dim != null || metal != null || brand != null)
             {
@@ -204,7 +204,7 @@ namespace ProjectTeamVitAspDotNetCore.Controllers
 
             if (searchString != null)
             {
-                products = products.Where(x => x.Name == searchString || x.PdId == searchString || x.StoneId == searchString || x.DimId == searchString || x.BrandId == searchString || x.ColorId == searchString).ToList();
+                products = products.Where(x => x.Name.Contains(searchString) || x.PdId.Contains(searchString) || x.StoneId.Contains(searchString) || x.DimId.Contains(searchString) || x.BrandId.Contains(searchString) || x.ColorId.Contains(searchString)).ToList();
             }
             if (color != null || stone != null || dim != null || metal != null || brand != null)
             {

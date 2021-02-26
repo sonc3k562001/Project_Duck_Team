@@ -8,6 +8,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using ProjectTeamVitAspDotNetCore.Models;
+using ProjectTeamVitAspDotNetCore.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -28,6 +29,7 @@ namespace ProjectTeamVitAspDotNetCore
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
+            services.AddScoped<IProduct, ItemProductService>();
             services.AddScoped<IStoreRepository, EFStoreRepository>();
             services.AddSession(options => {
                 options.Cookie.HttpOnly = true;
@@ -38,7 +40,10 @@ namespace ProjectTeamVitAspDotNetCore
                 options.CheckConsentNeeded = context => true;
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
+            
         }
+
+
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)

@@ -1,7 +1,6 @@
 ﻿<environment>
     <link href="~/css/necklaces.css" rel="stylesheet" />
 </environment>
-<p>necklaces works!</p>
 @model IEnumerable<ProjectTeamVitAspDotNetCore.Models.Product>
 
 @{ ViewData["Title"] = "Bracelets";
@@ -11,12 +10,12 @@
 
 
 <section class="col-xs-12 col-md-12">
-    <form asp-controller="Product" asp-action="Lockets">
+    <form asp-controller="Product" asp-action="Necklaces">
         <input type="text" name="searchString" />
         <input type="submit" value="Search" />
-        <a asp-controller="Product" asp-action="Lockets">All</a>
+        <a asp-controller="Product" asp-action="Necklaces">All</a>
     </form>
-    <form asp-controller="Product" asp-action="Lockets">
+    <form asp-controller="Product" asp-action="Necklaces">
         <select name="color">
             <option value="null">Color</option>
             @foreach (Color color in ViewBag.colors)
@@ -80,7 +79,7 @@
                     @Html.DisplayFor(modelItem => item.Name)
                 </h3>
                 <span>
-                    @Html.DisplayFor(modelItem => item.Price)
+                    $@Html.DisplayFor(modelItem => item.Price)
                 </span>
             </div>
         </a>

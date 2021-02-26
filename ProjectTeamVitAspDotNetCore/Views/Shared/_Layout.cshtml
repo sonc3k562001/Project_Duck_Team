@@ -63,7 +63,7 @@
             <section class="header_promo text-center col-xs-12 col-md-12">
                 <div>
                     <ul>
-                        <li><a asp-controller="View_pages" asp-action="new_items"><i class="fas fa-gift"></i>SHOP NEW ARRIVALS |</a></li>
+                        <li><i class="fas fa-gift"></i>SHOP NEW ARRIVALS |</li>
                         <li><i class="fas fa-truck"></i><strong>FREE </strong> GLOBAL DELIVERY |</li>
                         <li><i class="fas fa-undo"></i><strong>FREE </strong> UK, US & EU RETURNS |</li>
                         <li>
@@ -113,22 +113,22 @@
 
                 <div class="footer_main-middle col-xs-4 col-md-4">
                     <h2>Stay in the know</h2>
-                    <form>
-                        <input type="text" placeholder="Enter your email address">
+                    <form asp-controller="Account" asp-action="SentEmail">
+                        <input type="text" name="email" placeholder="Enter your email address">
                         <button type="submit">
                             <i class="far fa-check-circle"></i>
                         </button>
                     </form>
                 </div>
 
-                <nav class="footer_main-right text-center col-xs-4 col-md-4">
+                @*<nav class="footer_main-right text-center col-xs-4 col-md-4">
                     <ul>
                         <li><a href="facebook"><i class="fab fa-facebook-square"></i></a></li>
                         <li><a href="www.google.com"><i class="fab fa-google"></i></a></li>
                         <li><a href="www.youtube.com"><i class="fab fa-youtube"></i></a></li>
                         <li><a href="www.twitter.com"><i class="fab fa-twitter-square"></i></a></li>
                     </ul>
-                </nav>
+                </nav>*@
             </div>
 
             <div class="footer_nav col-xs-12 col-md-12">

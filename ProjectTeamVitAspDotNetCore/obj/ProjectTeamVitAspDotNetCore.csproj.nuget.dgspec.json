@@ -49,6 +49,10 @@
               "target": "Package",
               "version": "[0.1.0, )"
             },
+            "DynamicData": {
+              "target": "Package",
+              "version": "[7.1.1, )"
+            },
             "Microsoft.AspNet.Providers.Core": {
               "target": "Package",
               "version": "[2.0.0, )"

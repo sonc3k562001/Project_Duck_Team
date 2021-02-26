@@ -74,9 +74,13 @@ namespace ProjectTeamVitAspDotNetCore.Controllers
         {
             var cart = SessionHelper.GetObjectFromJson<List<Item>>(HttpContext.Session, "cart");
             int index = Exists(cart, id);
+            if (index == -1)
+            {
+                return View("CartNull");
+            }
             cart.RemoveAt(index);
             SessionHelper.SetObjectAsJson(HttpContext.Session, "cart", cart);
-            return RedirectToAction("Index");
+            return Redirect("Index");
         }
 
         private int Exists(List<Item> cart, string id)
@@ -141,6 +145,7 @@ namespace ProjectTeamVitAspDotNetCore.Controllers
                 db.Add(orderDetail);
                 db.SaveChanges();
             }
+            HttpContext.Session.Clear();
             await db.SaveChangesAsync();
             return View("Thanks");
         }

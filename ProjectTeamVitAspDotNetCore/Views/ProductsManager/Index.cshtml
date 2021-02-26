@@ -19,7 +19,7 @@
             <th>
                 Price
             </th>
-          
+
             <th>
                 Image
             </th>
@@ -39,35 +39,90 @@
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Name)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Price)
-            </td>
-            <td>
-                <img src="~/Images/@Html.DisplayFor(modelItem => item.Image)" width="50px" height="50px"/>
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Size)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Brand.BrandId)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Color.ColorId)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.IdCategory)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.PdId">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.PdId">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.PdId">Delete</a>
-            </td>
-        </tr>
-}
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Price)
+                </td>
+                <td>
+                    <img src="~/Images/@Html.DisplayFor(modelItem => item.Image)" width="50px" height="50px" />
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Size)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Brand.BrandId)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Color.ColorId)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.IdCategory)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.PdId">Edit</a> |
+                    <a asp-action="Details" asp-route-id="@item.PdId">Details</a> |
+                    <a asp-action="Delete" asp-route-id="@item.PdId">Delete</a>
+                </td>
+            </tr>
+        }
     </tbody>
 </table>
+<ul class="pagination">
+    @{
+        int numberPage = ViewBag.numberPage;
+        int pageCurrent = ViewBag.pageCurrent;
+        int offset = 4;//number display page
+
+        if (pageCurrent > 1)
+        {
+            int prevPage = pageCurrent - 1;
+            var PrevLink = new Dictionary<string, string> { { "page", prevPage.ToString() } };
+            <li><a class="btn btn-info" asp-controller="ProductsManager" asp-action="Index" asp-all-route-data="PrevLink">Prev Link</a></li>
+        }
+
+        int from = pageCurrent - offset;
+        int to = pageCurrent + offset;
+        if (from <= 0)
+        {
+            from = 1;
+            to = offset * 2;
+        }
+
+
+        if (to > numberPage)
+        {
+            to = numberPage;
+        }
+
+        int i;
+        for (i = from; i <= to; i++)
+        {
+            var parms = new Dictionary<string, string>
+                {
+                        { "page",i.ToString()}
+                    };
+            if (pageCurrent == i)
+            {
+                <li class="active"><a class="btn btn-info" asp-controller="ProductsManager" asp-action="Index" asp-all-route-data="parms">@i</a></li>
+            }
+            else
+            {
+                <li><a class="btn" asp-controller="ProductsManager" asp-action="Index" asp-all-route-data="parms">@i</a></li>
+            }
+
+        }
+
+        if (pageCurrent < numberPage)
+        {
+            int nextPage = pageCurrent + 1;
+            var NextLink = new Dictionary<string, string> { { "page", nextPage.ToString() } };
+            <li><a class="btn btn-info" asp-controller="ProductsManager" asp-action="Index" asp-all-route-data="NextLink">Next Link</a></li>
+        }
+    }
+</ul>
+

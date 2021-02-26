@@ -8,6 +8,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using ProjectTeamVitAspDotNetCore.Models;
+using ProjectTeamVitAspDotNetCore.Models.ViewModels;
+using ProjectTeamVitAspDotNetCore.Services;
 
 namespace ProjectTeamVitAspDotNetCore.Controllers
 {
@@ -15,17 +17,45 @@ namespace ProjectTeamVitAspDotNetCore.Controllers
     public class ProductsManagerController : Controller
     {
         private readonly JwelleryContext _context;
+        private readonly IProduct _product;
 
-        public ProductsManagerController(JwelleryContext context)
+
+        public ProductsManagerController(JwelleryContext context, IProduct product)
         {
             _context = context;
+            _product = product;
         }
 
         // GET: ProductsManager
-        public async Task<IActionResult> Index()
+
+        public async Task<IActionResult> Index(int? page = 0)
         {
-            var jwelleryContext = _context.Product.Include(p => p.Brand).Include(p => p.Category).Include(p => p.Color).Include(p => p.Dim).Include(p => p.Metal).Include(p => p.Stone);
-            return View(await jwelleryContext.ToListAsync());
+            int limit = 10;
+            int start;
+            if (page > 0)
+            {
+                page = page;
+            }
+            else
+            {
+                page = 1;
+            }
+            start = (int)(page - 1) * limit;
+
+            ViewBag.pageCurrent = page;
+
+            int totalProduct = _product.totalProduct();
+
+            ViewBag.totalProduct = totalProduct;
+
+            ViewBag.numberPage = _product.numberPage(totalProduct, limit);
+
+            var data = _product.paginationProduct(start, limit);
+
+            return View(data);
+
+            //var jwelleryContext = _context.Product.Include(p => p.Brand).Include(p => p.Category).Include(p => p.Color).Include(p => p.Dim).Include(p => p.Metal).Include(p => p.Stone);
+            //return View(await jwelleryContext.ToListAsync());
         }
 
         // GET: ProductsManager/Details/5

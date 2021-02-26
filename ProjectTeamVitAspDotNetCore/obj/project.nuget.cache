@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "QjQUBQf4rcYX3qy5lI5teEFMGFaVvEDIRlz267N8ncHE5SNffGR8SwKHM/KljJmOgmHo/GSixN5M12/zMESAJw==",
+  "dgSpecHash": "Xp8mNzyP6qJVIHC6P2KKBa+T45fQKJ7YHf8pXPtxVOuC0URbsTRER4LkpqQ1Dq11cN4KNJQWkZUgbs1FAK1qvg==",
   "success": true,
   "projectFilePath": "C:\\Users\\son10\\OneDrive\\Tài liệu\\GitHub\\TeamVit\\Project_Duck_Team\\ProjectTeamVitAspDotNetCore\\ProjectTeamVitAspDotNetCore.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\son10\\.nuget\\packages\\bcrypt.net\\0.1.0\\bcrypt.net.0.1.0.nupkg.sha512",
+    "C:\\Users\\son10\\.nuget\\packages\\dynamicdata\\7.1.1\\dynamicdata.7.1.1.nupkg.sha512",
     "C:\\Users\\son10\\.nuget\\packages\\entityframework\\6.0.0\\entityframework.6.0.0.nupkg.sha512",
     "C:\\Users\\son10\\.nuget\\packages\\microsoft.aspnet.providers.core\\2.0.0\\microsoft.aspnet.providers.core.2.0.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.aspnetcore.cryptography.internal\\2.2.0\\microsoft.aspnetcore.cryptography.internal.2.2.0.nupkg.sha512",
@@ -142,6 +143,7 @@
     "C:\\Users\\son10\\.nuget\\packages\\system.net.sockets\\4.3.0\\system.net.sockets.4.3.0.nupkg.sha512",
     "C:\\Users\\son10\\.nuget\\packages\\system.objectmodel\\4.3.0\\system.objectmodel.4.3.0.nupkg.sha512",
     "C:\\Users\\son10\\.nuget\\packages\\system.private.datacontractserialization\\4.3.0\\system.private.datacontractserialization.4.3.0.nupkg.sha512",
+    "C:\\Users\\son10\\.nuget\\packages\\system.reactive\\5.0.0\\system.reactive.5.0.0.nupkg.sha512",
     "C:\\Users\\son10\\.nuget\\packages\\system.reflection\\4.3.0\\system.reflection.4.3.0.nupkg.sha512",
     "C:\\Users\\son10\\.nuget\\packages\\system.reflection.emit\\4.3.0\\system.reflection.emit.4.3.0.nupkg.sha512",
     "C:\\Users\\son10\\.nuget\\packages\\system.reflection.emit.ilgeneration\\4.3.0\\system.reflection.emit.ilgeneration.4.3.0.nupkg.sha512",

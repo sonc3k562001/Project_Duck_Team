@@ -443,7 +443,7 @@ namespace ProjectTeamVitAspDotNetCore.Models
                                             "Solid 14 carat rose gold, encrusted with diamonds" +
                                             "Produced using 100% recycled gold" +
                                             "All of our diamonds are natural, conflict-free and ethically sourced",
-                Image = "/Images/Lockets/45058RNON",
+                Image = "/Images/Lockets/45058RNON.jpg",
                 Size = "16 - 18",
                 ColorId = "Rose",
                 IdCategory = "Lockets",
@@ -905,7 +905,7 @@ namespace ProjectTeamVitAspDotNetCore.Models
                                             "Personalise for free with an engraving" +
                                             "Crafted from 18 carat gold plated sterling silver" +
                                             "Can be worn as either a pendant or lariat necklace",
-                  Image = "/Images/Necklaces/ 47000YNON.PNG",
+                  Image = "/Images/Necklaces/47000YNON.PNG",
                   Size = "20-22",
                   ColorId = "Gold",
                   IdCategory = "Necklaces",

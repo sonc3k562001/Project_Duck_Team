@@ -20,7 +20,7 @@
                         Name:  @ViewBag.product.Name
                     </h3>
                     <h4>
-                        Price:  @ViewBag.product.Price
+                        Price:  $@ViewBag.product.Price
                     </h4>
                     <h4>
                         Code:  @ViewBag.product.PdId
@@ -46,7 +46,7 @@
                     @ViewData["Descirption"]
                 </div>
                 <form asp-controller="cart" asp-action="buy" asp-route-id="@ViewBag.product.PdId">
-                    <label>Size: </label>
+                    <labe>Size: </label>
                     <input class="form-control" type="text" name="size" placeholder="Enter your size..." />
                     <input type="hidden" name="id" value="@ViewBag.product.PdId" />
                     <div class="action d-flex flex-column justify-content-center align-items-center col-xs-12 col-md-12">
@@ -60,54 +60,6 @@
 
         <section class="product_detail-addon col-xs-12 col-md-12">
             <div class="left col-xs-6 col-md-6">
-                <div class="mini col-xs-12 col-md-12">
-                    <nav id="myTab" role="tablist" class="col-xs-12 col-md-12">
-                        <div class="col-xs-12 col-md-12">
-                            <ul class="nav nav-tabs">
-                                <li class="nav-item col-xs-4 col-md-4">
-                                    <a class="nav-link active" id="tab1" data-toggle="tab" href="#tab1" role="tab" aria-controls="tab1"
-                                       aria-selected="true">Home</a>
-                                </li>
-                                <li class="nav-item col-xs-4 col-md-4">
-                                    <a class="nav-link" id="tab2" data-toggle="tab" href="#tab2" role="tab" aria-controls="tab2"
-                                       aria-selected="false">Profile</a>
-                                </li>
-                                <li class="nav-item col-xs-4 col-md-4">
-                                    <a class="nav-link" id="tab3" data-toggle="tab" href="#tab3" role="tab" aria-controls="tab3"
-                                       aria-selected="false">Contact</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </nav>
-                    <div class="tab-content col-xs-12 col-md-12" id="myTabContent">
-                        <div class="tab-pane fade show active" id="tab1" role="tabpanel" aria-labelledby="tab1-tab">
-                            <table class="text-center col-xs-12 col-md-12">
-                                <tr>
-                                    <td>Collection</td>
-                                    <td>Interstellar</td>
-                                </tr>
-                                <tr>
-                                    <td>Gemstone</td>
-                                    <td>Diamond</td>
-                                </tr>
-                                <tr>
-                                    <td>Diamond Specification</td>
-                                    <td>0.13ct White</td>
-                                </tr>
-                                <tr>
-                                    <td>Metal</td>
-                                    <td>Yellow Gold (Solid, 100% Recycled)</td>
-                                </tr>
-                                <tr>
-                                    <td>Metal Type</td>
-                                    <td>14 Carat Gold</td>
-                                </tr>
-                            </table>
-                        </div>
-                        <div class="tab-pane fade" id="tab2" role="tabpanel" aria-labelledby="tab2-tab">tab2</div>
-                        <div class="tab-pane fade" id="tab3" role="tabpanel" aria-labelledby="tab3-tab">tab3</div>
-                    </div>
-                </div>
                 <div class="delivery col-xs-12 col-md-12">
 
                     <h3 class="bg-dark text-center col-xs-12 col-md-12">DELIVERY & RETURNS</h3>

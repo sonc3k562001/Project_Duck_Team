@@ -136,6 +136,7 @@ namespace ProjectTeamVitAspDotNetCore.Controllers
 
         public IActionResult Signout()
         {
+            HttpContext.Session.Clear();
             HttpContext.SignOutAsync();
             return RedirectToAction("Login", "Account");
         }
@@ -188,6 +189,20 @@ namespace ProjectTeamVitAspDotNetCore.Controllers
             }
             return View("PasswordReset");
             
+        }
+        public IActionResult SentEmail(string email)
+        {
+            var body = "Welcome, please let us know what your problem is so we can assist you in resolving it.";
+            var mailHelper = new MailHelper(configuration);
+            if (mailHelper.Forgot(configuration["Gmail:Username"], email, body))
+            {
+                ViewBag.msg = "Please check password in email!";
+            }
+            else
+            {
+                ViewBag.msg = "Failed";
+            }
+            return RedirectToAction("Index","Product");
         }
         public IActionResult Profile()
         {

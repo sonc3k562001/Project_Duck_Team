@@ -10,11 +10,6 @@ namespace ProjectTeamVitAspDotNetCore.Models
 {
     public partial class Category
     {
-        public Category()
-        {
-            Product = new HashSet<Product>();
-        }
-
         [Key]
         public string IdCategory { get; set; }
         public string TypeName { get; set; }

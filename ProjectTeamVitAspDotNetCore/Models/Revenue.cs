@@ -8,6 +8,6 @@ namespace ProjectTeamVitAspDotNetCore.Models
     public class Revenue
     {
         public string Time { get; set; }
-        public decimal? Money { get; set; }
+        public double Money { get; set; }
     }
 }

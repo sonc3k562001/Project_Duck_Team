@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 // Code scaffolded by EF Core assumes nullable reference types (NRTs) are not used or disabled.
 // If you have enabled NRTs for your project, then un-comment the following line:
@@ -9,14 +10,10 @@ namespace ProjectTeamVitAspDotNetCore.Models
 {
     public partial class Product
     {
-        public Product()
-        {
-            OrderDetail = new HashSet<OrderDetail>();
-        }
-
+        [Key]
         public string PdId { get; set; }
         public string Name { get; set; }
-        public decimal? Price { get; set; }
+        public double Price { get; set; }
         public string Description { get; set; }
         public string Image { get; set; }
         public string ColorId { get; set; }

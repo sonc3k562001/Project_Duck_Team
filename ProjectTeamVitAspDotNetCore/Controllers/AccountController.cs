@@ -366,7 +366,7 @@ namespace ProjectTeamVitAspDotNetCore.Controllers
             List<OrderDetail> orderDetails = new List<OrderDetail>();
             List<OrderDetail> orderdetails = db.OrderDetail.Where(x => x.OdId == id).ToList();
             List<Product> products = db.Product.Where(x => x.PdId == id).ToList();
-            decimal? Sum = 0;
+            double Sum = 0;
             foreach(OrderDetail orderDetail in orderdetails)
             {
                 Product product = db.Product.FirstOrDefault(x => x.PdId == orderDetail.PdId);

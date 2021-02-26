@@ -9,7 +9,7 @@ namespace ProjectTeamVitAspDotNetCore.Models
     {
         public Product Product { get; set; }
         int Quantity { get; set; }
-        decimal? Price { get; set; }
-        decimal? TotalPrice { get; set; }
+        double Price { get; set; }
+        double TotalPrice { get; set; }
     }
 }

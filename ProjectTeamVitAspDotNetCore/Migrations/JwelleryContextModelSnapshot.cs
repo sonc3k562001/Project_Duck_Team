@@ -22,15 +22,10 @@ namespace ProjectTeamVitAspDotNetCore.Migrations
             modelBuilder.Entity("ProjectTeamVitAspDotNetCore.Models.Brand", b =>
                 {
                     b.Property<string>("BrandId")
-                        .HasColumnName("Brand_Id")
-                        .HasColumnType("nchar(50)")
-                        .IsFixedLength(true)
-                        .HasMaxLength(50);
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("BrandName")
-                        .HasColumnName("Brand_Name")
-                        .HasColumnType("nvarchar(50)")
-                        .HasMaxLength(50);
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("BrandId");
 
@@ -40,15 +35,10 @@ namespace ProjectTeamVitAspDotNetCore.Migrations
             modelBuilder.Entity("ProjectTeamVitAspDotNetCore.Models.Category", b =>
                 {
                     b.Property<string>("IdCategory")
-                        .HasColumnName("Id_Category")
-                        .HasColumnType("nchar(50)")
-                        .IsFixedLength(true)
-                        .HasMaxLength(50);
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("TypeName")
-                        .HasColumnName("Type_Name")
-                        .HasColumnType("nvarchar(250)")
-                        .HasMaxLength(250);
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("IdCategory");
 
@@ -58,15 +48,10 @@ namespace ProjectTeamVitAspDotNetCore.Migrations
             modelBuilder.Entity("ProjectTeamVitAspDotNetCore.Models.Certify", b =>
                 {
                     b.Property<string>("CertifyId")
-                        .HasColumnName("Certify_ID")
-                        .HasColumnType("nchar(50)")
-                        .IsFixedLength(true)
-                        .HasMaxLength(50);
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("CertifyType")
-                        .HasColumnName("Certify_Type")
-                        .HasColumnType("nvarchar(50)")
-                        .HasMaxLength(50);
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("CertifyId");
 
@@ -76,14 +61,10 @@ namespace ProjectTeamVitAspDotNetCore.Migrations
             modelBuilder.Entity("ProjectTeamVitAspDotNetCore.Models.Color", b =>
                 {
                     b.Property<string>("ColorId")
-                        .HasColumnName("Color_Id")
-                        .HasColumnType("nchar(50)")
-                        .IsFixedLength(true)
-                        .HasMaxLength(50);
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("Name")
-                        .HasColumnType("nvarchar(50)")
-                        .HasMaxLength(50);
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("ColorId");
 
@@ -93,42 +74,31 @@ namespace ProjectTeamVitAspDotNetCore.Migrations
             modelBuilder.Entity("ProjectTeamVitAspDotNetCore.Models.Dim", b =>
                 {
                     b.Property<string>("DimId")
-                        .HasColumnName("Dim_Id")
-                        .HasColumnType("nchar(50)")
-                        .IsFixedLength(true)
-                        .HasMaxLength(50);
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("Certify")
-                        .HasColumnType("nvarchar(250)")
-                        .HasMaxLength(250);
+                        .HasColumnType("nvarchar(max)");
 
-                    b.Property<decimal?>("DimAmt")
-                        .HasColumnName("Dim_Amt")
-                        .HasColumnType("numeric(10, 2)");
+                    b.Property<double>("DimAmt")
+                        .HasColumnType("float");
 
-                    b.Property<decimal?>("DimCrt")
-                        .HasColumnName("Dim_Crt")
-                        .HasColumnType("numeric(10, 2)");
+                    b.Property<double>("DimCrt")
+                        .HasColumnType("float");
 
-                    b.Property<decimal?>("DimGm")
-                        .HasColumnName("Dim_Gm")
-                        .HasColumnType("numeric(10, 2)");
+                    b.Property<double>("DimGm")
+                        .HasColumnType("float");
 
-                    b.Property<decimal?>("DimPcs")
-                        .HasColumnName("Dim_Pcs")
-                        .HasColumnType("numeric(10, 2)");
+                    b.Property<double>("DimPcs")
+                        .HasColumnType("float");
 
-                    b.Property<decimal?>("DimRate")
-                        .HasColumnName("Dim_Rate")
-                        .HasColumnType("numeric(10, 2)");
+                    b.Property<double>("DimRate")
+                        .HasColumnType("float");
 
-                    b.Property<decimal?>("DimSize")
-                        .HasColumnName("Dim_Size")
-                        .HasColumnType("numeric(10, 2)");
+                    b.Property<double>("DimSize")
+                        .HasColumnType("float");
 
                     b.Property<string>("Name")
-                        .HasColumnType("nvarchar(250)")
-                        .HasMaxLength(250);
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("DimId");
 
@@ -138,31 +108,25 @@ namespace ProjectTeamVitAspDotNetCore.Migrations
             modelBuilder.Entity("ProjectTeamVitAspDotNetCore.Models.DimInfo", b =>
                 {
                     b.Property<string>("DimInfoId")
-                        .HasColumnType("nchar(50)")
-                        .IsFixedLength(true)
-                        .HasMaxLength(50);
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("Description")
-                        .HasColumnType("text");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("DimCrt")
-                        .HasColumnType("varchar(50)")
-                        .HasMaxLength(50)
-                        .IsUnicode(false);
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<byte[]>("DimImg")
-                        .HasColumnType("image");
+                        .HasColumnType("varbinary(max)");
 
-                    b.Property<decimal?>("DimPrice")
-                        .HasColumnType("decimal(18, 0)");
+                    b.Property<double>("DimPrice")
+                        .HasColumnType("float");
 
                     b.Property<string>("DimSubType")
-                        .HasColumnType("nvarchar(50)")
-                        .HasMaxLength(50);
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("DimType")
-                        .HasColumnType("nvarchar(50)")
-                        .HasMaxLength(50);
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("DimInfoId");
 
@@ -172,20 +136,13 @@ namespace ProjectTeamVitAspDotNetCore.Migrations
             modelBuilder.Entity("ProjectTeamVitAspDotNetCore.Models.Metal", b =>
                 {
                     b.Property<string>("MetalId")
-                        .HasColumnName("Metal_Id")
-                        .HasColumnType("nchar(50)")
-                        .IsFixedLength(true)
-                        .HasMaxLength(50);
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("MetalCrt")
-                        .HasColumnName("Metal_Crt")
-                        .HasColumnType("varchar(50)")
-                        .HasMaxLength(50)
-                        .IsUnicode(false);
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Name")
-                        .HasColumnType("nvarchar(250)")
-                        .HasMaxLength(250);
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("MetalId");
 
@@ -195,49 +152,41 @@ namespace ProjectTeamVitAspDotNetCore.Migrations
             modelBuilder.Entity("ProjectTeamVitAspDotNetCore.Models.Order", b =>
                 {
                     b.Property<string>("Id")
-                        .HasColumnType("nvarchar(50)")
-                        .HasMaxLength(50);
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("Address")
-                        .HasColumnType("text");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Birthday")
-                        .HasColumnType("varchar(50)")
-                        .HasMaxLength(50)
-                        .IsUnicode(false);
+                        .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTime?>("CreateTime")
-                        .HasColumnName("Create_Time")
-                        .HasColumnType("datetime");
+                    b.Property<DateTime>("CreateTime")
+                        .HasColumnType("datetime2");
 
                     b.Property<string>("Email")
-                        .HasColumnType("nvarchar(250)")
-                        .HasMaxLength(250);
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("EmailNavigationEmail")
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("Gender")
-                        .HasColumnType("nvarchar(50)")
-                        .HasMaxLength(50);
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Name")
-                        .HasColumnType("nvarchar(250)")
-                        .HasMaxLength(250);
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Phone")
-                        .HasColumnType("varchar(50)")
-                        .HasMaxLength(50)
-                        .IsUnicode(false);
+                        .HasColumnType("nvarchar(max)");
 
-                    b.Property<bool?>("Status")
+                    b.Property<bool>("Status")
                         .HasColumnType("bit");
 
                     b.Property<string>("ZipCode")
-                        .HasColumnType("nchar(50)")
-                        .IsFixedLength(true)
-                        .HasMaxLength(50);
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("Email");
+                    b.HasIndex("EmailNavigationEmail");
 
                     b.ToTable("Order");
                 });
@@ -250,27 +199,19 @@ namespace ProjectTeamVitAspDotNetCore.Migrations
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<string>("OdId")
-                        .IsRequired()
-                        .HasColumnName("od_id")
-                        .HasColumnType("nvarchar(50)")
-                        .HasMaxLength(50);
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("PdId")
-                        .IsRequired()
-                        .HasColumnName("pd_id")
-                        .HasColumnType("nvarchar(50)")
-                        .HasMaxLength(50);
+                        .HasColumnType("nvarchar(450)");
 
-                    b.Property<int?>("Quantity")
+                    b.Property<int>("Quantity")
                         .HasColumnType("int");
 
                     b.Property<string>("Size")
-                        .HasColumnType("nvarchar(50)")
-                        .HasMaxLength(50);
+                        .HasColumnType("nvarchar(max)");
 
-                    b.Property<decimal?>("TotalPrice")
-                        .HasColumnName("Total_Price")
-                        .HasColumnType("decimal(18, 0)");
+                    b.Property<double>("TotalPrice")
+                        .HasColumnType("float");
 
                     b.HasKey("Id");
 
@@ -278,78 +219,59 @@ namespace ProjectTeamVitAspDotNetCore.Migrations
 
                     b.HasIndex("PdId");
 
-                    b.ToTable("Order_Detail");
+                    b.ToTable("OrderDetail");
                 });
 
             modelBuilder.Entity("ProjectTeamVitAspDotNetCore.Models.Product", b =>
                 {
                     b.Property<string>("PdId")
-                        .HasColumnName("pd_id")
-                        .HasColumnType("nvarchar(50)")
-                        .HasMaxLength(50);
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("BrandId")
-                        .HasColumnName("Brand_id")
-                        .HasColumnType("nchar(50)")
-                        .IsFixedLength(true)
-                        .HasMaxLength(50);
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("CategoryIdCategory")
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("ColorId")
-                        .HasColumnName("Color_id")
-                        .HasColumnType("nchar(50)")
-                        .IsFixedLength(true)
-                        .HasMaxLength(50);
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("Description")
-                        .HasColumnType("text");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("DimId")
-                        .HasColumnName("Dim_id")
-                        .HasColumnType("nchar(50)")
-                        .IsFixedLength(true)
-                        .HasMaxLength(50);
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("IdCategory")
-                        .HasColumnName("Id_Category")
-                        .HasColumnType("nchar(50)")
-                        .IsFixedLength(true)
-                        .HasMaxLength(50);
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Image")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("MetalId")
-                        .HasColumnName("Metal_id")
-                        .HasColumnType("nchar(50)")
-                        .IsFixedLength(true)
-                        .HasMaxLength(50);
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("Name")
-                        .HasColumnType("nvarchar(250)")
-                        .HasMaxLength(250);
+                        .HasColumnType("nvarchar(max)");
 
-                    b.Property<decimal?>("Price")
-                        .HasColumnType("decimal(18, 0)");
+                    b.Property<double>("Price")
+                        .HasColumnType("float");
 
                     b.Property<string>("Size")
-                        .HasColumnType("nvarchar(50)")
-                        .HasMaxLength(50);
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("StoneId")
-                        .HasColumnName("Stone_id")
-                        .HasColumnType("nchar(50)")
-                        .IsFixedLength(true)
-                        .HasMaxLength(50);
+                        .HasColumnType("nvarchar(450)");
 
                     b.HasKey("PdId");
 
                     b.HasIndex("BrandId");
 
+                    b.HasIndex("CategoryIdCategory");
+
                     b.HasIndex("ColorId");
 
                     b.HasIndex("DimId");
-
-                    b.HasIndex("IdCategory");
 
                     b.HasIndex("MetalId");
 
@@ -361,14 +283,10 @@ namespace ProjectTeamVitAspDotNetCore.Migrations
             modelBuilder.Entity("ProjectTeamVitAspDotNetCore.Models.Role", b =>
                 {
                     b.Property<string>("Id")
-                        .HasColumnType("nchar(10)")
-                        .IsFixedLength(true)
-                        .HasMaxLength(10);
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("StringRole")
-                        .HasColumnName("String_Role")
-                        .HasColumnType("nvarchar(50)")
-                        .HasMaxLength(50);
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
@@ -378,36 +296,28 @@ namespace ProjectTeamVitAspDotNetCore.Migrations
             modelBuilder.Entity("ProjectTeamVitAspDotNetCore.Models.Stone", b =>
                 {
                     b.Property<string>("StoneId")
-                        .HasColumnName("Stone_Id")
-                        .HasColumnType("nchar(50)")
-                        .IsFixedLength(true)
-                        .HasMaxLength(50);
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("Description")
-                        .HasColumnType("text");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Name")
-                        .HasColumnType("nvarchar(250)")
-                        .HasMaxLength(250);
+                        .HasColumnType("nvarchar(max)");
 
-                    b.Property<decimal?>("Price")
-                        .HasColumnType("decimal(18, 0)");
+                    b.Property<double>("Price")
+                        .HasColumnType("float");
 
-                    b.Property<decimal?>("StoneAmt")
-                        .HasColumnName("Stone_Amt")
-                        .HasColumnType("numeric(10, 2)");
+                    b.Property<double>("StoneAmt")
+                        .HasColumnType("float");
 
-                    b.Property<decimal?>("StoneCrt")
-                        .HasColumnName("Stone_Crt")
-                        .HasColumnType("numeric(10, 2)");
+                    b.Property<double>("StoneCrt")
+                        .HasColumnType("float");
 
-                    b.Property<decimal?>("StoneGm")
-                        .HasColumnName("Stone_Gm")
-                        .HasColumnType("numeric(10, 2)");
+                    b.Property<double>("StoneGm")
+                        .HasColumnType("float");
 
-                    b.Property<decimal?>("StoneRate")
-                        .HasColumnName("Stone_Rate")
-                        .HasColumnType("numeric(10, 2)");
+                    b.Property<double>("StoneRate")
+                        .HasColumnType("float");
 
                     b.HasKey("StoneId");
 
@@ -417,66 +327,50 @@ namespace ProjectTeamVitAspDotNetCore.Migrations
             modelBuilder.Entity("ProjectTeamVitAspDotNetCore.Models.User", b =>
                 {
                     b.Property<string>("Email")
-                        .HasColumnType("nvarchar(250)")
-                        .HasMaxLength(250);
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("Address")
-                        .HasColumnType("text");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Avatar")
-                        .HasColumnType("nvarchar(250)")
-                        .HasMaxLength(250);
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Bdate")
-                        .HasColumnType("varchar(50)")
-                        .HasMaxLength(50)
-                        .IsUnicode(false);
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("ConfirmPassword")
-                        .HasColumnName("Confirm_Password")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<bool?>("Eable")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("bit")
-                        .HasDefaultValueSql("((1))");
+                        .HasColumnType("bit");
 
                     b.Property<string>("Fname")
-                        .HasColumnType("nvarchar(50)")
-                        .HasMaxLength(50);
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Gender")
-                        .HasColumnType("nvarchar(50)")
-                        .HasMaxLength(50);
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("IdRole")
-                        .HasColumnName("Id_Role")
-                        .HasColumnType("nchar(10)")
-                        .HasDefaultValueSql("((4))")
-                        .IsFixedLength(true)
-                        .HasMaxLength(10);
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("IdRoleNavigationId")
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("Lname")
-                        .HasColumnType("nvarchar(50)")
-                        .HasMaxLength(50);
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Password")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Phone")
-                        .HasColumnType("varchar(50)")
-                        .HasMaxLength(50)
-                        .IsUnicode(false);
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("ZipCode")
-                        .HasColumnName("Zip_Code")
-                        .HasColumnType("nchar(50)")
-                        .IsFixedLength(true)
-                        .HasMaxLength(50);
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Email");
 
-                    b.HasIndex("IdRole");
+                    b.HasIndex("IdRoleNavigationId");
 
                     b.ToTable("User");
                 });
@@ -485,64 +379,52 @@ namespace ProjectTeamVitAspDotNetCore.Migrations
                 {
                     b.HasOne("ProjectTeamVitAspDotNetCore.Models.User", "EmailNavigation")
                         .WithMany("Order")
-                        .HasForeignKey("Email")
-                        .HasConstraintName("FK_Order_User");
+                        .HasForeignKey("EmailNavigationEmail");
                 });
 
             modelBuilder.Entity("ProjectTeamVitAspDotNetCore.Models.OrderDetail", b =>
                 {
                     b.HasOne("ProjectTeamVitAspDotNetCore.Models.Order", "Od")
                         .WithMany("OrderDetail")
-                        .HasForeignKey("OdId")
-                        .HasConstraintName("FK_Order_Detail_Order")
-                        .IsRequired();
+                        .HasForeignKey("OdId");
 
                     b.HasOne("ProjectTeamVitAspDotNetCore.Models.Product", "Pd")
                         .WithMany("OrderDetail")
-                        .HasForeignKey("PdId")
-                        .HasConstraintName("FK_Order_Detail_Product")
-                        .IsRequired();
+                        .HasForeignKey("PdId");
                 });
 
             modelBuilder.Entity("ProjectTeamVitAspDotNetCore.Models.Product", b =>
                 {
                     b.HasOne("ProjectTeamVitAspDotNetCore.Models.Brand", "Brand")
                         .WithMany("Product")
-                        .HasForeignKey("BrandId")
-                        .HasConstraintName("FK_Product_Brand");
-
-                    b.HasOne("ProjectTeamVitAspDotNetCore.Models.Color", "Color")
-                        .WithMany("Product")
-                        .HasForeignKey("ColorId")
-                        .HasConstraintName("FK_Product_Color");
-
-                    b.HasOne("ProjectTeamVitAspDotNetCore.Models.Dim", "Dim")
-                        .WithMany("Product")
-                        .HasForeignKey("DimId")
-                        .HasConstraintName("FK_Product_Dim");
+                        .HasForeignKey("BrandId");
 
                     b.HasOne("ProjectTeamVitAspDotNetCore.Models.Category", "Category")
                         .WithMany("Product")
-                        .HasForeignKey("IdCategory")
-                        .HasConstraintName("FK_Product_Category");
+                        .HasForeignKey("CategoryIdCategory");
+
+                    b.HasOne("ProjectTeamVitAspDotNetCore.Models.Color", "Color")
+                        .WithMany("Product")
+                        .HasForeignKey("ColorId");
+
+                    b.HasOne("ProjectTeamVitAspDotNetCore.Models.Dim", "Dim")
+                        .WithMany("Product")
+                        .HasForeignKey("DimId");
 
                     b.HasOne("ProjectTeamVitAspDotNetCore.Models.Metal", "Metal")
                         .WithMany("Product")
-                        .HasForeignKey("MetalId")
-                        .HasConstraintName("FK_Product_Metal");
+                        .HasForeignKey("MetalId");
 
                     b.HasOne("ProjectTeamVitAspDotNetCore.Models.Stone", "Stone")
                         .WithMany("Product")
-                        .HasForeignKey("StoneId")
-                        .HasConstraintName("FK_Product_Stone");
+                        .HasForeignKey("StoneId");
                 });
 
             modelBuilder.Entity("ProjectTeamVitAspDotNetCore.Models.User", b =>
                 {
                     b.HasOne("ProjectTeamVitAspDotNetCore.Models.Role", "IdRoleNavigation")
                         .WithMany("User")
-                        .HasForeignKey("IdRole")
-                        .HasConstraintName("FK_User_Role");
+                        .HasForeignKey("IdRoleNavigationId");
                 });
 #pragma warning restore 612, 618
         }

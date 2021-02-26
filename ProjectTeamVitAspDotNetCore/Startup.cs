@@ -28,6 +28,7 @@ namespace ProjectTeamVitAspDotNetCore
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
+            services.AddScoped<IStoreRepository, EFStoreRepository>();
             services.AddSession(options => {
                 options.Cookie.HttpOnly = true;
                 options.Cookie.IsEssential = true;
@@ -51,6 +52,7 @@ namespace ProjectTeamVitAspDotNetCore
                 app.UseExceptionHandler("/Home/Error");
                 app.UseHsts();
             }
+            SeedData.EnsurePopulated(app);
             app.UseHttpsRedirection();
             app.UseStaticFiles();
             app.UseSession();

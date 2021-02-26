@@ -22,12 +22,4 @@
     <PackageReference Include="System.Configuration.ConfigurationManager" Version="5.0.0" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="wwwroot\Images\Bracelets\" />
-    <Folder Include="wwwroot\Images\Earrings\" />
-    <Folder Include="wwwroot\Images\Lockets\" />
-    <Folder Include="wwwroot\Images\Necklaces\" />
-    <Folder Include="wwwroot\Images\Rings\" />
-  </ItemGroup>
-
 </Project>

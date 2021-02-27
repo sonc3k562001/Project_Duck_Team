@@ -1,0 +1,56 @@
+﻿.term .container {
+    width: 60%;
+}
+
+.term .title {
+    color: white;
+    background-color: black;
+    text-align: start;
+    margin-top: 20px;
+    padding: 5px 20px;
+}
+
+.term h3 {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.term strong {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.term li {
+    text-justify: distribute-all-lines;
+}
+
+.term p {
+    font-size: 16px;
+    line-height: 2;
+}
+
+.term .term_banner {
+    background-image: url("https://www.astleyclarke.com/skin/frontend/default/astleyclarke/images/cms-page-banners/blue-nov-2020.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80px;
+    margin-bottom: 45px;
+}
+
+    .term .term_banner h2 {
+        color: white;
+        font-weight: bold;
+        text-transform: uppercase;
+        padding-top: 20px;
+        font-size: 24px;
+    }
+
+.term .term_loyal ul {
+    list-style: disc;
+}
+
+.term .term_loyal li {
+    margin-left: 20px;
+    padding: 10px;
+}

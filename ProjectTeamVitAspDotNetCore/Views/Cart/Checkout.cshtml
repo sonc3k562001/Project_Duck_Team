@@ -1,0 +1,159 @@
+﻿<environment>
+    <link rel="stylesheet" href="~/css/order-summary.css" />
+</environment>
+@model ProjectTeamVitAspDotNetCore.Models.User
+
+<div class="order col-xs-12 col-md-12">
+    <div class="container">
+        <div class="row">
+            <form asp-controller="Cart" asp-action="Checkout" method="post">
+                <section class="order_summary col-xs-12 col-md-12">
+                    <h2>Order Summary</h2>
+                    <table class="table table-responsive align-middle text-center">
+                        <thead>
+                            <tr>
+                                <th>Product Image</th>
+                                <th>Product Name</th>
+                                <th>Product Size</th>
+                                <th>Product Price</th>
+                                <th>Product Quantity</th>
+                                <th>Product Total</th>
+                            </tr>
+                        </thead>
+                        <input type="hidden" name="cart" value="@ViewBag.cart"/>
+                        <input type="hidden" name="total" value="@ViewBag.total"/>
+
+                        @foreach (var item in ViewBag.cart)
+                        {
+            <tbody>
+
+                <tr>
+                    <td>
+                        <a [routerLink]="['/']">
+                            <img class="col-xs-12 col-md-12" width="100" height="100"
+                                 src="~/Images/@item.Product.Image">
+                        </a>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>@item.Product.Name</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>@item.Size</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <span>@item.Product.Price</span>
+                    </td>
+                    <td>@item.Quantity</td>
+                    <td>@(item.Product.Price * item.Quantity)</td>
+                </tr>
+            </tbody>}
+
+                        <tfoot>
+                            <tr class="total_row">
+                                <td colspan="3" class="text-end">TOTAL</td>
+                                <td></td>
+                                <td class="total_row-price">@ViewBag.total</td>
+                            </tr>
+                        </tfoot>
+
+                    </table>
+                </section>
+
+                <section class="order_form col-xs-12 col-md-12">
+
+                    <div class="right col-xs-12 col-md-12">
+                        <h2>DELIVERY ADDRESS</h2>
+
+                        <div class="form-group col-xs-12 col-md-12">
+                            <label for="firstName">First Name</label>
+                            <input asp-for="Fname" class="form-controls" id="firstName" name="Fname">
+                        </div>
+                        <div class="form-group col-xs-12 col-md-12">
+                            <label for="lastName">Last Name</label>
+                            <input asp-for="Lname" class="form-controls" id="lastName" name="Lname">
+                        </div>
+                        <div class="form-group col-xs-12 col-md-12">
+                            <label for="birthday">Birthday</label>
+                            <input type="date" min="1900-01-01" max="2021-01-31" asp-for="Bdate" class="form-controls" id="phone" name="Bdate">
+                        </div>
+                        <div class="form-group col-xs-12 col-md-12 ">
+                            <label asp-for="Gender" class="control-label">Man&nbsp;&nbsp;&nbsp;&nbsp; </label>
+                            <input type="radio" asp-for="Gender" name="Gender" value="Man" class="form-check-input" />
+                           
+                            <span asp-validation-for="Gender" class="text-danger"></span>
+                        </div>
+                        <div class="form-group col-xs-12 col-md-12 ">
+                            <label asp-for="Gender" class="control-label">Woman&nbsp;&nbsp;&nbsp;&nbsp; </label>
+                            <input type="radio" asp-for="Gender" name="Gender" value="Woman" class="form-check-input" />
+                            <span asp-validation-for="Gender" class="text-danger"></span>
+                        </div>
+                        <div class="form-group col-xs-12 col-md-12">
+                            <label for="address">Address </label>
+                            <input asp-for="Address" class="form-controls" id="address" name="Address">
+                        </div>
+                        <div class="form-group col-xs-12 col-md-12">
+                            <label for="phone">Mobile Phone</label>
+                            <input asp-for="Phone" class="form-controls" id="phone" name="Phone">
+                        </div>
+                        <div class="form-group col-xs-12 col-md-12">
+                            <label for="zip">Zip / Postcode</label>
+                            <input asp-for="ZipCode" class="form-controls" id="zip" name="ZipCode">
+                        </div>
+                       <br/>
+                        <br/>
+                        <hr/>
+                        <div class="form-group">
+                            <button type="submit" style="background-color:black;color:white;" class="btn checkout_button" [routerLink]="['/thank-you']">
+                                PLACE ORDER
+                            </button>
+                        </div>
+</form>
+        </div>
+        </section>
+
+        <section class="order_payment col-xs-12 col-md-12">
+            <div class="left col-xs-6 col-md-6">
+                <h2>PAYMENT</h2>
+                <div class="method col-xs-12 col-md-12">
+                    <img src="https://www.astleyclarke.com/skin/frontend/default/astleyclarke/images/onestepcheckout_secure_cards_transparent.png">
+                </div>
+                <p>
+                    By clicking Pay and Place Order, you agree to purchase your item(s) from Global-e as merchant of record for
+                    this transaction, on Global-e’s Terms and Conditions and Privacy Policy. Global-e is an international
+                    fulfilment service provider to Astley Clarke.
+                </p>
+            </div>
+            @*<div class="right col-xs-6 col-md-6">
+                <h2>BILLING SUMMARY</h2>
+                <table class="table-sm table-responsive col-xs-12 col-md-12">
+                    <tbody>
+                        <tr>
+                            <td class="title">ITEMS TOTAL</td>
+                            <td class="text-end">@ViewBag.total</td>
+                        </tr>
+                        <tr>
+                            <td class="title">SHIPPING</td>
+                            <td class="text-end">0</td>
+                        </tr>
+                        <tr>
+                            <td class="title">DUTIES, TAXES & FEES</td>
+                            <td class="text-end">0</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td class="title">TOTAL FOR YOUR ORDER</td>
+                            <td class="text-end">@ViewBag.total</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>*@
+        </section>
+
+    </div>
+</div>
+</div>

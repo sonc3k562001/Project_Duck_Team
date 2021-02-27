@@ -1,0 +1,79 @@
+﻿.affiliates .container {
+    width: 60%;
+}
+
+.affiliates .title {
+    color: white;
+    background-color: black;
+    text-align: start;
+    padding: 5px 20px;
+}
+
+.affiliates h3 {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.affiliates strong {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.affiliates ul {
+    list-style-type: disc;
+}
+
+.affiliates li {
+    text-justify: distribute-all-lines;
+    margin-left: 20px;
+    padding: 10px;
+}
+
+.affiliates p {
+    font-size: 16px;
+    line-height: 2;
+}
+
+.affiliates a {
+    text-decoration: none;
+    color: black;
+}
+
+.affiliates button {
+    border: solid 1px black;
+    border-radius: 10px;
+    color: black;
+    font-size: 20px;
+    line-height: 1.5;
+    padding: 10px;
+    width: 15%;
+    margin-top: 10px;
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+    height: auto;
+    width: auto;
+}
+
+    .affiliates button:hover {
+        background: black;
+        color: white;
+    }
+
+.affiliates .affiliates_banner {
+    background-image: url("https://www.astleyclarke.com/skin/frontend/default/astleyclarke/images/cms-page-banners/blue-nov-2020.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80px;
+    margin-bottom: 45px;
+}
+
+    .affiliates .affiliates_banner h2 {
+        color: white;
+        font-weight: bold;
+        text-transform: uppercase;
+        padding-top: 20px;
+        font-size: 24px;
+    }
+/*# sourceMappingURL=affiliates.component.css.map */

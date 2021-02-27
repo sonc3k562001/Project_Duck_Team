@@ -1,0 +1,67 @@
+﻿@model ProjectTeamVitAspDotNetCore.Models.Dim
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Dim</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.DimCrt)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.DimCrt)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.DimPcs)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.DimPcs)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.DimGm)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.DimGm)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.DimRate)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.DimRate)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.DimAmt)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.DimAmt)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Certify)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Certify)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.DimSize)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.DimSize)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.DimId">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

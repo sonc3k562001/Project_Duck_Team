@@ -1,0 +1,106 @@
+﻿
+@model ProjectTeamVitAspDotNetCore.Models.OrderDetail
+
+<environment>
+    <link rel="stylesheet" href="~/css/checkout.css" />
+</environment>
+<div class="container">
+    <div class="row">
+        <section class="checkout col-xs-12 col-md-12">
+            <div class="checkout_info col-xs-12 col-md-12">
+                <h2>SHOPPING BAG</h2>
+                <h3>If you have any questions, please call: <span>+44 (0)20 7706 0060</span></h3>
+                <strong>You are currently shipping to Vietnam.</strong>
+                <a [routerLink]="['/']"> Shipping to a different country?</a>
+            </div>
+
+            <div class="checkout_product col-xs-12 col-md-12">
+                <table class="table table-borderless table-responsive align-middle text-center">
+
+                    <thead class="table-dark">
+                        <tr>
+                            <th>Product Image</th>
+                            <th>Product Name</th>
+                            <th>Product Size</th>
+                            <th>Product Price</th>
+                            <th>Product Quantity</th>
+                            <th>Product Total</th>
+                            
+                        </tr>
+                    </thead>
+                    @foreach (var item in ViewBag.cart)
+                    {
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <a [routerLink]="['/']">
+                                        <img class="col-xs-12 col-md-12"
+                                             src="/Images/@item.Product.Image">
+                                    </a>
+                                </td>
+                                <td>
+                                    <ul>
+                                        <li>@item.Product.Name</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <span>@item.Size</span>
+                                </td>
+                                <td>
+                                    <span>@item.Product.Price</span>
+                                </td>
+
+                                <td>@item.Quantity</td>
+                                <td>
+                                    @(item.Product.Price * item.Quantity)
+                                </td>
+                            </tr>
+                        </tbody>
+                    }
+                    <tfoot>
+                        <tr>
+                            <td colspan="4" class="text-end">Subtotal</td>
+                            <td>@ViewBag.total</td>
+                        </tr>
+
+                        <tr class="total_row">
+                            <td colspan="3">TOTAL</td>
+                            <td></td>
+                            <td class="total_row-price">@ViewBag.total</td>
+                        </tr>
+
+                    </tfoot>
+                    <input type="hidden" value="@ViewBag.total" />
+
+
+                </table>
+                <div class="d-flex justify-content-end text-center col-xs-12 col-md-12">
+                    <ul>
+                        <li>
+                            <button class="btn checkout_button">
+                                <a asp-controller="Cart" asp-action="Checkout">Go to Checkout</a>
+                            </button>
+
+                        </li>
+                    </ul>
+                </div>
+
+                <form asp-controller="Cart" asp-action="CheckoutPaypal" method="post">
+                    <input type="hidden" name="cart" value="@ViewBag.cart" />
+                    <input type="hidden" name="total" value="@ViewBag.total" />
+                    <div class="d-flex justify-content-end text-center col-xs-12 col-md-12">
+                        <ul>
+                            <li>
+                                <button type="submit" class="btn checkout_button">
+                                    Payment with Paypal
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+
+                </form>
+            </div>
+        </section>
+    </div>
+</div>
+

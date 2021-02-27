@@ -1,0 +1,218 @@
+﻿
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    /* Margin bottom by footer height */
+    min-height: 100vh;
+    overflow-x: hidden;
+    background-color: #f6f7fb !important;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    white-space: nowrap;
+    line-height: 60px;
+    /* Vertically center the text there */
+}
+
+
+
+.header-name {
+    color: #d41442;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 300;
+    letter-spacing: 0px;
+    font-family: "Titan One", Arial, Tahoma, sans-serif;
+    margin: 13px 0 0 50px;
+}
+
+.toggle {
+    float: left;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.1);
+    transition: all 0.4s;
+    z-index: 2;
+}
+
+.vertical-nav {
+    min-width: 17rem;
+    width: 17rem;
+    height: 100vh;
+    position: fixed;
+    top: 59px;
+    left: 0;
+    transition: all 0.4s;
+}
+
+.page-content {
+    width: calc(100% - 17rem);
+    margin-left: 17rem;
+    transition: all 0.4s;
+    color: black;
+    font-size: 15px;
+}
+
+.account {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    height: 40px;
+    padding: 4px 16px 4px 4px;
+    box-sizing: border-box;
+    color: #333;
+    cursor: pointer;
+    float: right;
+}
+
+.account-avatar {
+    width: 32px;
+    height: 32px;
+    margin-right: 8px;
+    border-radius: 50%;
+}
+
+.account-name {
+    min-width: 64px;
+    font-size: 14px;
+    color: #333;
+}
+
+#sidebar.active {
+    margin-left: -17rem;
+}
+
+#content.active {
+    width: 100%;
+    margin: 0;
+}
+
+.separator {
+    margin: 3rem 0;
+    border-bottom: 1px solid #8e8e8e;
+}
+
+.text-uppercase {
+    letter-spacing: 0.1em;
+}
+
+.text-gray {
+    color: black;
+}
+
+.nav-link {
+    text-transform: capitalize;
+}
+
+    .nav-link:hover {
+        background: #f3f2f2;
+    }
+
+.text-primary {
+    color: #7579e7 !important;
+}
+
+@media (max-width: 768px) {
+    #sidebar {
+        margin-left: -17rem;
+    }
+
+        #sidebar.active {
+            margin-left: 0;
+        }
+
+    #content {
+        width: 100%;
+        margin: 0;
+    }
+
+        #content.active {
+            margin-left: 17rem;
+            width: calc(100% - 17rem);
+        }
+}
+
+.btn-secondary {
+    background-color: #455ec9 !important;
+}
+
+
+
+
+
+
+
+.sidebar-left {
+    border-radius: 5px;
+}
+
+    .sidebar-left .sidebar-title {
+        color: #333;
+        font-size: 18px;
+        line-height: 22px;
+        font-weight: bold;
+    }
+
+.sidebar-menu {
+    padding-left: 5px;
+}
+
+.sidebar-left .sidebar-menu {
+    list-style: none;
+}
+
+    .sidebar-left .sidebar-menu li {
+        display: block;
+    }
+
+        .sidebar-left .sidebar-menu li a {
+            display: block;
+            font-size: 16px;
+            line-height: 1.2;
+            text-decoration: none;
+            padding: 12px 0px;
+            position: relative;
+            color: white;
+            /*border: 1px solid white;*/
+        }
+
+            .sidebar-left .sidebar-menu li a:hover {
+                color: #4caf50;
+            }
+
+        .sidebar-left .sidebar-menu li ul {
+            padding-left: 25px;
+            list-style: none;
+            display: none;
+        }
+
+        .sidebar-left .sidebar-menu li.has-child > a .icon {
+            content: '';
+            position: absolute;
+            right: 0;
+            top: 15px;
+            width: 20px;
+            height: 20px;
+            background: url(//theme.hstatic.net/1000006434/1000468887/14/menu-arrow.png?v=491) center center no-repeat;
+            background-size: 14px;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .sidebar-left .sidebar-menu li.has-child.menu-open > a .icon {
+            transform: rotate(180deg);
+        }
+
+        .sidebar-left .sidebar-menu li.has-child.menu-open > ul {
+            display: block;
+        }

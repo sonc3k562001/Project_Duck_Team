@@ -1,0 +1,92 @@
+﻿<environment>
+    <link rel="stylesheet" href="~/css/rings.css" />
+</environment>
+
+
+@model IEnumerable<ProjectTeamVitAspDotNetCore.Models.Product>
+
+@{ ViewData["Title"] = "Bracelets";
+    Layout = "~/Views/Shared/_Layout.cshtml"; }
+
+
+
+
+<section class="col-xs-12 col-md-12 search-option">
+    <form asp-controller="Product" asp-action="Rings" class="input-group input-group-sm">
+        <input class="form-control col-md-3" type="text" name="searchString" />
+        <input class="btn btn-sm btn-dark btn-outline-secondary" type="submit" value="Search" />
+        <a asp-controller="Product" asp-action="Rings">All Rings</a>
+    </form>
+    <form asp-controller="Product" asp-action="Rings" class="select">
+        <select name="color" class="col-md-2">
+            <option value="null">Color</option>
+            @foreach (Color color in ViewBag.colors)
+            {
+                <option value="@color.ColorId">@color.Name</option>
+            }
+        </select>
+        <select name="brand" class="col-md-2">
+            <option value="null">Brand</option>
+            @foreach (Brand brand in ViewBag.brands)
+            {
+                <option value="@brand.BrandId">@brand.BrandName</option>
+            }
+        </select>
+        <select name="dim" class="col-md-2">
+            <option value="null">Diamond</option>
+            @foreach (Dim dim in ViewBag.dims)
+            {
+                <option value="@dim.DimId">@dim.Name</option>
+            }
+        </select>
+        <select name="stone">
+            <option value="null">Stone</option>
+            @foreach (Stone stone in ViewBag.stones)
+            {
+                <option value="@stone.StoneId">@stone.Name</option>
+            }
+        </select>
+        <select name="metal">
+            <option value="null">Metal</option>
+            @foreach (Metal metal in ViewBag.metals)
+            {
+                <option value="@metal.MetalId">@metal.Name</option>
+            }
+        </select>
+        <input class="btn btn-sm btn-dark btn-outline-secondary filter" type="submit" value="Filter" />
+    </form>
+
+</section>
+
+
+<section class="col-xs-12 col-md-12">
+
+
+    <div class="products_filter-show d-flex flex-row flex-wrap justify-content-center align-content-center col-xs-12 col-md-12">
+        @foreach (var item in Model)
+        {
+<div class="product col-xs-2 col-md-2">
+    <div class="d-flex text-center align-items-center justify-content-center">
+        <a class="p-3 col-xs-12 col-md-12" asp-controller="Product" asp-action="Product_detail" asp-route-id="@item.PdId">
+
+            <div class="text-center">
+
+                <img src="~/Images/@item.Image" width="375" height="375" />
+
+                <h3>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </h3>
+                <span>
+                    @Html.DisplayFor(modelItem => item.Price)
+                </span>
+            </div>
+        </a>
+    </div>
+</div>}
+    </div>
+</section>
+
+
+
+
+

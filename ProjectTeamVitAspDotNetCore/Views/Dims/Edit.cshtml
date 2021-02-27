@@ -1,0 +1,70 @@
+﻿@model ProjectTeamVitAspDotNetCore.Models.Dim
+
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h1>Edit</h1>
+
+<h4>Dim</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="DimId" />
+            <div class="form-group">
+                <label asp-for="Name" class="control-label"></label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DimCrt" class="control-label"></label>
+                <input asp-for="DimCrt" class="form-control" />
+                <span asp-validation-for="DimCrt" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DimPcs" class="control-label"></label>
+                <input asp-for="DimPcs" class="form-control" />
+                <span asp-validation-for="DimPcs" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DimGm" class="control-label"></label>
+                <input asp-for="DimGm" class="form-control" />
+                <span asp-validation-for="DimGm" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DimRate" class="control-label"></label>
+                <input asp-for="DimRate" class="form-control" />
+                <span asp-validation-for="DimRate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DimAmt" class="control-label"></label>
+                <input asp-for="DimAmt" class="form-control" />
+                <span asp-validation-for="DimAmt" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Certify" class="control-label"></label>
+                <input asp-for="Certify" class="form-control" />
+                <span asp-validation-for="Certify" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DimSize" class="control-label"></label>
+                <input asp-for="DimSize" class="form-control" />
+                <span asp-validation-for="DimSize" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

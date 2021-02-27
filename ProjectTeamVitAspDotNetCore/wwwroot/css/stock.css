@@ -1,0 +1,74 @@
+﻿.stock .stock_banner {
+    background-image: url("https://www.astleyclarke.com/skin/frontend/default/astleyclarke/images/cms-page-banners/blue-nov-2020.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80px;
+}
+
+    .stock .stock_banner h2 {
+        color: white;
+        font-weight: bold;
+        text-transform: uppercase;
+        padding-top: 20px;
+        font-size: 32px;
+        line-height: 1.5;
+    }
+
+.stock h3.intro {
+    font-size: 24px;
+    line-height: 1.5;
+    margin: 10px 0;
+}
+
+.stock .stock_select select {
+    margin: 0 20px;
+}
+
+    .stock .stock_select select option {
+        padding: 10px;
+        font-size: 16px;
+    }
+
+.stock .stock_list img {
+    margin: 20px 0;
+}
+
+.stock .stock_list ul {
+    list-style: none;
+}
+
+    .stock .stock_list ul li {
+        display: -webkit-inline-box;
+        display: -ms-inline-flexbox;
+        display: inline-flex;
+        padding: 20px;
+    }
+
+        .stock .stock_list ul li .stock_list-info {
+            background-color: #ebe5e5;
+            padding: 20px;
+        }
+
+            .stock .stock_list ul li .stock_list-info h2 {
+                font-size: 24px;
+                font-weight: bold;
+                line-height: 1.5;
+            }
+
+            .stock .stock_list ul li .stock_list-info h3 {
+                font-size: 20px;
+                line-height: 1.5;
+            }
+
+            .stock .stock_list ul li .stock_list-info h4 {
+                font-size: 18px;
+                color: blue;
+                line-height: 1.5;
+            }
+
+            .stock .stock_list ul li .stock_list-info span {
+                font-size: 16px;
+                margin: 10px 0;
+                line-height: 1.5;
+            }

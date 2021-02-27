@@ -1,0 +1,41 @@
+﻿.policy .container {
+    width: 60%;
+}
+
+.policy .title {
+    color: white;
+    background-color: black;
+    text-align: start;
+    padding: 5px 20px;
+}
+
+.policy strong {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.policy li {
+    text-justify: distribute-all-lines;
+}
+
+.policy p {
+    font-size: 16px;
+    line-height: 2;
+}
+
+.policy .policy_banner {
+    background-image: url("https://www.astleyclarke.com/skin/frontend/default/astleyclarke/images/cms-page-banners/blue-nov-2020.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80px;
+    margin-bottom: 45px;
+}
+
+    .policy .policy_banner h2 {
+        color: white;
+        font-weight: bold;
+        text-transform: uppercase;
+        padding-top: 20px;
+        font-size: 24px;
+    }

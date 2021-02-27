@@ -57,6 +57,8 @@ namespace ProjectTeamVitAspDotNetCore.Controllers
             ViewData["Stone"] = stone;
 
             var cart = SessionHelper.GetObjectFromJson<List<Item>>(HttpContext.Session, "cart");
+
+
             if (cart != null)
             {
                 ViewBag.cart = cart;
@@ -125,7 +127,7 @@ namespace ProjectTeamVitAspDotNetCore.Controllers
 
             int pageSize = 8;
             ViewBag.pageSize = pageSize;
-            ViewBag.Count = products.Count();
+            ViewBag.CountP = products.Count();
             ViewBag.order = sortOrder;
 
             return View(await PaginatedList<Product>.CreateAsync(products.AsNoTracking(), pageNumber ?? 1, pageSize));
@@ -225,7 +227,7 @@ namespace ProjectTeamVitAspDotNetCore.Controllers
 
             int pageSize = 8;
             ViewBag.pageSize = pageSize;
-            ViewBag.Count = products.Count();
+            ViewBag.CountP = products.Count();
             ViewBag.order = sortOrder;
 
             return View(await PaginatedList<Product>.CreateAsync(products.AsNoTracking(), pageNumber ?? 1, pageSize));
@@ -325,7 +327,7 @@ namespace ProjectTeamVitAspDotNetCore.Controllers
 
             int pageSize = 8;
             ViewBag.pageSize = pageSize;
-            ViewBag.Count = products.Count();
+            ViewBag.CountP = products.Count();
             ViewBag.order = sortOrder;
 
             return View(await PaginatedList<Product>.CreateAsync(products.AsNoTracking(), pageNumber ?? 1, pageSize));
@@ -425,7 +427,7 @@ namespace ProjectTeamVitAspDotNetCore.Controllers
 
             int pageSize = 8;
             ViewBag.pageSize = pageSize;
-            ViewBag.Count = products.Count();
+            ViewBag.CountP = products.Count();
             ViewBag.order = sortOrder;
 
             return View(await PaginatedList<Product>.CreateAsync(products.AsNoTracking(), pageNumber ?? 1, pageSize));
@@ -525,7 +527,7 @@ namespace ProjectTeamVitAspDotNetCore.Controllers
 
             int pageSize = 8;
             ViewBag.pageSize = pageSize;
-            ViewBag.Count = products.Count();
+            ViewBag.CountP = products.Count();
             ViewBag.order = sortOrder;
 
             return View(await PaginatedList<Product>.CreateAsync(products.AsNoTracking(), pageNumber ?? 1, pageSize));

@@ -14,13 +14,13 @@
                 <a [routerLink]="['/']"> Shipping to a different country?</a>
             </div>
 
-            <div class="checkout_product col-xs-12 col-md-12">
-                <table class="table table-borderless table-responsive align-middle text-center">
+            <div class="checkout col-xs-12 col-md-12">
+                <table class="table">
 
                     <thead class="table-dark">
                         <tr>
-                            <th>Product Image</th>
-                            <th>Product Name</th>
+                            <th class="text-center">Product Image</th>
+                            <th class="text-center">Product Name</th>
                             <th>Product Price</th>
                             <th>Product Quantity</th>
                             <th>Product Total</th>
@@ -30,22 +30,20 @@
                     {
                         <tbody>
                             <tr>
-                                <td>
-                                    <a [routerLink]="['/']">
-                                        <img class="col-xs-12 col-md-12"
-                                             src="/Images/@item.Product.Image">
-                                    </a>
+                                <td class="text-center">
+                                    <img class="col-xs-3 col-md-3"
+                                         src="/Images/@item.Product.Image">
                                 </td>
-                                <td>
+                                <td style="padding:65px 20px">
                                     <ul>
                                         <li>@item.Product.Name</li>
                                     </ul>
                                 </td>
-                                <td>
+                                <td style="padding:77px 0">
                                     <span>@item.Product.Price</span>
                                 </td>
-                                <td>@item.Quantity</td>
-                                <td>
+                                <td  style="padding:77px 0">@item.Quantity</td>
+                                <td  style="padding:77px 0">
                                     @(item.Product.Price * item.Quantity)
                                 </td>
                             </tr>
@@ -57,11 +55,7 @@
                             <td>@ViewBag.total</td>
                         </tr>
 
-                        <tr class="total_row">
-                            <td colspan="3">TOTAL</td>
-                            <td></td>
-                            <td class="total_row-price">@ViewBag.total</td>
-                        </tr>
+                        
 
                     </tfoot>
                     <input type="hidden" value="@ViewBag.total" />
@@ -69,30 +63,39 @@
 
                 </table>
                 <div class="d-flex justify-content-end text-center col-xs-12 col-md-12">
-                    <ul>
-                        <li>
-                            <button class="btn checkout_button">
-                                <a asp-controller="Cart" asp-action="Checkout">Go to Checkout</a>
-                            </button>
+                        <div class="col-xs-5 col-md-5">
+                            <div class="row text-white" style="background-color:black;height:50px">
+                                <div class="col-xs-6 col-md-6" style="padding-top:13px">TOTAL</div>
+                                <div class="col-xs-6 col-md-6" style="padding-top:13px">@ViewBag.total</div>
+                            </div>
+                        </div>
+                        <div class="col-xs-7 col-md-7">
+                                <div class="">
+                                        <div>
+                                            <button class="btn checkout_button float-right" style="margin-right:-20px">
+                                                <a asp-controller="Cart" asp-action="Checkout">Go to Checkout</a>
+                                            </button>
+                                        </div>
+                                    <div class="float-right">
+                                        <form asp-controller="Cart" asp-action="CheckoutPaypal" method="post">
+                                            <input type="hidden" name="cart" value="@ViewBag.cart" />
+                                            <input type="hidden" name="total" value="@ViewBag.total" />
+                                            <div class="d-flex justify-content-end text-center">
+                                                <div>
+                                                    <button type="submit" class="btn checkout_button float-right" style="margin-right:10px">
+                                                        Payment with Paypal
+                                                    </button>
+                                                </div>
+                                            </div>
 
-                        </li>
-                    </ul>
+                                        </form>
+                                    </div>
+                                </div>                             
+                           
+                        </div>                   
                 </div>
 
-                <form asp-controller="Cart" asp-action="CheckoutPaypal" method="post">
-                    <input type="hidden" name="cart" value="@ViewBag.cart" />
-                    <input type="hidden" name="total" value="@ViewBag.total" />
-                    <div class="d-flex justify-content-end text-center col-xs-12 col-md-12">
-                        <ul>
-                            <li>
-                                <button type="submit" class="btn checkout_button">
-                                    Payment with Paypal
-                                </button>
-                            </li>
-                        </ul>
-                    </div>
-
-                </form>
+                
             </div>
         </section>
     </div>

@@ -1,5 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
+﻿
+using System;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
@@ -9,7 +9,6 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using ProjectTeamVitAspDotNetCore.Models;
 using ProjectTeamVitAspDotNetCore.Models.ViewModels;
-using ProjectTeamVitAspDotNetCore.Services;
 
 namespace ProjectTeamVitAspDotNetCore.Controllers
 {
@@ -17,45 +16,57 @@ namespace ProjectTeamVitAspDotNetCore.Controllers
     public class ProductsManagerController : Controller
     {
         private readonly JwelleryContext _context;
-        private readonly IProduct _product;
+    
 
 
-        public ProductsManagerController(JwelleryContext context, IProduct product)
+        public ProductsManagerController(JwelleryContext context)
         {
             _context = context;
-            _product = product;
+          
         }
 
         // GET: ProductsManager
 
-        public async Task<IActionResult> Index(int? page = 0)
+        public async Task<IActionResult> Index(string sortOrder,string currentFilter,string searchString,int? pageNumber)
         {
-            int limit = 10;
-            int start;
-            if (page > 0)
+            ViewData["DateSortParm"] = sortOrder == "price" ? "price_desc" : "price";
+
+            ViewData["CurrentFilter"] = searchString;
+            ViewData["CurrentSort"] = sortOrder;
+
+            if (searchString != null)
             {
-                page = page;
+                pageNumber = 1;
             }
             else
             {
-                page = 1;
+                searchString = currentFilter;
             }
-            start = (int)(page - 1) * limit;
 
-            ViewBag.pageCurrent = page;
+            ViewData["CurrentFilter"] = searchString;
+            var products = from s in _context.Product select s;
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                products = products.Where(s => s.Name.Contains(searchString)|| s.Category.TypeName.Contains(searchString));
+            }
+            switch (sortOrder)
+            {
+                case "price":
+                    products = products.OrderBy(s => s.Price);
+                    break;
+                case "price_desc":
+                    products = products.OrderByDescending(s => s.Price);
+                    break;
+                default:
+                    products = products.OrderBy(s => s.PdId);
+                    break;
+            }
 
-            int totalProduct = _product.totalProduct();
-
-            ViewBag.totalProduct = totalProduct;
-
-            ViewBag.numberPage = _product.numberPage(totalProduct, limit);
-
-            var data = _product.paginationProduct(start, limit);
-
-            return View(data);
-
-            //var jwelleryContext = _context.Product.Include(p => p.Brand).Include(p => p.Category).Include(p => p.Color).Include(p => p.Dim).Include(p => p.Metal).Include(p => p.Stone);
-            //return View(await jwelleryContext.ToListAsync());
+            int pageSize = 10;
+            ViewBag.pageSize = pageSize;
+            ViewBag.Count = products.Count();
+            ViewBag.order = sortOrder;
+            return View(await PaginatedList<Product>.CreateAsync(products.AsNoTracking(), pageNumber ?? 1, pageSize)); 
         }
 
         // GET: ProductsManager/Details/5

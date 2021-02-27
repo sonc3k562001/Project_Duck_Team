@@ -1,11 +1,15 @@
-﻿@model IEnumerable<ProjectTeamVitAspDotNetCore.Models.Product>
+﻿@model PaginatedList<ProjectTeamVitAspDotNetCore.Models.Product>
 
 @{
     ViewData["Title"] = "Index";
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
 
-<h1>Index</h1>
+<form asp-controller="ProductsManager" asp-action="index">
+    <input type="text" name="searchString" />
+    <input type="submit" value="Search" />
+    <a asp-controller="ProductsManager" asp-action="index">All</a>
+</form>
 
 <p>
     <a asp-action="Create">Create New</a>
@@ -17,7 +21,19 @@
                 Product
             </th>
             <th>
-                Price
+                @if (ViewBag.order == "price")
+                {
+                    <a asp-action="Index" asp-route-sortOrder="@ViewData["DateSortParm"]" asp-route-currentFilter="@ViewData["CurrentFilter"]"><i class="fas fa-sort-up">Price</i></a>
+                }
+                else if (ViewBag.order == "price_desc")
+                {
+                    <a asp-action="Index" asp-route-sortOrder="@ViewData["DateSortParm"]" asp-route-currentFilter="@ViewData["CurrentFilter"]"><i class="fas fa-sort-down">Price</i></a>
+                }
+                else
+                {
+                    <a asp-action="Index" asp-route-sortOrder="@ViewData["DateSortParm"]" asp-route-currentFilter="@ViewData["CurrentFilter"]"><i class="fas fa-sort">Price</i></a>
+                }
+
             </th>
 
             <th>
@@ -72,57 +88,41 @@
         }
     </tbody>
 </table>
-<ul class="pagination">
-    @{
-        int numberPage = ViewBag.numberPage;
-        int pageCurrent = ViewBag.pageCurrent;
-        int offset = 4;//number display page
+@{
+    var prevDisabled = !Model.HasPreviousPage ? "disabled" : "";
+    var nextDisabled = !Model.HasNextPage ? "disabled" : "";
+}
 
-        if (pageCurrent > 1)
+<a asp-action="Index"
+   asp-route-sortOrder="@ViewData["CurrentSort"]"
+   asp-route-pageNumber="@(Model.PageIndex - 1)"
+   asp-route-currentFilter="@ViewData["CurrentFilter"]"
+   class="btn-info btn btn-default @prevDisabled">
+    Previous
+</a>
+@{
+    double n = ViewBag.Count;
+    double s = ViewBag.pageSize;
+    double sn = Math.Ceiling(n / s);
+
+    for (int i = 1; i <= sn; i++)
+    {
+        if (Model.PageIndex == i)
         {
-            int prevPage = pageCurrent - 1;
-            var PrevLink = new Dictionary<string, string> { { "page", prevPage.ToString() } };
-            <li><a class="btn btn-info" asp-controller="ProductsManager" asp-action="Index" asp-all-route-data="PrevLink">Prev Link</a></li>
+            <a class="active btn btn-default btn-info">@i</a>
         }
-
-        int from = pageCurrent - offset;
-        int to = pageCurrent + offset;
-        if (from <= 0)
+        else
         {
-            from = 1;
-            to = offset * 2;
-        }
-
-
-        if (to > numberPage)
-        {
-            to = numberPage;
-        }
-
-        int i;
-        for (i = from; i <= to; i++)
-        {
-            var parms = new Dictionary<string, string>
-                {
-                        { "page",i.ToString()}
-                    };
-            if (pageCurrent == i)
-            {
-                <li class="active"><a class="btn btn-info" asp-controller="ProductsManager" asp-action="Index" asp-all-route-data="parms">@i</a></li>
-            }
-            else
-            {
-                <li><a class="btn" asp-controller="ProductsManager" asp-action="Index" asp-all-route-data="parms">@i</a></li>
-            }
-
-        }
-
-        if (pageCurrent < numberPage)
-        {
-            int nextPage = pageCurrent + 1;
-            var NextLink = new Dictionary<string, string> { { "page", nextPage.ToString() } };
-            <li><a class="btn btn-info" asp-controller="ProductsManager" asp-action="Index" asp-all-route-data="NextLink">Next Link</a></li>
+            <a class="btn btn-default btn-info" asp-action="Index" asp-route-sortOrder="@ViewData["CurrentSort"]" asp-route-currentFilter="@ViewData["CurrentFilter"]" asp-route-pageNumber="@i">@i</a>
         }
     }
-</ul>
+}
+
+<a asp-action="Index"
+   asp-route-sortOrder="@ViewData["CurrentSort"]"
+   asp-route-pageNumber="@(Model.PageIndex + 1)"
+   asp-route-currentFilter="@ViewData["CurrentFilter"]"
+   class="btn-info btn btn-default @nextDisabled">
+    Next
+</a>
 

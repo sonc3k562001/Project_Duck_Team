@@ -96,7 +96,7 @@ namespace ProjectTeamVitAspDotNetCore.Controllers
         }
 
       
-        public async Task<IActionResult> Checkout()
+        public IActionResult Checkout()
         {
             var email = User.FindFirstValue(ClaimTypes.Name);
             var user  = db.User.FirstOrDefault(x => x.Email == email);

@@ -30,16 +30,40 @@ namespace ProjectTeamVitAspDotNetCore.Controllers
             return View();
         }
 
-        public IActionResult Bracelets(string searchString, string color, string metal, string brand, string dim, string stone)
+        public async Task<IActionResult> Bracelets(string searchString, int? pageNumber, string sortOrder,string currentFilter, string currentColor, string currentMetal, string currentBrand, string currentDim, string currentStone, string color, string metal, string brand, string dim, string stone)
         {
+
+            ViewData["CurrentSort"] = sortOrder;
+            ViewData["DateSortParm"] = sortOrder == "price" ? "price_desc" : "price";
+
+            if (searchString != null ||color != null ||brand!=null||metal!=null||dim!=null||stone!=null)
+            {
+                pageNumber = 1;
+            }
+            else
+            {
+                color = currentColor;
+                brand = currentBrand;
+                dim = currentDim;
+                stone = currentStone;
+                metal = currentMetal;
+                searchString = currentFilter;
+            }
+            ViewData["CurrentFilter"] = searchString;
+            ViewData["Color"] = color;
+            ViewData["Metal"] = metal;
+            ViewData["Brand"] = brand;
+            ViewData["Dim"] = dim;
+            ViewData["Stone"] = stone;
+
             var cart = SessionHelper.GetObjectFromJson<List<Item>>(HttpContext.Session, "cart");
             if (cart != null)
             {
                 ViewBag.cart = cart;
                 ViewBag.Count = cart.Count;
             }
-            var category = _context.Category.FirstOrDefault(x => x.TypeName == "Bracelets");
-            List<Product> products = _context.Product.Where(x => x.IdCategory == category.IdCategory).ToList();
+            var category = _context.Category.FirstOrDefault(x => x.TypeName.Equals("Bracelets"));
+            var products = from s in _context.Product where(s.IdCategory ==category.IdCategory) select s; ;
 
             List<Color> colors = _context.Color.ToList();
             List<Metal> metals = _context.Metal.ToList();
@@ -52,32 +76,94 @@ namespace ProjectTeamVitAspDotNetCore.Controllers
             ViewBag.stones = stones;
             ViewBag.brands = brands;
 
-            if (searchString != null)
+            if (!String.IsNullOrEmpty(searchString))
             {
-                products = products.Where(x => x.Name.Contains(searchString) || x.PdId.Contains(searchString) || x.StoneId.Contains(searchString) || x.DimId.Contains(searchString) || x.BrandId.Contains(searchString) || x.ColorId.Contains(searchString)).ToList();
+                products = products.Where(s => s.Name.Contains(searchString) || s.PdId.Contains(searchString) ||s.Stone.StoneId.Contains(searchString)||s.Metal.MetalId.Contains(searchString)||s.Color.ColorId.Contains(searchString)||s.Dim.DimId.Contains(searchString)||s.Brand.BrandId.Contains(searchString));
             }
-            if (color != null || stone != null || dim != null || metal != null || brand != null)
+            if (!String.IsNullOrEmpty(color))
             {
-                products = products.Where(x => x.ColorId == color || x.BrandId== brand || x.DimId==dim || x.StoneId== stone || x.MetalId== metal).ToList();
+                products = products.Where(x => x.ColorId == color);
             }
-            if (products.Count == 0)
+            if (!String.IsNullOrEmpty(metal))
+            {
+                products = products.Where(x => x.MetalId == metal);
+            }
+            if (!String.IsNullOrEmpty(dim))
+            {
+                products = products.Where(x => x.DimId == dim);
+            }
+            if (!String.IsNullOrEmpty(stone))
+            {
+                products = products.Where(x => x.StoneId == stone);
+            }
+            if (!String.IsNullOrEmpty(brand))
+            {
+                products = products.Where(x => x.BrandId == brand);
+            }
+            if (products.Count() == 0)
             {
                 ViewBag.message = "Can't find the product you need";
             }
 
-            return View(products);
-        }
 
-        public IActionResult Lockets(string searchString,string color,string metal,string brand,string dim,string stone)
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                products = products.Where(s => s.Name.Contains(searchString) || s.Category.TypeName.Contains(searchString));
+            }
+            switch (sortOrder)
+            {
+                case "price":
+                    products = products.OrderBy(s => s.Price);
+                    break;
+                case "price_desc":
+                    products = products.OrderByDescending(s => s.Price);
+                    break;
+                default:
+                    products = products.OrderBy(s => s.PdId);
+                    break;
+            }
+
+            int pageSize = 8;
+            ViewBag.pageSize = pageSize;
+            ViewBag.Count = products.Count();
+            ViewBag.order = sortOrder;
+
+            return View(await PaginatedList<Product>.CreateAsync(products.AsNoTracking(), pageNumber ?? 1, pageSize));
+        }
+        public async Task<IActionResult> Lockets(string searchString, int? pageNumber, string sortOrder,string currentFilter, string currentColor, string currentMetal, string currentBrand, string currentDim, string currentStone, string color, string metal, string brand, string dim, string stone)
         {
+
+            ViewData["CurrentSort"] = sortOrder;
+            ViewData["DateSortParm"] = sortOrder == "price" ? "price_desc" : "price";
+
+            if (searchString != null ||color != null ||brand!=null||metal!=null||dim!=null||stone!=null)
+            {
+                pageNumber = 1;
+            }
+            else
+            {
+                color = currentColor;
+                brand = currentBrand;
+                dim = currentDim;
+                stone = currentStone;
+                metal = currentMetal;
+                searchString = currentFilter;
+            }
+            ViewData["CurrentFilter"] = searchString;
+            ViewData["Color"] = color;
+            ViewData["Metal"] = metal;
+            ViewData["Brand"] = brand;
+            ViewData["Dim"] = dim;
+            ViewData["Stone"] = stone;
+
             var cart = SessionHelper.GetObjectFromJson<List<Item>>(HttpContext.Session, "cart");
             if (cart != null)
             {
                 ViewBag.cart = cart;
                 ViewBag.Count = cart.Count;
             }
-            var category = _context.Category.FirstOrDefault(x => x.TypeName == "Lockets");// get categorry
-            List<Product> products = _context.Product.Where(x => x.IdCategory == category.IdCategory).ToList();// list product in category
+            var category = _context.Category.FirstOrDefault(x => x.TypeName.Equals("Lockets"));
+            var products = from s in _context.Product where(s.IdCategory ==category.IdCategory) select s; ;
 
             List<Color> colors = _context.Color.ToList();
             List<Metal> metals = _context.Metal.ToList();
@@ -90,32 +176,94 @@ namespace ProjectTeamVitAspDotNetCore.Controllers
             ViewBag.stones = stones;
             ViewBag.brands = brands;
 
-            if (searchString != null)
+            if (!String.IsNullOrEmpty(searchString))
             {
-                products = products.Where(x => x.Name.Contains(searchString) || x.PdId.Contains(searchString) || x.StoneId.Contains(searchString) || x.DimId.Contains(searchString) || x.BrandId.Contains(searchString) || x.ColorId.Contains(searchString)).ToList();
+                products = products.Where(s => s.Name.Contains(searchString) || s.PdId.Contains(searchString) ||s.Stone.StoneId.Contains(searchString)||s.Metal.MetalId.Contains(searchString)||s.Color.ColorId.Contains(searchString)||s.Dim.DimId.Contains(searchString)||s.Brand.BrandId.Contains(searchString));
             }
-            if(color != null ||stone != null || dim != null || metal != null || brand != null)
+            if (!String.IsNullOrEmpty(color))
             {
-                products = products.Where(x => x.ColorId == color || x.BrandId == brand|| x.DimId == dim|| x.StoneId == stone|| x.MetalId == metal).ToList();
+                products = products.Where(x => x.ColorId == color);
             }
-            if(products.Count == 0)
+            if (!String.IsNullOrEmpty(metal))
+            {
+                products = products.Where(x => x.MetalId == metal);
+            }
+            if (!String.IsNullOrEmpty(dim))
+            {
+                products = products.Where(x => x.DimId == dim);
+            }
+            if (!String.IsNullOrEmpty(stone))
+            {
+                products = products.Where(x => x.StoneId == stone);
+            }
+            if (!String.IsNullOrEmpty(brand))
+            {
+                products = products.Where(x => x.BrandId == brand);
+            }
+            if (products.Count() == 0)
             {
                 ViewBag.message = "Can't find the product you need";
             }
-            return View(products);
-        }
 
-        public IActionResult Necklaces(string searchString, string color, string metal, string brand, string dim, string stone)
+
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                products = products.Where(s => s.Name.Contains(searchString) || s.Category.TypeName.Contains(searchString));
+            }
+            switch (sortOrder)
+            {
+                case "price":
+                    products = products.OrderBy(s => s.Price);
+                    break;
+                case "price_desc":
+                    products = products.OrderByDescending(s => s.Price);
+                    break;
+                default:
+                    products = products.OrderBy(s => s.PdId);
+                    break;
+            }
+
+            int pageSize = 8;
+            ViewBag.pageSize = pageSize;
+            ViewBag.Count = products.Count();
+            ViewBag.order = sortOrder;
+
+            return View(await PaginatedList<Product>.CreateAsync(products.AsNoTracking(), pageNumber ?? 1, pageSize));
+        }
+        public async Task<IActionResult> Necklaces(string searchString, int? pageNumber, string sortOrder,string currentFilter, string currentColor, string currentMetal, string currentBrand, string currentDim, string currentStone, string color, string metal, string brand, string dim, string stone)
         {
+
+            ViewData["CurrentSort"] = sortOrder;
+            ViewData["DateSortParm"] = sortOrder == "price" ? "price_desc" : "price";
+
+            if (searchString != null ||color != null ||brand!=null||metal!=null||dim!=null||stone!=null)
+            {
+                pageNumber = 1;
+            }
+            else
+            {
+                color = currentColor;
+                brand = currentBrand;
+                dim = currentDim;
+                stone = currentStone;
+                metal = currentMetal;
+                searchString = currentFilter;
+            }
+            ViewData["CurrentFilter"] = searchString;
+            ViewData["Color"] = color;
+            ViewData["Metal"] = metal;
+            ViewData["Brand"] = brand;
+            ViewData["Dim"] = dim;
+            ViewData["Stone"] = stone;
+
             var cart = SessionHelper.GetObjectFromJson<List<Item>>(HttpContext.Session, "cart");
             if (cart != null)
             {
                 ViewBag.cart = cart;
                 ViewBag.Count = cart.Count;
             }
-            var category = _context.Category.FirstOrDefault(x => x.TypeName == "Necklaces");
-            List<Product> products = _context.Product.Where(x => x.IdCategory == category.IdCategory).ToList();
-
+            var category = _context.Category.FirstOrDefault(x => x.TypeName.Equals("Necklaces"));
+            var products = from s in _context.Product where(s.IdCategory ==category.IdCategory) select s; ;
 
             List<Color> colors = _context.Color.ToList();
             List<Metal> metals = _context.Metal.ToList();
@@ -128,30 +276,94 @@ namespace ProjectTeamVitAspDotNetCore.Controllers
             ViewBag.stones = stones;
             ViewBag.brands = brands;
 
-            if (searchString != null)
+            if (!String.IsNullOrEmpty(searchString))
             {
-                products = products.Where(x => x.Name.Contains(searchString) || x.PdId.Contains(searchString) || x.StoneId.Contains(searchString) || x.DimId.Contains(searchString) || x.BrandId.Contains(searchString) || x.ColorId.Contains(searchString)).ToList();
+                products = products.Where(s => s.Name.Contains(searchString) || s.PdId.Contains(searchString) ||s.Stone.StoneId.Contains(searchString)||s.Metal.MetalId.Contains(searchString)||s.Color.ColorId.Contains(searchString)||s.Dim.DimId.Contains(searchString)||s.Brand.BrandId.Contains(searchString));
             }
-            if (color != null || stone != null || dim != null || metal != null || brand != null)
+            if (!String.IsNullOrEmpty(color))
             {
-                products = products.Where(x => x.ColorId == color || x.BrandId == brand || x.DimId == dim || x.StoneId == stone || x.MetalId == metal).ToList();
+                products = products.Where(x => x.ColorId == color);
             }
-            if (products.Count == 0)
+            if (!String.IsNullOrEmpty(metal))
+            {
+                products = products.Where(x => x.MetalId == metal);
+            }
+            if (!String.IsNullOrEmpty(dim))
+            {
+                products = products.Where(x => x.DimId == dim);
+            }
+            if (!String.IsNullOrEmpty(stone))
+            {
+                products = products.Where(x => x.StoneId == stone);
+            }
+            if (!String.IsNullOrEmpty(brand))
+            {
+                products = products.Where(x => x.BrandId == brand);
+            }
+            if (products.Count() == 0)
             {
                 ViewBag.message = "Can't find the product you need";
             }
-            return View(products);
+
+
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                products = products.Where(s => s.Name.Contains(searchString) || s.Category.TypeName.Contains(searchString));
+            }
+            switch (sortOrder)
+            {
+                case "price":
+                    products = products.OrderBy(s => s.Price);
+                    break;
+                case "price_desc":
+                    products = products.OrderByDescending(s => s.Price);
+                    break;
+                default:
+                    products = products.OrderBy(s => s.PdId);
+                    break;
+            }
+
+            int pageSize = 8;
+            ViewBag.pageSize = pageSize;
+            ViewBag.Count = products.Count();
+            ViewBag.order = sortOrder;
+
+            return View(await PaginatedList<Product>.CreateAsync(products.AsNoTracking(), pageNumber ?? 1, pageSize));
         }
-        public IActionResult Rings(string searchString, string color, string metal, string brand, string dim, string stone)
+        public async Task<IActionResult> Rings(string searchString, int? pageNumber, string sortOrder,string currentFilter, string currentColor, string currentMetal, string currentBrand, string currentDim, string currentStone, string color, string metal, string brand, string dim, string stone)
         {
+
+            ViewData["CurrentSort"] = sortOrder;
+            ViewData["DateSortParm"] = sortOrder == "price" ? "price_desc" : "price";
+
+            if (searchString != null ||color != null ||brand!=null||metal!=null||dim!=null||stone!=null)
+            {
+                pageNumber = 1;
+            }
+            else
+            {
+                color = currentColor;
+                brand = currentBrand;
+                dim = currentDim;
+                stone = currentStone;
+                metal = currentMetal;
+                searchString = currentFilter;
+            }
+            ViewData["CurrentFilter"] = searchString;
+            ViewData["Color"] = color;
+            ViewData["Metal"] = metal;
+            ViewData["Brand"] = brand;
+            ViewData["Dim"] = dim;
+            ViewData["Stone"] = stone;
+
             var cart = SessionHelper.GetObjectFromJson<List<Item>>(HttpContext.Session, "cart");
             if (cart != null)
             {
                 ViewBag.cart = cart;
                 ViewBag.Count = cart.Count;
             }
-            var category = _context.Category.FirstOrDefault(x => x.TypeName == "Rings");
-            List<Product> products = _context.Product.Where(x => x.IdCategory == category.IdCategory).ToList();
+            var category = _context.Category.FirstOrDefault(x => x.TypeName.Equals("Rings"));
+            var products = from s in _context.Product where(s.IdCategory ==category.IdCategory) select s; ;
 
             List<Color> colors = _context.Color.ToList();
             List<Metal> metals = _context.Metal.ToList();
@@ -164,32 +376,94 @@ namespace ProjectTeamVitAspDotNetCore.Controllers
             ViewBag.stones = stones;
             ViewBag.brands = brands;
 
-            if (searchString != null)
+            if (!String.IsNullOrEmpty(searchString))
             {
-                products = products.Where(x => x.Name.Contains(searchString) || x.PdId.Contains(searchString) || x.StoneId.Contains(searchString) || x.DimId.Contains(searchString) || x.BrandId.Contains(searchString) || x.ColorId.Contains(searchString)).ToList();
+                products = products.Where(s => s.Name.Contains(searchString) || s.PdId.Contains(searchString) ||s.Stone.StoneId.Contains(searchString)||s.Metal.MetalId.Contains(searchString)||s.Color.ColorId.Contains(searchString)||s.Dim.DimId.Contains(searchString)||s.Brand.BrandId.Contains(searchString));
             }
-            if (color != null || stone != null || dim != null || metal != null || brand != null)
+            if (!String.IsNullOrEmpty(color))
             {
-                products = products.Where(x => x.ColorId == color || x.BrandId == brand || x.DimId == dim || x.StoneId == stone || x.MetalId == metal).ToList();
+                products = products.Where(x => x.ColorId == color);
             }
-            if (products.Count == 0)
+            if (!String.IsNullOrEmpty(metal))
+            {
+                products = products.Where(x => x.MetalId == metal);
+            }
+            if (!String.IsNullOrEmpty(dim))
+            {
+                products = products.Where(x => x.DimId == dim);
+            }
+            if (!String.IsNullOrEmpty(stone))
+            {
+                products = products.Where(x => x.StoneId == stone);
+            }
+            if (!String.IsNullOrEmpty(brand))
+            {
+                products = products.Where(x => x.BrandId == brand);
+            }
+            if (products.Count() == 0)
             {
                 ViewBag.message = "Can't find the product you need";
             }
-            return View(products);
+
+
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                products = products.Where(s => s.Name.Contains(searchString) || s.Category.TypeName.Contains(searchString));
+            }
+            switch (sortOrder)
+            {
+                case "price":
+                    products = products.OrderBy(s => s.Price);
+                    break;
+                case "price_desc":
+                    products = products.OrderByDescending(s => s.Price);
+                    break;
+                default:
+                    products = products.OrderBy(s => s.PdId);
+                    break;
+            }
+
+            int pageSize = 8;
+            ViewBag.pageSize = pageSize;
+            ViewBag.Count = products.Count();
+            ViewBag.order = sortOrder;
+
+            return View(await PaginatedList<Product>.CreateAsync(products.AsNoTracking(), pageNumber ?? 1, pageSize));
         }
-        public IActionResult Earrings(string searchString, string color, string metal, string brand, string dim, string stone)
+        public async Task<IActionResult> Earrings(string searchString, int? pageNumber, string sortOrder,string currentFilter, string currentColor, string currentMetal, string currentBrand, string currentDim, string currentStone, string color, string metal, string brand, string dim, string stone)
         {
+
+            ViewData["CurrentSort"] = sortOrder;
+            ViewData["DateSortParm"] = sortOrder == "price" ? "price_desc" : "price";
+
+            if (searchString != null ||color != null ||brand!=null||metal!=null||dim!=null||stone!=null)
+            {
+                pageNumber = 1;
+            }
+            else
+            {
+                color = currentColor;
+                brand = currentBrand;
+                dim = currentDim;
+                stone = currentStone;
+                metal = currentMetal;
+                searchString = currentFilter;
+            }
+            ViewData["CurrentFilter"] = searchString;
+            ViewData["Color"] = color;
+            ViewData["Metal"] = metal;
+            ViewData["Brand"] = brand;
+            ViewData["Dim"] = dim;
+            ViewData["Stone"] = stone;
+
             var cart = SessionHelper.GetObjectFromJson<List<Item>>(HttpContext.Session, "cart");
             if (cart != null)
             {
                 ViewBag.cart = cart;
                 ViewBag.Count = cart.Count;
             }
-            var category = _context.Category.FirstOrDefault(x => x.TypeName == "Earrings");
-            List<Product> products = _context.Product.Where(x => x.IdCategory == category.IdCategory).ToList();
-
-
+            var category = _context.Category.FirstOrDefault(x => x.TypeName.Equals("Earrings"));
+            var products = from s in _context.Product where(s.IdCategory ==category.IdCategory) select s; ;
 
             List<Color> colors = _context.Color.ToList();
             List<Metal> metals = _context.Metal.ToList();
@@ -202,20 +476,61 @@ namespace ProjectTeamVitAspDotNetCore.Controllers
             ViewBag.stones = stones;
             ViewBag.brands = brands;
 
-            if (searchString != null)
+            if (!String.IsNullOrEmpty(searchString))
             {
-                products = products.Where(x => x.Name.Contains(searchString) || x.PdId.Contains(searchString) || x.StoneId.Contains(searchString) || x.DimId.Contains(searchString) || x.BrandId.Contains(searchString) || x.ColorId.Contains(searchString)).ToList();
+                products = products.Where(s => s.Name.Contains(searchString) || s.PdId.Contains(searchString) ||s.Stone.StoneId.Contains(searchString)||s.Metal.MetalId.Contains(searchString)||s.Color.ColorId.Contains(searchString)||s.Dim.DimId.Contains(searchString)||s.Brand.BrandId.Contains(searchString));
             }
-            if (color != null || stone != null || dim != null || metal != null || brand != null)
+            if (!String.IsNullOrEmpty(color))
             {
-                products = products.Where(x => x.ColorId == color || x.BrandId == brand || x.DimId == dim || x.StoneId == stone || x.MetalId == metal).ToList();
+                products = products.Where(x => x.ColorId == color);
             }
-            if (products.Count == 0)
+            if (!String.IsNullOrEmpty(metal))
+            {
+                products = products.Where(x => x.MetalId == metal);
+            }
+            if (!String.IsNullOrEmpty(dim))
+            {
+                products = products.Where(x => x.DimId == dim);
+            }
+            if (!String.IsNullOrEmpty(stone))
+            {
+                products = products.Where(x => x.StoneId == stone);
+            }
+            if (!String.IsNullOrEmpty(brand))
+            {
+                products = products.Where(x => x.BrandId == brand);
+            }
+            if (products.Count() == 0)
             {
                 ViewBag.message = "Can't find the product you need";
             }
-            return View(products);
+
+
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                products = products.Where(s => s.Name.Contains(searchString) || s.Category.TypeName.Contains(searchString));
+            }
+            switch (sortOrder)
+            {
+                case "price":
+                    products = products.OrderBy(s => s.Price);
+                    break;
+                case "price_desc":
+                    products = products.OrderByDescending(s => s.Price);
+                    break;
+                default:
+                    products = products.OrderBy(s => s.PdId);
+                    break;
+            }
+
+            int pageSize = 8;
+            ViewBag.pageSize = pageSize;
+            ViewBag.Count = products.Count();
+            ViewBag.order = sortOrder;
+
+            return View(await PaginatedList<Product>.CreateAsync(products.AsNoTracking(), pageNumber ?? 1, pageSize));
         }
+
 
         public IActionResult Product_detail(string id)
         {

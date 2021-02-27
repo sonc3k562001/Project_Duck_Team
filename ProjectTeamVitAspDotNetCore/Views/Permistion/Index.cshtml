@@ -5,7 +5,11 @@
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
 
-<h1>Index</h1>
+<form asp-controller="Permistion" asp-action="index">
+    <input type="text" name="searchString" />
+    <input type="submit" value="Search" />
+    <a asp-controller="Permistion" asp-action="index">All</a>
+</form>
 
 <p>
     <a asp-action="Create">Create New</a>

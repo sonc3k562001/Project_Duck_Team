@@ -21,9 +21,15 @@ namespace ProjectTeamVitAspDotNetCore.Controllers
             _context = context;
         }
         
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string searchString)
         {
-            return View(await _context.User.ToListAsync());
+            List<User> users = _context.User.ToList();
+            Role role = _context.Role.FirstOrDefault(x => x.Id.Contains(searchString));
+            if(searchString != null)
+            {
+                users = users.Where(x => x.Email.Contains(searchString) || x.Fname.Contains(searchString) ||x.Lname.Contains(searchString) ||x.Address.Contains(searchString)||x.Gender.Contains(searchString)).ToList();
+            }
+            return View(users);
         }
     
         public async Task<IActionResult> Details(string id)

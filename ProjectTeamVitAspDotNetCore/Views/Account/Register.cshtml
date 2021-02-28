@@ -69,20 +69,24 @@
                     </div>
                     <div class="form-group gender">
                         <label asp-for="Gender" class="control-label">Gender: </label>
-                        <input type="radio" asp-for="Gender" name="Gender" value="Man" class="form-check-input" /><span>Man</span>
-                        <input type="radio" asp-for="Gender" name="Gender" value="Woman" class="form-check-input" /><span>Woman</span>
+                        <select asp-for="Gender" class="form-control">
+                            <option value="Man">Man</option>
+                            <option value="Woman">Woman</option>
+                        </select>
+                       
                         <span asp-validation-for="Gender" class="text-danger"></span>
                     </div>
                     <input type="hidden" asp-for="Eable" value="true" name="Eable" class="form-control" />
                     <div class="form-group">
                         <input type="submit" value="CREATE ACCOUNT" class="btn-dark" />
+                        Do have an account ?<a asp-controller="Account" asp-action="Login">Login</a>
                     </div>
                 </form>
 
 
             </div>
             <div class="col-md-1"></div>
-            <div class="col-md-5 img-signup"></div>
+            <div class="col-md-5 img-signup">
             <div class="col-md-1"></div>
         </div>
     </div>

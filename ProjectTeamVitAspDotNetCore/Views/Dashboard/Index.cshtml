@@ -1,6 +1,4 @@
-﻿@{ 
-    Layout = "_AdminLayout";
-}
+﻿@{ Layout = "_AdminLayout"; }
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 <script type="text/javascript">
@@ -34,8 +32,8 @@
 
             var barchart_options = {
                 title: 'Barchart: Monthly revenue',
-                width: 1200,
-                height: 600
+                width: 550,
+                height: 400
             };
 
             var barchar = new google.visualization.BarChart(document
@@ -44,7 +42,7 @@
         }
 
     });
-    
+
 </script>
 
 <script type="text/javascript">
@@ -78,8 +76,8 @@
             ///
             var piechart_options = {
                 title: 'Pie Chart: Sales rate for the past 3 years',
-                width: 1200,
-                height: 600,
+                width: 550,
+                height: 400,
 
             };
             var piechart = new google.visualization.PieChart(document
@@ -105,7 +103,7 @@
                                 <i class="fas fa-chart-pie pt-2 pl-5" style="color:green;font-size:30px"></i>
                             </div>
                             <div class="col-lg-6 mt-2 pr-3">
-                                <div class="btn btn-outline-success" style="margin-left:60px">@ViewBag.totalProduct</div>
+                                <div class="btn btn-success" style="margin-left:90px">@ViewBag.totalProduct</div>
                             </div>
                         </div>
                     </div>
@@ -124,7 +122,7 @@
                                 <i class="far fa-chart-bar pt-2 pl-5" style="color:red;font-size:30px"></i>
                             </div>
                             <div class="col-lg-6 mt-2">
-                                <div class="btn btn-outline-danger" style="margin-left:60px">@ViewBag.totalUser</div>
+                                <div class="btn btn-danger" style="margin-left:90px">@ViewBag.totalUser</div>
                             </div>
                         </div>
                     </div>
@@ -143,7 +141,7 @@
                                 <i class="fas fa-chart-line pt-2 pl-5" style="color:blue;font-size:30px"></i>
                             </div>
                             <div class="col-lg-6 mt-2">
-                                <div class="btn btn-outline-primary" style="margin-left:60px">@ViewBag.totalUser</div>
+                                <div class="btn btn-primary" style="margin-left:90px">@ViewBag.totalOrder</div>
                             </div>
                         </div>
                     </div>
@@ -152,11 +150,20 @@
         </div>
     </div>
 </div>
-<br/>
-<br/>
-<br/>
-<div id="barchar_div" style="border:1px solid #ccc"></div>
-<div id="piechart_div" style="border:1px solid #ccc"></div>
+<br />
+<br />
+<br />
+<div class="col-lg-12">
+    <div class="row">
+        <div class="col-lg-6">
+            <div id="barchar_div" style="border:1px solid #ccc"></div>
+        </div>
+        <div class="col-lg-6">
+            <div id="piechart_div" style="border:1px solid #ccc"></div>
+        </div>
+    </div>
+</div>
+
 
 
 

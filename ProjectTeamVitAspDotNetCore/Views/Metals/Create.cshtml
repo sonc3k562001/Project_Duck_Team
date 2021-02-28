@@ -5,38 +5,36 @@
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
 
-<h1>Create</h1>
+<div class="card card-primary">
+    <div class="card-header">
+        <h3 class="card-title">Create Metal</h3>
+    </div>
 
-<h4>Metal</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="Create">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+    <form asp-controller="Brands" enctype="multipart/form-data" asp-action="Create" method="post">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <div class="card-body">
             <div class="form-group">
-                <label asp-for="MetalId" class="control-label"></label>
-                <input asp-for="MetalId" class="form-control" />
+                <label for="exampleInputEmail1">Metal Code</label>
+                <input type="text" asp-for="MetalId" class="form-control" id="exampleInputEmail1">
                 <span asp-validation-for="MetalId" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Name" class="control-label"></label>
-                <input asp-for="Name" class="form-control" />
+                <label for="exampleInputPassword1">Brand Name</label>
+                <input asp-for="Name" type="text" class="form-control" id="exampleInputPassword1" />
                 <span asp-validation-for="Name" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="MetalCrt" class="control-label"></label>
-                <input asp-for="MetalCrt" class="form-control" />
+                <label for="exampleInputPassword1">Carat of Metal</label>
+                <input asp-for="MetalCrt" class="form-control" id="exampleInputPassword1" />
                 <span asp-validation-for="MetalCrt" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
-            </div>
-        </form>
-    </div>
-</div>
 
-<div>
-    <a asp-action="Index">Back to List</a>
+        </div>
+        <div class="card-footer">
+            <button type="submit" class="btn btn-primary">Create New Color</button>
+            <a asp-action="index" class="btn btn-success">Back To List</a>
+        </div>
+    </form>
 </div>
 
 @section Scripts {

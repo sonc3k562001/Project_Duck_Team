@@ -1,5 +1,6 @@
 ﻿
 using System;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
@@ -7,6 +8,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.FileProviders;
 using ProjectTeamVitAspDotNetCore.Models;
 using ProjectTeamVitAspDotNetCore.Models.ViewModels;
 
@@ -29,10 +31,11 @@ namespace ProjectTeamVitAspDotNetCore.Controllers
 
         public async Task<IActionResult> Index(string sortOrder,string currentFilter,string searchString,int? pageNumber)
         {
-            ViewData["DateSortParm"] = sortOrder == "price" ? "price_desc" : "price";
+            ViewData["PriceSortParm"] = sortOrder == "price" ? "price_desc" : "price";
+            ViewData["NameSortParm"] = sortOrder == "name" ? "name_desc" : "name";
 
             ViewData["CurrentFilter"] = searchString;
-            ViewData["CurrentSort"] = sortOrder;
+         
 
             if (searchString != null)
             {
@@ -56,6 +59,12 @@ namespace ProjectTeamVitAspDotNetCore.Controllers
                     break;
                 case "price_desc":
                     products = products.OrderByDescending(s => s.Price);
+                    break;
+                case "name_desc":
+                    products = products.OrderByDescending(s => s.Name);
+                    break;
+                case "name":
+                    products = products.OrderBy(s => s.Name);
                     break;
                 default:
                     products = products.OrderBy(s => s.PdId);
@@ -114,6 +123,17 @@ namespace ProjectTeamVitAspDotNetCore.Controllers
             {
                 _context.Add(product);
                 await _context.SaveChangesAsync();
+                if (Image != null)
+                {
+                    var fileName = Path.GetFileName(Image.FileName);
+                    var filepath = new PhysicalFileProvider(Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "Images")).Root + $@"\{fileName}";
+
+                    using (FileStream fs = System.IO.File.Create(filepath))
+                    {
+                        Image.CopyTo(fs);
+                        fs.Flush();
+                    }
+                }
                 return RedirectToAction(nameof(Index));
             }
 

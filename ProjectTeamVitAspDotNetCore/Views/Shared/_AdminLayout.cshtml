@@ -14,28 +14,30 @@
             <div class="navbar-brand col-md-12" href="#">
                 <div class="row">
                     <div class="col-md-5">
-                        <a href="#" class="header-name">Diamond Jewellery</a>
+                        <a asp-controller="Dashboard" style="text-decoration:none !important" asp-action="Index" class="header-name"><i><strong>Diamond Jewellery</strong></i></a>
                         <button id="sidebarCollapse" type="button" class="btn btn-light bg-white  shadow-sm toggle">
                             <i class="fa fa-bars mr-2"></i>
                         </button>
                     </div>
-                    <div class="col-md-7 mr-0">
-                        <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
-                            <ul class="navbar-nav flex-grow-1">
+                    <div class="col-md-7  mr-0">
+                        <div class="account">
+                            <ul class="account-name" style="list-style: none;">
                                 @if (User.Identity.IsAuthenticated)
                                 {
 
-                        <li class="nav-item">
-                            <a href="/Account/Profile">@User.Identity.Name</a>
-                        </li> }
-                                    else
-                                    {
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Account" asp-action="Login">Login</a>
-                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link text-dark" asp-area="" asp-controller="Account" asp-action="Register">Sign up</a>
-                                        </li>}
+                    <li class="nav-item" style="padding-top: 15px; font-size: 17px">
+                        <img class="account-avatar" src="https://i.pinimg.com/564x/77/5b/91/775b91d4b1bfcac2aa3292b47763c1b1.jpg" />
+                        <a href="/Account/Profile">@User.Identity.Name</a>
+                    </li>
+ }
+                else
+                {
+    <li class="nav-item">
+        <a class="nav-link text-dark" asp-area="" asp-controller="Account" asp-action="Login">Login</a>
+    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" asp-area="" asp-controller="Account" asp-action="Register">Sign up</a>
+                    </li>}
                             </ul>
                         </div>
                     </div>
@@ -50,138 +52,140 @@
             <ul class="sidebar-menu">
                 <li>
                     <a asp-controller="Dashboard" asp-action="Index">
-                        <i class="fa fa-home mr-2 text-primary fa-fw"></i>
+                        <i class="fas fa-chart-line mr-3 fa-fw font-as"></i>
                         Dashboard
                     </a>
                 </li>
                 <li>
                     <a asp-controller="Order" asp-action="Index">
-                        <i class="fas fa-align-left mr-2 text-primary fa-fw"></i>
-                        Order list
+                        <i class="fab fa-sellsy mr-3 fa-fw font-as"></i>
+                        Orders list
                     </a>
                 </li>
                 <li>
-                    <a asp-controller="Permistion" asp-action="Index">
-                        <i class="fas fa-inbox mr-2 text-primary fa-fw"></i>
-                        Account management
+                    <a asp-controller="Categories" asp-action="Index">
+                        <i class="fas fa-clipboard-list mr-3 fa-fw font-as"></i>
+                        Categories Management
                     </a>
                 </li>
                 <li class="has-child">
-                    <a href="/ProductsManager/Index"><i class="fas fa-air-freshener mr-2 text-primary fa-fw"></i>Product Management <i class="icon"></i></a>
+                    <a asp-controller="ProductsManager" asp-action="Index"><i class="fab fa-product-hunt mr-3 fa-fw font-as"></i>Product Management<i class="icon fas fa-hand-point-left"></i></a>
                     <ul class="menu-sub">
                         <li>
                             <a asp-controller="ProductsManager" asp-action="Index">
-                                <i class="fa fa-home mr-2 text-primary fa-fw"></i>
-                                All Product
+                                <i class="fas fa-th-list mr-2 fa-fw font-as"></i>
+                                All Products
                             </a>
                         </li>
                         <li>
                             <a asp-controller="ProductsManager" asp-action="Create">
-                                <i class="fa fa-home mr-2 text-primary fa-fw"></i>
+                                <i class="fas fa-plus mr-2 fa-fw font-as"></i>
                                 Add Product
                             </a>
                         </li>
                     </ul>
                 </li>
                 <li class="has-child">
-                    <a href="#"><i class="fas fa-air-freshener mr-2 text-primary fa-fw"></i>Brand Management <i class="icon"></i></a>
+                    <a asp-controller="Brands" asp-action="Index"><i class="fab fa-bandcamp mr-3 fa-fw font-as"></i>Brands Management <i class="icon fas fa-hand-point-left"></i></a>
                     <ul class="menu-sub">
                         <li>
                             <a asp-controller="Brands" asp-action="Index">
-                                <i class="fa fa-home mr-2 text-primary fa-fw"></i>
+                                <i class="fas fa-th-list mr-2 fa-fw font-as"></i>
                                 All Brands
                             </a>
                         </li>
                         <li>
                             <a asp-controller="Brands" asp-action="Create">
-                                <i class="fa fa-home mr-2 text-primary fa-fw"></i>
+                                <i class="fas fa-plus mr-2 fa-fw font-as"></i>
                                 Add Brand
                             </a>
                         </li>
                     </ul>
                 </li>
                 <li class="has-child">
-                    <a href="#"><i class="fas fa-air-freshener mr-2 text-primary fa-fw"></i>Metal Management <i class="icon"></i></a>
+                    <a asp-controller="Metals" asp-action="Index"><i class="fas fa-cubes mr-3 fa-fw font-as"></i>Metals Management <i class="icon fas fa-hand-point-left"></i></a>
                     <ul class="menu-sub">
                         <li>
                             <a asp-controller="Metals" asp-action="Index">
-                                <i class="fa fa-home mr-2 text-primary fa-fw"></i>
+                                <i class="fas fa-th-list mr-2 fa-fw font-as"></i>
                                 All Metals
                             </a>
                         </li>
                         <li>
                             <a asp-controller="Metals" asp-action="Create">
-                                <i class="fa fa-home mr-2 text-primary fa-fw"></i>
+                                <i class="fas fa-plus mr-2 fa-fw font-as"></i>
                                 Add Metal
                             </a>
                         </li>
                     </ul>
                 </li>
                 <li class="has-child">
-                    <a href="#"><i class="fas fa-air-freshener mr-2 text-primary fa-fw"></i>Color Management <i class="icon"></i></a>
+                    <a asp-controller="Colors" asp-action="Index"><i class="fas fa-tint mr-3 fa-fw font-as"></i>Colors Management <i class="icon fas fa-hand-point-left"></i></a>
                     <ul class="menu-sub">
                         <li>
                             <a asp-controller="Colors" asp-action="Index">
-                                <i class="fa fa-home mr-2 text-primary fa-fw"></i>
+                                <i class="fas fa-th-list mr-2 fa-fw font-as"></i>
                                 All Colors
                             </a>
                         </li>
                         <li>
                             <a asp-controller="Colors" asp-action="Create">
-                                <i class="fa fa-home mr-2 text-primary fa-fw"></i>
+                                <i class="fas fa-plus mr-2 fa-fw font-as"></i>
                                 Add Color
                             </a>
                         </li>
                     </ul>
                 </li>
                 <li class="has-child">
-                    <a href="#"><i class="fas fa-air-freshener mr-2 text-primary fa-fw"></i>Stone Management <i class="icon"></i></a>
+                    <a asp-controller="Stones" asp-action="Index"><i class="fas fa-circle  mr-3 fa-fw font-as"></i>Stones Management <i class="icon fas fa-hand-point-left"></i></a>
                     <ul class="menu-sub">
                         <li>
                             <a asp-controller="Stones" asp-action="Index">
-                                <i class="fa fa-home mr-2 text-primary fa-fw"></i>
+                                <i class="fas fa-th-list mr-2 fa-fw font-as"></i>
                                 All Stones
                             </a>
                         </li>
                         <li>
                             <a asp-controller="Stones" asp-action="Create">
-                                <i class="fa fa-home mr-2 text-primary fa-fw"></i>
+                                <i class="fas fa-plus mr-2 fa-fw font-as"></i>
                                 Add Stone
                             </a>
                         </li>
                     </ul>
                 </li>
-
                 <li class="has-child">
-                    <a href="#"><i class="fas fa-air-freshener mr-2 text-primary fa-fw"></i>Diamond Management <i class="icon"></i></a>
+                    <a asp-controller="Dims" asp-action="Index"><i class="fas fa-gem mr-3 fa-fw font-as"></i>Diamonds Management <i class="icon fas fa-hand-point-left"></i></a>
                     <ul class="menu-sub">
                         <li>
                             <a asp-controller="Dims" asp-action="Index">
-                                <i class="fa fa-home mr-2 text-primary fa-fw"></i>
+                                <i class="fas fa-th-list mr-2 fa-fw font-as"></i>
                                 All Diamond
                             </a>
                         </li>
                         <li>
                             <a asp-controller="Dims" asp-action="Create">
-                                <i class="fa fa-home mr-2 text-primary fa-fw"></i>
+                                <i class="fas fa-plus mr-2 fa-fw font-as"></i>
                                 Add Diamond
                             </a>
                         </li>
                     </ul>
                 </li>
                 <li class="has-child">
-                    <a href="#"><i class="fas fa-air-freshener mr-2 text-primary fa-fw"></i>Category Management <i class="icon"></i></a>
+                    <a asp-controller="Permistion" asp-action="Index">
+                        <i class="fas fa-users mr-3 fa-fw font-as"></i>
+                        User Management <i class="icon fas fa-hand-point-left"></i>
+                    </a>
                     <ul class="menu-sub">
                         <li>
-                            <a asp-controller="Categories" asp-action="Index">
-                                <i class="fa fa-home mr-2 text-primary fa-fw"></i>
-                                All Categories
+                            <a asp-controller="Permistion" asp-action="Index">
+                                <i class="fas fa-th-list mr-2 fa-fw font-as"></i>
+                                All Users
                             </a>
                         </li>
                         <li>
-                            <a asp-controller="Categories" asp-action="Create">
-                                <i class="fa fa-home mr-2 text-primary fa-fw"></i>
-                                Add Category
+                            <a asp-controller="Permistion" asp-action="Create">
+                                <i class="fas fa-plus mr-2 fa-fw font-as"></i>
+                                Add User
                             </a>
                         </li>
                     </ul>
@@ -198,8 +202,6 @@
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
-    <script src="https://code.highcharts.com/highcharts.src.js"></script>
     <script src="~/js/main.js"></script>
     @RenderSection("Scripts", required: false)
 </body>

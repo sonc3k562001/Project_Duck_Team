@@ -1,4 +1,5 @@
 ﻿
+using System;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
@@ -20,9 +21,51 @@ namespace ProjectTeamVitAspDotNetCore.Controllers
         }
 
         // GET: Stones
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string sortOrder, string currentFilter, string searchString, int? pageNumber)
         {
-            return View(await _context.Stone.ToListAsync());
+            ViewData["PriceSortParm"] = sortOrder == "price" ? "price_desc" : "price";
+            ViewData["NameSortParm"] = sortOrder == "name" ? "name_desc" : "name";
+
+            ViewData["CurrentFilter"] = searchString;
+            if (searchString != null)
+            {
+                pageNumber = 1;
+            }
+            else
+            {
+                searchString = currentFilter;
+            }
+
+            ViewData["CurrentFilter"] = searchString;
+            var stones = from s in _context.Stone select s;
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                stones = stones.Where(s => s.Name.Contains(searchString) || s.Description.Contains(searchString));
+            }
+            switch (sortOrder)
+            {
+                case "price":
+                    stones = stones.OrderBy(s => s.Price);
+                    break;
+                case "price_desc":
+                    stones = stones.OrderByDescending(s => s.Price);
+                    break;
+                case "name_desc":
+                    stones = stones.OrderByDescending(s => s.Name);
+                    break;
+                case "name":
+                    stones = stones.OrderBy(s => s.Name);
+                    break;
+                default:
+                    stones = stones.OrderBy(s => s.StoneId);
+                    break;
+            }
+
+            int pageSize = 10;
+            ViewBag.pageSize = pageSize;
+            ViewBag.Count = stones.Count();
+            ViewBag.order = sortOrder;
+            return View(await PaginatedList<Stone>.CreateAsync(stones.AsNoTracking(), pageNumber ?? 1, pageSize));
         }
 
         // GET: Stones/Details/5

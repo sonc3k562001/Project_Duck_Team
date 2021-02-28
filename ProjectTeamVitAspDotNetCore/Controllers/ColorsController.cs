@@ -22,9 +22,46 @@ namespace ProjectTeamVitAspDotNetCore.Controllers
         }
 
         // GET: Colors
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string sortOrder, string currentFilter, string searchString, int? pageNumber)
         {
-            return View(await _context.Color.ToListAsync());
+            ViewData["NameSortParm"] = sortOrder == "name" ? "name_desc" : "name";
+
+            ViewData["CurrentFilter"] = searchString;
+
+
+            if (searchString != null)
+            {
+                pageNumber = 1;
+            }
+            else
+            {
+                searchString = currentFilter;
+            }
+
+            ViewData["CurrentFilter"] = searchString;
+            var colors = from s in _context.Color select s;
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                colors = colors.Where(s => s.Name.Contains(searchString) || s.ColorId.Contains(searchString));
+            }
+            switch (sortOrder)
+            {
+                case "name_desc":
+                    colors = colors.OrderByDescending(s => s.Name);
+                    break;
+                case "name":
+                    colors = colors.OrderBy(s => s.Name);
+                    break;
+                default:
+                    colors = colors.OrderBy(s => s.ColorId);
+                    break;
+            }
+
+            int pageSize = 10;
+            ViewBag.pageSize = pageSize;
+            ViewBag.Count = colors.Count();
+            ViewBag.order = sortOrder;
+            return View(await PaginatedList<Color>.CreateAsync(colors.AsNoTracking(), pageNumber ?? 1, pageSize));
         }
 
         // GET: Colors/Details/5

@@ -5,88 +5,62 @@
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
 
-<h1>Edit</h1>
 
-<h4>User</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="Edit">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="Fname" class="control-label"></label>
-                <input asp-for="Fname" class="form-control" />
-                <span asp-validation-for="Fname" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Lname" class="control-label"></label>
-                <input asp-for="Lname" class="form-control" />
-                <span asp-validation-for="Lname" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Bdate" class="control-label"></label>
-                <input asp-for="Bdate" class="form-control" />
-                <span asp-validation-for="Bdate" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Address" class="control-label"></label>
-                <input asp-for="Address" class="form-control" />
-                <span asp-validation-for="Address" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Phone" class="control-label"></label>
-                <input asp-for="Phone" class="form-control" />
-                <span asp-validation-for="Phone" class="text-danger"></span>
-            </div>
+
+<div class="card card-primary">
+    <div class="card-header">
+        <h3 class="card-title">Edit Product</h3>
+    </div>
+
+    <form asp-controller="Permistion" enctype="multipart/form-data" asp-action="Edit" method="post">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <div class="card-body">
             <input type="hidden" asp-for="Email" />
+            <input asp-for="Fname" type="hidden">
+            <input asp-for="Lname" type="hidden">
+            <input asp-for="Bdate" type="hidden">
+            <input asp-for="Gender" type="hidden">
+            <input type="hidden" asp-for="Address">
+                <input asp-for="Phone" type="hidden">
+                <input asp-for="ZipCode" type="hidden">
+                <input type="hidden" asp-for="Password" >
+        
+          
+                <input type="hidden" asp-for="ConfirmPassword">
+            
+
+                        <input type="hidden" asp-for="Avatar" >
+                        <input type="hidden" asp-for="Gender" >
+                      
             <div class="form-group">
-                <label asp-for="Password" class="control-label"></label>
-                <input asp-for="Password" class="form-control" />
-                <span asp-validation-for="Password" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="ConfirmPassword" class="control-label"></label>
-                <input asp-for="ConfirmPassword" class="form-control" />
-                <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="ZipCode" class="control-label"></label>
-                <input asp-for="ZipCode" class="form-control" />
-                <span asp-validation-for="ZipCode" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Avatar" class="control-label"></label>
-                <input asp-for="Avatar" class="form-control" />
-                <span asp-validation-for="Avatar" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Gender" class="control-label"></label>
-                <select asp-for="Gender" name="Gender" class="form-control">
-                    <option value="Man">Man</option>
-                    <option value="Woman">Woman</option>
+                <label asp-for="Eable" class="control-label"></label>
+                <select asp-for="Eable" class="form-control">
+                    <option value="True">Unlock</option>
+                    <option value="False">Lock</option>
                 </select>
                 <span asp-validation-for="IdRole" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Eable" class="control-label"></label>
-                <input type="text" asp-for="Eable" />
+                <label asp-for="IdRole" class="control-label">Role</label>
+                <select asp-for="IdRole">
+                    @foreach (Role role in ViewBag.roles)
+                    {
+                        <option value="@role.Id">@role.StringRole</option>
+                    }
+                </select>
                 <span asp-validation-for="IdRole" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="IdRole" class="control-label"></label>
-                <input type="text" asp-for="IdRole" />
-                <span asp-validation-for="IdRole" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
-            </div>
-        </form>
-    </div>
+        </div>
+        <div class="card-footer">
+            <button type="submit" class="btn btn-primary">Save Change</button>
+            <a asp-action="index" class="btn btn-success">Back To List</a>
+        </div>
+    </form>
 </div>
 
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
+
+
+
 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}

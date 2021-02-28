@@ -22,14 +22,29 @@ namespace ProjectTeamVitAspDotNetCore.Controllers
             configuration = _configuration;
         }
         [Authorize(Roles = "Admin,SuperAdmin")]
-        public async Task<IActionResult> Index(string searchString)
+        public async Task<IActionResult> Index(string sortOrder, string currentFilter, string searchString, int? pageNumber)
         {
+            ViewData["PriceSortParm"] = sortOrder == "price" ? "price_desc" : "price";
+            ViewData["NameSortParm"] = sortOrder == "name" ? "name_desc" : "name";
+            ViewData["CurrentFilter"] = searchString;
 
-            List<Order> orders = db.Order.ToList();
+            if (searchString != null)
+            {
+                pageNumber = 1;
+            }
+            else
+            {
+                searchString = currentFilter;
+            }
+            ViewData["CurrentFilter"] = searchString;
+
+
+            
+            var orders = from s in db.Order select s;
 
             if (!String.IsNullOrEmpty(searchString))
             {
-                orders = db.Order.Where(s => s.Id.Contains(searchString) || s.Email.Contains(searchString) || s.Name.Contains(searchString) || s.Phone.Contains(searchString)).ToList();
+                orders = orders.Where(s => s.Id.Contains(searchString) || s.Email.Contains(searchString) || s.Name.Contains(searchString) || s.Phone.Contains(searchString));
             }
 
 
@@ -51,9 +66,32 @@ namespace ProjectTeamVitAspDotNetCore.Controllers
 
             }
             ViewBag.products = productsInUser;
+            switch (sortOrder)
+            {
+                case "price":
+                    orders = orders.OrderBy(s => s.CreateTime);
+                    break;
+                case "price_desc":
+                    orders = orders.OrderByDescending(s => s.CreateTime);
+                    break;
+                case "name_desc":
+                    orders = orders.OrderByDescending(s => s.Name);
+                    break;
+                case "name":
+                    orders = orders.OrderBy(s => s.Name);
+                    break;
+                default:
+                    orders = orders.OrderBy(s => s.Id);
+                    break;
+            }
+
+            int pageSize = 10;
+            ViewBag.pageSize = pageSize;
+            ViewBag.Count = orders.Count();
+            ViewBag.order = sortOrder;
 
 
-            return View(orders);
+            return View(await PaginatedList<Order>.CreateAsync(orders.AsNoTracking(), pageNumber ?? 1, pageSize));
         }
 
         [Authorize(Roles = "Admin,SuperAdmin")]
@@ -97,9 +135,9 @@ namespace ProjectTeamVitAspDotNetCore.Controllers
         public async Task<IActionResult> Edit(string id, [Bind("Id,Name,CreateTime,Status,Email,,Address,Birthday,Phone,ZipCode,Gender")] Order order)
         {
             var account = db.User.FirstOrDefault(x => x.Email == order.Email);
-            if (order.Status == false || order.Status == null )
+            if (order.Status == true)
             {
-                order.Status = true;
+
                 var body = "Dear " + account.Fname + " " + account.Lname + "!<br/>Thank you for using our service and have a nice day!";
                 var mailHelper = new MailHelper(configuration);
                 if (mailHelper.Forgot(configuration["Gmail:Username"], account.Email, body))
@@ -110,10 +148,6 @@ namespace ProjectTeamVitAspDotNetCore.Controllers
                 {
                     ViewBag.msg = "Failed";
                 }
-            }
-            else
-            {
-                order.Status = false;
             }
             
             if (id != order.Id)

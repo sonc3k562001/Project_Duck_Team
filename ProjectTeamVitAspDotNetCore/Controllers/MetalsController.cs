@@ -21,9 +21,45 @@ namespace ProjectTeamVitAspDotNetCore.Controllers
         }
 
         // GET: Metals
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string sortOrder, string currentFilter, string searchString, int? pageNumber)
         {
-            return View(await _context.Metal.ToListAsync());
+            ViewData["PriceSortParm"] = sortOrder == "price" ? "price_desc" : "price";
+            ViewData["NameSortParm"] = sortOrder == "name" ? "name_desc" : "name";
+
+            ViewData["CurrentFilter"] = searchString;
+            if (searchString != null)
+            {
+                pageNumber = 1;
+            }
+            else
+            {
+                searchString = currentFilter;
+            }
+
+            ViewData["CurrentFilter"] = searchString;
+            var metals = from s in _context.Metal select s;
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                metals = metals.Where(s => s.Name.Contains(searchString) || s.MetalId.Contains(searchString) );
+            }
+            switch (sortOrder)
+            {
+                case "name_desc":
+                    metals = metals.OrderByDescending(s => s.Name);
+                    break;
+                case "name":
+                    metals = metals.OrderBy(s => s.Name);
+                    break;
+                default:
+                    metals = metals.OrderBy(s => s.MetalId);
+                    break;
+            }
+
+            int pageSize = 10;
+            ViewBag.pageSize = pageSize;
+            ViewBag.Count = metals.Count();
+            ViewBag.order = sortOrder;
+            return View(await PaginatedList<Metal>.CreateAsync(metals.AsNoTracking(), pageNumber ?? 1, pageSize));
         }
 
         // GET: Metals/Details/5

@@ -21,9 +21,46 @@ namespace ProjectTeamVitAspDotNetCore.Controllers
         }
 
         
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string sortOrder, string currentFilter, string searchString, int? pageNumber)
         {
-            return View(await _context.Brand.ToListAsync());
+            ViewData["NameSortParm"] = sortOrder == "name" ? "name_desc" : "name";
+
+            ViewData["CurrentFilter"] = searchString;
+
+
+            if (searchString != null)
+            {
+                pageNumber = 1;
+            }
+            else
+            {
+                searchString = currentFilter;
+            }
+
+            ViewData["CurrentFilter"] = searchString;
+            var brands = from s in _context.Brand select s;
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                brands = brands.Where(s => s.BrandName.Contains(searchString) || s.BrandId.Contains(searchString));
+            }
+            switch (sortOrder)
+            {
+                case "name_desc":
+                    brands = brands.OrderByDescending(s => s.BrandName);
+                    break;
+                case "name":
+                    brands = brands.OrderBy(s => s.BrandName);
+                    break;
+                default:
+                    brands = brands.OrderBy(s => s.BrandId);
+                    break;
+            }
+
+            int pageSize = 10;
+            ViewBag.pageSize = pageSize;
+            ViewBag.Count = brands.Count();
+            ViewBag.order = sortOrder;
+            return View(await PaginatedList<Brand>.CreateAsync(brands.AsNoTracking(), pageNumber ?? 1, pageSize));
         }
 
         public async Task<IActionResult> Details(string id)

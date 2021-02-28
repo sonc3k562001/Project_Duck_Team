@@ -5,63 +5,74 @@
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
 
-<h1>Details</h1>
+<section class="content pb-3">
+    <div class="container-fluid h-100">
+        <div class="card card-row card-secondary">
+            <div class="card-header">
+                <div style="text-align:center">
+                    <h2> @Html.DisplayFor(model => model.Name)</h2>
+                </div>
+            </div>
+            <div class="card-body">
+
+                <dl class="row">
+                    <dt class="col-sm-5">
+                        Certify:
+                    </dt>
+                    <dd class="col-sm-5">
+                        @Html.DisplayFor(model => model.Certify)
+                    </dd>
+                    <dt class="col-sm-5">
+                        Code:
+                    </dt>
+                    <dd class="col-sm-5">
+                        @Html.DisplayFor(model => model.DimId)
+                    </dd>
+                    <dt class="col-sm-5">
+                        Size:
+                    </dt>
+                    <dd class="col-sm-5">
+                        @Html.DisplayFor(model => model.DimSize)
+                    </dd>
+                    <dt class="col-sm-5">
+                        Carat Of Diamond:
+                    </dt>
+                    <dd class="col-sm-5">
+                        @Html.DisplayFor(model => model.DimCrt)
+                    </dd>
+                    <dt class="col-sm-5">
+                        Total Amount Of Diamond In Item:
+                    </dt>
+                    <dd class="col-sm-5">
+                        @Html.DisplayFor(model => model.DimAmt)
+                    </dd>
+                    <dt class="col-sm-5">
+                        Weight Of Each Diamond(Grams):
+                    </dt>
+                    <dd class="col-sm-5">
+                        @Html.DisplayFor(model => model.DimGm)
+                    </dd>
+                    <dt class="col-sm-5">
+                        Total Pcs Of Diamond In Item :
+                    </dt>
+                    <dd class="col-sm-5">
+                        @Html.DisplayFor(model => model.DimPcs)
+                    </dd>
+                    <dt class="col-sm-5">
+                        Rate Of Each Diamon:
+                    </dt>
+                    <dd class="col-sm-5">
+                        @Html.DisplayFor(model => model.DimRate)
+                    </dd>
+                    
+                </dl>
+
+            </div>
+        </div>
+    </div>
+</section>
 
 <div>
-    <h4>Dim</h4>
-    <hr />
-    <dl class="row">
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Name)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Name)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.DimCrt)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.DimCrt)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.DimPcs)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.DimPcs)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.DimGm)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.DimGm)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.DimRate)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.DimRate)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.DimAmt)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.DimAmt)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Certify)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Certify)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.DimSize)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.DimSize)
-        </dd>
-    </dl>
+    <a asp-action="index" class="btn btn-success">Back To List</a>
 </div>
-<div>
-    <a asp-action="Edit" asp-route-id="@Model.DimId">Edit</a> |
-    <a asp-action="Index">Back to List</a>
-</div>
+

@@ -380,6 +380,21 @@ namespace ProjectTeamVitAspDotNetCore.Models
                          ZipCode = "VN",
                          Eable = true,
                          IdRole = "1"
+                     }, new User
+                     {
+                         Email = "son10c3k56@gmail.com",
+                         Fname = "Nguyễn",
+                         Lname = "Giang Sơn",
+                         Bdate = "2001-07-25",
+                         Gender = "Man",
+                         Address = "8A Tôn Thất Thuyết, Mĩ Đình ,Cầu Giấy,Hà Nội",
+                         Phone = "0966803014",
+                         Avatar = "",
+                         Password = "$2a$04$QDNudgI.yeBrc85Kz2RoQOYGasoKfLfMY6I/0Rn1rFD9h6a0yd/xK",
+                         ConfirmPassword = "$2a$04$QDNudgI.yeBrc85Kz2RoQOYGasoKfLfMY6I/0Rn1rFD9h6a0yd/xK",
+                         ZipCode = "VN",
+                         Eable = true,
+                         IdRole = "4"
                      }
                 );
                 context.SaveChanges();
@@ -1409,6 +1424,315 @@ namespace ProjectTeamVitAspDotNetCore.Models
 
                 context.SaveChanges();
             }
+            if (!context.Order.Any())
+            {
+                context.Order.AddRange(
+                      new Order
+                      {
+                          Id = "1112A19",
+                          CreateTime = new DateTime(2019, 05, 23, 08, 14, 40),
+                          Status = true,
+                          Name = "Nguyễn Văn Bình",
+                          Birthday = "1995-04-17",
+                          ZipCode = "BNT190IK",
+                          Gender = "Man",
+                          Address = "09 Đào Duy Anh, Đống Đa, Hà Nội",
+                          Phone = "0360935271",
+                          Email = "sonngth1908031@fpt.edu.vn"
+                      },
+                      new Order
+                      {
+                          Id = "1112B19",
+                          CreateTime = new DateTime(2020, 08, 15, 11, 23, 14),
+                          Status = true,
+                          Name = "Đỗ Thị Lan",
+                          Birthday = "2003-11-04",
+                          ZipCode = "29OUYR4E",
+                          Gender = "Woman",
+                          Address = "392 Cầu Giấy, Cầu Giấy, Hà Nội",
+                          Phone = "0934876132",
+                          Email = "sonngth1908031@fpt.edu.vn"
+                      },
+                      new Order
+                      {
+                          Id = "1112C19",
+                          CreateTime = new DateTime(2021, 12, 16, 11, 23, 14),
+                          Status = true,
+                          Name = "Nguyễn Văn Lộc",
+                          Birthday = "1983-07-28",
+                          ZipCode = "OI863FRE",
+                          Gender = "Man",
+                          Address = "26 Lâm Động, Thủy Nguyên, Hải Phòng",
+                          Phone = "0907529131",
+                          Email = "sonngth1908031@fpt.edu.vn"
+                      },
+                      new Order
+                      {
+                          Id = "1112A20",
+                          CreateTime = new DateTime(2021, 11, 12, 09, 02, 00),
+                          Status = true,
+                          Name = "Đào Quỳnh Mai",
+                          Birthday = "1973-12-09",
+                          ZipCode = "T853EDRKI",
+                          Gender = "Woman",
+                          Address = "12 Thượng Đình, Thanh Xuân, Hà Nội",
+                          Phone = "0397265320",
+                          Email = "sonngth1908031@fpt.edu.vn"
+                      },
+                      new Order
+                      {
+                          Id = "1112B20",
+                          CreateTime = new DateTime(2021, 10, 07, 10, 23, 15),
+                          Status = false,
+                          Name = "Nguyễn Thị Lệ Quyên",
+                          Birthday = "1999-09-12",
+                          ZipCode = "8OYTR42W",
+                          Gender = "Woman",
+                          Address = "25 Lê Lợi, Sơn Tây, Hà Nội",
+                          Phone = "09036542186",
+                          Email = "sonngth1908031@fpt.edu.vn"
+                      },
+                      new Order
+                      {
+                          Id = "1112C20",
+                          CreateTime = new DateTime(2021, 9, 17, 05, 43, 10),
+                          Status = false,
+                          Name = "Phạm Lệ Trâm",
+                          Birthday = "1998-11-21",
+                          ZipCode = "85DCTSD5",
+                          Gender = "Woman",
+                          Address = "3C Thụy An, Ba Vì, Hà Nội",
+                          Phone = "09309723246",
+                          Email = "sonngth1908031@fpt.edu.vn"
+                      },
+                      new Order
+                      {
+                          Id = "1112D20",
+                          CreateTime = new DateTime(2021, 8, 04, 03, 32, 56),
+                          Status = false,
+                          Name = "Trần Đắc Tiến",
+                          Birthday = "1982-01-27",
+                          ZipCode = "09OTDXE43",
+                          Gender = "Man",
+                          Address = "56 Thụy Khê, Tây Hồ, Hà Nội",
+                          Phone = "0309265318",
+                          Email = "sonngth1908031@fpt.edu.vn"
+                      },
+                      new Order
+                      {
+                          Id = "1112E20",
+                          CreateTime = new DateTime(2021, 7, 03, 09, 54, 04),
+                          Status = true,
+                          Name = "Nguyễn Việt Dũng",
+                          Birthday = "1989-09-05",
+                          ZipCode = "UTD543SL",
+                          Gender = "Man",
+                          Address = "123 Lê Lợi,Bến Nghé, 1,Hồ Chí Minh",
+                          Phone = "0907243862",
+                          Email = "sonngth1908031@fpt.edu.vn"
+                      },
+                      new Order
+                      {
+                          Id = "1112A21",
+                          CreateTime = new DateTime(2021, 6, 04, 08, 12, 34),
+                          Status = true,
+                          Name = "Trương Tuấn Đức",
+                          Birthday = "1993-12-19",
+                          ZipCode = "90OJGFD54",
+                          Gender = "Man",
+                          Address = "123/5B Lê Lợi, 6, Tuy Hòa, Phú Yên",
+                          Phone = "0387508254",
+                          Email = "sonngth1908031@fpt.edu.vn"
+                      },
+                      new Order
+                      {
+                          Id = "1112B21",
+                          CreateTime = new DateTime(2021, 5, 14, 06, 30, 12),
+                          Status = true,
+                          Name = "Phạm Ngọc Dương",
+                          Birthday = "2000-04-25",
+                          ZipCode = "UTRD65I86",
+                          Gender = "Woman",
+                          Address = "49 Ngô Thì Nhậm, Hai Bà Trưng, Hà Nội",
+                          Phone = "0907353454",
+                          Email = "sonngth1908031@fpt.edu.vn"
+                      },
+                      new Order
+                      {
+                          Id = "1112C21",
+                          CreateTime = new DateTime(2021, 4, 28, 02, 11, 38),
+                          Status = true,
+                          Name = "Ngô Diên An",
+                          Birthday = "1997-12-09",
+                          ZipCode = "IYF9754WEE",
+                          Gender = "Man",
+                          Address = "164 Nguyễn Tuân, Thanh Xuân, Hà Nội",
+                          Phone = "0909354572",
+                          Email = "sonngth1908031@fpt.edu.vn"
+                      },
+                      new Order
+                      {
+                          Id = "1112D21",
+                          CreateTime = new DateTime(2021, 3, 10, 10, 15, 13),
+                          Status = true,
+                          Name = "Ngô Lệ Á",
+                          Birthday = "1984-07-11",
+                          ZipCode = "UTDX7654D",
+                          Gender = "Woman",
+                          Address = "5 Đào Duy Anh, Đống Đa, Hà Nội",
+                          Phone = "0309625484",
+                          Email = "sonngth1908031@fpt.edu.vn"
+                      },
+                      new Order
+                      {
+                          Id = "1112E21",
+                          CreateTime = new DateTime(2021, 2, 18, 07, 43, 09),
+                          Status = true,
+                          Name = "Trần Dụ Uyên",
+                          Birthday = "1994-02-09",
+                          ZipCode = "497TRSS754",
+                          Gender = "Woman",
+                          Address = "2B/107 Trần Duy Hưng,Trung Hoà,Cầu Giấy, Hà Nội",
+                          Phone = "0375409524",
+                          Email = "sonngth1908031@fpt.edu.vn"
+                      },
+                      new Order
+                      {
+                          Id = "1112F21",
+                          CreateTime = new DateTime(2021, 1, 13, 06, 27, 14),
+                          Status = true,
+                          Name = "Mộc Minh Phong",
+                          Birthday = "1996-08-03",
+                          ZipCode = "8765YFDG43",
+                          Gender = "Woman",
+                          Address = " 43 Tú Mỡ, Yên Hoà,Cầu Giấy, Hà Nội",
+                          Phone = "0904538325",
+                          Email = "sonngth1908031@fpt.edu.vn"
+                      }
+                     
+                );
+                context.SaveChanges();
+            }
+            if (!context.OrderDetail.Any())
+            {
+                context.OrderDetail.AddRange(
+                      new OrderDetail
+                      {
+                          OdId = "1112A19",
+                          PdId = "45058YNON",
+                          Size = "18",
+                          Quantity = 1,
+                          TotalPrice = 10000000,
+                      },
+                      new OrderDetail
+                      {
+                          OdId = "1112B19",
+                          PdId = "46048YGEN",
+                          Size = "16",
+                          Quantity = 2,
+                          TotalPrice = 11000000,
+                      },
+                      new OrderDetail
+                      {
+                          OdId = "1112C19",
+                          PdId = "42064SNON",
+                          Size = "18",
+                          Quantity = 5,
+                          TotalPrice = 500000,
+                      },
+                      new OrderDetail
+                      {
+                          OdId = "1112A20",
+                          PdId = "46052YWTN",
+                          Size = "18",
+                          Quantity = 6,
+                          TotalPrice = 1000000,
+                      },
+                      new OrderDetail
+                      {
+                          OdId = "1112B20",
+                          PdId = "45060YBEE",
+                          Size = "14",
+                          Quantity = 3,
+                          TotalPrice = 3000000,
+                      },
+                      new OrderDetail
+                      {
+                          OdId = "1112C20",
+                          PdId = "47018YNOE",
+                          Size = "16",
+                          Quantity = 9,
+                          TotalPrice = 4300000,
+                      },
+                      new OrderDetail
+                      {
+                          OdId = "1112D20",
+                          PdId = "44002YLBE",
+                          Size = "14",
+                          Quantity = 30,
+                          TotalPrice = 1100000,
+                      },
+                      new OrderDetail
+                      {
+                          OdId = "1112E20",
+                          PdId = "46037YGEB",
+                          Size = "16",
+                          Quantity = 7,
+                          TotalPrice = 3000000,
+                      },
+                      new OrderDetail
+                      {
+                          OdId = "1112A21",
+                          PdId = "44011YWTB",
+                          Size = "18",
+                          Quantity = 8,
+                          TotalPrice = 2200000,
+                      },
+                      new OrderDetail
+                      {
+                          OdId = "1112B21",
+                          PdId = "44038YBKB",
+                          Size = "18",
+                          Quantity = 2,
+                          TotalPrice = 700000,
+                      },
+                      new OrderDetail
+                      {
+                          OdId = "1112C21",
+                          PdId = "45059RNON",
+                          Size = "20",
+                          Quantity = 12,
+                          TotalPrice = 1100000,
+                      },
+                      new OrderDetail
+                      {
+                          OdId = "1112D21",
+                          PdId = "38032YGRN",
+                          Size = "16",
+                          Quantity = 3,
+                          TotalPrice = 6000000,
+                      },
+                      new OrderDetail
+                      {
+                          OdId = "1112E21",
+                          PdId = "46012YBEN",
+                          Size = "14",
+                          Quantity = 4,
+                          TotalPrice = 4300000,
+                      },
+                      new OrderDetail
+                      {
+                          OdId = "1112F21",
+                          PdId = "46048YBEN",
+                          Size = "20",
+                          Quantity = 11,
+                          TotalPrice = 1200000,
+                      }
+
+                  );
+                context.SaveChanges();
+            }
+
         }
     }
 }

@@ -21,9 +21,53 @@ namespace ProjectTeamVitAspDotNetCore.Controllers
         }
 
         // GET: Dims
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string sortOrder, string currentFilter, string searchString, int? pageNumber)
         {
-            return View(await _context.Dim.ToListAsync());
+            ViewData["PriceSortParm"] = sortOrder == "price" ? "price_desc" : "price";
+            ViewData["NameSortParm"] = sortOrder == "name" ? "name_desc" : "name";
+
+            ViewData["CurrentFilter"] = searchString;
+
+
+            if (searchString != null)
+            {
+                pageNumber = 1;
+            }
+            else
+            {
+                searchString = currentFilter;
+            }
+
+            ViewData["CurrentFilter"] = searchString;
+            var dims = from s in _context.Dim select s;
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                dims = dims.Where(s => s.Name.Contains(searchString) || s.DimId.Contains(searchString)|| s.Certify.Contains(searchString));
+            }
+            switch (sortOrder)
+            {
+                case "price":
+                    dims = dims.OrderBy(s => s.DimRate);
+                    break;
+                case "price_desc":
+                    dims = dims.OrderByDescending(s => s.DimRate);
+                    break;
+                case "name_desc":
+                    dims = dims.OrderByDescending(s => s.Name);
+                    break;
+                case "name":
+                    dims = dims.OrderBy(s => s.Name);
+                    break;
+                default:
+                    dims = dims.OrderBy(s => s.DimId);
+                    break;
+            }
+
+            int pageSize = 10;
+            ViewBag.pageSize = pageSize;
+            ViewBag.Count = dims.Count();
+            ViewBag.order = sortOrder;
+            return View(await PaginatedList<Dim>.CreateAsync(dims.AsNoTracking(), pageNumber ?? 1, pageSize));
         }
 
         // GET: Dims/Details/5

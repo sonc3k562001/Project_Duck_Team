@@ -1,110 +1,155 @@
 ﻿@model PaginatedList<ProjectTeamVitAspDotNetCore.Models.Product>
+<environment>
 
+</environment>
 @{
     ViewData["Title"] = "Index";
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
 
-<form asp-controller="ProductsManager" asp-action="index">
-    <input type="text" name="searchString" />
-    <input type="submit" value="Search" />
-    <a asp-controller="ProductsManager" asp-action="index">All</a>
-</form>
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                Product
-            </th>
-            <th>
-                @if (ViewBag.order == "price")
-                {
-                    <a asp-action="Index" asp-route-sortOrder="@ViewData["DateSortParm"]" asp-route-currentFilter="@ViewData["CurrentFilter"]"><i class="fas fa-sort-up">Price</i></a>
-                }
-                else if (ViewBag.order == "price_desc")
-                {
-                    <a asp-action="Index" asp-route-sortOrder="@ViewData["DateSortParm"]" asp-route-currentFilter="@ViewData["CurrentFilter"]"><i class="fas fa-sort-down">Price</i></a>
-                }
-                else
-                {
-                    <a asp-action="Index" asp-route-sortOrder="@ViewData["DateSortParm"]" asp-route-currentFilter="@ViewData["CurrentFilter"]"><i class="fas fa-sort">Price</i></a>
-                }
+<section class="content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <div class="card" style="text-align:center">
+                    <div class="card-header">
+                        <div class="input-group input-group-sm">
+                            <div class="navbar-search-block">
+                                <form asp-controller="ProductsManager" asp-action="index" class="form-inline">
+                                    <div class="input-group input-group-sm">
+                                        <input name="searchString" class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search" style="overflow: visible; height: 33px; width: 400px">
+                                        <div class="input-group-append">
+                                            <button style="background-color:white;border: 1px solid #ced4da;" class="btn btn-navbar" type="submit">
+                                                <i class="fas fa-search"></i>
+                                            </button>
+                                            <a style="background-color:white;border: 1px solid #ced4da;" asp-controller="ProductsManager" class="btn btn-navbar" asp-action="index">All</a>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.card-header -->
+                    <div class="card-body">
+                        <table class="table table-bordered table-hover">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        @if (ViewBag.order == "name")
+                                        {
+                                            <a asp-action="Index" style="color:black" asp-route-sortOrder="@ViewData["NameSortParm"]" asp-route-currentFilter="@ViewData["CurrentFilter"]" asp-route-pageNumber="@Model.PageIndex "><i class="fas fa-sort-alpha-down">&nbsp;Name</i></a>
+                                        }
+                                        else if (ViewBag.order == "name_desc")
+                                        {
+                                            <a asp-action="Index" style="color:black" asp-route-sortOrder="@ViewData["NameSortParm"]" asp-route-currentFilter="@ViewData["CurrentFilter"]" asp-route-pageNumber="@Model.PageIndex "><i class="fas fa-sort-alpha-up">&nbsp;Name</i></a>
+                                        }
+                                        else
+                                        {
+                                            <a asp-action="Index" style="color:black" asp-route-sortOrder="@ViewData["NameSortParm"]" asp-route-currentFilter="@ViewData["CurrentFilter"]" asp-route-pageNumber="@Model.PageIndex "><i class="fas fa-filter">&nbsp;Name</i></a>
+                                        }
+                                    </th>
+                                    <th>
+                                        @if (ViewBag.order == "price")
+                                        {
+                                            <a asp-action="Index" style="color:black" asp-route-sortOrder="@ViewData["PriceSortParm"]" asp-route-currentFilter="@ViewData["CurrentFilter"]" asp-route-pageNumber="@Model.PageIndex"><i class="fas fa-sort-up">&nbsp;Price</i></a>
+                                        }
+                                        else if (ViewBag.order == "price_desc")
+                                        {
+                                            <a asp-action="Index" style="color:black" asp-route-sortOrder="@ViewData["PriceSortParm"]" asp-route-currentFilter="@ViewData["CurrentFilter"]" asp-route-pageNumber="@Model.PageIndex "><i class="fas fa-sort-down">&nbsp;Price</i></a>
+                                        }
+                                        else
+                                        {
+                                            <a asp-action="Index" style="color:black" asp-route-sortOrder="@ViewData["PriceSortParm"]" asp-route-currentFilter="@ViewData["CurrentFilter"]" asp-route-pageNumber="@Model.PageIndex "><i class="fas fa-sort">&nbsp;Price</i></a>
+                                        }
+                                    </th>
+                                    <th>Image</th>
+                                    <th>Category</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var item in Model)
+                                {
+                                    <tr>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.Name)
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.Price)
+                                        </td>
+                                        <td>
+                                            <img src="~/Images/@Html.DisplayFor(modelItem => item.Image)" width="50px" height="50px" />
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.IdCategory)
+                                        </td>
+                                        <td>
+                                            <a style="color:orange" asp-action="Edit" asp-route-id="@item.PdId"><i class="fas fa-edit"></i></a> |
+                                            <a style="color:green" asp-action="Details" asp-route-id="@item.PdId"><i class="fas fa-file-alt"></i></a> |
+                                            <a style="color:darkred" asp-action="Delete" asp-route-id="@item.PdId"><i class="fas fa-trash-alt"></i></a>
+                                        </td>
+                                        
+                                    </tr>
+                                    <tr>
 
-            </th>
+                                    </tr>
+                                }
+                            </tbody>
 
-            <th>
-                Image
-            </th>
-            <th>
-                Category
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var item in Model)
-        {
-            <tr>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Name)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Price)
-                </td>
-                <td>
-                    <img src="~/Images/@Html.DisplayFor(modelItem => item.Image)" width="50px" height="50px" />
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.IdCategory)
-                </td>
-                <td>
-                    <a asp-action="Edit" asp-route-id="@item.PdId">Edit</a> |
-                    <a asp-action="Details" asp-route-id="@item.PdId">Details</a> |
-                    <a asp-action="Delete" asp-route-id="@item.PdId">Delete</a>
-                </td>
-            </tr>
-        }
-    </tbody>
-</table>
-@{
-    var prevDisabled = !Model.HasPreviousPage ? "disabled" : "";
-    var nextDisabled = !Model.HasNextPage ? "disabled" : "";
-}
+                        </table>
+                        <div style="text-align:center;">
+                            @{
+                                var prevDisabled = !Model.HasPreviousPage ? "disabled" : "";
+                                var nextDisabled = !Model.HasNextPage ? "disabled" : "";
+                            }
 
-<a asp-action="Index"
-   asp-route-sortOrder="@ViewData["CurrentSort"]"
-   asp-route-pageNumber="@(Model.PageIndex - 1)"
-   asp-route-currentFilter="@ViewData["CurrentFilter"]"
-   class="btn-info btn btn-default @prevDisabled">
-    Previous
-</a>
-@{
-    double n = ViewBag.Count;
-    double s = ViewBag.pageSize;
-    double sn = Math.Ceiling(n / s);
+                            <tr>
+                                <a asp-action="Index"
+                                   asp-route-sortOrder="@ViewData["CurrentSort"]"
+                                   asp-route-pageNumber="@(Model.PageIndex - 1)"
+                                   asp-route-currentFilter="@ViewData["CurrentFilter"]"
+                                   class="btn border-dark btn-default @prevDisabled">
+                                    Previous
+                                </a>
 
-    for (int i = 1; i <= sn; i++)
-    {
-        if (Model.PageIndex == i)
-        {
-            <a class="active btn btn-default btn-info">@i</a>
-        }
-        else
-        {
-            <a class="btn btn-default btn-info" asp-action="Index" asp-route-sortOrder="@ViewData["CurrentSort"]" asp-route-currentFilter="@ViewData["CurrentFilter"]" asp-route-pageNumber="@i">@i</a>
-        }
-    }
-}
 
-<a asp-action="Index"
-   asp-route-sortOrder="@ViewData["CurrentSort"]"
-   asp-route-pageNumber="@(Model.PageIndex + 1)"
-   asp-route-currentFilter="@ViewData["CurrentFilter"]"
-   class="btn-info btn btn-default @nextDisabled">
-    Next
-</a>
+                                @{
+                                    double n = ViewBag.Count;
+                                    double s = ViewBag.pageSize;
+                                    double sn = Math.Ceiling(n / s);
+
+                                    for (int i = 1; i <= sn; i++)
+                                    {
+                                        if (Model.PageIndex == i)
+                                        {
+                                            <a style="background-color:gray;color:white" class="active btn btn-default border-dark">@i</a>
+                                        }
+                                        else
+                                        {
+                                            <a class="btn border-dark btn-default" asp-action="Index" asp-route-sortOrder="@ViewData["CurrentSort"]" asp-route-currentFilter="@ViewData["CurrentFilter"]" asp-route-pageNumber="@i">@i</a>
+                                        }
+                                    }
+                                }
+
+
+                                <a asp-action="Index"
+                                   asp-route-sortOrder="@ViewData["CurrentSort"]"
+                                   asp-route-pageNumber="@(Model.PageIndex + 1)"
+                                   asp-route-currentFilter="@ViewData["CurrentFilter"]"
+                                   class="btn border-dark btn-default @nextDisabled">
+                                    Next
+                                </a>
+                            </tr>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
 

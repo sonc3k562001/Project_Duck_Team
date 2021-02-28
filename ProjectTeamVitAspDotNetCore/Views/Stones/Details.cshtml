@@ -7,55 +7,67 @@
 
 <h1>Details</h1>
 
+<section class="content pb-3">
+    <div class="container-fluid h-100">
+        <div class="card card-row card-secondary">
+            <div class="card-header">
+                <div style="text-align:center">
+                    <h2> @Html.DisplayFor(model => model.Name)</h2>
+                </div>
+            </div>
+            <div class="card-body">
+
+                <dl class="row">
+                    <dt class="col-sm-2">
+                        Description:
+                    </dt>
+                    <dd class="col-sm-10">
+                        @Html.DisplayFor(model => model.Description)
+                    </dd>
+                    <dt class="col-sm-2">
+                        Price:
+                    </dt>
+                    <dd class="col-sm-10">
+                        $ @Html.DisplayFor(model => model.Price)
+                    </dd>
+                    <dt class="col-sm-2">
+                        Code:
+                    </dt>
+                    <dd class="col-sm-10">
+                        @Html.DisplayFor(model => model.StoneId)
+                    </dd>
+                    <dt class="col-sm-2">
+                        Total Amount Of Stones In Item:
+                    </dt>
+                    <dd class="col-sm-10">
+                        @Html.DisplayFor(model => model.StoneAmt)
+                    </dd>
+                    <dt class="col-sm-2">
+                        Carat Of Stone:
+                    </dt>
+                    <dd class="col-sm-10">
+                        @Html.DisplayFor(model => model.StoneCrt)
+                    </dd>
+                    <dt class="col-sm-2">
+                        Weight Of Each Stone(Grams):
+                    </dt>
+                    <dd class="col-sm-10">
+                        @Html.DisplayFor(model => model.StoneGm)
+                    </dd>
+                    <dt class="col-sm-2">
+                        Rate Of Each Stone :
+                    </dt>
+                    <dd class="col-sm-10">
+                        @Html.DisplayFor(model => model.StoneRate)
+                    </dd>
+
+                </dl>
+
+            </div>
+        </div>
+    </div>
+</section>
+
 <div>
-    <h4>Stone</h4>
-    <hr />
-    <dl class="row">
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Name)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Name)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Description)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Description)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Price)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Price)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.StoneGm)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.StoneGm)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.StoneCrt)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.StoneCrt)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.StoneRate)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.StoneRate)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.StoneAmt)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.StoneAmt)
-        </dd>
-    </dl>
-</div>
-<div>
-    <a asp-action="Edit" asp-route-id="@Model.StoneId">Edit</a> |
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="index" class="btn btn-success">Back To List</a>
 </div>

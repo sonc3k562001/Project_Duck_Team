@@ -21,9 +21,48 @@ namespace ProjectTeamVitAspDotNetCore.Controllers
         }
 
         [Authorize(Roles = "Admin,SuperAdmin")]
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string sortOrder, string currentFilter, string searchString, int? pageNumber)
         {
-            return View(await _context.Category.ToListAsync());
+            ViewData["PriceSortParm"] = sortOrder == "price" ? "price_desc" : "price";
+            ViewData["NameSortParm"] = sortOrder == "name" ? "name_desc" : "name";
+
+            ViewData["CurrentFilter"] = searchString;
+
+
+            if (searchString != null)
+            {
+                pageNumber = 1;
+            }
+            else
+            {
+                searchString = currentFilter;
+            }
+
+            ViewData["CurrentFilter"] = searchString;
+            var categories = from s in _context.Category select s;
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                categories = categories.Where(s => s.TypeName.Contains(searchString) || s.IdCategory.Contains(searchString));
+            }
+            switch (sortOrder)
+            {
+                
+                case "name_desc":
+                    categories = categories.OrderByDescending(s => s.TypeName);
+                    break;
+                case "name":
+                    categories = categories.OrderBy(s => s.TypeName);
+                    break;
+                default:
+                    categories = categories.OrderBy(s => s.IdCategory);
+                    break;
+            }
+
+            int pageSize = 10;
+            ViewBag.pageSize = pageSize;
+            ViewBag.Count = categories.Count();
+            ViewBag.order = sortOrder;
+            return View(await PaginatedList<Category>.CreateAsync(categories.AsNoTracking(), pageNumber ?? 1, pageSize));
         }
 
         [Authorize(Roles = "Admin,SuperAdmin")]

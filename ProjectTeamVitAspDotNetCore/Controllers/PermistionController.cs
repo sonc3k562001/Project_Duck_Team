@@ -21,15 +21,59 @@ namespace ProjectTeamVitAspDotNetCore.Controllers
             _context = context;
         }
         
-        public async Task<IActionResult> Index(string searchString)
+        public async Task<IActionResult> Index(string sortOrder, string currentFilter, string searchString, int? pageNumber)
         {
-            List<User> users = _context.User.ToList();
-            Role role = _context.Role.FirstOrDefault(x => x.Id.Contains(searchString));
-            if(searchString != null)
+
+            ViewData["PriceSortParm"] = sortOrder == "price" ? "price_desc" : "price";
+            ViewData["NameSortParm"] = sortOrder == "name" ? "name_desc" : "name";
+
+            ViewData["CurrentFilter"] = searchString;
+
+
+            if (searchString != null)
             {
-                users = users.Where(x => x.Email.Contains(searchString) || x.Fname.Contains(searchString) ||x.Lname.Contains(searchString) ||x.Address.Contains(searchString)||x.Gender.Contains(searchString)).ToList();
+                pageNumber = 1;
             }
-            return View(users);
+            else
+            {
+                searchString = currentFilter;
+            }
+
+            ViewData["CurrentFilter"] = searchString;
+            var users = from s in _context.User select s;
+
+            Role role = _context.Role.FirstOrDefault(x => x.Id.Contains(searchString));
+
+            if(!String.IsNullOrEmpty(searchString))
+            {
+                users = users.Where(x => x.Email.Contains(searchString) || x.Fname.Contains(searchString) ||x.Lname.Contains(searchString) ||x.Address.Contains(searchString)||x.Gender.Contains(searchString));
+            }
+
+            switch (sortOrder)
+            {
+                case "price":
+                    users = users.OrderBy(s => s.Bdate);
+                    break;
+                case "price_desc":
+                    users = users.OrderByDescending(s => s.Bdate);
+                    break;
+                case "name_desc":
+                    users = users.OrderByDescending(s => s.Fname).ThenByDescending(users=>users.Lname);
+                    break;
+                case "name":
+                    users = users.OrderBy(s => s.Fname).ThenBy(users=>users.Lname);
+                    break;
+                default:
+                    users = users.OrderBy(s => s.Email);
+                    break;
+            }
+
+            int pageSize = 10;
+            ViewBag.pageSize = pageSize;
+            ViewBag.Count = users.Count();
+            ViewBag.order = sortOrder;
+
+            return View(await PaginatedList<User>.CreateAsync(users.AsNoTracking(), pageNumber ?? 1, pageSize));
         }
     
         public async Task<IActionResult> Details(string id)
@@ -41,6 +85,7 @@ namespace ProjectTeamVitAspDotNetCore.Controllers
 
             var user = await _context.User
                 .FirstOrDefaultAsync(m => m.Email == id);
+            ViewBag.user = user;
             if (user == null)
             {
                 return NotFound();
@@ -52,6 +97,8 @@ namespace ProjectTeamVitAspDotNetCore.Controllers
        
         public IActionResult Create()
         {
+            List<Role> roles = _context.Role.ToList();
+            ViewBag.roles = roles;
             return View();
         }
 
@@ -61,6 +108,7 @@ namespace ProjectTeamVitAspDotNetCore.Controllers
         {
             user.Password = BCrypt.Net.BCrypt.HashPassword(user.Password);
             user.ConfirmPassword = BCrypt.Net.BCrypt.HashPassword(user.ConfirmPassword);
+            user.Avatar = Path.GetFileName(Avatar.FileName);
             if (ModelState.IsValid)
             {
                 _context.Add(user);
@@ -79,6 +127,7 @@ namespace ProjectTeamVitAspDotNetCore.Controllers
                     fs.Flush();
                 }
             }
+           
             return View(user);
         }
 
@@ -91,11 +140,14 @@ namespace ProjectTeamVitAspDotNetCore.Controllers
             }
 
             var user = await _context.User.FindAsync(id);
+            List<Role> roles = _context.Role.ToList();
             if (user == null)
             {
                 return NotFound();
             }
             ViewBag.user = user;
+            ViewBag.eable = user.Eable;
+            ViewBag.roles = roles;
             return View(user);
         }
         

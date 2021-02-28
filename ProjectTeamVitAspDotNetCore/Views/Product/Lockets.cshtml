@@ -16,18 +16,19 @@
 
 @model PaginatedList<ProjectTeamVitAspDotNetCore.Models.Product>
 
-        <div class="reskin category-introblock lockets" style="margin-top:90px">
-            <div class="contentt">
-                <h1>Lockets</h1>
-                <p>
-                    Personalising an engravable photo locket for free couldn't be simpler: upload your favourite image, and add a message to engrave, then we'll take care of the rest. The ultimate way to refresh your memories,
-                    a personalised photo locket makes for the perfect gift to treasure.
-                </p>
-                <p>Also explore: 
-                    <a asp-controller="Product" asp-action="Lockets"><b>All Lokets</b></a> | <a asp-controller="Product" asp-action="Bestsellers"><b>All Bestsellers</b></a>
-                </p>
-            </div>
-        </div>
+<div class="reskin category-introblock lockets" style="margin-top:90px">
+    <div class="contentt">
+        <h1>Lockets</h1>
+        <p>
+            Personalising an engravable photo locket for free couldn't be simpler: upload your favourite image, and add a message to engrave, then we'll take care of the rest. The ultimate way to refresh your memories,
+            a personalised photo locket makes for the perfect gift to treasure.
+        </p>
+        <p>
+            Also explore:
+            <a asp-controller="Product" asp-action="Lockets"><b>All Lokets</b></a> | <a asp-controller="Product" asp-action="Bestsellers"><b>All Bestsellers</b></a>
+        </p>
+    </div>
+</div>
 
 <section class="col-xs-12 col-md-12">
 
@@ -43,36 +44,31 @@
                 <option value="null">Color</option>
                 @foreach (Color color in ViewBag.colors)
                 {
-                    <option value="@color.ColorId">@color.Name</option>
-}
+    <option value="@color.ColorId">@color.Name</option>}
             </select>
             <select name="brand" class="col-md-2">
                 <option value="null">Brand</option>
                 @foreach (Brand brand in ViewBag.brands)
                 {
-                    <option value="@brand.BrandId">@brand.BrandName</option>
-}
+    <option value="@brand.BrandId">@brand.BrandName</option>}
             </select>
             <select name="dim" class="col-md-2">
                 <option value="null">Diamond</option>
                 @foreach (Dim dim in ViewBag.dims)
                 {
-                    <option value="@dim.DimId">@dim.Name</option>
-}
+    <option value="@dim.DimId">@dim.Name</option>}
             </select>
             <select name="stone">
                 <option value="null">Stone</option>
                 @foreach (Stone stone in ViewBag.stones)
                 {
-                    <option value="@stone.StoneId">@stone.Name</option>
-}
+    <option value="@stone.StoneId">@stone.Name</option>}
             </select>
             <select name="metal">
                 <option value="null">Metal</option>
                 @foreach (Metal metal in ViewBag.metals)
                 {
-                    <option value="@metal.MetalId">@metal.Name</option>
-}
+    <option value="@metal.MetalId">@metal.Name</option>}
             </select>
             <input class="btn btn-sm btn-dark btn-outline-secondary filter" type="submit" value="Apply" />
         </form>
@@ -81,19 +77,17 @@
 
 
     <!--Phần này là chỗ sắp xếp sản phẩm theo giá-->
-    @if (ViewBag.order == "price")
-    {
-        <a asp-action="Lockets" asp-route-sortOrder="@ViewData["DateSortParm"]" asp-route-currentFilter="@ViewData["CurrentFilter"]" asp-route-currentColor="@ViewData["Color"]" asp-route-currentMetal="@ViewData["Metal"]" asp-route-currentBrand="@ViewData["Brand"]" asp-route-currentDim="@ViewData["Dim"]" asp-route-currentStone="@ViewData["Stone"]" asp-route-pageNumber="@Model.PageIndex"><i class="fas fa-sort-up">Price</i></a>
-    }
-    else if (ViewBag.order == "price_desc")
-    {
-        <a asp-action="Lockets" asp-route-sortOrder="@ViewData["DateSortParm"]" asp-route-currentFilter="@ViewData["CurrentFilter"]" asp-route-currentColor="@ViewData["Color"]" asp-route-currentMetal="@ViewData["Metal"]" asp-route-currentBrand="@ViewData["Brand"]" asp-route-currentDim="@ViewData["Dim"]" asp-route-currentStone="@ViewData["Stone"]" asp-route-pageNumber="@Model.PageIndex"><i class="fas fa-sort-down">Price</i></a>
-    }
-    else
-    {
-        <a asp-action="Lockets" asp-route-sortOrder="@ViewData["DateSortParm"]" asp-route-currentFilter="@ViewData["CurrentFilter"]" asp-route-currentColor="@ViewData["Color"]" asp-route-currentMetal="@ViewData["Metal"]" asp-route-currentBrand="@ViewData["Brand"]" asp-route-currentDim="@ViewData["Dim"]" asp-route-currentStone="@ViewData["Stone"]" asp-route-pageNumber="@Model.PageIndex"><i class="fas fa-sort">Price</i></a>
-    }
-
+    <div class="price">
+        @if (ViewBag.order == "price")
+        {
+<a asp-action="Lockets" asp-route-sortOrder="@ViewData["DateSortParm"]" asp-route-currentFilter="@ViewData["CurrentFilter"]" asp-route-currentColor="@ViewData["Color"]" asp-route-currentMetal="@ViewData["Metal"]" asp-route-currentBrand="@ViewData["Brand"]" asp-route-currentDim="@ViewData["Dim"]" asp-route-currentStone="@ViewData["Stone"]" asp-route-pageNumber="@Model.PageIndex" class="btn btn-outline-dark btn-sm"><i class="fas fa-sort-up">Price</i></a> }
+            else if (ViewBag.order == "price_desc")
+            {
+<a asp-action="Lockets" asp-route-sortOrder="@ViewData["DateSortParm"]" asp-route-currentFilter="@ViewData["CurrentFilter"]" asp-route-currentColor="@ViewData["Color"]" asp-route-currentMetal="@ViewData["Metal"]" asp-route-currentBrand="@ViewData["Brand"]" asp-route-currentDim="@ViewData["Dim"]" asp-route-currentStone="@ViewData["Stone"]" asp-route-pageNumber="@Model.PageIndex" class="btn btn-outline-dark btn-sm"><i class="fas fa-sort-down">Price</i></a> }
+            else
+            {
+<a asp-action="Lockets" asp-route-sortOrder="@ViewData["DateSortParm"]" asp-route-currentFilter="@ViewData["CurrentFilter"]" asp-route-currentColor="@ViewData["Color"]" asp-route-currentMetal="@ViewData["Metal"]" asp-route-currentBrand="@ViewData["Brand"]" asp-route-currentDim="@ViewData["Dim"]" asp-route-currentStone="@ViewData["Stone"]" asp-route-pageNumber="@Model.PageIndex" class="btn btn-outline-dark btn-sm"><i class="fas fa-sort">Price</i></a>}
+    </div>
 
 </section>
 
@@ -104,77 +98,71 @@
     <div class="products_filter-show d-flex flex-row flex-wrap justify-content-center align-content-center col-xs-12 col-md-12">
         @foreach (var item in Model)
         {
-            <div class="product col-xs-3 col-md-3">
-                <div class="d-flex text-center align-items-center justify-content-center">
-                    <a class="p-3 col-xs-12 col-md-12" asp-controller="Product" asp-action="Product_detail" asp-route-id="@item.PdId">
+<div class="product col-xs-3 col-md-3">
+    <div class="d-flex text-center align-items-center justify-content-center">
+        <a class="p-3 col-xs-12 col-md-12" asp-controller="Product" asp-action="Product_detail" asp-route-id="@item.PdId">
 
-                        <div class="text-center">
+            <div class="text-center">
 
-                            <img src="~/Images/@item.Image" width="375" height="375" />
+                <img src="~/Images/@item.Image" width="375" height="375" />
 
-                            <h3>
-                                @Html.DisplayFor(modelItem => item.Name)
-                            </h3>
-                            <span>
-                                $@Html.DisplayFor(modelItem => item.Price)
-                            </span>
-                        </div>
-                    </a>
-                </div>
-            </div>}
+                <h3>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </h3>
+                <span>
+                    $@Html.DisplayFor(modelItem => item.Price)
+                </span>
+            </div>
+        </a>
+    </div>
+</div>}
     </div>
 
     <!--Phần này là form phân trang-->
+    <div class="pagination">
+        @{ var prevDisabled = !Model.HasPreviousPage ? "disabled" : "";
+                        var nextDisabled = !Model.HasNextPage ? "disabled" : ""; }
 
-    @{
-        var prevDisabled = !Model.HasPreviousPage ? "disabled" : "";
-        var nextDisabled = !Model.HasNextPage ? "disabled" : "";
-    }
+        <a asp-action="Lockets"
+           asp-route-sortOrder="@ViewData["CurrentSort"]"
+           asp-route-pageNumber="@(Model.PageIndex - 1)"
+           asp-route-currentFilter="@ViewData["CurrentFilter"]"
+           asp-route-currentColor="@ViewData["Color"]"
+           asp-route-currentMetal="@ViewData["Metal"]"
+           asp-route-currentBrand="@ViewData["Brand"]"
+           asp-route-currentDim="@ViewData["Dim"]"
+           asp-route-currentStone="@ViewData["Stone"]"
+           class="btn btn-dark btn-outline-secondary @prevDisabled">
+            Previous
+        </a>
 
-    <a asp-action="Lockets"
-       asp-route-sortOrder="@ViewData["CurrentSort"]"
-       asp-route-pageNumber="@(Model.PageIndex - 1)"
-       asp-route-currentFilter="@ViewData["CurrentFilter"]"
-       asp-route-currentColor="@ViewData["Color"]"
-       asp-route-currentMetal="@ViewData["Metal"]"
-       asp-route-currentBrand="@ViewData["Brand"]"
-       asp-route-currentDim="@ViewData["Dim"]"
-       asp-route-currentStone="@ViewData["Stone"]"
-       class="btn-info btn btn-default @prevDisabled">
-        Previous
-    </a>
+        @{ double n = ViewBag.CountP;
+                        double s = ViewBag.pageSize;
+                        double sn = Math.Ceiling(n / s);
 
-    @{
-        double n = ViewBag.CountP;
-        double s = ViewBag.pageSize;
-        double sn = Math.Ceiling(n / s);
+                        for (int i = 1; i <= sn; i++)
+                        {
+                            if (Model.PageIndex == i)
+                            {
+            <a class="active btn btn-dark btn-outline-secondary">@i</a> }
+                            else
+                            {
+            <a class="btn btn-dark btn-outline-secondary" asp-action="Lockets" asp-route-sortOrder="@ViewData["CurrentSort"]" asp-route-currentFilter="@ViewData["CurrentFilter"]" asp-route-currentColor="@ViewData["Color"]" asp-route-currentMetal="@ViewData["Metal"]" asp-route-currentBrand="@ViewData["Brand"]" asp-route-currentDim="@ViewData["Dim"]" asp-route-currentStone="@ViewData["Stone"]" asp-route-pageNumber="@i">@i</a> }
+                        } }
 
-        for (int i = 1; i <= sn; i++)
-        {
-            if (Model.PageIndex == i)
-            {
-                <a class="active btn btn-default btn-info">@i</a>
-            }
-            else
-            {
-                <a class="btn btn-default btn-info" asp-action="Lockets" asp-route-sortOrder="@ViewData["CurrentSort"]" asp-route-currentFilter="@ViewData["CurrentFilter"]" asp-route-currentColor="@ViewData["Color"]" asp-route-currentMetal="@ViewData["Metal"]" asp-route-currentBrand="@ViewData["Brand"]" asp-route-currentDim="@ViewData["Dim"]" asp-route-currentStone="@ViewData["Stone"]" asp-route-pageNumber="@i">@i</a>
-            }
-        }
-    }
-
-    <a asp-action="Lockets"
-       asp-route-sortOrder="@ViewData["CurrentSort"]"
-       asp-route-pageNumber="@(Model.PageIndex + 1)"
-       asp-route-currentFilter="@ViewData["CurrentFilter"]"
-       asp-route-currentColor="@ViewData["Color"]"
-       asp-route-currentMetal="@ViewData["Metal"]"
-       asp-route-currentBrand="@ViewData["Brand"]"
-       asp-route-currentDim="@ViewData["Dim"]"
-       asp-route-currentStone="@ViewData["Stone"]"
-       class="btn-info btn btn-default @nextDisabled">
-        Next
-    </a>
-
+        <a asp-action="Lockets"
+           asp-route-sortOrder="@ViewData["CurrentSort"]"
+           asp-route-pageNumber="@(Model.PageIndex + 1)"
+           asp-route-currentFilter="@ViewData["CurrentFilter"]"
+           asp-route-currentColor="@ViewData["Color"]"
+           asp-route-currentMetal="@ViewData["Metal"]"
+           asp-route-currentBrand="@ViewData["Brand"]"
+           asp-route-currentDim="@ViewData["Dim"]"
+           asp-route-currentStone="@ViewData["Stone"]"
+           class="btn btn-dark btn-outline-secondary @nextDisabled">
+            Next
+        </a>
+    </div>
 </section>
 
 <section>

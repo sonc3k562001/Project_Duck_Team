@@ -9528,11 +9528,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ASUS\\Source\\Repos\\Project_Duck_Team5\\ProjectTeamVitAspDotNetCore\\ProjectTeamVitAspDotNetCore.csproj",
+      "projectUniqueName": "C:\\Users\\ASUS\\source\\repos\\Project_Duck_Team5\\ProjectTeamVitAspDotNetCore\\ProjectTeamVitAspDotNetCore.csproj",
       "projectName": "ProjectTeamVitAspDotNetCore",
-      "projectPath": "C:\\Users\\ASUS\\Source\\Repos\\Project_Duck_Team5\\ProjectTeamVitAspDotNetCore\\ProjectTeamVitAspDotNetCore.csproj",
+      "projectPath": "C:\\Users\\ASUS\\source\\repos\\Project_Duck_Team5\\ProjectTeamVitAspDotNetCore\\ProjectTeamVitAspDotNetCore.csproj",
       "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ASUS\\Source\\Repos\\Project_Duck_Team5\\ProjectTeamVitAspDotNetCore\\obj\\",
+      "outputPath": "C:\\Users\\ASUS\\source\\repos\\Project_Duck_Team5\\ProjectTeamVitAspDotNetCore\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",

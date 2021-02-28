@@ -1,0 +1,135 @@
+﻿.category-introblock.wide-introblock {
+    background-position: center !important;
+    background-size: cover !important;
+    height: 250px;
+    max-width: none;
+    text-align: center;
+    top: -90px;
+}
+
+.category-introblock.jewellery {
+    background-image: url("https://www.astleyclarke.com/media/cms/jewellery-landing-page/images/2020-11-19/icon-lockets-d.jpg");
+}
+
+.category-introblock.wide-introblock .content {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: none;
+    padding: 0 !important;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.category-introblock.wide-introblock h1 {
+    font-family: baskerville-bi !important;
+    font-size: 40px !important;
+}
+
+.category-introblock.wide-introblock h1 {
+    color: #fff !important;
+    margin-bottom: 5px !important;
+}
+
+.category-introblock.wide-introblock .main-copy {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 660px;
+}
+
+.category-introblock.wide-introblock p {
+    color: #fff;
+    font-weight: 400;
+}
+
+.category-introblock p, .category-introblock a {
+    font-size: 16px;
+    line-height: 23px;
+}
+
+.reskin p {
+    margin-bottom: 10px;
+    font-family: neuzeit-grotesk,verdana,sans-serif;
+    font-weight: lighter;
+    font-size: 16px;
+    letter-spacing: .4px;
+    color: #050004;
+    line-height: 23px;
+}
+
+/*phần section: */
+.in-view {
+    opacity: 1;
+}
+
+.wide-mid-promo {
+    margin-bottom: 0 !important;
+    max-width: none;
+    position: relative;
+}
+
+section, img {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.wide-mid-promo img {
+    width: 100%;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    vertical-align: top;
+}
+
+.copy-wrapper {
+    position: absolute;
+    top: 58%;
+    transform: translateY(-58%);
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+}
+
+p {
+    font-size: 17px;
+    line-height: 1.4;
+    margin: 0 auto;
+    font-family: 'Open Sans Condensed', sans-serif;
+    max-width: 800px;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 70px;
+    margin-bottom: .5rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.cta {
+    margin: 0 auto;
+    max-width: 280px;
+    width: 100%;
+    border-width: 2px;
+    font-weight: bold;
+    line-height: 40px;
+    margin-top: 25px;
+}
+
+.cta {
+    border: 1px solid #050004;
+    box-sizing: border-box;
+    color: #050004;
+    cursor: pointer;
+    display: block;
+    height: 44px;
+    font-family: neuzeit-grotesk,verdana,sans-serif;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: background-color .15s,color .15s,font-weight .15s;
+}

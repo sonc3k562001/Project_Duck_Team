@@ -1,15 +1,30 @@
 ﻿<environment>
     <link rel="stylesheet" href="~/css/bestsellers.css" />
+    <link rel="preload" href="https://www.astleyclarke.com/skin/frontend/default/astleyclarke/fonts/local/NeuzeitGroteskRegular.ttf" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="https://www.astleyclarke.com/skin/frontend/default/astleyclarke/fonts/local/NeuzeitGroteskLight.ttf" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="https://www.astleyclarke.com/skin/frontend/default/astleyclarke/fonts/local/BetterSignature.ttf" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="https://www.astleyclarke.com/skin/frontend/default/astleyclarke/fonts/local/NeuzeitGroteskBold.ttf" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="https://www.astleyclarke.com/skin/frontend/default/astleyclarke/fonts/engraving-fonts/BaskervilleBoldItalicBT.woff" as="font" type="font/woff2" crossorigin>
 </environment>
 
-<section class="col-xs-12 col-md-12">
+<section class="category-view" style="margin-top:90px">
+    <div class="reskin category-introblock most-desired">
+        <div class="contentt">
+            <h1>Bestsellers</h1>
+            <p>Tempting as it is to keep our top rated pieces all to ourselves, we could never be so cruel. Here you will find our top-rated, 
+            bestselling jewellery - from old favourites to captivating new collections.</p>
+            <p>Quite simply, this is the jewellery on everybody’s wish list.</p>
+        </div>
+    </div>
+</section>
 
+<section class="col-xs-12 col-md-12">
 
     <div class="products_filter-show d-flex flex-row flex-wrap justify-content-center align-content-center col-xs-12 col-md-12">
         @foreach (Item item in ViewBag.best)
         {
 
-<div class="product col-xs-2 col-md-2">
+<div class="product col-xs-3 col-md-3">
     <div class="d-flex text-center align-items-center justify-content-center">
         <a class="p-3 col-xs-12 col-md-12" asp-controller="Product" asp-action="Product_detail" asp-route-id="@item.Product.PdId">
 
@@ -28,5 +43,20 @@
     </div>
 </div>}
         
+    </div>
+</section>
+
+<section>
+    <div class="category-outro-block">
+        <div class="inner">
+            <h3><i><b>Bestsellers</b></i></h3>
+            <p>We’re putting our best pieces forward. Elevate your everyday essentials with this radiant selection of five-star rated jewellery, 
+            including iconic designs and signature styles like our engravable photo lockets, gemstone Biography friendship bracelets, statement stacking rings 
+            and unique diamond jewellery. From old favourites to captivating new collections, explore meaningful jewellery gifts - whether you’re treating someone special or yourself, 
+            we can guarantee that these much-loved bestsellers will give any jewellery collection a new lease of life. Every piece of Astley Clarke jewellery is designed in our London studio, 
+            with emphasis on creating statement jewellery you can mix and match however, wherever and whenever you wish. We work exclusively with noble metals, natural ethically sourced diamonds 
+            and responsibly sourced gemstones, taking great care to craft our pieces so that they will last and be loved for years to come. Available with free global delivery and free returns for the UK, 
+            USA and Europe, plus luxury gift wrapping and free personalisation services.</p>
+        </div>
     </div>
 </section>

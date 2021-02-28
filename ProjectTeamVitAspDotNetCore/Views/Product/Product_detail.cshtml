@@ -1,11 +1,17 @@
 ﻿<environment>
     <link rel="stylesheet" href="~/css/product-detail.css" />
+    <link rel="preload" href="https://www.astleyclarke.com/skin/frontend/default/astleyclarke/fonts/local/NeuzeitGroteskRegular.ttf" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="https://www.astleyclarke.com/skin/frontend/default/astleyclarke/fonts/local/NeuzeitGroteskLight.ttf" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="https://www.astleyclarke.com/skin/frontend/default/astleyclarke/fonts/local/BetterSignature.ttf" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="https://www.astleyclarke.com/skin/frontend/default/astleyclarke/fonts/local/NeuzeitGroteskBold.ttf" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="https://www.astleyclarke.com/skin/frontend/default/astleyclarke/fonts/engraving-fonts/BaskervilleBoldItalicBT.woff" as="font" type="font/woff2" crossorigin>
+
 </environment>
-<div class="product_detail container">
+<div class="product_detail container" style="font-family: baskerville-bi !important;">
     <div class="row">
         <!-- !TODO: breadcrumb -->
         <section class="product_detail-breadcrumb col-xs-12 col-md-12">
-            Home > Jewellery > Bracelets > <strong>Interstellar Diamond Bangle</strong>
+            <a asp-controller="View_pages" asp-action="home">Home</a> > <a asp-controller="View_pages" asp-action="jewellery">Jewellery</a> > Bracelets > <strong>Interstellar Diamond Bangle</strong>
         </section>
 
         <section class="product_detail-info col-xs-12 col-md-12">
@@ -20,7 +26,7 @@
                         Name:  @ViewBag.product.Name
                     </h3>
                     <h4>
-                        Price:  $@ViewBag.product.Price
+                        Price:  @ViewBag.product.Price
                     </h4>
                     <h4>
                         Code:  @ViewBag.product.PdId
@@ -45,24 +51,74 @@
                 <div class="description col-xs-12 col-md-12">
                     @ViewData["Descirption"]
                 </div>
-                <form asp-controller="cart" asp-action="buy" asp-route-id="@ViewBag.product.PdId">
-                    <labe>Size: </label>
-                    <input class="form-control" type="text" name="size" placeholder="Enter your size..." />
-                    <input type="hidden" name="id" value="@ViewBag.product.PdId" />
-                    <div class="action d-flex flex-column justify-content-center align-items-center col-xs-12 col-md-12">
-                        <input type="submit" class="btn add_button col-xs-12 col-md-12" value="Buy Now"/>
-                    </div>
-                </form>
 
+                <form asp-controller="cart" asp-action="buy" asp-route-id="@ViewBag.product.PdId">
+                    <labe>
+                        Size: </label>
+                        <input class="form-control" type="text" name="size" placeholder="Enter your size..." style="margin-left:35px"/>
+                        <input type="hidden" name="id" value="@ViewBag.product.PdId" />
+                        <div class="action d-flex flex-column justify-content-center align-items-center col-xs-12 col-md-12">
+                            <input type="submit" class="btn add_button col-xs-12 col-md-12" value="Buy Now" />
+                        </div>
+                </form>
 
             </div>
         </section>
 
         <section class="product_detail-addon col-xs-12 col-md-12">
             <div class="left col-xs-6 col-md-6">
-                <div class="delivery col-xs-12 col-md-12">
+                <div class="mini col-xs-12 col-md-12">
+                    <nav id="myTab" role="tablist" class="col-xs-12 col-md-12">
+                        <div class="row">
+                            <ul class="nav nav-tabs" style="width:100%">
+                                <li class="nav-item col-xs-4 col-md-4" style="background-color:black">
+                                    <a class="text-white mt-2 ml-2" id="tab1" data-toggle="tab" href="#tab1" role="tab" aria-controls="tab1"
+                                       aria-selected="true">Product Details</a>
+                                </li>
+                                <li class="nav-item col-xs-4 col-md-4" style="background-color:white">
+                                    <a class="nav-link" id="tab2" data-toggle="tab" href="#tab2" role="tab" aria-controls="tab2"
+                                       aria-selected="false">Profile</a>
+                                </li>
+                                <li class="nav-item col-xs-4 col-md-4" style="background-color:white">
+                                    <a class="nav-link" asp-controller="View_pages" asp-action="contact" aria-selected="false">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <div class="tab-content col-xs-12 col-md-12" id="myTabContent" style="height:200px">
+                        <div class="tab-pane fade show active mt-4" id="tab1" role="tabpanel" aria-labelledby="tab1-tab">
+                            <table class="text-center col-xs-12 col-md-12">
+                                <tr>
+                                    <td>Collection</td>
+                                    <td>Interstellar</td>
+                                </tr>
+                                <tr>
+                                    <td>Gemstone</td>
+                                    <td>Diamond</td>
+                                </tr>
+                                <tr>
+                                    <td>Diamond Specification</td>
+                                    <td>0.13ct White</td>
+                                </tr>
+                                <tr>
+                                    <td>Metal</td>
+                                    <td>Yellow Gold (Solid, 100% Recycled)</td>
+                                </tr>
+                                <tr>
+                                    <td>Metal Type</td>
+                                    <td>14 Carat Gold</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="tab-pane fade" id="tab2" role="tabpanel" aria-labelledby="tab2-tab">tab2</div>
+                        <div class="tab-pane fade" id="tab3" role="tabpanel" aria-labelledby="tab3-tab">tab3</div>
+                    </div>
+                </div>
+                <div class="delivery">
+                    <div style="background-color:black">
+                        <h3 class="text-center col-xs-12 col-md-12">DELIVERY & RETURNS</h3>
+                    </div>
 
-                    <h3 class="bg-dark text-center col-xs-12 col-md-12">DELIVERY & RETURNS</h3>
                     <div class="delivery_info">
                         <h4><i class="fas fa-truck"></i> <strong>FREE SHIPPING</strong> on all (Country) orders.</h4>
                         <ul>
@@ -85,18 +141,18 @@
                     <h3 class="title text-center">
                         YOU MAY ALSO LIKE
                     </h3>
-                    @foreach (Product product in ViewBag.productWithCategory)
-                    {
 
-        <a asp-controller="Product" asp-action="Product_detail" asp-route-id="@product.PdId" class="col-xs-4 col-md-4">
-            <div class="text-center">
-                <img src="~/Images/@product.Image"
-                     class="one-edge-shadow">
-                <h3 class="text-center">
-                    @product.Name
-                </h3>
-            </div>
-        </a>}
+                    <div class="row">
+                        @foreach (Product product in ViewBag.productWithCategory)
+                        {
+            <a asp-controller="Product" asp-action="Product_detail" asp-route-id="@product.PdId" class="col-xs-6 col-md-6 pt-4">
+                <div class="text-center">
+                    <img src="~/Images/@product.Image" class="one-edge-shadow"><br />
+                    <h9 class="text-center"> @product.Name</h9>
+                </div>
+            </a>}
+                    </div>
+
                 </div>
             </div>
         </section>

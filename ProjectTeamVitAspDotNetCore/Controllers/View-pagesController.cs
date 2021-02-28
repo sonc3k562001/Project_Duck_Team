@@ -97,6 +97,10 @@ namespace ProjectTeamVitAspDotNetCore.Controllers
         {
             return View();
         }
+        public IActionResult jewellery()
+        {
+            return View();
+        }
 
     }
 }

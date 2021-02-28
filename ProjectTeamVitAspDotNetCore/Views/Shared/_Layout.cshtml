@@ -15,20 +15,21 @@
 
                 <div class="header_main-left col-xs-4 col-md-4">
                     <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
-                        <ul class="navbar-nav flex-grow-1">
-                            @if (User.Identity.IsAuthenticated)
-                            {
+                        <ul class="navbar-nav flex-grow-1 d-flex flex-row">
+                                @if (User.Identity.IsAuthenticated)
+                                {
 
-                <li class="nav-item">
-                    <a href="/Account/Profile">@User.Identity.Name</a>
-                </li> }
-                            else
-                            {
-                <li class="nav-item">
-                    <a class="nav-link text-dark" asp-area="" asp-controller="Account" asp-action="Login">Login</a>
-                </li>
                                 <li class="nav-item">
-                                    <a class="nav-link text-dark" asp-area="" asp-controller="Account" asp-action="Register">Sign up</a>
+                                    <a href="/Account/Profile">@User.Identity.Name</a>
+                                </li> }
+                                            else
+                                            {
+                                <li class="nav-item">
+                                    <a class="nav-link" asp-area="" asp-controller="Account" asp-action="Login" style="color:black"><b>Login </b></a>
+                                </li>
+                                <span style="margin-top:5px"> | </span>
+                                <li class="nav-item">
+                                    <a class="nav-link" asp-area="" asp-controller="Account" asp-action="Register" style="color:black"><b> Sign up</b></a>
                                 </li>}
                         </ul>
                     </div>
@@ -132,7 +133,7 @@
             </div>
 
             <div class="footer_nav col-xs-12 col-md-12">
-                <div class="footer_nav-left col-xs-8 col-md-8">
+                <div class="footer_nav-left col-xs-7 col-md-7">
 
                     <ul class="no-pl">
                         <li><strong>Customer Service |</strong></li>
@@ -143,37 +144,27 @@
                         <li><a asp-controller="View_pages" asp-action="term">Terms & Conditions</a> |</li>
                         <li><a asp-controller="View_pages" asp-action="policy">Privacy Policy</a> |</li>
                     </ul>
+                </div>
+
+                <div class="footer_nav-left col-xs-3 col-md-3 text-center">
                     <ul class="no-pl">
                         <li><strong>About us |</strong></li>
                         <li><a href="background">Our Story</a> |</li>
                         <li><a href="stock">Global Stockists</a> |</li>
                     </ul>
-                    <ul class="no-pl">
-                        <li><strong>Here to Help |</strong></li>
-                        <li><a href="popular-search">Popular Searches</a> |</li>
-                        <li><a href="maintain">Jewellery Care</a> |</li>
-                        <li><a href="repair">Warranty & Repairs</a> |</li>
-                        <li><a href="size-guide">Size Guide</a> |</li>
-                    </ul>
-
                 </div>
 
-                <div class="footer_nav-right text-center col-xs-4 col-md-4">
+                <div class="footer_nav-left col-xs-2 col-md-2" style="">
 
                     <ul class="no-pl">
                         <li><a asp-controller="View_pages" asp-action="affiliates"><strong>Affiliates |</strong></a></li>
                         <li><a asp-controller="View_pages" asp-action="careers">Careers</a></li>
                     </ul>
-                    <ul class="no-pl">
-                        <li><a asp-controller="View_pages" asp-action="sitemap"><strong>Sitemap |</strong></a></li>
-                        <li><a asp-controller="View_pages" asp-action="reviews">Review</a></li>
-                    </ul>
-
                 </div>
 
             </div>
 
-            <div class="footer_pay text-center col-xs-12 col-md-12">
+            <div class="footer_pay text-center col-xs-12 col-md-12" style="margin-left:-80px">
                 <ul>
                     <li><i class="fab fa-cc-visa"></i></li>
                     <li><i class="fab fa-cc-mastercard"></i></li>

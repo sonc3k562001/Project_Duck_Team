@@ -1,5 +1,13 @@
 ﻿<environment>
     <link href="~/css/lockets.css" rel="stylesheet" />
+    <link rel="preload" href="https://www.astleyclarke.com/skin/frontend/default/astleyclarke/fonts/local/NeuzeitGroteskRegular.ttf" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="https://www.astleyclarke.com/skin/frontend/default/astleyclarke/fonts/local/NeuzeitGroteskLight.ttf" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="https://www.astleyclarke.com/skin/frontend/default/astleyclarke/fonts/local/BetterSignature.ttf" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="https://www.astleyclarke.com/skin/frontend/default/astleyclarke/fonts/local/NeuzeitGroteskBold.ttf" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="https://www.astleyclarke.com/skin/frontend/default/astleyclarke/fonts/engraving-fonts/BaskervilleBoldItalicBT.woff" as="font" type="font/woff2" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@200&family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+
 </environment>
 
 @{ ViewData["Title"] = "Bracelets";
@@ -7,64 +15,69 @@
 
 
 @model PaginatedList<ProjectTeamVitAspDotNetCore.Models.Product>
+
+        <div class="reskin category-introblock lockets" style="margin-top:90px">
+            <div class="contentt">
+                <h1>Lockets</h1>
+                <p>
+                    Personalising an engravable photo locket for free couldn't be simpler: upload your favourite image, and add a message to engrave, then we'll take care of the rest. The ultimate way to refresh your memories,
+                    a personalised photo locket makes for the perfect gift to treasure.
+                </p>
+                <p>Also explore: 
+                    <a asp-controller="Product" asp-action="Lockets"><b>All Lokets</b></a> | <a asp-controller="Product" asp-action="Bestsellers"><b>All Bestsellers</b></a>
+                </p>
+            </div>
+        </div>
+
 <section class="col-xs-12 col-md-12">
 
     <!--Phần này là form search-->
-    <form asp-controller="Product" asp-action="Lockets">
-        <input type="text" name="searchString" />
-        <input type="submit" value="Search" />
-        <a asp-controller="Product" asp-action="Lockets">All</a>
-    </form>
+    <section class="col-xs-12 col-md-12 search-option">
+        <form asp-controller="Product" asp-action="Lockets" class="input-group input-group-sm">
+            <input class="form-control col-md-3" type="text" name="searchString" />
+            <input class="btn btn-sm btn-dark btn-outline-secondary" type="submit" value="Search" />
+            <a asp-controller="Product" asp-action="Lockets" style="color:black"><b>All Lockets</b></a>
+        </form>
+        <form asp-controller="Product" asp-action="Lockets" class="select">
+            <select name="color" class="col-md-2">
+                <option value="null">Color</option>
+                @foreach (Color color in ViewBag.colors)
+                {
+                    <option value="@color.ColorId">@color.Name</option>
+}
+            </select>
+            <select name="brand" class="col-md-2">
+                <option value="null">Brand</option>
+                @foreach (Brand brand in ViewBag.brands)
+                {
+                    <option value="@brand.BrandId">@brand.BrandName</option>
+}
+            </select>
+            <select name="dim" class="col-md-2">
+                <option value="null">Diamond</option>
+                @foreach (Dim dim in ViewBag.dims)
+                {
+                    <option value="@dim.DimId">@dim.Name</option>
+}
+            </select>
+            <select name="stone">
+                <option value="null">Stone</option>
+                @foreach (Stone stone in ViewBag.stones)
+                {
+                    <option value="@stone.StoneId">@stone.Name</option>
+}
+            </select>
+            <select name="metal">
+                <option value="null">Metal</option>
+                @foreach (Metal metal in ViewBag.metals)
+                {
+                    <option value="@metal.MetalId">@metal.Name</option>
+}
+            </select>
+            <input class="btn btn-sm btn-dark btn-outline-secondary filter" type="submit" value="Apply" />
+        </form>
 
-
-
-    <!--Phần này là form filter-->
-    <form asp-controller="Product" asp-action="Lockets">
-        <select name="color">
-            <option value="">Color</option>
-            @foreach (Color color in ViewBag.colors)
-            {
-
-                <option value="@color.ColorId">@color.Name</option>
-            }
-        </select>
-        <select name="brand">
-            <option value="">Brand</option>
-            @foreach (Brand brand in ViewBag.brands)
-            {
-
-                <option value="@brand.BrandId">@brand.BrandName</option>
-            }
-        </select>
-        <select name="dim">
-            <option value="">Diamond</option>
-            @foreach (Dim dim in ViewBag.dims)
-            {
-
-                <option value="@dim.DimId">@dim.Name</option>
-            }
-        </select>
-        <select name="stone">
-            <option value="">Stone</option>
-            @foreach (Stone stone in ViewBag.stones)
-            {
-
-                <option value="@stone.StoneId">@stone.Name</option>
-            }
-        </select>
-        <select name="metal">
-            <option value="">Metal</option>
-            @foreach (Metal metal in ViewBag.metals)
-            {
-
-                <option value="@metal.MetalId">@metal.Name</option>
-            }
-        </select>
-        <input type="submit" value="Filter" />
-    </form>
-
-
-
+    </section>
 
 
     <!--Phần này là chỗ sắp xếp sản phẩm theo giá-->
@@ -162,5 +175,21 @@
         Next
     </a>
 
+</section>
 
+<section>
+    <div class="category-outro-block">
+        <div class="inner">
+            <h3><i><b>Lockets</b></i></h3>
+            <p>
+                We’re putting our best pieces forward. Elevate your everyday essentials with this radiant selection of five-star rated jewellery,
+                including iconic designs and signature styles like our engravable photo lockets, gemstone Biography friendship bracelets, statement stacking rings
+                and unique diamond jewellery. From old favourites to captivating new collections, explore meaningful jewellery gifts - whether you’re treating someone special or yourself,
+                we can guarantee that these much-loved bestsellers will give any jewellery collection a new lease of life. Every piece of Astley Clarke jewellery is designed in our London studio,
+                with emphasis on creating statement jewellery you can mix and match however, wherever and whenever you wish. We work exclusively with noble metals, natural ethically sourced diamonds
+                and responsibly sourced gemstones, taking great care to craft our pieces so that they will last and be loved for years to come. Available with free global delivery and free returns for the UK,
+                USA and Europe, plus luxury gift wrapping and free personalisation services.
+            </p>
+        </div>
+    </div>
 </section>

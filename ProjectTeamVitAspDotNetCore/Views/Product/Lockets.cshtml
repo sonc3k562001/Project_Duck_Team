@@ -81,19 +81,20 @@
 
 
     <!--Phần này là chỗ sắp xếp sản phẩm theo giá-->
+    <div class="price">
     @if (ViewBag.order == "price")
     {
-        <a asp-action="Lockets" asp-route-sortOrder="@ViewData["DateSortParm"]" asp-route-currentFilter="@ViewData["CurrentFilter"]" asp-route-currentColor="@ViewData["Color"]" asp-route-currentMetal="@ViewData["Metal"]" asp-route-currentBrand="@ViewData["Brand"]" asp-route-currentDim="@ViewData["Dim"]" asp-route-currentStone="@ViewData["Stone"]" asp-route-pageNumber="@Model.PageIndex"><i class="fas fa-sort-up">Price</i></a>
+        <a asp-action="Lockets" asp-route-sortOrder="@ViewData["DateSortParm"]" asp-route-currentFilter="@ViewData["CurrentFilter"]" asp-route-currentColor="@ViewData["Color"]" asp-route-currentMetal="@ViewData["Metal"]" asp-route-currentBrand="@ViewData["Brand"]" asp-route-currentDim="@ViewData["Dim"]" asp-route-currentStone="@ViewData["Stone"]" asp-route-pageNumber="@Model.PageIndex" class="btn btn-outline-dark btn-sm"><i class="fas fa-sort-up">Price</i></a>
     }
     else if (ViewBag.order == "price_desc")
     {
-        <a asp-action="Lockets" asp-route-sortOrder="@ViewData["DateSortParm"]" asp-route-currentFilter="@ViewData["CurrentFilter"]" asp-route-currentColor="@ViewData["Color"]" asp-route-currentMetal="@ViewData["Metal"]" asp-route-currentBrand="@ViewData["Brand"]" asp-route-currentDim="@ViewData["Dim"]" asp-route-currentStone="@ViewData["Stone"]" asp-route-pageNumber="@Model.PageIndex"><i class="fas fa-sort-down">Price</i></a>
+        <a asp-action="Lockets" asp-route-sortOrder="@ViewData["DateSortParm"]" asp-route-currentFilter="@ViewData["CurrentFilter"]" asp-route-currentColor="@ViewData["Color"]" asp-route-currentMetal="@ViewData["Metal"]" asp-route-currentBrand="@ViewData["Brand"]" asp-route-currentDim="@ViewData["Dim"]" asp-route-currentStone="@ViewData["Stone"]" asp-route-pageNumber="@Model.PageIndex" class="btn btn-outline-dark btn-sm"><i class="fas fa-sort-down">Price</i></a>
     }
     else
     {
-        <a asp-action="Lockets" asp-route-sortOrder="@ViewData["DateSortParm"]" asp-route-currentFilter="@ViewData["CurrentFilter"]" asp-route-currentColor="@ViewData["Color"]" asp-route-currentMetal="@ViewData["Metal"]" asp-route-currentBrand="@ViewData["Brand"]" asp-route-currentDim="@ViewData["Dim"]" asp-route-currentStone="@ViewData["Stone"]" asp-route-pageNumber="@Model.PageIndex"><i class="fas fa-sort">Price</i></a>
+        <a asp-action="Lockets" asp-route-sortOrder="@ViewData["DateSortParm"]" asp-route-currentFilter="@ViewData["CurrentFilter"]" asp-route-currentColor="@ViewData["Color"]" asp-route-currentMetal="@ViewData["Metal"]" asp-route-currentBrand="@ViewData["Brand"]" asp-route-currentDim="@ViewData["Dim"]" asp-route-currentStone="@ViewData["Stone"]" asp-route-pageNumber="@Model.PageIndex" class="btn btn-outline-dark btn-sm"><i class="fas fa-sort">Price</i></a>
     }
-
+</div>
 
 </section>
 
@@ -125,7 +126,7 @@
     </div>
 
     <!--Phần này là form phân trang-->
-
+    <div class="pagination">
     @{
         var prevDisabled = !Model.HasPreviousPage ? "disabled" : "";
         var nextDisabled = !Model.HasNextPage ? "disabled" : "";
@@ -153,11 +154,11 @@
         {
             if (Model.PageIndex == i)
             {
-                <a class="active btn btn-default btn-info">@i</a>
+                <a class="active btn btn-dark btn-outline-secondary">@i</a>
             }
             else
             {
-                <a class="btn btn-default btn-info" asp-action="Lockets" asp-route-sortOrder="@ViewData["CurrentSort"]" asp-route-currentFilter="@ViewData["CurrentFilter"]" asp-route-currentColor="@ViewData["Color"]" asp-route-currentMetal="@ViewData["Metal"]" asp-route-currentBrand="@ViewData["Brand"]" asp-route-currentDim="@ViewData["Dim"]" asp-route-currentStone="@ViewData["Stone"]" asp-route-pageNumber="@i">@i</a>
+                <a class="btn btn-dark btn-outline-secondary" asp-action="Lockets" asp-route-sortOrder="@ViewData["CurrentSort"]" asp-route-currentFilter="@ViewData["CurrentFilter"]" asp-route-currentColor="@ViewData["Color"]" asp-route-currentMetal="@ViewData["Metal"]" asp-route-currentBrand="@ViewData["Brand"]" asp-route-currentDim="@ViewData["Dim"]" asp-route-currentStone="@ViewData["Stone"]" asp-route-pageNumber="@i">@i</a>
             }
         }
     }
@@ -171,10 +172,10 @@
        asp-route-currentBrand="@ViewData["Brand"]"
        asp-route-currentDim="@ViewData["Dim"]"
        asp-route-currentStone="@ViewData["Stone"]"
-       class="btn-info btn btn-default @nextDisabled">
+       class="btn btn-dark btn-outline-secondary @nextDisabled">
         Next
     </a>
-
+        </div>
 </section>
 
 <section>

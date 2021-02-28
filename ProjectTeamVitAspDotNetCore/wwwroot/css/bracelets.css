@@ -220,13 +220,70 @@ a{
         margin-bottom: 15px;
         text-transform: none;
     }
-select {
-    font-family: 'Barlow', sans-serif;
-    font-family: 'Open Sans Condensed', sans-serif;
-}
+
 
 .product {
     font-family: 'Barlow', sans-serif;
     font-family: 'Open Sans Condensed', sans-serif;
 }
-    
+
+/*form search & option*/
+.search-option {
+    margin-top: 20px;
+    margin-left: 60px;
+}
+
+    .search-option input {
+        border-radius: 0px;
+    }
+
+    .btn-dark {
+        color: white;
+    }
+
+    .search-option a {
+        color: black;
+        margin-left: 10px;
+        text-underline-position: under;
+        text-decoration: underline;
+        font-size: 15px;
+    }
+
+    .search-option select {
+        border-top: none;
+        border-bottom: none;
+        border-left: none;
+        padding-bottom: 0.4rem;
+    }
+
+    .search-option .select {
+        border-bottom: 1px solid black;
+        border-top: 1px solid black;
+        width: 92.2%;
+        margin-top: 10px;
+    }
+
+    .search-option .filter {
+        margin-left: -5px;
+        width: 52.5px;
+    }
+
+    .search-option .form-control {
+        border: 1px solid black;
+        border-radius: 0px;
+    }
+
+.price {
+    margin-left: 75px;
+    margin-top: 10px;
+}
+    .price .btn-outline-dark {
+        border-radius:0px;
+    }
+.pagination{
+    margin-top:20px;
+    margin-bottom:20px;
+}
+    .pagination .btn-dark {
+        border-radius: 0px;
+    }

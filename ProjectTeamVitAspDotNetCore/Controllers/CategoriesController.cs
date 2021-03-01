@@ -10,7 +10,7 @@ using ProjectTeamVitAspDotNetCore.Models;
 
 namespace ProjectTeamVitAspDotNetCore.Controllers
 {
-    [Authorize(Roles = "Admin,SuperAdmin")]
+    [Authorize(Roles = "Admin,SuperAdmin,Employee")]
     public class CategoriesController : Controller
     {
         private readonly JwelleryContext _context;
@@ -94,6 +94,7 @@ namespace ProjectTeamVitAspDotNetCore.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("IdCategory,TypeName")] Category category)
         {
+           
             if (ModelState.IsValid)
             {
                 _context.Add(category);

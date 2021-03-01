@@ -105,8 +105,13 @@ namespace ProjectTeamVitAspDotNetCore.Controllers
                 return RedirectToAction("Login", "Account");
             }
             var cart = SessionHelper.GetObjectFromJson<List<Item>>(HttpContext.Session, "cart");
+            if (cart == null)
+            {
+                return View("CartNull");
+            }
             ViewBag.cart = cart;
             ViewBag.total = cart.Sum(i => i.Product.Price * i.Quantity);
+            
             return View(user);
         }
 
@@ -188,7 +193,8 @@ namespace ProjectTeamVitAspDotNetCore.Controllers
             order.ZipCode = result.payer.payer_info.country_code;
             order.Id = result.cart;
             order.CreateTime = result.create_time;
-            order.Phone = user.Phone;
+                order.Phone = user.Phone;
+      
             order.Status = false ;
             order.Email = email;
             db.Add(order);

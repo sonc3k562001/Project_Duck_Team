@@ -9,7 +9,7 @@
     <div class="card-header">
         <h3 class="card-title">Create Brand</h3>
     </div>
-
+    <p style="color:red">@ViewBag.Error</p>
     <form asp-controller="Brands" enctype="multipart/form-data" asp-action="Create" method="post">
         <div asp-validation-summary="ModelOnly" class="text-danger"></div>
         <div class="card-body">

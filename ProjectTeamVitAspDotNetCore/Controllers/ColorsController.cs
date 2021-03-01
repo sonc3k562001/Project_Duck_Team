@@ -10,7 +10,7 @@ using ProjectTeamVitAspDotNetCore.Models;
 
 namespace ProjectTeamVitAspDotNetCore.Controllers
 {
-    [Authorize(Roles = "Admin,SuperAdmin")]
+    [Authorize(Roles = "Admin,SuperAdmin,Employee")]
     public class ColorsController : Controller
     {
         
@@ -95,6 +95,14 @@ namespace ProjectTeamVitAspDotNetCore.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("ColorId,Name")] Color color)
         {
+            var value = _context.Color.FirstOrDefault(x => x.ColorId == color.ColorId);
+            if(value != null)
+            {
+                ViewBag.error = "Color code already exists";
+                return View();
+            }
+
+
             if (ModelState.IsValid)
             {
                 _context.Add(color);

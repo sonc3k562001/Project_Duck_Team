@@ -1,0 +1,83 @@
+.order-list{
+  background-color: #293042;
+  color: white;
+  border-radius: 10px;
+
+  h1{
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+  }
+
+  .product-id{
+    text-decoration: none;
+    color: white;
+  }
+
+  table{
+    border: none;
+    color: white;
+
+    tr, td{
+      vertical-align: middle;
+    }
+
+    ul{
+      list-style: decimal;
+    }
+
+    thead{
+      border-bottom: solid 1px white;
+      th{
+        font-weight: bold;
+        font-size: 18px;
+      }
+    }
+
+    tr{
+      border-bottom: solid 1px white;
+    }
+
+    .product-list{
+      li{
+        text-align: start;
+        padding-left: 10px;
+      }
+    }
+  }
+
+  .add-button{
+    text-decoration: none;
+    color: #008000;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 0 20px;
+    text-align: end;
+  }
+
+  .user-list-action{
+    li{
+      display: inline-flex;
+
+      .delete-button{
+        text-decoration: none;
+        color: #E25B5B;
+        font-size: 20px;
+        font-weight: bold;
+        padding: 0 20px;
+      }
+
+      .edit-button{
+        text-decoration: none;
+        color: #93932A;
+        font-size: 20px;
+        font-weight: bold;
+        padding: 0 20px;
+      }
+    }
+  }
+
+  .table>:not(caption)>*>* {
+    border-bottom-width: 0px;
+  }
+}

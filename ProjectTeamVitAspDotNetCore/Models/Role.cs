@@ -11,7 +11,7 @@ namespace ProjectTeamVitAspDotNetCore.Models
     public partial class Role
     {
         [Key]
-        public string Id { get; set; }
+        public string IdRole { get; set; }
         public string StringRole { get; set; }
 
         public virtual ICollection<User> User { get; set; }

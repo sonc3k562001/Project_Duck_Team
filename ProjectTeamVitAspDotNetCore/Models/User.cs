@@ -25,7 +25,7 @@ namespace ProjectTeamVitAspDotNetCore.Models
         public bool? Eable { get; set; }
         public string IdRole { get; set; }
 
-        public virtual Role IdRoleNavigation { get; set; }
+        public virtual Role Role { get; set; }
         public virtual ICollection<Order> Order { get; set; }
     }
 }

@@ -19,8 +19,6 @@ namespace ProjectTeamVitAspDotNetCore.Controllers
     {
         private readonly JwelleryContext _context;
     
-
-
         public ProductsManagerController(JwelleryContext context)
         {
             _context = context;
@@ -118,6 +116,14 @@ namespace ProjectTeamVitAspDotNetCore.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("PdId,Name,Price,Description,Image,ColorId,Size,BrandId,DimId,StoneId,IdCategory,MetalId")] Product product, IFormFile Image)
         {
+
+            var value = _context.Product.FirstOrDefault(x => x.PdId == product.PdId);
+            if(value != null)
+            {
+                ViewBag.Error = "Product Code already exists";
+                return View();
+            }
+
             if (Image != null) { product.Image = Image.FileName; }
             if (ModelState.IsValid)
             {

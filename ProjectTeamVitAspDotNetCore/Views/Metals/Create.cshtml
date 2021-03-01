@@ -10,8 +10,9 @@
         <h3 class="card-title">Create Metal</h3>
     </div>
 
-    <form asp-controller="Brands" enctype="multipart/form-data" asp-action="Create" method="post">
+    <form asp-controller="Metals" enctype="multipart/form-data" asp-action="Create" method="post">
         <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <p style="color:red">@ViewBag.Error</p>
         <div class="card-body">
             <div class="form-group">
                 <label for="exampleInputEmail1">Metal Code</label>

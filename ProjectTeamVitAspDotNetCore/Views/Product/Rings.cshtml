@@ -1,87 +1,90 @@
 ﻿<environment>
     <link rel="stylesheet" href="~/css/rings.css" />
+    <link rel="preload" href="https://www.astleyclarke.com/skin/frontend/default/astleyclarke/fonts/local/NeuzeitGroteskRegular.ttf" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="https://www.astleyclarke.com/skin/frontend/default/astleyclarke/fonts/local/NeuzeitGroteskLight.ttf" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="https://www.astleyclarke.com/skin/frontend/default/astleyclarke/fonts/local/BetterSignature.ttf" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="https://www.astleyclarke.com/skin/frontend/default/astleyclarke/fonts/local/NeuzeitGroteskBold.ttf" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="https://www.astleyclarke.com/skin/frontend/default/astleyclarke/fonts/engraving-fonts/BaskervilleBoldItalicBT.woff" as="font" type="font/woff2" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@200&family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
 </environment>
 
 
 @{ ViewData["Title"] = "Bracelets";
     Layout = "~/Views/Shared/_Layout.cshtml"; }
 
-
-
-
 @model PaginatedList<ProjectTeamVitAspDotNetCore.Models.Product>
+
+<div class="reskin category-introblock wide-introblock rings" style="margin-bottom:50px">
+    <div class="content">
+        <h1>Rings</h1>
+        <p class="main-copy">
+            From enduring stacking rings to the show-stopping diamond ring you’ve been searching for,
+            our selection of fine and demi-fine designs make precious presents that were made to be layered together.
+        </p>
+        <p>Also: <a asp-controller="Product" asp-action="Rings"><b>All Rings</b></a> | <a asp-controller="Product" asp-action="Bestsellers"><b>All Bestsellers</b></a></p>
+    </div>
+</div>
+
 <section class="col-xs-12 col-md-12">
 
     <!--Phần này là form search-->
-    <form asp-controller="Product" asp-action="Rings">
-        <input type="text" name="searchString" />
-        <input type="submit" value="Search" />
-        <a asp-controller="Product" asp-action="Rings">All</a>
-    </form>
+    <section class="col-xs-12 col-md-12 search-option">
+        <form asp-controller="Product" asp-action="Rings" class="input-group input-group-sm">
+            <input class="form-control col-md-3" type="text" name="searchString" />
+            <input class="btn btn-sm btn-dark btn-outline-secondary" type="submit" value="Search" />
+            <a asp-controller="Product" asp-action="Rings"><b>All Rings</b></a>
+        </form>
+        <form asp-controller="Product" asp-action="Rings" class="select">
+            <select name="color" class="col-md-2">
+                <option value="null">Color</option>
+                @foreach (Color color in ViewBag.colors)
+                {
+    <option value="@color.ColorId">@color.Name</option>}
+            </select>
+            <select name="brand" class="col-md-2">
+                <option value="null">Brand</option>
+                @foreach (Brand brand in ViewBag.brands)
+                {
+    <option value="@brand.BrandId">@brand.BrandName</option>}
+            </select>
+            <select name="dim" class="col-md-2">
+                <option value="null">Diamond</option>
+                @foreach (Dim dim in ViewBag.dims)
+                {
+    <option value="@dim.DimId">@dim.Name</option>}
+            </select>
+            <select name="stone">
+                <option value="null">Stone</option>
+                @foreach (Stone stone in ViewBag.stones)
+                {
+    <option value="@stone.StoneId">@stone.Name</option>}
+            </select>
+            <select name="metal">
+                <option value="null">Metal</option>
+                @foreach (Metal metal in ViewBag.metals)
+                {
+    <option value="@metal.MetalId">@metal.Name</option>}
+            </select>
+            <input class="btn btn-sm btn-dark btn-outline-secondary filter" type="submit" value="Apply" />
+        </form>
 
+    </section>
 
+    <div class="price">
+        <!--Phần này là chỗ sắp xếp sản phẩm theo giá-->
 
-    <!--Phần này là form filter-->
-    <form asp-controller="Product" asp-action="Rings">
-        <select name="color">
-            <option value="">Color</option>
-            @foreach (Color color in ViewBag.colors)
-            {
-
-<option value="@color.ColorId">@color.Name</option>
-}
-        </select>
-        <select name="brand">
-            <option value="">Brand</option>
-            @foreach (Brand brand in ViewBag.brands)
-            {
-
-<option value="@brand.BrandId">@brand.BrandName</option>
-}
-        </select>
-        <select name="dim">
-            <option value="">Diamond</option>
-            @foreach (Dim dim in ViewBag.dims)
-            {
-
-<option value="@dim.DimId">@dim.Name</option>
-}
-        </select>
-        <select name="stone">
-            <option value="">Stone</option>
-            @foreach (Stone stone in ViewBag.stones)
-            {
-
-<option value="@stone.StoneId">@stone.Name</option>
-}
-        </select>
-        <select name="metal">
-            <option value="">Metal</option>
-            @foreach (Metal metal in ViewBag.metals)
-            {
-
-<option value="@metal.MetalId">@metal.Name</option>
-}
-        </select>
-        <input type="submit" value="Filter" />
-    </form>
-
-
-
-
-
-    <!--Phần này là chỗ sắp xếp sản phẩm theo giá-->
-    @if (ViewBag.order == "price")
-    {
-<a asp-action="Rings" asp-route-sortOrder="@ViewData["DateSortParm"]" asp-route-currentFilter="@ViewData["CurrentFilter"]" asp-route-currentColor="@ViewData["Color"]" asp-route-currentMetal="@ViewData["Metal"]" asp-route-currentBrand="@ViewData["Brand"]" asp-route-currentDim="@ViewData["Dim"]" asp-route-currentStone="@ViewData["Stone"]" asp-route-pageNumber="@Model.PageIndex"><i class="fas fa-sort-up">Price</i></a> }
+        @if (ViewBag.order == "price")
+        {
+<a asp-action="Rings" asp-route-sortOrder="@ViewData["DateSortParm"]" asp-route-currentFilter="@ViewData["CurrentFilter"]" asp-route-currentColor="@ViewData["Color"]" asp-route-currentMetal="@ViewData["Metal"]" asp-route-currentBrand="@ViewData["Brand"]" asp-route-currentDim="@ViewData["Dim"]" asp-route-currentStone="@ViewData["Stone"]" asp-route-pageNumber="@Model.PageIndex" class="btn btn-sm btn-outline-secondary"><i class="fas fa-sort-up">Price</i></a> }
 else if (ViewBag.order == "price_desc")
 {
-<a asp-action="Rings" asp-route-sortOrder="@ViewData["DateSortParm"]" asp-route-currentFilter="@ViewData["CurrentFilter"]" asp-route-currentColor="@ViewData["Color"]" asp-route-currentMetal="@ViewData["Metal"]" asp-route-currentBrand="@ViewData["Brand"]" asp-route-currentDim="@ViewData["Dim"]" asp-route-currentStone="@ViewData["Stone"]" asp-route-pageNumber="@Model.PageIndex"><i class="fas fa-sort-down">Price</i></a> }
+<a asp-action="Rings" asp-route-sortOrder="@ViewData["DateSortParm"]" asp-route-currentFilter="@ViewData["CurrentFilter"]" asp-route-currentColor="@ViewData["Color"]" asp-route-currentMetal="@ViewData["Metal"]" asp-route-currentBrand="@ViewData["Brand"]" asp-route-currentDim="@ViewData["Dim"]" asp-route-currentStone="@ViewData["Stone"]" asp-route-pageNumber="@Model.PageIndex" class="btn btn-sm btn-outline-secondary"><i class="fas fa-sort-down">Price</i></a> }
 else
 {
-<a asp-action="Rings" asp-route-sortOrder="@ViewData["DateSortParm"]" asp-route-currentFilter="@ViewData["CurrentFilter"]" asp-route-currentColor="@ViewData["Color"]" asp-route-currentMetal="@ViewData["Metal"]" asp-route-currentBrand="@ViewData["Brand"]" asp-route-currentDim="@ViewData["Dim"]" asp-route-currentStone="@ViewData["Stone"]" asp-route-pageNumber="@Model.PageIndex"><i class="fas fa-sort">Price</i></a>}
+<a asp-action="Rings" asp-route-sortOrder="@ViewData["DateSortParm"]" asp-route-currentFilter="@ViewData["CurrentFilter"]" asp-route-currentColor="@ViewData["Color"]" asp-route-currentMetal="@ViewData["Metal"]" asp-route-currentBrand="@ViewData["Brand"]" asp-route-currentDim="@ViewData["Dim"]" asp-route-currentStone="@ViewData["Stone"]" asp-route-pageNumber="@Model.PageIndex" class="btn btn-sm btn-outline-secondary"><i class="fas fa-sort">Price</i></a>}
 
-
+    </div>
 </section>
 
 
@@ -110,53 +113,72 @@ else
     </div>
 </div>}
     </div>
+    <div class="pagination">
+        <!--Phần này là form phân trang-->
 
-    <!--Phần này là form phân trang-->
+        @{ var prevDisabled = !Model.HasPreviousPage ? "disabled" : "";
+            var nextDisabled = !Model.HasNextPage ? "disabled" : ""; }
 
-    @{ var prevDisabled = !Model.HasPreviousPage ? "disabled" : "";
-        var nextDisabled = !Model.HasNextPage ? "disabled" : ""; }
+        <a asp-action="Rings"
+           asp-route-sortOrder="@ViewData["CurrentSort"]"
+           asp-route-pageNumber="@(Model.PageIndex - 1)"
+           asp-route-currentFilter="@ViewData["CurrentFilter"]"
+           asp-route-currentColor="@ViewData["Color"]"
+           asp-route-currentMetal="@ViewData["Metal"]"
+           asp-route-currentBrand="@ViewData["Brand"]"
+           asp-route-currentDim="@ViewData["Dim"]"
+           asp-route-currentStone="@ViewData["Stone"]"
+           class="btn btn-dark btn-outline-secondary @prevDisabled">
+            Previous
+        </a>
 
-    <a asp-action="Rings"
-       asp-route-sortOrder="@ViewData["CurrentSort"]"
-       asp-route-pageNumber="@(Model.PageIndex - 1)"
-       asp-route-currentFilter="@ViewData["CurrentFilter"]"
-       asp-route-currentColor="@ViewData["Color"]"
-       asp-route-currentMetal="@ViewData["Metal"]"
-       asp-route-currentBrand="@ViewData["Brand"]"
-       asp-route-currentDim="@ViewData["Dim"]"
-       asp-route-currentStone="@ViewData["Stone"]"
-       class="btn-info btn btn-default @prevDisabled">
-        Previous
-    </a>
+        @{ double n = ViewBag.CountP;
+            double s = ViewBag.pageSize;
+            double sn = Math.Ceiling(n / s);
 
-    @{ double n = ViewBag.CountP;
-        double s = ViewBag.pageSize;
-        double sn = Math.Ceiling(n / s);
-
-        for (int i = 1; i <= sn; i++)
-        {
-            if (Model.PageIndex == i)
+            for (int i = 1; i <= sn; i++)
             {
-<a class="active btn btn-default btn-info">@i</a> }
+                if (Model.PageIndex == i)
+                {
+<a class="active btn btn-dark btn-outline-secondary">@i</a> }
 else
 {
-<a class="btn btn-default btn-info" asp-action="Rings" asp-route-sortOrder="@ViewData["CurrentSort"]" asp-route-currentFilter="@ViewData["CurrentFilter"]" asp-route-currentColor="@ViewData["Color"]" asp-route-currentMetal="@ViewData["Metal"]" asp-route-currentBrand="@ViewData["Brand"]" asp-route-currentDim="@ViewData["Dim"]" asp-route-currentStone="@ViewData["Stone"]" asp-route-pageNumber="@i">@i</a> }
+<a class="btn btn-dark btn-outline-secondary" asp-action="Rings" asp-route-sortOrder="@ViewData["CurrentSort"]" asp-route-currentFilter="@ViewData["CurrentFilter"]" asp-route-currentColor="@ViewData["Color"]" asp-route-currentMetal="@ViewData["Metal"]" asp-route-currentBrand="@ViewData["Brand"]" asp-route-currentDim="@ViewData["Dim"]" asp-route-currentStone="@ViewData["Stone"]" asp-route-pageNumber="@i">@i</a> }
 } }
 
-    <a asp-action="Rings"
-       asp-route-sortOrder="@ViewData["CurrentSort"]"
-       asp-route-pageNumber="@(Model.PageIndex + 1)"
-       asp-route-currentFilter="@ViewData["CurrentFilter"]"
-       asp-route-currentColor="@ViewData["Color"]"
-       asp-route-currentMetal="@ViewData["Metal"]"
-       asp-route-currentBrand="@ViewData["Brand"]"
-       asp-route-currentDim="@ViewData["Dim"]"
-       asp-route-currentStone="@ViewData["Stone"]"
-       class="btn-info btn btn-default @nextDisabled">
-        Next
-    </a>
+        <a asp-action="Rings"
+           asp-route-sortOrder="@ViewData["CurrentSort"]"
+           asp-route-pageNumber="@(Model.PageIndex + 1)"
+           asp-route-currentFilter="@ViewData["CurrentFilter"]"
+           asp-route-currentColor="@ViewData["Color"]"
+           asp-route-currentMetal="@ViewData["Metal"]"
+           asp-route-currentBrand="@ViewData["Brand"]"
+           asp-route-currentDim="@ViewData["Dim"]"
+           asp-route-currentStone="@ViewData["Stone"]"
+           class="btn btn-dark btn-outline-secondary @nextDisabled">
+            Next
+        </a>
+    </div>
+</section>
 
-
+<section>
+    <div class="category-outro-block">
+        <div class="inner">
+            <h3><i><b>Rings</b></i></h3>
+            <p>
+                Minimalist or maximalist? Wherever you sit on the ring stacking scale, we’ve got your new everyday jewellery essentials covered.
+                From enduring stacking rings to the showstopping diamond ring you’ve been searching for, our selection of fine and demi-fine designs
+                make meaningful gifts that were made to be worn, layered, gifted and enjoyed every day. All of our rings are crafted from
+                solid 14 carat gold, solid sterling silver, or 18 carat gold vermeil, to ensure a quality that will last for years to come.
+                Every Astley Clarke ring is designed in our London studio, with a focus on creating meaningful eternity bands, bold signet rings
+                and diamond cocktail rings that can be mixed and matched together, to represent your own personal style. If you’re looking for
+                unique gifting ideas, these five-star rated rings will surprise and delight, whether you treat them to stackable gemstones
+                or new diamonds. We work exclusively with noble metals, natural ethically sourced diamonds and responsibly sourced gemstones,
+                taking great care to craft our pieces so that they will last and be loved for years to come. Available with free global delivery
+                and free returns for the UK, USA and Europe, plus luxury gift wrapping.
+            </p>
+        </div>
+    </div>
 </section>
 
 

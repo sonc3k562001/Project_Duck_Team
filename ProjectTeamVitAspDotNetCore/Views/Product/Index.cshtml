@@ -1,199 +1,182 @@
 ﻿<environment>
-    <link rel="stylesheet" href="~/css/products.css" />
+    <link rel="stylesheet" href="~/css/home.css" />
 </environment>
-<!-- <router-outlet></router-outlet> -->
+<div class="home col-xs-12 col-md-12" style="width:100%">
+    <section class="home_video col-xs-12 col-md-12">
+        <a asp-controller="Product" asp-action="Lockets" class="d-flex home_gemstone-link flex-column justify-content-end flex-wrap align-content-center">
+            <h3 class="text-center">Refresh Your Memories</h3>
+            <p class="text-center">
+                Start the year off on a meaningful note with the ultimate gift: an engravable photo locket.
+                Personalise yours with a memory and engraving for free, and well ensure it arrives made to treasure.
+            </p>
+        </a>
+    </section>
 
-<section class="products_banner col-xs-12 col-md-12">
-    <div class="p-3 d-flex flex-column align-items-center justify-content-center">
-        <h3>
-            Name of the products
-        </h3>
-        <p>
-            Description of the products
-        </p>
-        <ul>
-            <li>Type:</li>
-            <li><a [routerLink]="['/']">Adjustable Bracelets |</a></li>
-            <li><a [routerLink]="['/']">Bangles |</a></li>
-            <li><a [routerLink]="['/']">Charm Bracelets |</a></li>
-            <li><a [routerLink]="['/']">Diamond Bracelets |</a></li>
-            <li><a [routerLink]="['/']">Friendship Bracelets |</a></li>
-            <li><a [routerLink]="['/']">Bracelet Stacks |</a></li>
-        </ul>
-        <ul>
-            <li>Colour:</li>
-            <li><a [routerLink]="['/']">Rose Gold Bracelets |</a></li>
-            <li><a [routerLink]="['/']">Silver Bracelets |</a></li>
-            <li><a [routerLink]="['/']">Gold Bracelets |</a></li>
-        </ul>
-    </div>
-</section>
+    <section class="home_accessories col-xs-12 col-md-12">
+        <div class="d-flex align-items-center justify-content-center">
+            <a asp-controller="Product" asp-action="Bracelets" class="p-2 col-xs-2 col-md-2">
+                <div>
+                    <img src="https://www.astleyclarke.com/media/cms/home/2021-01-08/top-promo-bracelets-d.jpg"
+                         class="one-edge-shadow">
+                    <h3>
+                        Bracelets
+                    </h3>
+                </div>
+            </a>
+            <a asp-controller="Product" asp-action="Rings"class="p-2 col-xs-2 col-md-2">
+                <div>
+                    <img src="https://www.astleyclarke.com/media/cms/home/2021-01-08/top-promo-rings-d.jpg" class="one-edge-shadow">
+                    <h3>
+                        Rings
+                    </h3>
+                </div>
+            </a>
+            <a asp-controller="Product" asp-action="Earrings" class="p-2 col-xs-2 col-md-2">
+                <div>
+                    <img src="https://www.astleyclarke.com/media/cms/home/2021-01-08/top-promo-earrings-d.jpg"
+                         class="one-edge-shadow">
+                    <h3>
+                        Earrings
+                    </h3>
+                </div>
+            </a>
+            <a asp-controller="Product" asp-action="Lockets" class="p-2 col-xs-2 col-md-2">
+                <div>
+                    <img src="https://www.astleyclarke.com/media/cms/home/2021-01-08/top-promo-lockets-d.jpg"
+                         class="one-edge-shadow">
+                    <h3>
+                        Lockets
+                    </h3>
+                </div>
+            </a>
+            <a asp-controller="Product" asp-action="Necklaces" class="p-2 col-xs-2 col-md-2">
+                <div>
+                    <img src="https://www.astleyclarke.com/media/cms/home/2021-01-08/top-promo-necklaces-d.jpg"
+                         class="one-edge-shadow">
+                    <h3>
+                        Necklaces
+                    </h3>
+                </div>
+            </a>
+        </div>
+    </section>
 
-<section class="col-xs-12 col-md-12">
+    <section class="home_gemstone col-xs-12 col-md-12">
+        <a asp-controller="Product" asp-action="Lockets" class="d-flex home_gemstone-link flex-column justify-content-end flex-wrap align-content-center">
 
-    <div class="products_filter col-xs-12 col-md-12">
-        <div class="products_filter-left col-xs-6 col-md-6">
-            <ul>
-                <li>Jewellery Type</li>
-                <li>Price</li>
-                <li>Metal</li>
-                <li>Size</li>
-                <li>Engravable</li>
-                <li>Gemstone</li>
-                <li>Colour</li>
-            </ul>
-        </div>
-        <div class="products_filter-right col-xs-6 col-md-6">
-            <ul class="d-flex justify-content-end align-items-center">
-                <li>96 results</li>
-                <li>
-                    Sort by:
-                    <select></select>
-                </li>
-            </ul>
-        </div>
-    </div>
+            <h3 class="text-center">It's the little things</h3>
+            <p class="text-center">
+                A bright gemstone here and a vibrant stack there can lift spirits in an instant.
+                Embrace radiance this season
+                with jewellery to elevate your everyday.
+            </p>
 
+        </a>
 
-</section>
-<section class="col-xs-12 col-md-12">
-    <div class="products_filter-show d-flex flex-row flex-wrap justify-content-center align-content-center col-xs-12 col-md-12">
-        <div class="product col-xs-2 col-md-2">
-            <div class="d-flex text-center align-items-center justify-content-center">
-                <a [routerLink]="['/products/product-detail']" class="p-3 col-xs-12 col-md-12">
-                    <div class="text-center">
-                        <img src="https://www.astleyclarke.com/media/catalog/product/cache/1/small_image/375x375/9df78eab33525d08d6e5fb8d27136e95/4/5/45044ynob_a/Astley-Clarke-Interstellar-Diamond-Bangle-Yellow-Gold-(Solid,-100-Recycled)-45044YNOB.jpg"
-                             class="one-edge-shadow">
-                        <h3>
-                            Interstellar Diamond Bangle
-                        </h3>
-                        <span>
-                            ₫63,802,576
-                        </span>
-                    </div>
-                </a>
-            </div>
-        </div>
-        <!-- <div class="product col-xs-2 col-md-2">
-          <div class="d-flex text-center align-items-center justify-content-center">
-            <a [routerLink]="['/products']" class="p-3 col-xs-12 col-md-12">
-              <div class="text-center">
-                <img
-                  src="https://www.astleyclarke.com/media/catalog/product/cache/1/small_image/375x375/9df78eab33525d08d6e5fb8d27136e95/4/5/45044ynob_a/Astley-Clarke-Interstellar-Diamond-Bangle-Yellow-Gold-(Solid,-100-Recycled)-45044YNOB.jpg"
-                  class="one-edge-shadow">
-                <h3>
-                  Interstellar Diamond Bangle
-                </h3>
-                <span>
-                  ₫63,802,576
-                </span>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="product col-xs-2 col-md-2">
-          <div class="d-flex text-center align-items-center justify-content-center">
-            <a [routerLink]="['/products']" class="p-3 col-xs-12 col-md-12">
-              <div class="text-center">
-                <img
-                  src="https://www.astleyclarke.com/media/catalog/product/cache/1/small_image/375x375/9df78eab33525d08d6e5fb8d27136e95/4/5/45044ynob_a/Astley-Clarke-Interstellar-Diamond-Bangle-Yellow-Gold-(Solid,-100-Recycled)-45044YNOB.jpg"
-                  class="one-edge-shadow">
-                <h3>
-                  Interstellar Diamond Bangle
-                </h3>
-                <span>
-                  ₫63,802,576
-                </span>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="product col-xs-2 col-md-2">
-          <div class="d-flex text-center align-items-center justify-content-center">
-            <a [routerLink]="['/products']" class="p-3 col-xs-12 col-md-12">
-              <div class="text-center">
-                <img
-                  src="https://www.astleyclarke.com/media/catalog/product/cache/1/small_image/375x375/9df78eab33525d08d6e5fb8d27136e95/4/5/45044ynob_a/Astley-Clarke-Interstellar-Diamond-Bangle-Yellow-Gold-(Solid,-100-Recycled)-45044YNOB.jpg"
-                  class="one-edge-shadow">
-                <h3>
-                  Interstellar Diamond Bangle
-                </h3>
-                <span>
-                  ₫63,802,576
-                </span>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="product col-xs-2 col-md-2">
-          <div class="d-flex text-center align-items-center justify-content-center">
-            <a [routerLink]="['/products']" class="p-3 col-xs-12 col-md-12">
-              <div class="text-center">
-                <img
-                  src="https://www.astleyclarke.com/media/catalog/product/cache/1/small_image/375x375/9df78eab33525d08d6e5fb8d27136e95/4/5/45044ynob_a/Astley-Clarke-Interstellar-Diamond-Bangle-Yellow-Gold-(Solid,-100-Recycled)-45044YNOB.jpg"
-                  class="one-edge-shadow">
-                <h3>
-                  Interstellar Diamond Bangle
-                </h3>
-                <span>
-                  ₫63,802,576
-                </span>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="product col-xs-2 col-md-2">
-          <div class="d-flex text-center align-items-center justify-content-center">
-            <a [routerLink]="['/products']" class="p-3 col-xs-12 col-md-12">
-              <div class="text-center">
-                <img
-                  src="https://www.astleyclarke.com/media/catalog/product/cache/1/small_image/375x375/9df78eab33525d08d6e5fb8d27136e95/4/5/45044ynob_a/Astley-Clarke-Interstellar-Diamond-Bangle-Yellow-Gold-(Solid,-100-Recycled)-45044YNOB.jpg"
-                  class="one-edge-shadow">
-                <h3>
-                  Interstellar Diamond Bangle
-                </h3>
-                <span>
-                  ₫63,802,576
-                </span>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="product col-xs-2 col-md-2">
-          <div class="d-flex text-center align-items-center justify-content-center">
-            <a [routerLink]="['/products']" class="p-3 col-xs-12 col-md-12">
-              <div class="text-center">
-                <img
-                  src="https://www.astleyclarke.com/media/catalog/product/cache/1/small_image/375x375/9df78eab33525d08d6e5fb8d27136e95/4/5/45044ynob_a/Astley-Clarke-Interstellar-Diamond-Bangle-Yellow-Gold-(Solid,-100-Recycled)-45044YNOB.jpg"
-                  class="one-edge-shadow">
-                <h3>
-                  Interstellar Diamond Bangle
-                </h3>
-                <span>
-                  ₫63,802,576
-                </span>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="product_notfound text-center d-flex flex-column align-content-center justify-content-center p-3 col-xs-2 col-md-2">
-          <div class="p-3 col-xs-12 col-md-12">
-            <h3>
-              Not found what you're looking for?
-            </h3>
-            <a [routerLink]="['/']">
-              <button type="button" class="btn">
-                SHOP ALL JEWELLERY
-              </button>
-            </a>
-            <a [routerLink]="['/']">
-              <button type="button" class="btn">
-                SHOP GIFT CARDS
-              </button>
-            </a>
-          </div>
-        </div> -->
-    </div>
+    </section>
+
+    <section class="home_bestseller col-xs-12 col-md-12">
+        <div class="d-flex align-items-center justify-content-center">
+
+            <a asp-controller="Product" asp-action="Bestsellers"
+               class="p-2 col-xs-5 col-md-5 background-left d-flex flex-column justify-content-end flex-wrap align-content-center">
+                <h3 class="text-center">The best of the best</h3>
+                <p class="text-center">
+                    They're five-star rated for a reason.
+                    Uncover your new jewellery box staples amongst this selection of our most-loved styles.
+                </p>
 
 
-</section>
+            </a>
+
+
+            <a asp-controller="Product" asp-action="Necklaces"
+               class="p-2 col-xs-5 col-md-5 background-right d-flex flex-column justify-content-end flex-wrap align-content-center">
+                <h3 class="text-center">Fresh Finery</h3>
+                <p class="text-center">
+                    Diamonds are for every day.
+                    Discover distinctive, solid gold silhouettes you'll feel effortlessly extravagant in, wherever you wear them.
+                </p>
+
+            </a>
+
+        </div>
+    </section>
+
+    @*<section class="home_public col-xs-12 col-md-12 text-center">
+        <a href="#">ASTLEYCLARKE</a>
+
+        <div class="user d-flex flex-row align-items-center justify-content-center">
+            <a href="review" class="post p-2 col-xs-2 col-md-2">
+                <img src="https://www.astleyclarke.com/media/instagram/posts/18186434911048732/standard_resolution.jpg"
+                     alt="Avatar" class="image" style="width:100%">
+                <div class="content-position d-flex flex-column align-items-center">
+                    <i class="fab fa-instagram"></i>
+                    <br>
+
+                </div>
+            </a>
+            <button type="button" class="btn flex-end">
+                SHOP THE LOOK
+            </button>
+            <a href="review" class="post p-2 col-xs-2 col-md-2">
+                <img src="https://www.astleyclarke.com/media/instagram/posts/18186434911048732/standard_resolution.jpg"
+                     alt="Avatar" class="image" style="width:100%">
+                <div class="content-position d-flex flex-column align-items-center">
+                    <i class="fab fa-instagram"></i>
+                    <br>
+
+                </div>
+
+            </a>
+            <button type="button" class="btn flex-end">
+                SHOP THE LOOK
+            </button>
+            <a href="review" class="post p-2 col-xs-2 col-md-2">
+                <img src="https://www.astleyclarke.com/media/instagram/posts/18186434911048732/standard_resolution.jpg"
+                     alt="Avatar" class="image" style="width:100%">
+                <div class="content-position d-flex flex-column align-items-center">
+                    <i class="fab fa-instagram"></i>
+                    <br>
+
+                </div>
+
+            </a>
+            <button type="button" class="btn flex-end">
+                SHOP THE LOOK
+            </button>
+            <a href="review" class="post p-2 col-xs-2 col-md-2">
+                <img src="https://www.astleyclarke.com/media/instagram/posts/18186434911048732/standard_resolution.jpg"
+                     alt="Avatar" class="image" style="width:100%">
+                <div class="content-position d-flex flex-column align-items-center">
+                    <i class="fab fa-instagram"></i>
+                    <br>
+
+                </div>
+            </a>
+            <button type="button" class="btn flex-end">
+                SHOP THE LOOK
+            </button>
+            <a href="review" class="post p-2 col-xs-2 col-md-2">
+                <img src="https://www.astleyclarke.com/media/instagram/posts/18186434911048732/standard_resolution.jpg"
+                     alt="Avatar" class="image" style="width:100%">
+                <div class="content-position d-flex flex-column align-items-center">
+                    <i class="fab fa-instagram"></i>
+                    <br>
+
+                </div>
+            </a>
+            <button type="button" class="btn flex-end">
+                SHOP THE LOOK
+            </button>
+        </div>
+
+    </section>*@
+
+    <section class="home_brands col-xs-12 col-md-12">
+        <a href="brands">
+            <h3 class="text-center">As Seen In...</h3>
+            <img src="https://www.astleyclarke.com/media/cms/logos/featured-in-d.png?v=0">
+        </a>
+    </section>
+</div>

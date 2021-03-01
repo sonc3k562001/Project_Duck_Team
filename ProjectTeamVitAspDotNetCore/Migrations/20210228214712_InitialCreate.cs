@@ -108,12 +108,12 @@ namespace ProjectTeamVitAspDotNetCore.Migrations
                 name: "Role",
                 columns: table => new
                 {
-                    Id = table.Column<string>(nullable: false),
+                    IdRole = table.Column<string>(nullable: false),
                     StringRole = table.Column<string>(nullable: true)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Role", x => x.Id);
+                    table.PrimaryKey("PK_Role", x => x.IdRole);
                 });
 
             migrationBuilder.CreateTable(
@@ -151,16 +151,16 @@ namespace ProjectTeamVitAspDotNetCore.Migrations
                     Gender = table.Column<string>(nullable: true),
                     Eable = table.Column<bool>(nullable: true),
                     IdRole = table.Column<string>(nullable: true),
-                    IdRoleNavigationId = table.Column<string>(nullable: true)
+                    RoleIdRole = table.Column<string>(nullable: true)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_User", x => x.Email);
                     table.ForeignKey(
-                        name: "FK_User_Role_IdRoleNavigationId",
-                        column: x => x.IdRoleNavigationId,
+                        name: "FK_User_Role_RoleIdRole",
+                        column: x => x.RoleIdRole,
                         principalTable: "Role",
-                        principalColumn: "Id",
+                        principalColumn: "IdRole",
                         onDelete: ReferentialAction.Restrict);
                 });
 
@@ -325,9 +325,9 @@ namespace ProjectTeamVitAspDotNetCore.Migrations
                 column: "StoneId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_User_IdRoleNavigationId",
+                name: "IX_User_RoleIdRole",
                 table: "User",
-                column: "IdRoleNavigationId");
+                column: "RoleIdRole");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)

@@ -9,7 +9,7 @@ using ProjectTeamVitAspDotNetCore.Models;
 
 namespace ProjectTeamVitAspDotNetCore.Controllers
 {
-    [Authorize(Roles = "Admin,SuperAdmin")]
+    [Authorize(Roles = "Admin,SuperAdmin,Employee")]
     public class StonesController : Controller
     {
         
@@ -99,6 +99,13 @@ namespace ProjectTeamVitAspDotNetCore.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("StoneId,Name,Description,Price,StoneGm,StoneCrt,StoneRate,StoneAmt")] Stone stone)
         {
+            var value = _context.Stone.FirstOrDefault(x => x.StoneId == stone.StoneId);
+
+            if(value!= null)
+            {
+                ViewBag.Error = "Stone already exists";
+                return View();
+            }
             if (ModelState.IsValid)
             {
                 _context.Add(stone);

@@ -12,12 +12,12 @@
                     <table class="table table-responsive align-middle text-center">
                         <thead>
                             <tr>
-                                <th>Product Image</th>
-                                <th>Product Name</th>
-                                <th>Product Size</th>
-                                <th>Product Price</th>
-                                <th>Product Quantity</th>
-                                <th>Product Total</th>
+                                <th>Image</th>
+                                <th>Name</th>
+                                <th>Size</th>
+                                <th>Price</th>
+                                <th>Quantity</th>
+                                <th>Total</th>
                             </tr>
                         </thead>
                         <input type="hidden" name="cart" value="@ViewBag.cart"/>
@@ -81,14 +81,12 @@
                             <input type="date" min="1900-01-01" max="2021-01-31" asp-for="Bdate" class="form-controls" id="phone" name="Bdate">
                         </div>
                         <div class="form-group col-xs-12 col-md-12 ">
-                            <label asp-for="Gender" class="control-label">Man&nbsp;&nbsp;&nbsp;&nbsp; </label>
-                            <input type="radio" asp-for="Gender" name="Gender" value="Man" class="form-check-input" />
-                           
-                            <span asp-validation-for="Gender" class="text-danger"></span>
-                        </div>
-                        <div class="form-group col-xs-12 col-md-12 ">
-                            <label asp-for="Gender" class="control-label">Woman&nbsp;&nbsp;&nbsp;&nbsp; </label>
-                            <input type="radio" asp-for="Gender" name="Gender" value="Woman" class="form-check-input" />
+                            <label asp-for="Gender" class="control-label">Gender</label>
+                            <select asp-for="Gender" class="form-group">
+                                <option value="Man">Man</option>
+                                <option value="Woman">Woman</option>
+                                <option value="LGBT">LGBT</option>
+                            </select>
                             <span asp-validation-for="Gender" class="text-danger"></span>
                         </div>
                         <div class="form-group col-xs-12 col-md-12">

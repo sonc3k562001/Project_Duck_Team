@@ -1,15 +1,15 @@
-﻿using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.FileProviders;
-using ProjectTeamVitAspDotNetCore.Models;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
-
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.FileProviders;
+using ProjectTeamVitAspDotNetCore.Models;
 namespace ProjectTeamVitAspDotNetCore.Controllers
 {
     [Authorize(Roles = "Admin,SuperAdmin")]
@@ -42,7 +42,7 @@ namespace ProjectTeamVitAspDotNetCore.Controllers
             ViewData["CurrentFilter"] = searchString;
             var users = from s in _context.User select s;
 
-            Role role = _context.Role.FirstOrDefault(x => x.Id.Contains(searchString));
+            Role role = _context.Role.FirstOrDefault(x => x.IdRole.Contains(searchString));
 
             if(!String.IsNullOrEmpty(searchString))
             {
@@ -97,8 +97,7 @@ namespace ProjectTeamVitAspDotNetCore.Controllers
        
         public IActionResult Create()
         {
-            List<Role> roles = _context.Role.ToList();
-            ViewBag.roles = roles;
+            ViewData["IdRole"] =new SelectList(_context.Role,"IdRole" ,"IdRole" );
             return View();
         }
 
@@ -106,6 +105,14 @@ namespace ProjectTeamVitAspDotNetCore.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("Fname,Lname,Bdate,Address,Phone,Password,ConfirmPassword,ZipCode,Avatar,Gender,Email,Enable,IdRole")] User user, IFormFile Avatar)
         {
+            var value = _context.User.FirstOrDefault(x => x.Email == user.Email);
+
+            if (value != null)
+            {
+                ViewBag.Error = "Email already exists";
+                return View();
+            }
+
             user.Password = BCrypt.Net.BCrypt.HashPassword(user.Password);
             user.ConfirmPassword = BCrypt.Net.BCrypt.HashPassword(user.ConfirmPassword);
             user.Avatar = Path.GetFileName(Avatar.FileName);

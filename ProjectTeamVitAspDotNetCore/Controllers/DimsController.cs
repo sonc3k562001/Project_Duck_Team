@@ -10,7 +10,7 @@ using ProjectTeamVitAspDotNetCore.Models;
 
 namespace ProjectTeamVitAspDotNetCore.Controllers
 {
-    [Authorize(Roles = "Admin,SuperAdmin")]
+    [Authorize(Roles = "Admin,SuperAdmin,Employee")]
     public class DimsController : Controller
     {
         private readonly JwelleryContext _context;
@@ -44,6 +44,7 @@ namespace ProjectTeamVitAspDotNetCore.Controllers
             {
                 dims = dims.Where(s => s.Name.Contains(searchString) || s.DimId.Contains(searchString)|| s.Certify.Contains(searchString));
             }
+
             switch (sortOrder)
             {
                 case "price":
@@ -94,13 +95,18 @@ namespace ProjectTeamVitAspDotNetCore.Controllers
             return View();
         }
 
-        // POST: Dims/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to, for 
-        // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+        
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("DimId,Name,DimCrt,DimPcs,DimGm,DimRate,DimAmt,Certify,DimSize")] Dim dim)
         {
+
+            var value = _context.Dim.FirstOrDefault(x => x.DimId == dim.DimId);
+            {
+                ViewBag.Error = "Diamond code already exists";
+                return View();
+            }
+
             if (ModelState.IsValid)
             {
                 _context.Add(dim);

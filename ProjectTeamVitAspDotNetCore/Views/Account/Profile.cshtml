@@ -1,15 +1,140 @@
-﻿
+﻿<environment>
+    <link rel="stylesheet" href="~/css/new-user.css" />
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</environment>
+@model ProjectTeamVitAspDotNetCore.Models.User
+@{
+    Layout = "~/Views/Shared/_LayoutProfile.cshtml";
+}
 
-<img src="~/Images/@ViewBag.User.Avatar" width="100" height="100" />
-<p><span>Full Name :</span> @ViewBag.User.Fname @ViewBag.User.Lname</p>
-<p><span>Birthday :</span> @ViewBag.User.Bdate</p>
-<p><span>Adress :</span> @ViewBag.User.Address</p>
-<p><span>Gender :</span> @ViewBag.User.Gender</p>
-<p><span>Phone :</span> @ViewBag.User.Phone</p>
-<p><span>Zip Code :</span> @ViewBag.User.ZipCode</p>
-<br />
-<a href="/Account/PasswordChange">Change Password</a><br />
-<a href="/Account/ChangedInformation">Change Information</a>
-<a href="/Account/ListOrder">List Bill</a>
-<a class="nav-link text-dark" asp-area="" asp-controller="Account" asp-action="Signout">Logout</a>
+<div class="container emp-profile">
+    <form asp-controller="Account" enctype="multipart/form-data" asp-action="ChangedInformation" method="post">
+        <input asp-for="Email" type="hidden" />
+        <input type="hidden" asp-for="Password" />
+        <input type="hidden" asp-for="ConfirmPassword" />
+        <input type="hidden" asp-for="IdRole" />
+        <div class="row">
+            <div class="col-md-5">
+                <div class="profile-img" style="border-radius:100%">
+                    <img src="/Images/@Model.Avatar" width="300" height="200" alt="" />
+                    <div class="file btn btn-lg btn-primary">
+                        Change Photo
+                        <input asp-for="Avatar" type="file" />
+                    </div>
+                </div>
+                <div class="row">
+                    <a class="btn btn-block form-group" style="background-color:paleturquoise" asp-controller="Account" asp-action="ListOrder">Order List</a>
+                </div>
+                <div class="row">
+                    <a class="btn btn-block form-group" style="background-color:paleturquoise" asp-controller="Account" asp-action="PasswordChange">Change Password</a><br />
+                </div>
+                <div class="row">
+                    @if (Model.IdRole == "4")
+                    {
+                        <a class="btn btn-block form-group" style="background-color:paleturquoise" asp-controller="Product" asp-action="Index">Go to Home Page</a>
+                        <a class="btn " style="background-color:red" asp-controller="Account" asp-action="Signout">Logout <i class="fas fa-sign-out-alt"></i></a>
+                    }
+                    else
+                    {
+                        <a class="btn btn-block form-group" style="background-color:paleturquoise" asp-controller="Dashboard" asp-action="Index">Go to Admin Page</a>
+                        <a class="btn btn-block form-group" style="background-color:paleturquoise" asp-controller="Product" asp-action="Index">Go to User Page</a>
+                        <a class="btn " style="background-color:red" asp-controller="Account" asp-action="Signout">Logout <i class="fas fa-sign-out-alt"></i></a>
+                    }
+
+                </div>
+            </div>
+            <div class="col-md-7">
+                <div class="tab-content profile-tab" id="myTabContent">
+                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                        <div class="row form-group">
+                            <div class="col-md-2">
+                                <label>Email:</label>
+                            </div>
+                            <div class="col-md-10">
+                                <p>@ViewBag.User.Email</p>
+                            </div>
+                        </div>
+                        <div class="row form-group">
+                            <div class="col-md-2">
+                                <label>Fist Name:</label>
+                            </div>
+                            <div class="col-md-10">
+                                <input asp-for="Fname" class="form-control" />
+                            </div>
+                        </div>
+                        <div class="row form-group">
+                            <div class="col-md-2">
+                                <label>Last Name:</label>
+                            </div>
+                            <div class="col-md-10">
+                                <input asp-for="Lname" class="form-control" />
+                            </div>
+                        </div>
+
+                        <div class="row form-group">
+                            <div class="col-md-2">
+                                <label>Birthday:</label>
+                            </div>
+                            <div class="col-md-10">
+                                <input type="date" max="2020-02-01" class="form-control" asp-for="Bdate" />
+                            </div>
+                        </div>
+                        <div class="row form-group">
+                            <div class="col-md-2">
+                                <label>Phone:</label>
+                            </div>
+                            <div class="col-md-10">
+                                <input asp-for="Phone" class="form-control" />
+                            </div>
+                        </div>
+                        <div class="row form-group">
+                            <div class="col-md-2">
+                                <label>Gender:</label>
+                            </div>
+                            <div class="col-md-10">
+                                <select asp-for="Gender" class="form-control">
+                                    <option value="Man">Man</option>
+                                    <option value="Woman">Woman</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row form-group">
+                            <div class="col-md-2">
+                                <label>Address:</label>
+                            </div>
+                            <div class="col-md-10">
+                                <input asp-for="Address" class="form-control" />
+                            </div>
+                        </div>
+                        <div class="row form-group">
+                            <div class="col-md-2">
+                                <label>Zip Code:</label>
+                            </div>
+                            <div class="col-md-10">
+                                <input asp-for="ZipCode" class="form-control" />
+                            </div>
+                        </div>
+                        <div class="row form-group" style="text-align:center">
+                            <button class="profile-edit-btn right" asp-controller="Account" asp-action="Profile">Reset Value</button>
+                        </div>
+                        <div class="row form-group right" style="text-align:center">
+                            <input type="submit" class="profile-edit-btn" value="Save Profile" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+
+
+
+
+
+
+
+
+
 

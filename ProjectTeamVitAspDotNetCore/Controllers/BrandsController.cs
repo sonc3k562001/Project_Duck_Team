@@ -10,7 +10,7 @@ using ProjectTeamVitAspDotNetCore.Models;
 
 namespace ProjectTeamVitAspDotNetCore.Controllers
 {
-    [Authorize(Roles = "Admin,SuperAdmin")]
+    [Authorize(Roles = "Admin,SuperAdmin,Employee")]
     public class BrandsController : Controller
     {
         private readonly JwelleryContext _context;
@@ -92,6 +92,13 @@ namespace ProjectTeamVitAspDotNetCore.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("BrandId,BrandName")] Brand brand)
         {
+            var value = _context.Brand.FirstOrDefault(x => x.BrandId == brand.BrandId);
+            if(value!= null)
+            {
+                ViewBag.Error = "Brand code already exists";
+
+                return View();
+            }
             if (ModelState.IsValid)
             {
                 _context.Add(brand);
@@ -173,6 +180,12 @@ namespace ProjectTeamVitAspDotNetCore.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(string id)
         {
+            List<Product> products = _context.Product.Where(x => x.BrandId == id).ToList();
+            foreach(Product product in products)
+            {
+                _context.Product.Remove(product);
+                await _context.SaveChangesAsync();
+            }
             var brand = await _context.Brand.FindAsync(id);
             _context.Brand.Remove(brand);
             await _context.SaveChangesAsync();

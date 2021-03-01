@@ -571,6 +571,7 @@ namespace ProjectTeamVitAspDotNetCore.Controllers
             }
 
             ViewBag.category = category;
+            ViewBag.link = product.IdCategory;
             ViewBag.color = color;
             ViewBag.brand = brand;
             ViewBag.dim = dim;

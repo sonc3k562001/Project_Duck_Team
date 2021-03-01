@@ -26,17 +26,17 @@ body {
     color: gray;
     font-size: 23px;
     line-height: 30px;
-    font-weight: 350;
+    font-weight: 300;
     letter-spacing: 0px;
     font-family: "Titan One", Arial, Tahoma, sans-serif;
     margin: 13px 0 0 50px;
-    text-decoration:none;
+    text-decoration: none;
 }
-    .header-name :hover {
-        color: black;  
-        text-decoration:none !important;
-        list-style:none ;
 
+    .header-name :hover {
+        color: black;
+        text-decoration: none !important;
+        list-style: none;
     }
 
 .toggle {
@@ -44,7 +44,7 @@ body {
 }
 
 .header {
-    background:White !important;
+    background: White !important;
     position: fixed;
     top: 0;
     left: 0;
@@ -193,65 +193,74 @@ body {
     .sidebar-left .sidebar-menu li {
         display: block;
     }
-    .has-child:hover {
-        color:white
-    }
 
-        .sidebar-left .sidebar-menu li a {
-            display: block;
-            font-size: 16px;
-            line-height: 1.2;
-            text-decoration: none;
-            padding: 12px 0px;
-            position: relative;
-            color: #c2c7d0;
-            /*border: 1px solid white;*/
-        }
+.has-child:hover {
+    color: white
+}
+
+.sidebar-left .sidebar-menu li a {
+    display: block;
+    font-size: 15px;
+    line-height: 1.2;
+    text-decoration: none;
+    padding: 12px 0px;
+    position: relative;
+    color: #c2c7d0;
+    /*border: 1px solid white;*/
+}
 
 
-.font-as{
+.font-as {
     color: #c2c7d0;
 }
+
 .sidebar-left .sidebar-menu li a:hover {
     color: white;
     background: rgba(255,255,255,.1);
 }
+
 .sidebar-left .sidebar-menu li a .icon {
     color: #c2c7d0;
 }
-.sidebar-left .sidebar-menu li a .icon:hover {
-    color: white;
-    background: rgba(255,255,255,.1);
-}
+
+    .sidebar-left .sidebar-menu li a .icon:hover {
+        color: white;
+        background: rgba(255,255,255,.1);
+    }
+
 .sidebar-left .sidebar-menu li ul {
     padding-left: 25px;
     list-style: none;
     display: none;
 }
-.sidebar-left .sidebar-menu li.has-child > a{
-      color: #c2c7d0;
-    content: '';
-    transition: all 0.3s ease-in-out;
-}
-.sidebar-left .sidebar-menu li.has-child > a .icon {
+
+.sidebar-left .sidebar-menu li.has-child > a {
     color: #c2c7d0;
     content: '';
-    position: absolute;
-    right: 0;
-    top: 15px;
-    width: 20px;
-    height: 20px;
-    background-size: 14px;
     transition: all 0.3s ease-in-out;
 }
+
+    .sidebar-left .sidebar-menu li.has-child > a .icon {
+        color: #c2c7d0;
+        content: '';
+        position: absolute;
+        right: 0;
+        top: 15px;
+        width: 20px;
+        height: 20px;
+        background-size: 14px;
+        transition: all 0.3s ease-in-out;
+    }
 
 .sidebar-left .sidebar-menu li.has-child.menu-open > a .icon {
     transform: rotate(-90deg);
 }
+
     .sidebar-left .sidebar-menu li.has-child.menu-open > a .icon:hover {
         color: white;
         background: rgba(255,255,255,.1);
     }
+
 .sidebar-left .sidebar-menu li.has-child.menu-open > ul {
     display: block;
 }

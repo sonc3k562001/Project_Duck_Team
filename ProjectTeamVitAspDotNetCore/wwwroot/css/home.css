@@ -1,5 +1,10 @@
-﻿.home .home_video {
+﻿.home{
+    padding: 0;
+}
+
+.home .home_video {
     height: 1000px;
+    padding: 0;
 }
 
     .home .home_video a {
@@ -14,7 +19,7 @@
         text-decoration: none;
     }
 
-        .home .home_video a:hover button {
+        .home .home_video .shop-button:hover {
             background-color: white;
             color: black;
         }
@@ -40,7 +45,7 @@
             text-justify: distribute-all-lines;
         }
 
-        .home .home_video a button {
+        .home .home_video .shop-button {
             border: solid 1px white;
             border-radius: 10px;
             color: white;
@@ -82,6 +87,9 @@
     text-align: center;
 }
 
+.home .home_gemstone{
+    padding: 0;
+}
 .home .home_gemstone a {
     background-image: url("https://www.astleyclarke.com/media/cms/home/2021-01-08/gemstones-d.jpg?v=1");
     background-position: center;
@@ -151,10 +159,12 @@
 
         .home .home_bestseller a.background-left {
             background-image: url("https://www.astleyclarke.com/media/cms/home/2021-01-08/best-sellers-d.jpg");
+            border-radius: 10px;
         }
 
         .home .home_bestseller a.background-right {
             background-image: url("https://www.astleyclarke.com/media/cms/home/2021-01-08/diamonds-d.jpg");
+            border-radius: 10px;
         }
 
         .home .home_bestseller a:hover button {
@@ -194,7 +204,7 @@
             align-self: center;
         }
 
-.home .home_public {
+/*.home .home_public {
     margin: 40px 0;
 }
 
@@ -267,7 +277,7 @@
 
             .home .home_public .user .post:hover button {
                 background-color: white;
-            }
+            }*/
 
 .home .home_brands {
     margin: 40px 0;
@@ -293,3 +303,4 @@
     -webkit-box-shadow: 0 8px 6px -6px black;
     box-shadow: 0 8px 6px -6px black;
 }
+

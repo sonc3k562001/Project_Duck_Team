@@ -17,6 +17,7 @@
             <div class="form-group">
                 <label for="exampleInputEmail1">Product Code</label>
                 <input type="text" asp-for="PdId" class="form-control" id="exampleInputEmail1" placeholder="Enter Product Code">
+                <span style="color:red">@ViewBag.Error</span>
                 <span asp-validation-for="PdId" class="text-danger"></span>
             </div>
             <div class="form-group">

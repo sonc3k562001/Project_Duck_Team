@@ -10,7 +10,7 @@ using ProjectTeamVitAspDotNetCore.Models;
 
 namespace ProjectTeamVitAspDotNetCore.Controllers
 {
-    [Authorize(Roles = "Admin,SuperAdmin")]
+    [Authorize(Roles = "Admin,SuperAdmin,Employee")]
     public class MetalsController : Controller
     {
         private readonly JwelleryContext _context;
@@ -93,6 +93,12 @@ namespace ProjectTeamVitAspDotNetCore.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("MetalId,Name,MetalCrt")] Metal metal)
         {
+            var value = _context.Metal.FirstOrDefault(x => x.MetalId == metal.MetalId);
+            if(value != null)
+            {
+                ViewBag.Error = "Metal code already exists";
+                return View();
+            }
             if (ModelState.IsValid)
             {
                 _context.Add(metal);

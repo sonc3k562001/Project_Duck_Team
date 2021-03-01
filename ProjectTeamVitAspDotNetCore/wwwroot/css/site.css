@@ -25,6 +25,14 @@
         display: inline-flex;
     }
 
+        .nav-item .navbar-nav .nav-link {
+            text-decoration: none;
+            font-size: 14px;
+            color: black;
+            font-weight: bold;
+            padding-right: 10px;
+        }
+
         .header .header_main .header_main-left img {
             max-width: 30px;
             max-height: 30px;

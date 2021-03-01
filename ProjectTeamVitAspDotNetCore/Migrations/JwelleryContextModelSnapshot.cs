@@ -282,13 +282,13 @@ namespace ProjectTeamVitAspDotNetCore.Migrations
 
             modelBuilder.Entity("ProjectTeamVitAspDotNetCore.Models.Role", b =>
                 {
-                    b.Property<string>("Id")
+                    b.Property<string>("IdRole")
                         .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("StringRole")
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("Id");
+                    b.HasKey("IdRole");
 
                     b.ToTable("Role");
                 });
@@ -353,9 +353,6 @@ namespace ProjectTeamVitAspDotNetCore.Migrations
                     b.Property<string>("IdRole")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("IdRoleNavigationId")
-                        .HasColumnType("nvarchar(450)");
-
                     b.Property<string>("Lname")
                         .HasColumnType("nvarchar(max)");
 
@@ -365,12 +362,15 @@ namespace ProjectTeamVitAspDotNetCore.Migrations
                     b.Property<string>("Phone")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("RoleIdRole")
+                        .HasColumnType("nvarchar(450)");
+
                     b.Property<string>("ZipCode")
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Email");
 
-                    b.HasIndex("IdRoleNavigationId");
+                    b.HasIndex("RoleIdRole");
 
                     b.ToTable("User");
                 });
@@ -422,9 +422,9 @@ namespace ProjectTeamVitAspDotNetCore.Migrations
 
             modelBuilder.Entity("ProjectTeamVitAspDotNetCore.Models.User", b =>
                 {
-                    b.HasOne("ProjectTeamVitAspDotNetCore.Models.Role", "IdRoleNavigation")
+                    b.HasOne("ProjectTeamVitAspDotNetCore.Models.Role", "Role")
                         .WithMany("User")
-                        .HasForeignKey("IdRoleNavigationId");
+                        .HasForeignKey("RoleIdRole");
                 });
 #pragma warning restore 612, 618
         }

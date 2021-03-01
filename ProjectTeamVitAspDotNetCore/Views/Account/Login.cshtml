@@ -2,37 +2,35 @@
 @model ProjectTeamVitAspDotNetCore.Models.User
 <environment>
     <link rel="stylesheet" href="/css/login.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
 </environment>
-@{ 
-    Layout = "_LayoutLogin";
-}
+@{ Layout = "_LayoutLogin"; }
 
-<div class="info-login">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-1"></div>
-            <div class="col-md-4 information">
-                <h2 class="text-center">Already a member?</h2>
-                <form method="post" asp-controller="Account" asp-action="Login">
-                    <p style="color:red">@ViewBag.error</p>
-                    <div class="form-group">
-                        <label for="Email">Email:</label>
-                        <input type="email" asp-for="Email" name="Email" id="Email" class="form-control" placeholder="Email..." />
-                    </div>
-                    <div class="form-group">
-                        <label for="Password">Password:</label>
-                        <input type="password" asp-for="Password" name="Password" id="Password" class="form-control" placeholder="Password..." />
-                        <a asp-controller="Account" asp-action="PasswordReset" style="font-size:13px; color: #a09e9e;">Forgot password?</a><br />
-                    </div>
-                    <div class="form-group">
-                        <input type="submit" class="btn-dark" value="Login" />
-                        Don't have an account ?<a asp-controller="Account" asp-action="Register">Register</a>
-                    </div>
-                </form>
-            </div>
-            <div class="col-md-1"></div>
-            <div class="col-md-5 img-login"></div>
-            <div class="col-md-1"></div>
+<div class="img-login">
+    <div class="row">
+        <div class="col-md-5"></div>
+        <div class="col-md-4 information">
+            <h2 class="text-center" style="font-family: 'Libre Baskerville', serif;">Login here</h2>
+            <form method="post" asp-controller="Account" asp-action="Login">
+                <p style="color:red">@ViewBag.error</p>
+                <div class="form-group">
+                    @*<label for="Email" hidden>Email:</label>*@
+                    <input type="email" asp-for="Email" name="Email" id="Email" class="form-control form-control-lg" placeholder="Email..." />
+                    <i class="fa fa-user" aria-hidden="true"></i>
+                </div>
+                <div class="form-group">
+                    @*<label for="Password" hidden>Password:</label>*@
+                    <input type="password" asp-for="Password" name="Password" id="Password" class="form-control form-control-lg" placeholder="Password..." />
+                    <a asp-controller="Account" asp-action="PasswordReset" style="font-size:13px; color:white;">Forgot password?&nbsp;|&nbsp;</a><a asp-controller="Account" asp-action="Register" style="color:white;">Sign up</a>
+                    <i class="fa fa-unlock" aria-hidden="true"></i>
+                </div>
+                <div class="text-center">
+                    <input type="submit" class="btn-light" value="LOGIN" />
+
+                </div>
+            </form>
         </div>
+        <div class="col-md-3"></div>
     </div>
 </div>

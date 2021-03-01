@@ -743,6 +743,7 @@ C:\Users\son10\OneDrive\Tài liệu\GitHub\TeamVit\Project_Duck_Team\ProjectTe
 C:\Users\son10\OneDrive\Tài liệu\GitHub\TeamVit\Project_Duck_Team\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Account\Profile.cshtml.g.cs
 C:\Users\son10\OneDrive\Tài liệu\GitHub\TeamVit\Project_Duck_Team\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Account\Register.cshtml.g.cs
 C:\Users\son10\OneDrive\Tài liệu\GitHub\TeamVit\Project_Duck_Team\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Account\Welcome.cshtml.g.cs
+C:\Users\son10\OneDrive\Tài liệu\GitHub\TeamVit\Project_Duck_Team\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\AdminManager\Index.cshtml.g.cs
 C:\Users\son10\OneDrive\Tài liệu\GitHub\TeamVit\Project_Duck_Team\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Brands\Create.cshtml.g.cs
 C:\Users\son10\OneDrive\Tài liệu\GitHub\TeamVit\Project_Duck_Team\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Brands\Delete.cshtml.g.cs
 C:\Users\son10\OneDrive\Tài liệu\GitHub\TeamVit\Project_Duck_Team\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Brands\Details.cshtml.g.cs
@@ -848,3 +849,574 @@ C:\Users\son10\OneDrive\Tài liệu\GitHub\TeamVit\Project_Duck_Team\ProjectTe
 C:\Users\son10\OneDrive\Tài liệu\GitHub\TeamVit\Project_Duck_Team\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\DynamicData.dll
 C:\Users\son10\OneDrive\Tài liệu\GitHub\TeamVit\Project_Duck_Team\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\System.Reactive.dll
 C:\Users\son10\OneDrive\Tài liệu\GitHub\TeamVit\Project_Duck_Team\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\System.Reactive.xml
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\ProjectTeamVitAspDotNetCore.exe
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\ProjectTeamVitAspDotNetCore.deps.json
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\ProjectTeamVitAspDotNetCore.runtimeconfig.json
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\ProjectTeamVitAspDotNetCore.runtimeconfig.dev.json
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\ProjectTeamVitAspDotNetCore.dll
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\ProjectTeamVitAspDotNetCore.pdb
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\ProjectTeamVitAspDotNetCore.Views.dll
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\ProjectTeamVitAspDotNetCore.Views.pdb
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\BCrypt.Net.dll
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\DynamicData.dll
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\EntityFramework.SqlServer.dll
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\EntityFramework.dll
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\System.Web.Providers.dll
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Razor.Language.dll
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\Microsoft.Bcl.HashCode.dll
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.dll
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.Razor.dll
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.Workspaces.dll
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\Microsoft.Data.Sqlite.dll
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\Microsoft.DotNet.PlatformAbstractions.dll
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Sqlite.dll
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.dll
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyModel.dll
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.dll
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\Microsoft.Identity.Client.dll
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.dll
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Contracts.dll
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\dotnet-aspnet-codegenerator-design.dll
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\Microsoft.Win32.SystemEvents.dll
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\NuGet.Frameworks.dll
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\SQLitePCLRaw.batteries_v2.dll
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\SQLitePCLRaw.nativelibrary.dll
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\SQLitePCLRaw.core.dll
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\SQLitePCLRaw.provider.dynamic_cdecl.dll
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\System.Composition.AttributedModel.dll
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\System.Composition.Convention.dll
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\System.Composition.Hosting.dll
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\System.Composition.Runtime.dll
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\System.Composition.TypedParts.dll
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\System.Drawing.Common.dll
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\System.Runtime.Caching.dll
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\System.Security.AccessControl.dll
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\System.Security.Permissions.dll
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\System.Security.Principal.Windows.dll
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\System.Text.Json.dll
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\System.Windows.Extensions.dll
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\runtimes\alpine-x64\native\libe_sqlite3.so
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\runtimes\linux-arm\native\libe_sqlite3.so
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\runtimes\linux-arm64\native\libe_sqlite3.so
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\runtimes\linux-armel\native\libe_sqlite3.so
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\runtimes\linux-musl-x64\native\libe_sqlite3.so
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\runtimes\linux-x64\native\libe_sqlite3.so
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\runtimes\linux-x86\native\libe_sqlite3.so
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\runtimes\osx-x64\native\libe_sqlite3.dylib
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\runtimes\win-arm\native\e_sqlite3.dll
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\e_sqlite3.dll
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\e_sqlite3.dll
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\e_sqlite3.dll
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Security.AccessControl.dll
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Security.Principal.Windows.dll
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Security.Principal.Windows.dll
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\System.Reactive.dll
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\System.Reactive.xml
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\ProjectTeamVitAspDotNetCore.csprojAssemblyReference.cache
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\ProjectTeamVitAspDotNetCore.AssemblyInfoInputs.cache
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\ProjectTeamVitAspDotNetCore.AssemblyInfo.cs
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\ProjectTeamVitAspDotNetCore.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\ProjectTeamVitAspDotNetCore.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\ProjectTeamVitAspDotNetCore.RazorAssemblyInfo.cache
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\ProjectTeamVitAspDotNetCore.RazorAssemblyInfo.cs
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\ProjectTeamVitAspDotNetCore.TagHelpers.input.cache
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\ProjectTeamVitAspDotNetCore.TagHelpers.output.cache
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\ProjectTeamVitAspDotNetCore.RazorCoreGenerate.cache
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Account\AccessDenied.cshtml.g.cs
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Account\ChangedInformation.cshtml.g.cs
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Account\EditOrder.cshtml.g.cs
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Account\ListOrder.cshtml.g.cs
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Account\Login.cshtml.g.cs
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Account\OrderDetails.cshtml.g.cs
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Account\PasswordChange.cshtml.g.cs
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Account\PasswordReset.cshtml.g.cs
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Account\Profile.cshtml.g.cs
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Account\Register.cshtml.g.cs
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Account\Welcome.cshtml.g.cs
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\AdminManager\Index.cshtml.g.cs
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Brands\Create.cshtml.g.cs
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Brands\Delete.cshtml.g.cs
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Brands\Details.cshtml.g.cs
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Brands\Edit.cshtml.g.cs
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Brands\Index.cshtml.g.cs
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Cart\CartNull.cshtml.g.cs
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Cart\Checkout.cshtml.g.cs
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Cart\Index.cshtml.g.cs
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Cart\order_summary.cshtml.g.cs
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Cart\Success.cshtml.g.cs
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Cart\Thanks.cshtml.g.cs
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Categories\Create.cshtml.g.cs
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Categories\Delete.cshtml.g.cs
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Categories\Details.cshtml.g.cs
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Categories\Edit.cshtml.g.cs
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Categories\Index.cshtml.g.cs
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Certifies\Create.cshtml.g.cs
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Certifies\Delete.cshtml.g.cs
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Certifies\Details.cshtml.g.cs
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Certifies\Edit.cshtml.g.cs
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Certifies\Index.cshtml.g.cs
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Colors\Create.cshtml.g.cs
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Colors\Delete.cshtml.g.cs
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Colors\Details.cshtml.g.cs
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Colors\Edit.cshtml.g.cs
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Colors\Index.cshtml.g.cs
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Dashboard\Index.cshtml.g.cs
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Dims\Create.cshtml.g.cs
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Dims\Delete.cshtml.g.cs
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Dims\Details.cshtml.g.cs
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Dims\Edit.cshtml.g.cs
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Dims\Index.cshtml.g.cs
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Metals\Create.cshtml.g.cs
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Metals\Delete.cshtml.g.cs
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Metals\Details.cshtml.g.cs
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Metals\Edit.cshtml.g.cs
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Metals\Index.cshtml.g.cs
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Order\Details.cshtml.g.cs
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Order\Index.cshtml.g.cs
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Permistion\Create.cshtml.g.cs
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Permistion\Details.cshtml.g.cs
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Permistion\Edit.cshtml.g.cs
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Permistion\Index.cshtml.g.cs
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\ProductRest\Index.cshtml.g.cs
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\ProductsManager\Create.cshtml.g.cs
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\ProductsManager\Delete.cshtml.g.cs
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\ProductsManager\Details.cshtml.g.cs
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\ProductsManager\Edit.cshtml.g.cs
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\ProductsManager\Index.cshtml.g.cs
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Product\Bestsellers.cshtml.g.cs
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Product\Bracelets.cshtml.g.cs
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Product\Earrings.cshtml.g.cs
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Product\Index.cshtml.g.cs
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Product\Lockets.cshtml.g.cs
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Product\Necklaces.cshtml.g.cs
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Product\Product_detail.cshtml.g.cs
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Product\Product_list.cshtml.g.cs
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Product\Rings.cshtml.g.cs
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Shared\component\dropdown.cshtml.g.cs
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_AdminLayout.cshtml.g.cs
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_LayoutLogin.cshtml.g.cs
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Stones\Create.cshtml.g.cs
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Stones\Delete.cshtml.g.cs
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Stones\Details.cshtml.g.cs
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Stones\Edit.cshtml.g.cs
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Stones\Index.cshtml.g.cs
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\View_pages\affiliates.cshtml.g.cs
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\View_pages\background.cshtml.g.cs
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\View_pages\careers.cshtml.g.cs
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\View_pages\contact.cshtml.g.cs
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\View_pages\delivery.cshtml.g.cs
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\View_pages\error.cshtml.g.cs
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\View_pages\explore.cshtml.g.cs
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\View_pages\faq.cshtml.g.cs
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\View_pages\home.cshtml.g.cs
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\View_pages\new_items.cshtml.g.cs
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\View_pages\policy.cshtml.g.cs
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\View_pages\refund.cshtml.g.cs
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\View_pages\reviews.cshtml.g.cs
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\View_pages\sidenav_cart.cshtml.g.cs
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\View_pages\sitemap.cshtml.g.cs
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\View_pages\stock.cshtml.g.cs
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\View_pages\term.cshtml.g.cs
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\View_pages\thankyou.cshtml.g.cs
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\ProjectTeamVitAspDotNetCore.RazorTargetAssemblyInfo.cache
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\ProjectTeamVitAspDotNetCore.RazorTargetAssemblyInfo.cs
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\ProjectTeamVitAspDotNetCore.Views.pdb
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\ProjectTeamVitAspDotNetCore.csproj.CopyComplete
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\staticwebassets\ProjectTeamVitAspDotNetCore.StaticWebAssets.Manifest.cache
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\staticwebassets\ProjectTeamVitAspDotNetCore.StaticWebAssets.xml
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\ProjectTeamVitAspDotNetCore.dll
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\ProjectTeamVitAspDotNetCore.pdb
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\ProjectTeamVitAspDotNetCore.genruntimeconfig.cache
+C:\Users\ASUS\Source\Repos\Project_Duck_Team5\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\View_pages\jewellery.cshtml.g.cs
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\ProjectTeamVitAspDotNetCore.exe
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\ProjectTeamVitAspDotNetCore.deps.json
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\ProjectTeamVitAspDotNetCore.runtimeconfig.json
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\ProjectTeamVitAspDotNetCore.runtimeconfig.dev.json
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\ProjectTeamVitAspDotNetCore.dll
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\ProjectTeamVitAspDotNetCore.pdb
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\ProjectTeamVitAspDotNetCore.Views.dll
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\ProjectTeamVitAspDotNetCore.Views.pdb
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\BCrypt.Net.dll
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\DynamicData.dll
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\EntityFramework.SqlServer.dll
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\EntityFramework.dll
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\System.Web.Providers.dll
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Razor.Language.dll
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\Microsoft.Bcl.HashCode.dll
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.dll
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.Razor.dll
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.Workspaces.dll
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\Microsoft.Data.Sqlite.dll
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\Microsoft.DotNet.PlatformAbstractions.dll
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Sqlite.dll
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.dll
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyModel.dll
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.dll
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\Microsoft.Identity.Client.dll
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.dll
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Contracts.dll
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\dotnet-aspnet-codegenerator-design.dll
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\Microsoft.Win32.SystemEvents.dll
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\NuGet.Frameworks.dll
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\SQLitePCLRaw.batteries_v2.dll
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\SQLitePCLRaw.nativelibrary.dll
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\SQLitePCLRaw.core.dll
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\SQLitePCLRaw.provider.dynamic_cdecl.dll
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\System.Composition.AttributedModel.dll
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\System.Composition.Convention.dll
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\System.Composition.Hosting.dll
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\System.Composition.Runtime.dll
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\System.Composition.TypedParts.dll
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\System.Drawing.Common.dll
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\System.Runtime.Caching.dll
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\System.Security.AccessControl.dll
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\System.Security.Permissions.dll
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\System.Security.Principal.Windows.dll
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\System.Text.Json.dll
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\System.Windows.Extensions.dll
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.resources.dll
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.resources.dll
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.resources.dll
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.resources.dll
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.resources.dll
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.resources.dll
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.resources.dll
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.resources.dll
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.resources.dll
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\runtimes\alpine-x64\native\libe_sqlite3.so
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\runtimes\linux-arm\native\libe_sqlite3.so
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\runtimes\linux-arm64\native\libe_sqlite3.so
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\runtimes\linux-armel\native\libe_sqlite3.so
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\runtimes\linux-musl-x64\native\libe_sqlite3.so
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\runtimes\linux-x64\native\libe_sqlite3.so
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\runtimes\linux-x86\native\libe_sqlite3.so
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\runtimes\osx-x64\native\libe_sqlite3.dylib
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\runtimes\win-arm\native\e_sqlite3.dll
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\e_sqlite3.dll
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\e_sqlite3.dll
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\e_sqlite3.dll
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Security.AccessControl.dll
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Security.Principal.Windows.dll
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Security.Principal.Windows.dll
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\System.Reactive.dll
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\bin\Debug\netcoreapp3.1\System.Reactive.xml
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\ProjectTeamVitAspDotNetCore.csprojAssemblyReference.cache
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\ProjectTeamVitAspDotNetCore.AssemblyInfoInputs.cache
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\ProjectTeamVitAspDotNetCore.AssemblyInfo.cs
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\ProjectTeamVitAspDotNetCore.csproj.CoreCompileInputs.cache
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\ProjectTeamVitAspDotNetCore.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\ProjectTeamVitAspDotNetCore.RazorAssemblyInfo.cache
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\ProjectTeamVitAspDotNetCore.RazorAssemblyInfo.cs
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\staticwebassets\ProjectTeamVitAspDotNetCore.StaticWebAssets.Manifest.cache
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\staticwebassets\ProjectTeamVitAspDotNetCore.StaticWebAssets.xml
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\scopedcss\bundle\ProjectTeamVitAspDotNetCore.styles.css
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\ProjectTeamVitAspDotNetCore.TagHelpers.input.cache
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\ProjectTeamVitAspDotNetCore.TagHelpers.output.cache
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\ProjectTeamVitAspDotNetCore.RazorCoreGenerate.cache
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Account\AccessDenied.cshtml.g.cs
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Account\ChangedInformation.cshtml.g.cs
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Account\EditOrder.cshtml.g.cs
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Account\ListOrder.cshtml.g.cs
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Account\Login.cshtml.g.cs
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Account\OrderDetails.cshtml.g.cs
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Account\PasswordChange.cshtml.g.cs
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Account\PasswordReset.cshtml.g.cs
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Account\Profile.cshtml.g.cs
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Account\Register.cshtml.g.cs
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Account\Welcome.cshtml.g.cs
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Brands\Create.cshtml.g.cs
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Brands\Delete.cshtml.g.cs
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Brands\Details.cshtml.g.cs
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Brands\Edit.cshtml.g.cs
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Brands\Index.cshtml.g.cs
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Cart\CartNull.cshtml.g.cs
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Cart\Checkout.cshtml.g.cs
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Cart\Index.cshtml.g.cs
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Cart\order_summary.cshtml.g.cs
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Cart\Success.cshtml.g.cs
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Cart\Thanks.cshtml.g.cs
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Categories\Create.cshtml.g.cs
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Categories\Delete.cshtml.g.cs
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Categories\Details.cshtml.g.cs
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Categories\Edit.cshtml.g.cs
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Categories\Index.cshtml.g.cs
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Certifies\Create.cshtml.g.cs
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Certifies\Delete.cshtml.g.cs
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Certifies\Details.cshtml.g.cs
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Certifies\Edit.cshtml.g.cs
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Certifies\Index.cshtml.g.cs
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Colors\Create.cshtml.g.cs
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Colors\Delete.cshtml.g.cs
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Colors\Details.cshtml.g.cs
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Colors\Edit.cshtml.g.cs
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Colors\Index.cshtml.g.cs
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Dashboard\Index.cshtml.g.cs
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Dims\Create.cshtml.g.cs
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Dims\Delete.cshtml.g.cs
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Dims\Details.cshtml.g.cs
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Dims\Edit.cshtml.g.cs
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Dims\Index.cshtml.g.cs
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Metals\Create.cshtml.g.cs
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Metals\Delete.cshtml.g.cs
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Metals\Details.cshtml.g.cs
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Metals\Edit.cshtml.g.cs
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Metals\Index.cshtml.g.cs
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Order\Details.cshtml.g.cs
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Order\Index.cshtml.g.cs
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Permistion\Create.cshtml.g.cs
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Permistion\Details.cshtml.g.cs
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Permistion\Edit.cshtml.g.cs
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Permistion\Index.cshtml.g.cs
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\ProductRest\Index.cshtml.g.cs
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\ProductsManager\Create.cshtml.g.cs
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\ProductsManager\Delete.cshtml.g.cs
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\ProductsManager\Details.cshtml.g.cs
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\ProductsManager\Edit.cshtml.g.cs
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\ProductsManager\Index.cshtml.g.cs
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Product\Bestsellers.cshtml.g.cs
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Product\Bracelets.cshtml.g.cs
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Product\Earrings.cshtml.g.cs
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Product\Index.cshtml.g.cs
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Product\Lockets.cshtml.g.cs
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Product\Necklaces.cshtml.g.cs
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Product\Product_detail.cshtml.g.cs
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Product\Product_list.cshtml.g.cs
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Product\Rings.cshtml.g.cs
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Shared\component\dropdown.cshtml.g.cs
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_AdminLayout.cshtml.g.cs
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_LayoutLogin.cshtml.g.cs
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_LayoutProfile.cshtml.g.cs
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Stones\Create.cshtml.g.cs
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Stones\Delete.cshtml.g.cs
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Stones\Details.cshtml.g.cs
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Stones\Edit.cshtml.g.cs
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\Stones\Index.cshtml.g.cs
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\View_pages\affiliates.cshtml.g.cs
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\View_pages\background.cshtml.g.cs
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\View_pages\careers.cshtml.g.cs
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\View_pages\contact.cshtml.g.cs
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\View_pages\delivery.cshtml.g.cs
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\View_pages\error.cshtml.g.cs
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\View_pages\explore.cshtml.g.cs
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\View_pages\faq.cshtml.g.cs
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\View_pages\home.cshtml.g.cs
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\View_pages\jewellery.cshtml.g.cs
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\View_pages\new_items.cshtml.g.cs
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\View_pages\policy.cshtml.g.cs
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\View_pages\refund.cshtml.g.cs
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\View_pages\reviews.cshtml.g.cs
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\View_pages\sidenav_cart.cshtml.g.cs
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\View_pages\sitemap.cshtml.g.cs
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\View_pages\stock.cshtml.g.cs
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\View_pages\term.cshtml.g.cs
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\View_pages\thankyou.cshtml.g.cs
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\ProjectTeamVitAspDotNetCore.RazorTargetAssemblyInfo.cache
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\ProjectTeamVitAspDotNetCore.RazorTargetAssemblyInfo.cs
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\ProjectTeamVitAspDotNetCore.Views.pdb
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\ProjectTeamVitAspDotNetCore.csproj.CopyComplete
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\ProjectTeamVitAspDotNetCore.dll
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\ProjectTeamVitAspDotNetCore.pdb
+C:\Users\son10\Downloads\Project_Duck_Team-QuynhUI (1)\Project_Duck_Team-QuynhUI\ProjectTeamVitAspDotNetCore\obj\Debug\netcoreapp3.1\ProjectTeamVitAspDotNetCore.genruntimeconfig.cache

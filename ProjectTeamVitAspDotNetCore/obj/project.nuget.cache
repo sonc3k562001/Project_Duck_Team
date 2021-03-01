@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Xp8mNzyP6qJVIHC6P2KKBa+T45fQKJ7YHf8pXPtxVOuC0URbsTRER4LkpqQ1Dq11cN4KNJQWkZUgbs1FAK1qvg==",
+  "dgSpecHash": "47rvHxLa631FmkPmb35uiST9yD81XzPON0M9EdV+7Kg2SB5FQQai8WGDDlirPiBJO5Vnr9fXFAhxZ5mHGHJ3Bg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\son10\\OneDrive\\Tài liệu\\GitHub\\TeamVit\\Project_Duck_Team\\ProjectTeamVitAspDotNetCore\\ProjectTeamVitAspDotNetCore.csproj",
+  "projectFilePath": "C:\\Users\\son10\\Downloads\\Project_Duck_Team-QuynhUI (1)\\Project_Duck_Team-QuynhUI\\ProjectTeamVitAspDotNetCore\\ProjectTeamVitAspDotNetCore.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\son10\\.nuget\\packages\\bcrypt.net\\0.1.0\\bcrypt.net.0.1.0.nupkg.sha512",
     "C:\\Users\\son10\\.nuget\\packages\\dynamicdata\\7.1.1\\dynamicdata.7.1.1.nupkg.sha512",

@@ -17,6 +17,7 @@
                 <label for="exampleInputEmail1">Stone Code</label>
                 <input type="text" asp-for="StoneId" class="form-control" id="exampleInputEmail1" placeholder="Enter Code">
                 <span asp-validation-for="StoneId" class="text-danger"></span>
+                <span style="color:red"> @ViewBag.Error</span>
             </div>
             <div class="form-group">
                 <label for="exampleInputPassword1">Stone Name</label>

@@ -54,12 +54,19 @@ namespace ProjectTeamVitAspDotNetCore.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Register(User user , IFormFile Avatar)
         {
+            var value = db.User.FirstOrDefault(x => x.Email == user.Email);
+            if(value != null)
+            {
+                ViewBag.Error = "The email is already associated with the account! ";
+                return View("Register");
+            }
+
             user.Password = BCrypt.Net.BCrypt.HashPassword(user.Password);
             user.ConfirmPassword = BCrypt.Net.BCrypt.HashPassword(user.ConfirmPassword);
             Role Role = db.Role.FirstOrDefault(x=>x.StringRole == "Customer");
             var fileName = Path.GetFileName(Avatar.FileName);
                 user.Avatar = fileName;
-            user.IdRole = Role.Id;
+            user.IdRole = Role.IdRole;
             db.User.Add(user);
             await db.SaveChangesAsync();
             if (Avatar != null)
@@ -99,7 +106,7 @@ namespace ProjectTeamVitAspDotNetCore.Controllers
             }
             else
             {   
-                var Role = db.Role.FirstOrDefault(x => x.Id == account.IdRole);
+                var Role = db.Role.FirstOrDefault(x => x.IdRole == account.IdRole);
 
                 identity = new ClaimsIdentity(new[]
                 {
@@ -150,6 +157,11 @@ namespace ProjectTeamVitAspDotNetCore.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> PasswordReset(string email)
         {
+
+            if(email == null)
+            {
+                return View();
+            }
             int numberRD = 25;
             string randomStr = "";
             try
@@ -217,7 +229,7 @@ namespace ProjectTeamVitAspDotNetCore.Controllers
 
             User user = db.User.FirstOrDefault(x => x.Email == email);
             ViewBag.User = user;
-            return View();
+            return View(user);
         }
         public async Task<IActionResult> ChangedInformation()
         {
@@ -241,8 +253,6 @@ namespace ProjectTeamVitAspDotNetCore.Controllers
         {
             Email = User.FindFirstValue(ClaimTypes.Name);
             var user = db.User.FirstOrDefault(x => x.Email == Email);
-
-            
             user.Fname = Fname;
             user.Lname = Lname;
             user.Bdate = Bdate;
@@ -251,6 +261,12 @@ namespace ProjectTeamVitAspDotNetCore.Controllers
             user.Gender = Gender;
             user.ZipCode = ZipCode;
             if(Avatar != null)
+            {
+                user.Avatar = Path.GetFileName(Avatar.FileName);
+            }
+           
+
+            if (Avatar != null)
             {
                 var avatar = Path.GetFileName(Avatar.FileName);
                 user.Avatar = avatar;
@@ -326,26 +342,37 @@ namespace ProjectTeamVitAspDotNetCore.Controllers
             return  View();
         }
 
-        public async Task<IActionResult> ListOrder(string searchString, string sortOrder)
+        public async Task<IActionResult> ListOrder(string sortOrder, string currentFilter, string searchString, int? pageNumber)
         {
+            ViewData["PriceSortParm"] = sortOrder == "price" ? "price_desc" : "price";
+            ViewData["NameSortParm"] = sortOrder == "name" ? "name_desc" : "name";
+            ViewData["CurrentFilter"] = searchString;
+
             var email = User.FindFirstValue(ClaimTypes.Name);
 
             List<Order> orders = db.Order.Where(x => x.Email == email).ToList();
-            ViewData["NameSortParm"] = String.IsNullOrEmpty(sortOrder) ? "name_desc" : "";
-            ViewData["DateSortParm"] = sortOrder == "Date" ? "date_desc" : "Date";
+     
+
             var orderss = from o in db.Order  where(o.Email==email) select o;
+
+            if (searchString != null)
+            {
+                pageNumber = 1;
+            }
+            else
+            {
+                searchString = currentFilter;
+            }
 
             switch (sortOrder)
             {
                 case "name_desc":
                     orderss = orderss.OrderByDescending(s => s.Name);
                     break;
-                case "Date":
+                case "name":
                     orderss = orderss.OrderBy(s => s.Id);
                     break;
-                case "date_desc":
-                    orderss = orderss.OrderByDescending(s => s.CreateTime);
-                    break;
+             
                 default:
                     orderss = orderss.OrderBy(s => s.Phone);
                     break;
@@ -375,9 +402,13 @@ namespace ProjectTeamVitAspDotNetCore.Controllers
                             
             }
             ViewBag.products = productsInUser;
-            
 
-            return View(await orderss.AsNoTracking().ToListAsync());
+            int pageSize = 10;
+            ViewBag.pageSize = pageSize;
+            ViewBag.Count = orderss.Count();
+            ViewBag.order = sortOrder;
+
+            return View(await PaginatedList<Order>.CreateAsync(orderss.AsNoTracking(), pageNumber ?? 1, pageSize));
         }
         public async Task<IActionResult> OrderDetails(string id)
         {

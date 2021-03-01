@@ -341,22 +341,22 @@ namespace ProjectTeamVitAspDotNetCore.Models
                 context.Role.AddRange(
                      new Role
                      {
-                         Id = "1",
+                         IdRole= "1",
                          StringRole = "SuperAdmin"
                      },
                      new Role
                      {
-                         Id = "2",
+                         IdRole = "2",
                          StringRole = "Admin"
                      },
                      new Role
                      {
-                         Id = "3",
+                         IdRole = "3",
                          StringRole = "Employee"
                      },
                      new Role
                      {
-                         Id = "4",
+                         IdRole = "4",
                          StringRole = "Customer"
                      }
                 );
@@ -374,7 +374,7 @@ namespace ProjectTeamVitAspDotNetCore.Models
                          Gender = "Man",
                          Address = "8A Tôn Thất Thuyết, Mĩ Đình ,Cầu Giấy,Hà Nội",
                          Phone = "0966803014",
-                         Avatar = "",
+                         Avatar = "Mai_Avatar.jpg",
                          Password = "$2a$04$QDNudgI.yeBrc85Kz2RoQOYGasoKfLfMY6I/0Rn1rFD9h6a0yd/xK",
                          ConfirmPassword = "$2a$04$QDNudgI.yeBrc85Kz2RoQOYGasoKfLfMY6I/0Rn1rFD9h6a0yd/xK",
                          ZipCode = "VN",
@@ -389,7 +389,7 @@ namespace ProjectTeamVitAspDotNetCore.Models
                          Gender = "Man",
                          Address = "8A Tôn Thất Thuyết, Mĩ Đình ,Cầu Giấy,Hà Nội",
                          Phone = "0966803014",
-                         Avatar = "",
+                         Avatar = "Mai_Avatar.jpg",
                          Password = "$2a$04$QDNudgI.yeBrc85Kz2RoQOYGasoKfLfMY6I/0Rn1rFD9h6a0yd/xK",
                          ConfirmPassword = "$2a$04$QDNudgI.yeBrc85Kz2RoQOYGasoKfLfMY6I/0Rn1rFD9h6a0yd/xK",
                          ZipCode = "VN",
@@ -434,7 +434,7 @@ namespace ProjectTeamVitAspDotNetCore.Models
                                             "Upload an image and we will print and fit it into the locket for free" +
                                             "Adjustable chain with three alternate lengths" +
                                             "Solid 14 carat white gold, encrusted with diamonds" +
-                                            "Produced using 100% recycled gold</li>" +
+                                            "Produced using 100% recycled gold" +
                                             "All of our diamonds are natural, conflict-free and ethically sourced",
                 Image = "/Images/Lockets/45058WNON.jpg",
                 Size = "16 - 18",
@@ -478,7 +478,7 @@ namespace ProjectTeamVitAspDotNetCore.Models
                                             "Upload an image and we will print and fit it into the locket for free" +
                                             "Adjustable chain with three alternate lengths" +
                                             "Solid 14 carat rose gold, encrusted with black diamonds" +
-                                            "Produced using 100% recycled gold</li>" +
+                                            "Produced using 100% recycled gold" +
                                             "All of our diamonds are natural, conflict-free and ethically sourced",
                   Image = "/Images/Lockets/45054RBKN.jpg",
                   Size = "16 - 18",
@@ -518,12 +518,12 @@ namespace ProjectTeamVitAspDotNetCore.Models
                   Description = "This gold locket necklace features a slice of dark blue Lapis Lazuli set in 18 carat yellow gold plated sterling silver.The statement lapis lazuli necklace can be engraved with a personal message, making for a special personalised jewellery gift.This locket can also hold a special photograph, which we print and insert into the photo locket for free.Our photo lockets are the perfect fit for any occasion, just upload a photo and a message and we will create your future heirloom." +
                                             "Personalised locket necklace with a FREE engraving and photo inside" +
                                             "Upload an image and we will print and fit it into the locket for free" +
-                                            "The perfect personalised jewellery gift</li>" +
+                                            "The perfect personalised jewellery gift" +
                                             "Gold locket necklace finished with our signature star-set white sapphire tag" +
                                             "Each gemstone has a unique appearance, therefore patterns may vary slightly" +
-                                            "Also available in a larger size</li>" +
-                                            "Styled here with the Lapis Droplet Necklace and Celestial Compass Pendant</li>" +
-                                            "All of our gemstones are cut and polished by hand</li></ul>",
+                                            "Also available in a larger size" +
+                                            "Styled here with the Lapis Droplet Necklace and Celestial Compass Pendant" +
+                                            "All of our gemstones are cut and polished by hand",
                   Image = "/Images/Lockets/39094YBEN.jpg",
                   Size = "20 - 22",
                   ColorId = "Blue",
@@ -588,7 +588,7 @@ namespace ProjectTeamVitAspDotNetCore.Models
                                             "Upload an image and we will print and fit it into the locket for free" +
                                             "Adjustable chain with three alternate lengths" +
                                             "Solid sterling silver, finished with a sapphire gemstone" +
-                                            "As seen in Red Magazine</li>" +
+                                            "As seen in Red Magazine" +
                                             "Styled here with the Compass Pendant and Large Mother of Pearl Locket",
                   Image = "/Images/Lockets/42064SNON.jpg",
                   Size = "16 - 18",
@@ -841,7 +841,7 @@ namespace ProjectTeamVitAspDotNetCore.Models
                                             "As seen on Poppy Delevingne, Celia Imrie and Megan Fox" +
                                             "Adjustable to give length variation" +
                                             "Elegant chain is finished by our signature star-set diamond tag" +
-                                            "Produced using 100% recycled gold</li>" +
+                                            "Produced using 100% recycled gold" +
                                             "All of our diamonds are natural, conflict-free and ethically sourced",
                   Image = "/Images/Necklaces/45059RNON.PNG",
                   Size = "20-22",
@@ -934,7 +934,7 @@ namespace ProjectTeamVitAspDotNetCore.Models
                     PdId = "42019YWTN",
                     Name = "Peggy Pearl Necklace",
                     Price = 195,
-                    Description = "The Pearl Peggy Necklace is a modern update to the traditional string of pearls around the neck. Featuring pearls in graduating sizes, each with a brilliant white lustre, this 18 carat yellow gold-plated sterling silver necklace is a standout, everyday stacking option.<br>" +
+                    Description = "The Pearl Peggy Necklace is a modern update to the traditional string of pearls around the neck. Featuring pearls in graduating sizes, each with a brilliant white lustre, this 18 carat yellow gold-plated sterling silver necklace is a standout, everyday stacking option." +
                                                             "A progressive addition to the pearl fashion trend" +
                                                             "Three length options with a secure clasp fastening" +
                                                             "Finished by our signature star-set cultured white sapphire tag" +
@@ -1072,11 +1072,11 @@ namespace ProjectTeamVitAspDotNetCore.Models
                     PdId = "47014YNOE",
                     Name = "Celestial Chain Earrings",
                     Price = 85,
-                    Description = "Resembling radiant stars floating in space, these Celestial chain earrings are statements that look radiant stacked with studs and hoops, or equally bold when worn alone. Crafted from 18 carat gold plated sterling silver, the chain earrings are decorated with starburst motifs set with cultured white sapphires - the chain connects to the butterfly back for secure wear. Perfect for bringing a bright touch to your ear stacks, these chain earrings make a meaningful gift or a statement addition to your own jewellery box.<br>" +
-                                                            "<ul><li>Chain earrings set with white sapphires.</li>" +
-                                                            "<li>Crafted from 18 carat gold-plated sterling silver</li>" +
-                                                            "<li>Resemble stars floating in space</li>" +
-                                                            "<li>A statement addition to any jewellery collection</li></ul>",
+                    Description = "Resembling radiant stars floating in space, these Celestial chain earrings are statements that look radiant stacked with studs and hoops, or equally bold when worn alone. Crafted from 18 carat gold plated sterling silver, the chain earrings are decorated with starburst motifs set with cultured white sapphires - the chain connects to the butterfly back for secure wear. Perfect for bringing a bright touch to your ear stacks, these chain earrings make a meaningful gift or a statement addition to your own jewellery box." +
+                                                            "Chain earrings set with white sapphires." +
+                                                            "Crafted from 18 carat gold-plated sterling silver" +
+                                                            "Resemble stars floating in space" +
+                                                            "A statement addition to any jewellery collection",
                     Image = "/Images/Earrings/47014YNOE.PNG",
                     Size = "14 - 16",
                     ColorId = "Gold",
@@ -1091,12 +1091,12 @@ namespace ProjectTeamVitAspDotNetCore.Models
                     PdId = "44002YLBE",
                     Name = "Linia London Blue Topaz Stud Earrings",
                     Price = 55,
-                    Description = "The ultimate colour accent for your collection, these Linia stud earrings are crafted from 18 carat gold plated sterling silver prongs that hold beautifully rich London blue topaz gemstones. With a polished finish, these studs are perfect for adding to your ear stack, or wearing as subtle statements.<br>" +
-                                                            "<ul><li>Crafted from 18 carat gold plated sterling silver</li>" +
-                                                            "<li>Defined by unique structures that hold the stones</li>" +
-                                                            "<li>Feature rich, jewel tone London blue topaz gemstones</li>" +
-                                                            "<li>All of our gemstones are cut and polished by hand</li>" +
-                                                            "<li>Styled here with the Linia London Blue Topaz Ear Cuff and the Disc Stilla Studs</li></ul>",
+                    Description = "The ultimate colour accent for your collection, these Linia stud earrings are crafted from 18 carat gold plated sterling silver prongs that hold beautifully rich London blue topaz gemstones. With a polished finish, these studs are perfect for adding to your ear stack, or wearing as subtle statements." +
+                                                            "Crafted from 18 carat gold plated sterling silver" +
+                                                            "Defined by unique structures that hold the stones" +
+                                                            "Feature rich, jewel tone London blue topaz gemstones" +
+                                                            "All of our gemstones are cut and polished by hand" +
+                                                            "Styled here with the Linia London Blue Topaz Ear Cuff and the Disc Stilla Studs",
                     Image = "/Images/Earrings/44002YLBE.PNG",
                     Size = " 13 - 15",
                     ColorId = "Blue",
@@ -1111,12 +1111,12 @@ namespace ProjectTeamVitAspDotNetCore.Models
                     PdId = "44050SNOE",
                     Name = "Small Linia Hoop Earrings",
                     Price = 75,
-                    Description = "Meet your new staples. These small Linia hoop earrings are lightweight without compromising on quality, crafted from solid sterling silver. With a secure click closure, the hoops feature a ridged textural detail that runs across the design, perfect for stacking and everyday wear.<br>" +
-                                                            "<ul><li>Crafted from solid sterling silver</li>" +
-                                                            "<li>Secure click closure</li>" +
-                                                            "<li>Lightweight and luxurious</li>" +
-                                                            "<li>Styled here with the Linia Ear Cuff and the Disc Stilla Studs</li>" +
-                                                            "<li>Also available as medium hoops and large hoops</li></ul>",
+                    Description = "Meet your new staples. These small Linia hoop earrings are lightweight without compromising on quality, crafted from solid sterling silver. With a secure click closure, the hoops feature a ridged textural detail that runs across the design, perfect for stacking and everyday wear." +
+                                                            "Crafted from solid sterling silver" +
+                                                            "Secure click closure" +
+                                                            "Lightweight and luxurious" +
+                                                            "Styled here with the Linia Ear Cuff and the Disc Stilla Studs" +
+                                                            "Also available as medium hoops and large hoops",
                     Image = "/Images/Earrings/44050SNOE.PNG",
                     Size = "16-18",
                     ColorId = "White",
@@ -1131,9 +1131,9 @@ namespace ProjectTeamVitAspDotNetCore.Models
                     PdId = "38178RNOE",
                     Name = "Mini Stilla Hoop Earrings",
                     Price = 65,
-                    Description = "No earring collection is complete without a pair of chic, minimalist hoops. These Mini Stilla Hoop Earrings are crafted from 18 carat rose gold plated silver and offer refined luxury to wear every day.<br>" +
-                                                            "<ul><li>Hugs the earlobe elegantly</li>" +
-                                                            "<li>Style alongside our other demi-fine earrings</li></ul>",
+                    Description = "No earring collection is complete without a pair of chic, minimalist hoops. These Mini Stilla Hoop Earrings are crafted from 18 carat rose gold plated silver and offer refined luxury to wear every day." +
+                                                            "Hugs the earlobe elegantly" +
+                                                            "Style alongside our other demi-fine earrings",
                     Image = "/Images/Earrings/38178RNOE.PNG",
                     Size = " 13 - 15",
                     ColorId = "Gold",
@@ -1148,11 +1148,11 @@ namespace ProjectTeamVitAspDotNetCore.Models
                     PdId = "47011YNOE",
                     Name = "Mini Celestial Dial Stud Earrings",
                     Price = 60,
-                    Description = "These mini Celestial Dial stud earrings are unique designs set to enliven your ear stacks, each crafted from 18 carat gold plated sterling silver and set with a white sapphire. Featuring octagonal surfaces decorated with the collection’s signature star motif, these mini Dial stud earrings will elevate your everyday staples. The meaningful Celestial collection draws inspiration from vintage metalwork, astronomical instruments used to track the night sky, and the sandblasted rays of sundials, to create extraordinary jewellery you’ll love wearing day in, day out.<br>" +
-                                                            "<ul><li>Set with white sapphires and decorated with star motifs</li>" +
-                                                            "<li>Crafted from 18 carat gold plated sterling silver</li>" +
-                                                            "<li>Mix and match with gold hoops and ear cuffs</li>" +
-                                                            "<li>Inspired by vintage metalwork</li></ul>",
+                    Description = "These mini Celestial Dial stud earrings are unique designs set to enliven your ear stacks, each crafted from 18 carat gold plated sterling silver and set with a white sapphire. Featuring octagonal surfaces decorated with the collection’s signature star motif, these mini Dial stud earrings will elevate your everyday staples. The meaningful Celestial collection draws inspiration from vintage metalwork, astronomical instruments used to track the night sky, and the sandblasted rays of sundials, to create extraordinary jewellery you’ll love wearing day in, day out." +
+                                                            "Set with white sapphires and decorated with star motifs" +
+                                                            "Crafted from 18 carat gold plated sterling silver" +
+                                                            "Mix and match with gold hoops and ear cuffs" +
+                                                            "Inspired by vintage metalwork",
                     Image = "/Images/Earrings/47011YNOE.PNG",
                     Size = "16-18",
                     ColorId = "Gold",
@@ -1167,11 +1167,11 @@ namespace ProjectTeamVitAspDotNetCore.Models
                     PdId = "46013YGYE",
                     Name = "Stilla Labradorite Drop Hoop Earrings",
                     Price = 160,
-                    Description = "Here to add a touch of iridescence to your ear party, these labradorite drop hoop earrings boast a specially designed ‘spectacle setting’, allowing the rose-cut gems to be viewed from both sides and creating maximum light reflection through the stones. Crafted from 18 carat gold plated sterling silver, these versatile hoops stack perfectly with gemstone studs and fit with a secure click closure.<br>" +
-                                                            "<ul><li>Featuring iridescent rose-cut labradorite gemstones</li>" +
-                                                            "<li>Crafted from 18 carat gold plated sterling silver</li>" +
-                                                            "<li>Fits with a secure click closure</li>" +
-                                                            "<li>Makes a meaningful jewellery gift</li></ul>",
+                    Description = "Here to add a touch of iridescence to your ear party, these labradorite drop hoop earrings boast a specially designed ‘spectacle setting’, allowing the rose-cut gems to be viewed from both sides and creating maximum light reflection through the stones. Crafted from 18 carat gold plated sterling silver, these versatile hoops stack perfectly with gemstone studs and fit with a secure click closure." +
+                                                            "Featuring iridescent rose-cut labradorite gemstones" +
+                                                            "Crafted from 18 carat gold plated sterling silver" +
+                                                            "Fits with a secure click closure" +
+                                                            "Makes a meaningful jewellery gift",
                     Image = "/Images/Earrings/46013YGYE.PNG",
                     Size = "16-18",
                     ColorId = "White",
@@ -1186,12 +1186,12 @@ namespace ProjectTeamVitAspDotNetCore.Models
                     PdId = "38084WNOE",
                     Name = "Medium Halo Diamond Hoop Earrings",
                     Price = 1250,
-                    Description = "Featuring brilliant-cut white diamonds set in solid 14 carat white gold, we have built on the popularity of our Mini Halo Hoop earrings to create these larger, equally covetable, essential diamond hoops.<br>" +
-                                                            "<ul><li>Luxurious jewellery piece to be enjoyed at any occasion</li>" +
-                                                            "<li>Crafted using a modern casting technique for a strong diamond setting</li>" +
-                                                            "<li>As seen on Rosie Huntington-Whiteley</li>" +
-                                                            "<li>Produced using 100% recycled gold</li>" +
-                                                            "<li>All of our diamonds are natural, conflict - free and ethically sourced</li></ul>",
+                    Description = "Featuring brilliant-cut white diamonds set in solid 14 carat white gold, we have built on the popularity of our Mini Halo Hoop earrings to create these larger, equally covetable, essential diamond hoops." +
+                                                            "Luxurious jewellery piece to be enjoyed at any occasion" +
+                                                            "Crafted using a modern casting technique for a strong diamond setting" +
+                                                            "As seen on Rosie Huntington-Whiteley" +
+                                                            "Produced using 100% recycled gold" +
+                                                            "All of our diamonds are natural, conflict - free and ethically sourced",
                     Image = "/Images/Earrings/38084WNOE.PNG",
                     Size = "16-18",
                     ColorId = "White",
@@ -1206,13 +1206,13 @@ namespace ProjectTeamVitAspDotNetCore.Models
                     PdId = "45034RBKE",
                     Name = "Medium Interstellar Black Diamond Hoop Earrings",
                     Price = 895,
-                    Description = "These medium Interstellar black diamond hoop earrings are the ultimate fine earring you can style easily into your everyday look. Relaxed and opulent all at once, the stones have been set in a cluster formation; brilliant cut black diamonds are gloriously encrusted in solid 14 carat rose gold hoops for maximum impact and light reflection. Perfect for stacking with diamond studs, the medium Interstellar rose gold hoops are your new jewellery box staples.<br>" +
-                                                            "<ul><li>Click closure for a secure easy fastening</li>" +
-                                                            "<li>Cluster formation of brilliant cut black diamonds</li>" +
-                                                            "<li>Set in solid 14 carat rose gold</li>" +
-                                                            "<li>Everyday diamonds that are perfect for stacking</li>" +
-                                                            "<li>Styled here with the Mini Interstellar Hoops</li>" +
-                                                            "<li>All of our diamonds are natural, conflict - free and ethically sourced</li></ul>",
+                    Description = "These medium Interstellar black diamond hoop earrings are the ultimate fine earring you can style easily into your everyday look. Relaxed and opulent all at once, the stones have been set in a cluster formation; brilliant cut black diamonds are gloriously encrusted in solid 14 carat rose gold hoops for maximum impact and light reflection. Perfect for stacking with diamond studs, the medium Interstellar rose gold hoops are your new jewellery box staples." +
+                                                            "Click closure for a secure easy fastening" +
+                                                            "Cluster formation of brilliant cut black diamonds" +
+                                                            "Set in solid 14 carat rose gold" +
+                                                            "Everyday diamonds that are perfect for stacking" +
+                                                            "Styled here with the Mini Interstellar Hoops" +
+                                                            "All of our diamonds are natural, conflict - free and ethically sourced",
                     Image = "/Images/Earrings/45034RBKE.PNG",
                     Size = " 13 - 15",
                     ColorId = "Black",
@@ -1329,7 +1329,7 @@ namespace ProjectTeamVitAspDotNetCore.Models
                                             "Stackable eternity ring design" +
                                             "Crafted from 18 carat gold-plated sterling silver" +
                                             "Set with radiant white sapphire pavé" +
-                                            "Inspired by the night sky</li></ul>",
+                                            "Inspired by the night sky",
                         Image = "/Images/Rings/46045YNOR.jpg",
                         Size = "16-18",
                         ColorId = "Gold",
@@ -1406,8 +1406,8 @@ namespace ProjectTeamVitAspDotNetCore.Models
                 Name = "Biography Evil Eye Stacking Ring",
                 Price = 211,
                 Description = "The ultimate stacking piece, this gold ring features mini links created from Evil Eye symbols; the unique links have been repeated to create a statement chain effect that will give your ring stacks the golden touch.Each Evil Eye link is crafted using white sapphire pavé with a turquoise pupil set in 18 carat gold plated sterling silver. With a relaxed, cool look, this meaningful gold stacking ring would stack with other gemstones and textures beautifully." +
-                                                        "Crafted from 18 carat gold plated sterling silver</li>" +
-                                                        "Gold chain stacking ring made up of Evil Eye symbols</li>" +
+                                                        "Crafted from 18 carat gold plated sterling silver" +
+                                                        "Gold chain stacking ring made up of Evil Eye symbols" +
                                                         "The Evil Eye is an ancient talisman that represents ‘wisdom’ and ‘protection’" +
                                                         "Makes a meaningful jewellery gift" +
                                                         ">White sapphire pavé setting with a turquoise cabochon",

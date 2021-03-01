@@ -21,7 +21,7 @@ namespace ProjectTeamVitAspDotNetCore.Controllers
         {
             configuration = _configuration;
         }
-        [Authorize(Roles = "Admin,SuperAdmin")]
+        [Authorize(Roles = "Admin,SuperAdmin,Employee,Employee")]
         public async Task<IActionResult> Index(string sortOrder, string currentFilter, string searchString, int? pageNumber)
         {
             ViewData["PriceSortParm"] = sortOrder == "price" ? "price_desc" : "price";

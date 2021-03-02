@@ -1,0 +1,55 @@
+﻿
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+<script>
+    $(document).ready(function () {
+        $("#Cpassword").keyup(validate);
+    });
+
+
+    function validate() {
+        var password1 = $("#password").val();
+        var password2 = $("#Cpassword").val();
+
+
+
+        if (password1 == password2) {
+            $("#validate-status").text("valid");
+        }
+        else {
+            $("#validate-status").text("invalid");
+        }
+
+    }
+
+</script>
+
+<h3>Register</h3>
+<form asp-action="Register" asp-controller="Account" method="post">
+    <div class="form-group">
+        <label>Id</label>
+        <input type="text" class="form-control" id="Id" name="Id" />
+    </div>
+    <div class="form-group">
+        <label>Email</label>
+        <input type="email" class="form-control" id="Email" name="Email" />
+    </div>
+    <div class="form-group">
+        <label>Name</label>
+        <input type="text" class="form-control" id="Name" name="Name" />
+    </div>
+    <div class="form-group">
+        <label>Password</label>
+        <input type="password" class="form-control" id="Password" name="Password" />
+    </div>
+    <div class="form-group">
+        <label>Confirm Password</label>
+        <input type="password" class="form-control" id="Cpassword" name="Cpassword" />
+    </div>
+    <div class="form-group">
+        <label>Adress</label>
+        <input type="text" class="form-control" id="Address" name="Address" />
+    </div>
+    <div class="form-group">
+        <input type="submit" class="btn btn-primary" value="Register" />
+    </div>
+</form>

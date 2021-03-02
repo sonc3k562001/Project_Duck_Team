@@ -1,0 +1,52 @@
+﻿@{
+    Layout = null;
+}
+@model BuildShoppingCart.Models.User
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <h3>Cart Info</h3>
+
+    <table border="1" cellpadding="2" cellspacing="2">
+        <tr>
+
+
+            <th>Id</th>
+            <th>Name</th>
+            <th>Photo</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Sub Total</th>
+        </tr>
+
+        <form method="post" asp-controller="Cart" asp-action="Checkout">
+
+            @foreach (var item in ViewBag.cart)
+            {
+                <tr>
+                    <td>@item.Product.Id</td>
+                    <td>@item.Product.Name</td>
+                    <td><img src="~/images/@item.Product.Photo" width="50" /></td>
+                    <td>@item.Product.Price</td>
+                    <td>@item.Quantity</td>
+                    <td>@(item.Product.Price * item.Quantity)</td>
+                </tr>
+                
+            }
+         
+            <input type="submit" value="Finish" />
+        </form>
+            <tr>
+                <td colspan="6" align="right">Total</td>
+                <td>@ViewBag.total</td>
+
+            </tr>
+        </table>
+
+</body>
+</html>

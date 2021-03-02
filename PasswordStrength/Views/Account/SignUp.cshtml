@@ -1,0 +1,56 @@
+﻿
+@{
+    Layout = null;
+}
+@model PasswordStrength.Models.Account
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-with"/>
+    <title>Index</title>
+</head>
+<body>
+    <h3>Sign Up Page</h3>
+
+    <form method="post" asp-controller="Account" asp-action="SignUp">
+        <table cellpadding="2" cellspacing="2">
+            <tr>
+                <td>Username</td>
+                <td>
+                    <input type="text" asp-for="Username" />
+                </td>
+
+            </tr>
+            <tr>
+                <td>Password</td>
+                <td>
+                    <input type="password" asp-for="Password" />
+                </td>
+
+            </tr>
+
+            <tr>
+                <td>Full Name</td>
+                <td>
+                    <input type="text" asp-for="FullName" />
+                </td>
+
+            </tr>
+
+            <tr>
+                <td>
+                    <input type="submit" value="Sign Up" />
+                    <br />
+                    <a asp-controller="Account" asp-action="Login">Login</a>
+                </td>
+
+            </tr>
+        </table>
+    </form>
+
+</body>
+</html>
+
+<h1>Index</h1>
+

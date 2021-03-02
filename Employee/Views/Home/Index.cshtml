@@ -1,0 +1,39 @@
+﻿@model IQueryable<Employee>
+
+    
+
+    <div>
+        <table>
+            <thead>
+                <tr style="border: 1px solid black" >
+                    <td>
+                        Name
+                    </td>
+                    <td>
+                        Birthday
+                    </td>
+                    <td>
+                        Address
+                    </td>
+                    <td>
+                        Email
+                    </td>
+                    <td>
+                        Salary
+                    </td>
+                </tr>
+            </thead>    
+            <tbody>
+                @foreach (var p in Model)
+                {
+                    <tr style="border: 1px solid black">
+                        <td>@p.Name</td>
+                        <td>@p.Birthday</td>
+                        <td>@p.Address</td>
+                        <td>@p.Email</td>
+                        <td>@p.Salary.ToString("c")</td>
+                    </tr>
+                    }
+                </tbody>
+        </table>
+    </div>

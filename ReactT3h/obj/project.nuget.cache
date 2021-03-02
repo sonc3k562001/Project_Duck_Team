@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "Ri9tF9/W//jHQ3qFjmESnhLcz1q6G/4BXEjarVDL/BrX0nie8n3gEDvu6/rBrS4H5s+ThoLgafUjNdHZj2WNuQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\son10\\source\\repos\\ReactT3h\\ReactT3h.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\son10\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.10\\microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512",
+    "C:\\Users\\son10\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.10\\microsoft.netcore.app.host.win-x64.3.1.10.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,33 @@
+﻿@model SendEmailCofirm.Models.Contact
+
+
+<h3>Contact</h3>
+@ViewBag.msg
+<form method="post" asp-controller="Contact" asp-action="Send">
+    <table>
+        <tr>
+            <td>Name</td>
+            <td><input type="text" asp-for="Name" /></td>
+        </tr>
+        <tr>
+            <td>Email</td>
+            <td><input type="email" asp-for="Email" /></td>
+        </tr>
+        <tr>
+            <td>Phome</td>
+            <td><input type="tel" asp-for="Phone" /></td>
+        </tr>
+        <tr>
+            <td>Subject</td>
+            <td><textarea asp-for="Content" rows="5" cols="20"></textarea></td>
+        </tr>
+        <tr>
+            <td>Attachments</td>
+            <td><input type="file" name="attachments" multiple="multiple" /></td>
+        </tr>
+        <tr>
+            <td valign="top">&nbsp;</td>
+            <td><input type="submit" value="Send" /></td>
+        </tr>
+    </table>
+</form>

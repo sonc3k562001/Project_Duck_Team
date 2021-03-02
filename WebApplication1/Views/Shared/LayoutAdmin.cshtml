@@ -1,0 +1,110 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Admin</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/LayoutAdmin.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-light bg-light header">
+            <div class="navbar-brand col-md-12" href="#">
+                <div class="row">
+                    <div class="col-md-5">
+                        <a href="#" class="header-name">Ice Cream</a>
+                        <button id="sidebarCollapse" type="button" class="btn btn-light bg-white  shadow-sm toggle">
+                            <i class="fa fa-bars mr-2"></i>
+                        </button>
+                    </div>
+                    <div class="col-md-7 mr-0">
+                        <div class="account">
+                            <img class="account-avatar" src="https://cf.shopee.vn/file/e3aea05255b46e75be739f3d47781132" />
+                            <span class="account-name">quynhquynh_04082001</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+    <div class="vertical-nav bg-white" id="sidebar">
+        <p class="text-gray font-weight-bold text-uppercase px-3 smail pb-4 mb-0 pt-5">Dashboard</p>
+
+        <ul class="nav flex-column bg-white mb-0">
+            <li class="nav-item">
+                <a href="/Admin" class="nav-link bg-light">
+                    <i class="fa fa-home mr-2 text-primary fa-fw"></i>
+                    Trang chủ
+                </a>
+            </li>
+            <li class="nav-item">
+                <a asp-controller="Expense" asp-action="ExpenseList" class="nav-link ">
+                    <i class="fa fa-address-card mr-2 text-primary fa-fw"></i>
+                    Quản lý sản phẩm
+                </a>
+            </li>
+            <li class="nav-item">
+                <a asp-controller="Customer" asp-action="CustomerList" class="nav-link">
+                    <i class="fa fa-th-large mr-2 text-primary fa-fw"></i>
+                    Quản lý tài khoản admin
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link ">
+                    <i class="fa fa-th-large mr-2 text-primary fa-fw"></i>
+                    service
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link ">
+                    <i class="fa fa-th-large mr-2 text-primary fa-fw"></i>
+                    gallery
+                </a>
+            </li>
+        </ul>
+
+        <p class="text-gray font-weight-bold text-uppercase px-3 small py-4 mb-0">Charts</p>
+
+        <ul class="nav flex-column bg-white mb-0">
+            <li class="nav-item">
+                <a href="#" class="nav-link ">
+                    <i class="fa fa-area-chart mr-2 fa-fw"></i>
+                    arer charts
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link ">
+                    <i class="fa fa-area-chart mr-2 fa-fw"></i>
+                    bar charts
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link ">
+                    <i class="fa fa-area-chart mr-2 fa-fw"></i>
+                    pie charts
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="page-content p-5 mt-5 " id="content">
+        @RenderBody()
+    </div>
+
+    <footer class="border-top footer text-muted bg-white">
+        <div class="container">
+            &copy; 2020 - Admin - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="https://code.highcharts.com/highcharts.src.js"></script>
+    <script src="~/js/AdminLayout.js"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

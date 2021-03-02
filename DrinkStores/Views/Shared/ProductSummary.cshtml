@@ -1,0 +1,31 @@
+﻿@model Product
+
+<div class="card card-outline-primary m-1 p-1">
+    <div class="col-4" style="float: left;">
+        <img src="@Model.Img" alt="" style="width:25vw;height:25vw;" />
+        <h3 style="color:red;text-align:center">@Model.Name</h3>
+        <b>Decription:</b> @Model.Description
+        <br />
+        <b>Price:</b> @Model.Price.ToString("c")
+        <br />
+        <b>Category:</b> @Model.Category
+        <br />
+        <b>Status:</b> @Model.Status
+        <br />
+        <b>Discout:</b>  @Model.Discount
+        <hr />
+    </div>
+
+    <form method="post" asp-page="/Cart" id=" @Model.ProductID">
+        <input type="hidden" asp-for="ProductID" />
+        <input type="hidden" name="returnUrl"
+               value="@ViewContext.HttpContext.Request.PathAndQuery()" />
+        <span class="card-text p-1">
+            @Model.Description
+            <button type="submit" class="btn btn-success btn-sm pull-right" style="float: right">
+                Add To Cart
+            </button>
+
+        </span>
+    </form>
+</div>

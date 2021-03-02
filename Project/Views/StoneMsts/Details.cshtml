@@ -1,0 +1,61 @@
+﻿@model Project.Models.StoneMst
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>StoneMst</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.StoneQltyId)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.StoneQltyId)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.StoneGm)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.StoneGm)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.StonePcs)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.StonePcs)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.StoneCrt)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.StoneCrt)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.StoneRate)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.StoneRate)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.StoneAmt)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.StoneAmt)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.StyleCodeNavigation)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.StyleCodeNavigation.StyleCode)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.StyleCode">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

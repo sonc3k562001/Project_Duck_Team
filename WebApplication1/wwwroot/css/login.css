@@ -1,0 +1,141 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #fff5f7;
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 500;
+}
+
+.logo {
+    float: left;
+    padding-top: 30px;
+}
+
+.top-bar-left {
+    width: 100%;
+    height: 120px
+}
+
+.logo a {
+    text-decoration: none;
+}
+
+    .logo a span {
+        color: #d41442;
+        font-size: 30px;
+        line-height: 40px;
+        font-weight: 400;
+        letter-spacing: 0px;
+        font-family: "Titan One", Arial, Tahoma, sans-serif;
+    }
+
+.menu-wrapper {
+    float: left;
+    height: 120px;
+}
+
+.menu-ul {
+    padding: 30px 50px;
+}
+
+    .menu-ul li {
+        list-style: none;
+        float: left;
+        margin-left: 30px;
+        color: white;
+    }
+
+        .menu-ul li a {
+            text-decoration: none;
+        }
+
+            .menu-ul li a span {
+                color: white;
+                font-family: "DM Sans", Arial, Tahoma, sans-serif;
+                font-size: 16px;
+                position: relative;
+                z-index: 2;
+            }
+
+                .menu-ul li a span:hover {
+                    color: #d41442;
+                    transition: 2s
+                }
+/*chỗ này phần menu*/
+
+
+
+/*phần login và sign up*/
+.pb-3 .info-signup {
+    background-image: url(https://mewallpaper.com/thumbnail/food/1002-ice-cream-and-berries-with-white-background-wallpaper-free-photo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+}
+
+.pb-3 .info-login {
+    background-image: url(https://wallpapershome.com/images/pages/pic_h/15362.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+}
+
+.pb-3 .info-reset {
+    background-image: url(https://sifu.unileversolutions.com/image/en-ZA/recipe-topvisual/2/1260-709/creamy-rooibos-ice-cream-50461859.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+}
+
+.pb-3 .info-change {
+    background-image: url(https://contenthandler.azureedge.net/recp/717/2000/0/700.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+}
+
+.information {
+    background-color: rgba(255, 255, 255, 0.76);
+    padding: 40px 20px 30px 20px;
+    border-radius: 8px;
+    float: right;
+    margin: 100px 0 100px;
+}
+
+.submit {
+    float: right;
+    margin-top: 20px;
+}
+
+h2 {
+    font-family: 'Titan One', Arial, Tahoma, sans-serif;
+    color: #d41442;
+}
+
+span {
+    color: #686868;
+    font-size: 10px;
+    line-height: 15px !important;
+}
+
+.name-left {
+    width: 47%;
+    float: left;
+}
+
+.username-right {
+    width: 47%;
+    float: right;
+}
+
+.form-group {
+    margin-bottom: 0 !important;
+}
+
+.form-control {
+    height: calc(1.5em + .5rem + 2px) !important;
+}

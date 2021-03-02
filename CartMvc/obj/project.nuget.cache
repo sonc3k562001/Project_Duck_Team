@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "GGn1eAOfRG7hbJXDkkMYkZNuC5gGHxjZO+ux+Lw94iFnviyX+hp+Yj+ZBwbYaGpO07DPaNhaPg95KNx/i6hOPw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\son10\\source\\repos\\CartMvc\\CartMvc.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\son10\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

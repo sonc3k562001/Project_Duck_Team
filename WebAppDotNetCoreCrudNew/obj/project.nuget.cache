@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "5B3X1DM2i6tGmxIQvipuTWcyzNswZCtoxR33zjina+Ok+3QLamoPOQRXthSmZBGiurJXA4wSHZlT4czrSQmgrw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\son10\\source\\repos\\WebAppDotNetCoreCrudNew\\WebAppDotNetCoreCrudNew.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\son10\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.10\\microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512",
+    "C:\\Users\\son10\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.10\\microsoft.netcore.app.host.win-x64.3.1.10.nupkg.sha512"
+  ],
+  "logs": []
+}

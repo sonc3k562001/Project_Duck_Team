@@ -1,0 +1,48 @@
+﻿@model WebApplication1.Models.Expense
+
+@{
+    ViewData["Title"] = "ExpenseInfo";
+    Layout = "LayoutAdmin";
+}
+
+<h1>ExpenseInfo</h1>
+
+<h4>Expense</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="SaveExpense">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+         
+            <div class="form-group">
+                <label asp-for="Title" class="control-label"></label>
+                <input asp-for="Title" class="form-control" />
+                <span asp-validation-for="Title" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Amount" class="control-label"></label>
+                <input asp-for="Amount" class="form-control" />
+                <span asp-validation-for="Amount" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PaidBy" class="control-label"></label>
+                <input asp-for="PaidBy" class="form-control" />
+                <span asp-validation-for="PaidBy" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Description" class="control-label"></label>
+                <input asp-for="Description" class="form-control" />
+                <span asp-validation-for="Description" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                @Html.HiddenFor(m =>m.Id)
+                <input type="submit" value="Save Expenses" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+

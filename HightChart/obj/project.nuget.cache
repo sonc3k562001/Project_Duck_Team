@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "ensfKe0pfjfy1Ui9K5J36D1pu+Ev4+rUG+F/NeZOJldblVJ4Wt141bId7efNgwSFh9AfB3xpGYlaAP1xusOPKQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\son10\\source\\repos\\HightChart\\HightChart.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\son10\\.nuget\\packages\\highsoft.highcharts\\8.2.2.2\\highsoft.highcharts.8.2.2.2.nupkg.sha512",
+    "C:\\Users\\son10\\.nuget\\packages\\newtonsoft.json\\12.0.1\\newtonsoft.json.12.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

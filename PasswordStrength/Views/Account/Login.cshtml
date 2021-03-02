@@ -1,0 +1,45 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-with" />
+    <title>Login</title>
+</head>
+<body>
+    <h3>Login Page</h3>
+    <form method="post" asp-controller="Account" asp-action="login">
+        @ViewBag.error
+        <table cellpadding="2" cellspacing="2">
+            <tr>
+                <td>Username</td>
+                <td>
+                    <input type="text" name="username" />
+                </td>
+
+            </tr>
+            <tr>
+                <td>Password</td>
+                <td>
+                    <input type="password" name="password" />
+                </td>
+
+            </tr>
+            <tr>
+
+                <td>
+                    <input type="submit" value="Login" />
+                    <br />
+                    <a asp-controller="Account" asp-action="SignUp">Sign Up</a>
+                </td>
+
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
+
+
